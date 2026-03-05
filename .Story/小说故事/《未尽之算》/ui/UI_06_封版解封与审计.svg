@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, "Microsoft YaHei", sans-serif; fill: #0F172A; }
+      .subtitle { font: 600 16px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+      .label { font: 600 14px Arial, "Microsoft YaHei", sans-serif; fill: #0F172A; }
+      .text { font: 14px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+      .muted { font: 12px Arial, "Microsoft YaHei", sans-serif; fill: #64748B; }
+      .panel { fill: #F8FAFC; stroke: #CBD5E1; stroke-width: 1.5; rx: 12; }
+      .field { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; rx: 8; }
+      .btn { fill: #0F172A; rx: 8; }
+      .btn-text { font: 600 14px Arial, "Microsoft YaHei", sans-serif; fill: #FFFFFF; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1400" height="900" fill="#FFFFFF"/>
+
+  <text x="40" y="52" class="title">封版 / 解封 / 审计</text>
+  <text x="40" y="80" class="subtitle">人类确认是硬条件，系统记录审计链</text>
+
+  <rect x="40" y="110" width="650" height="360" class="panel"/>
+  <text x="60" y="140" class="label">封版确认</text>
+  <rect x="60" y="165" width="610" height="260" class="field"/>
+  <text x="75" y="195" class="text">✅ Layer 0-3 全部通过</text>
+  <text x="75" y="220" class="text">✅ 伏笔已埋 / 已回收</text>
+  <text x="75" y="245" class="text">✅ 角色状态已更新</text>
+  <text x="75" y="270" class="text">✅ 集摘要已生成</text>
+  <text x="75" y="295" class="text">✅ 人类确认阅读完成</text>
+
+  <rect x="520" y="430" width="150" height="32" class="btn"/>
+  <text x="560" y="452" class="btn-text">执行封版</text>
+
+  <rect x="710" y="110" width="650" height="360" class="panel"/>
+  <text x="730" y="140" class="label">解封申请</text>
+  <rect x="730" y="165" width="610" height="160" class="field"/>
+  <text x="745" y="195" class="text">解封原因（必填）</text>
+  <text x="745" y="220" class="muted">如：时间线矛盾、伏笔冲突</text>
+  <rect x="730" y="335" width="610" height="90" class="field"/>
+  <text x="745" y="360" class="text">影响范围</text>
+  <text x="745" y="385" class="muted">下游场景将标记为 stale</text>
+
+  <rect x="1180" y="430" width="160" height="32" class="btn"/>
+  <text x="1215" y="452" class="btn-text">执行解封</text>
+
+  <rect x="40" y="500" width="1320" height="310" class="panel"/>
+  <text x="60" y="530" class="label">影响评估与审计记录</text>
+  <rect x="60" y="555" width="1280" height="110" class="field"/>
+  <text x="75" y="585" class="text">依赖场景：v01.e03.s02 / v01.e03.s03 / v01.e04.s01</text>
+  <text x="75" y="610" class="muted">解封后将触发重验与返工链</text>
+
+  <rect x="60" y="675" width="1280" height="110" class="field"/>
+  <text x="75" y="705" class="text">审计摘要：seal_hash 已生成，记录写入 audit_log</text>
+  <text x="75" y="730" class="muted">可追溯：封版人 / 时间 / 证据引用</text>
+</svg>

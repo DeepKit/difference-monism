@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, "Microsoft YaHei", sans-serif; fill: #0F172A; }
+      .subtitle { font: 600 16px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+      .label { font: 600 14px Arial, "Microsoft YaHei", sans-serif; fill: #0F172A; }
+      .text { font: 14px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+      .muted { font: 12px Arial, "Microsoft YaHei", sans-serif; fill: #64748B; }
+      .panel { fill: #F8FAFC; stroke: #CBD5E1; stroke-width: 1.5; rx: 12; }
+      .field { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; rx: 8; }
+      .status-pass { fill: #DCFCE7; stroke: #22C55E; stroke-width: 1; rx: 8; }
+      .status-warn { fill: #FEF9C3; stroke: #F59E0B; stroke-width: 1; rx: 8; }
+      .btn { fill: #0F172A; rx: 8; }
+      .btn-text { font: 600 14px Arial, "Microsoft YaHei", sans-serif; fill: #FFFFFF; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1400" height="900" fill="#FFFFFF"/>
+
+  <text x="40" y="52" class="title">质量报告（χ-环裁决）</text>
+  <text x="40" y="80" class="subtitle">展示 Layer0-2 结果与评委摘要，等待人类裁决</text>
+
+  <rect x="40" y="110" width="420" height="120" class="status-pass"/>
+  <text x="60" y="145" class="label">Layer 0 禁元检测</text>
+  <text x="60" y="175" class="text">✅ 全部通过</text>
+
+  <rect x="490" y="110" width="420" height="120" class="status-pass"/>
+  <text x="510" y="145" class="label">Layer 1 基元校验</text>
+  <text x="510" y="175" class="text">声音 PASS / 乐谱 PASS / 伏笔 PASS / 字数 PASS</text>
+
+  <rect x="940" y="110" width="420" height="120" class="status-warn"/>
+  <text x="960" y="145" class="label">Layer 2 τ-环指标</text>
+  <text x="960" y="175" class="text">乐谱命中 78%（低于 80% 阈值）</text>
+
+  <rect x="40" y="250" width="650" height="460" class="panel"/>
+  <text x="60" y="280" class="label">问题列表</text>
+  <rect x="60" y="305" width="610" height="120" class="field"/>
+  <text x="75" y="330" class="text">问题 1：第 3 段未落到 must_land #2</text>
+  <text x="75" y="355" class="muted">建议：将“决策时刻”提前 1 段</text>
+
+  <rect x="60" y="435" width="610" height="120" class="field"/>
+  <text x="75" y="460" class="text">问题 2：结尾情绪偏冷，与“正向结局”冲突</text>
+  <text x="75" y="485" class="muted">建议：补充情绪转折</text>
+
+  <rect x="720" y="250" width="640" height="460" class="panel"/>
+  <text x="740" y="280" class="label">评委制摘要</text>
+  <rect x="740" y="305" width="600" height="120" class="field"/>
+  <text x="755" y="330" class="text">语言 7.8 | 人物 8.2 | 叙事 7.5 | 主题 7.0</text>
+  <text x="755" y="355" class="muted">评语：修辞密度略高，人物动机略跳</text>
+
+  <rect x="740" y="435" width="600" height="120" class="field"/>
+  <text x="755" y="460" class="text">建议：压缩比喻，增加动作细节</text>
+  <text x="755" y="485" class="muted">评委摘要仅供参考，最终裁决由人类完成</text>
+
+  <rect x="40" y="735" width="1320" height="140" class="panel"/>
+  <text x="60" y="765" class="label">自动封版判定</text>
+  <text x="60" y="790" class="text">总分 8.05 ≥ X=8.0 且单项 ≥ Y=7.0 且 σ=0.35 ≤ 1.0 → ✅ 达标（自动封版）</text>
+  <text x="60" y="815" class="muted">未达标时进入 χ-环人类裁决：</text>
+  <rect x="820" y="828" width="120" height="36" class="btn"/>
+  <text x="850" y="852" class="btn-text">通过</text>
+  <rect x="950" y="828" width="140" height="36" class="btn"/>
+  <text x="982" y="852" class="btn-text">要求重写</text>
+  <rect x="1110" y="828" width="140" height="36" class="btn"/>
+  <text x="1142" y="852" class="btn-text">手动修改</text>
+</svg>

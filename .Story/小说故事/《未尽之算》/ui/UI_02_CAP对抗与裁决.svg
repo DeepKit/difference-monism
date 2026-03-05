@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, "Microsoft YaHei", sans-serif; fill: #0F172A; }
+      .subtitle { font: 600 16px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+      .label { font: 600 14px Arial, "Microsoft YaHei", sans-serif; fill: #0F172A; }
+      .text { font: 14px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+      .muted { font: 12px Arial, "Microsoft YaHei", sans-serif; fill: #64748B; }
+      .panel { fill: #F8FAFC; stroke: #CBD5E1; stroke-width: 1.5; rx: 12; }
+      .field { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; rx: 8; }
+      .btn { fill: #0F172A; rx: 8; }
+      .btn-text { font: 600 14px Arial, "Microsoft YaHei", sans-serif; fill: #FFFFFF; }
+      .pill { fill: #E2E8F0; rx: 14; }
+      .pill-text { font: 600 12px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1400" height="900" fill="#FFFFFF"/>
+
+  <text x="40" y="52" class="title">CAP 对抗与裁决</text>
+  <text x="40" y="80" class="subtitle">Round 1 李冰 → Round 2 仙儿 → Round 3 联合审查 → 司令裁决</text>
+
+  <rect x="40" y="110" width="640" height="700" class="panel"/>
+  <text x="60" y="140" class="label">攻击点列表</text>
+
+  <rect x="60" y="165" width="600" height="120" class="field"/>
+  <text x="75" y="190" class="label">逻辑漏洞</text>
+  <text x="75" y="215" class="text">乐谱要求“顿悟”，但角色状态未获得任何触发信息</text>
+  <rect x="520" y="190" width="120" height="24" class="pill"/>
+  <text x="545" y="207" class="pill-text">严重</text>
+
+  <rect x="60" y="295" width="600" height="120" class="field"/>
+  <text x="75" y="320" class="label">边界条件</text>
+  <text x="75" y="345" class="text">字数 4000 + 3 转折 + 2 伏笔，节奏不可收束</text>
+  <rect x="520" y="320" width="120" height="24" class="pill"/>
+  <text x="545" y="337" class="pill-text">中等</text>
+
+  <rect x="60" y="425" width="600" height="120" class="field"/>
+  <text x="75" y="450" class="label">恶意合规</text>
+  <text x="75" y="475" class="text">可生成“流水账式”文本仍满足字面约束</text>
+  <rect x="520" y="450" width="120" height="24" class="pill"/>
+  <text x="545" y="467" class="pill-text">严重</text>
+
+  <rect x="720" y="110" width="640" height="700" class="panel"/>
+  <text x="740" y="140" class="label">修复建议与裁决</text>
+
+  <rect x="740" y="165" width="600" height="150" class="field"/>
+  <text x="755" y="190" class="label">修复建议</text>
+  <text x="755" y="215" class="text">1) 增加“顿悟触发事件”或改为“怀疑”</text>
+  <text x="755" y="240" class="text">2) 合并转折，缩减字数或分拆为两集</text>
+  <text x="755" y="265" class="text">3) 增加“文本质感要求”约束条款</text>
+
+  <rect x="740" y="325" width="600" height="140" class="field"/>
+  <text x="755" y="350" class="label">裁决选项</text>
+  <text x="755" y="375" class="text">A. 接受修复并更新契约</text>
+  <text x="755" y="400" class="text">B. 人工改写契约</text>
+  <text x="755" y="425" class="text">C. 退回重新撰写</text>
+
+  <rect x="740" y="485" width="600" height="120" class="field"/>
+  <text x="755" y="510" class="label">裁决说明（可选）</text>
+  <text x="755" y="535" class="muted">记录裁决理由，写入审计日志</text>
+
+  <rect x="1110" y="835" width="110" height="36" class="btn"/>
+  <text x="1138" y="858" class="btn-text">保存记录</text>
+  <rect x="1230" y="835" width="130" height="36" class="btn"/>
+  <text x="1260" y="858" class="btn-text">通过 CAP</text>
+</svg>

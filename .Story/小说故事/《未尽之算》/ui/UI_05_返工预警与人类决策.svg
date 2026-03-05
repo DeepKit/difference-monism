@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .title { font: 700 28px Arial, "Microsoft YaHei", sans-serif; fill: #0F172A; }
+      .subtitle { font: 600 16px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+      .label { font: 600 14px Arial, "Microsoft YaHei", sans-serif; fill: #0F172A; }
+      .text { font: 14px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+      .muted { font: 12px Arial, "Microsoft YaHei", sans-serif; fill: #64748B; }
+      .panel { fill: #F8FAFC; stroke: #CBD5E1; stroke-width: 1.5; rx: 12; }
+      .field { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; rx: 8; }
+      .btn { fill: #0F172A; rx: 8; }
+      .btn-text { font: 600 14px Arial, "Microsoft YaHei", sans-serif; fill: #FFFFFF; }
+      .light-red { fill: #EF4444; }
+      .light-orange { fill: #F59E0B; }
+      .light-yellow { fill: #FACC15; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1400" height="900" fill="#FFFFFF"/>
+
+  <text x="40" y="52" class="title">返工预警与人类决策</text>
+  <text x="40" y="80" class="subtitle">触发点：返工次数 ≥ 阈值（黄/橙/红灯）</text>
+
+  <rect x="40" y="110" width="420" height="380" class="panel"/>
+  <text x="60" y="140" class="label">当前灯色</text>
+  <circle cx="160" cy="260" r="70" class="light-red"/>
+  <text x="250" y="245" class="text">红灯：返工 ≥ 6 次</text>
+  <text x="250" y="270" class="muted">需人类裁决，阻塞流程</text>
+
+  <rect x="40" y="510" width="420" height="300" class="panel"/>
+  <text x="60" y="540" class="label">统计</text>
+  <text x="60" y="570" class="text">本场景返工次数：6</text>
+  <text x="60" y="595" class="text">主要失败类型：乐谱模糊 / 声音不稳</text>
+  <text x="60" y="620" class="text">最近一次失败：VoiceCheck FAIL</text>
+
+  <rect x="480" y="110" width="880" height="380" class="panel"/>
+  <text x="500" y="140" class="label">诊断原因</text>
+  <rect x="500" y="165" width="840" height="90" class="field"/>
+  <text x="515" y="195" class="text">原因 1：must_land 含模糊词（“有所领悟”）</text>
+  <rect x="500" y="265" width="840" height="90" class="field"/>
+  <text x="515" y="295" class="text">原因 2：角色禁元被触发（比喻系统越界）</text>
+  <rect x="500" y="365" width="840" height="90" class="field"/>
+  <text x="515" y="395" class="text">原因 3：模型能力不足（复杂度偏高）</text>
+
+  <rect x="480" y="510" width="880" height="300" class="panel"/>
+  <text x="500" y="540" class="label">人类决策菜单</text>
+  <text x="500" y="570" class="text">A. 修改契约（补充 must_land / 调整三线）</text>
+  <text x="500" y="600" class="text">B. 放宽门禁（临时降低阈值）</text>
+  <text x="500" y="630" class="text">C. 人工补充（手动改写关键段落）</text>
+  <text x="500" y="660" class="text">D. 取消任务（放弃该场景）</text>
+  <text x="500" y="690" class="text">E. 继续尝试（重置计数）</text>
+
+  <rect x="1210" y="835" width="150" height="36" class="btn"/>
+  <text x="1246" y="858" class="btn-text">确认裁决</text>
+</svg>
