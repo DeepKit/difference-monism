@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"D:\\\\_Progs\\\\01Center\\\\ODDFounder\\\\NTE\")",
+      "Bash(dir \"D:\\\\_Progs\\\\01Center\")",
+      "Bash(dir /s /b \"D:\\\\_Progs\\\\01Center\\\\ASTO\")",
+      "Bash(findstr /i \"E04\")",
+      "Bash(findstr /s \"acceptance_criteria\" *.md)",
+      "Bash(findstr /s \"acceptance:\" *.md)",
+      "Bash(git init)",
+      "Bash(git add -A)",
+      "Bash(git commit -m \"feat: ODD 四层文档体系完整发布\n\n- 四层 29 篇文档：着陆层\\(101-104\\)、实战层\\(201-208\\)、工程层\\(301-312\\)、理论层\\(401-405\\)\n- README 着陆页\n- 12 篇引战文章 + 5 篇推广策略\n- 20 篇原始理论文档\\(ODD.01-ODD.16\\)\n- 深度审阅后修复：acceptance_criteria 格式统一、状态枚举对齐、frontmatter 补全、字段名统一、跨文档链接修复\")",
+      "Bash(grep -rn \"可执行\" docs/ ODD.00*.md ODD.01*.md)",
+      "Bash(sqlite3 /d/_Progs/02Business/progee2/bin/ProgeeConfig.db \".schema\")",
+      "Bash(sqlite3 /d/_Progs/01Center/ODDFounder/tools/articles.db \".schema\")",
+      "Bash(sqlite3 /d/_Progs/02Business/progee2/bin/ProgeeConfig.db \"SELECT name FROM sqlite_master WHERE type=''table'';\")",
+      "Bash(sqlite3 \"D:/_Progs/02Business/progee2/bin/ProgeeConfig.db\" \".tables\")",
+      "Bash(python odd_metrics_collector.py)"
+    ]
+  }
+}

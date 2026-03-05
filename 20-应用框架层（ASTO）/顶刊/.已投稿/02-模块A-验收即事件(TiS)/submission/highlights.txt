@@ -1,0 +1,6 @@
+Highlights
+1) Acceptance events bind artifact-constraint-evidence to an authorized sign-off.
+2) Constraint referencing requirement: no acceptance without citation.
+3) Shifts accountability from authorship/review to auditable acceptance operations.
+4) Adds a governance layer atop provenance/attestation (e.g., SLSA, Sigstore).
+5) Warns against compliance theater; rejects fully automated acceptance.

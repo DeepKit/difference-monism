@@ -1,0 +1,39 @@
+{
+  "messages": {
+    "bc6aa7d5-42d7-4c31-93a4-f4a7a9be22a5": {
+      "id": "bc6aa7d5-42d7-4c31-93a4-f4a7a9be22a5",
+      "topic": "topic1",
+      "content": {
+        "data": "test"
+      },
+      "timestamp": 1771511953.0182643,
+      "retry_count": 0,
+      "max_retries": 3,
+      "consumer_group": null
+    },
+    "65afc79e-3f3d-492b-95bf-13bb4dbd8ca8": {
+      "id": "65afc79e-3f3d-492b-95bf-13bb4dbd8ca8",
+      "topic": "topic1",
+      "content": {
+        "data": "test"
+      },
+      "timestamp": 1771512040.4193242,
+      "retry_count": 0,
+      "max_retries": 3,
+      "consumer_group": null
+    },
+    "7deacabb-186d-44c8-9d78-d402fc85db1e": {
+      "id": "7deacabb-186d-44c8-9d78-d402fc85db1e",
+      "topic": "topic1",
+      "content": {
+        "data": "test"
+      },
+      "timestamp": 1771512261.4524167,
+      "retry_count": 0,
+      "max_retries": 3,
+      "consumer_group": null
+    }
+  },
+  "pending_messages": {},
+  "consumer_groups": {}
+}

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"D:\\\\_Progs\\\\01Center\\\\ASTO\" diff --stat HEAD)",
+      "Bash(git -C \"D:\\\\_Progs\\\\01Center\\\\ASTO\" log:*)",
+      "Bash(pandoc --version)",
+      "Bash(python -c:*)",
+      "Bash(python -m pip install:*)",
+      "Bash(cmd.exe /c \"dir D:\\\\_Progs\\\\01Center\\\\ASTO\\\\papers\\\\better.md 2>&1\")",
+      "Bash(cmd.exe /c:*)",
+      "Bash(find \"D:\\\\_Progs\\\\01Center\\\\ASTO\\\\papers\" -name \"*.md\" -type f -exec grep -l \"三色灯\\\\|绿灯\\\\|红灯\\\\|黄灯\\\\|裁决\\\\|决断公理\" {} ;)",
+      "Bash(find \"D:\\\\_Progs\\\\01Center\\\\ASTO\\\\papers\" -name \"*.md\" -type f -exec grep -n \"三色灯\" {} +)",
+      "Bash(find:*)",
+      "Bash(powershell -Command \"Get-ChildItem ''D:\\\\_Progs\\\\01Center\\\\ASTO\\\\papers'' -Recurse | Select-Object FullName\")",
+      "Bash(powershell -Command \"Get-Content ''D:\\\\_Progs\\\\01Center\\\\ASTO\\\\papers\\\\ASTO.P04.宣言.Phil.v12.5.md'' -Encoding UTF8 | Select-String -Pattern ''三色灯|红灯|绿灯|黄灯|裁决|决断公理|伦理审计|定时炸弹'' | Select-Object -First 60\")",
+      "Bash(powershell -Command:*)",
+      "Bash(python3 -c:*)",
+      "Bash(git add \"papers/ASTO.P04.宣言.Phil.v12.5.md\" \"papers/ASTO.P05.公理.Phil.v9.1.md\" \"papers/ASTO.Task.md\" \"papers/ASTO.U02.Glossary.zh-en.v1.0.md\" \"papers/better.md\" \"papers/better3.5.md\" \"papers/better4.md\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(for f in P07 P08 P09 P10 P11 P12 P13)",
+      "Bash(do echo \"=== $f ===\" grep -n -E \"\\(Firstness|Secondness|Thirdness|Peircean|物理力场|Force Field\\)\" \"D:/_Progs/01Center/ASTO/papers/ASTO.$f.\"*.md)",
+      "Bash(done)",
+      "Bash(git -C \"D:/_Progs/01Center/ASTO\" diff:*)"
+    ]
+  }
+}

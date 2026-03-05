@@ -1,0 +1,11 @@
+Figure 1 (conceptual governance diagram)
+Caption: A governance-level, implementation-agnostic abstraction: artifact–constraint–evidence binding as an acceptance event forming a queryable responsibility anchor.
+
+```mermaid
+flowchart LR
+  A["Artifact<br/>name / version / digest"] --> E["Acceptance Event<br/>artifact + constraints + evidence<br/>+ authorized sign-off + timestamp"]
+  C["Constraint Set<br/>id / version / digest"] --> E
+  V["Evidence Bundle<br/>digest / commitment"] --> E
+  S["Authorized Agent<br/>role / identity"] --> E
+  E --> Q["Queryable Responsibility Anchor<br/>who / what / constraints / evidence / when"]
+```

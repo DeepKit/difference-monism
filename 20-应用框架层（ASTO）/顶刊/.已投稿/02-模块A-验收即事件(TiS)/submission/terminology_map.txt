@@ -1,0 +1,21 @@
+Terminology map (CN ↔ EN)
+1) 验收事件 → acceptance event
+   - Preferred phrase: auditable acceptance event
+2) 约束引用要求 → constraint referencing requirement
+   - Optional alias (use sparingly): institutional fixation (if used, clarify as an explicit constraint-binding requirement)
+3) 显式约束绑定 → explicit constraint binding
+4) 约束集 → constraint set
+   - Optional: acceptance criteria set (avoid if it weakens “constraint as governance object”)
+5) 产出物 → artifact
+   - Optional: (software) artifact / digital artifact
+6) 证据包 → evidence bundle
+7) 证据包摘要/证据摘要 → evidence bundle digest / evidence digest
+8) 三元绑定（产出物–约束–证据）→ artifact-constraint-evidence binding
+   - Avoid “ternary binding” unless you define it; prefer the explicit triple name.
+9) 授权主体/授权角色 → authorized agent / authorized role
+10) 责任锚点 → responsibility anchor
+11) 责任边界（非责任垄断点）→ responsibility boundary (not a responsibility monopoly)
+
+Consistency rules
+- Keep the triple phrase repeated verbatim throughout (artifact-constraint-evidence binding).
+- Use “acceptance operation” / “responsibility-binding operation” as fixed collocations.

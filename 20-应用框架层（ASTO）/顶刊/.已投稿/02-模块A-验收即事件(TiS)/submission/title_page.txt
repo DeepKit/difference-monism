@@ -1,0 +1,27 @@
+Title Page
+
+Title
+Acceptance Is Not a Judgment: Operationalizing Accountability with Auditable Acceptance Events
+
+Running Title
+Acceptance as Auditable Event
+
+Author(s)
+Yi Fu
+
+Affiliation(s)
+Department of Logistics Management, North Sichuan Medical College, Nanchong, Sichuan, China
+
+Corresponding Author
+Yi Fu
+Email: fuyi@nsmc.edu.cn
+Address: University Town, Shunqing District, Nanchong, Sichuan 637000, China
+
+Keywords
+acceptance event; accountability; governance semantics; auditability; constraint referencing; responsible technology
+
+Declarations
+- Conflicts of interest: The author declares no competing interests.
+- Funding: None.
+- Data availability: No datasets were generated or analyzed for this article.
+- CRediT author statement: see separate file.

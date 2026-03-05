@@ -1,0 +1,16 @@
+Pre-submission checklist (TiS)
+1) Title page prepared (authors, affiliations, corresponding author).
+2) Manuscript file prepared (English): main text, references, figure placeholders (if any).
+3) Highlights (3–5 bullets, <= 85 characters each).
+4) Data availability statement.
+5) Conflict of interest statement.
+6) CRediT author contribution statement.
+7) Cover letter emphasizing novelty vs provenance/attestation.
+8) Suggested reviewers (optional).
+9) Figure 1 (optional): see figure1_mermaid.txt (convert to image if required).
+10) Ensure no internal project/system names appear in the manuscript.
+11) Footnote-only mention of historical cases; avoid factual/legal disputes.
+12) Consistent terminology: acceptance event; constraint referencing requirement; constraint set; evidence bundle; artifact-constraint-evidence binding.
+13) References style consistent (align to journal guidance at final submission stage).
+14) English abstract <= 250 words.
+15) If resubmission: response_letter.txt included and maps changes to sections.

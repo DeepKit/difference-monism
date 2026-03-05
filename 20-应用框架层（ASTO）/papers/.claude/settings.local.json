@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Select-String -Path ''D:/_Progs/01Center/ASTO/papers/ASTO.P05.公理.Phil.v9.1.md'' -Pattern ''结构'' | ForEach-Object { $_LineNumber.ToString\\(\\) + '': '' + $_Line }\")",
+      "Bash(python3 -c \"\nwith open\\(r''D:/_Progs/01Center/ASTO/papers/ASTO.P05.公理.Phil.v9.1.md'', ''r'', encoding=''utf-8''\\) as f:\n    for i, line in enumerate\\(f, 1\\):\n        if ''\\\\u7ed3\\\\u6784'' in line:\n            print\\(f''{i}: {line.rstrip\\(\\)[:120]}''\\)\n\")",
+      "Bash(python -c \"\nwith open\\(r''D:/_Progs/01Center/ASTO/papers/ASTO.P05.公理.Phil.v9.1.md'', ''r'', encoding=''utf-8''\\) as f:\n    for i, line in enumerate\\(f, 1\\):\n        if ''\\\\u7ed3\\\\u6784'' in line:\n            print\\(f''{i}: {line.rstrip\\(\\)[:150]}''\\)\n\")",
+      "Bash(python -c \"\nimport sys\nwith open\\(r''D:/_Progs/01Center/ASTO/papers/ASTO.P05.公理.Phil.v9.1.md'', ''r'', encoding=''utf-8''\\) as f:\n    for i, line in enumerate\\(f, 1\\):\n        if ''\\\\u7ed3\\\\u6784'' in line:\n            try:\n                s = repr\\(line.rstrip\\(\\)[:150]\\)\n                sys.stdout.buffer.write\\(f''{i}: ''.encode\\(''utf-8''\\)\\)\n                sys.stdout.buffer.write\\(line.rstrip\\(\\)[:150].encode\\(''utf-8'', errors=''ignore''\\)\\)\n                sys.stdout.buffer.write\\(b''\\\\n''\\)\n            except:\n                pass\n\")",
+      "Bash(grep:*)",
+      "Bash(done)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(git add \"ASTO.P01.非此.Phil.P.v8.0.md\" \"ASTO.P02.序章.Phil.v8.0.md\" \"ASTO.P03.认识论.Phil.Paper.v1.1.md\" \"ASTO.P04.宣言.Phil.v12.5.md\" \"ASTO.P05.公理.Phil.v9.1.md\")",
+      "Bash(git add \"ASTO.P06.价值与边界.Phil.v1.0.md\" \"ASTO.P07.自由论.Phil.v9.0.md\" \"ASTO.P09.批判.Phil.v9.0.md\" \"ASTO.A01.自指性变迁问题.Phil.v1.0.md\" \"ASTO.A02.结构病理学.Phil.v1.0.md\")",
+      "Bash(git commit:*)",
+      "Bash(git add \"./工程版/ASTO.E03.叙事生产.Eng.v1.0.md\")",
+      "Bash(git add:*)",
+      "Bash(git rm --cached \"小说故事/《未尽之算》/nul\" \"小说故事/《思维越狱》/知乎体/nul\")"
+    ]
+  }
+}

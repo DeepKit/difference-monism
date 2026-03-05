@@ -1,0 +1,61 @@
+{
+  "messages": {
+    "512c9c0c-6f67-45f8-8676-2edd4ea68f45": {
+      "id": "512c9c0c-6f67-45f8-8676-2edd4ea68f45",
+      "topic": "test_topic",
+      "content": {
+        "data": "hello"
+      },
+      "timestamp": 1771510540.58961,
+      "retry_count": 0,
+      "max_retries": 3,
+      "consumer_group": null
+    },
+    "2db59de2-18a7-4ccd-af80-0ec573557aa9": {
+      "id": "2db59de2-18a7-4ccd-af80-0ec573557aa9",
+      "topic": "test_topic",
+      "content": {
+        "data": "hello"
+      },
+      "timestamp": 1771511852.9003484,
+      "retry_count": 0,
+      "max_retries": 3,
+      "consumer_group": null
+    },
+    "2da14185-cdf3-42ed-b040-e2863a101e3f": {
+      "id": "2da14185-cdf3-42ed-b040-e2863a101e3f",
+      "topic": "test_topic",
+      "content": {
+        "data": "hello"
+      },
+      "timestamp": 1771511953.0112152,
+      "retry_count": 0,
+      "max_retries": 3,
+      "consumer_group": null
+    },
+    "aaf4669f-1b7e-459f-8df6-e160538e9d19": {
+      "id": "aaf4669f-1b7e-459f-8df6-e160538e9d19",
+      "topic": "test_topic",
+      "content": {
+        "data": "hello"
+      },
+      "timestamp": 1771512040.4118965,
+      "retry_count": 0,
+      "max_retries": 3,
+      "consumer_group": null
+    },
+    "0197c728-26b0-444d-ac5c-7b163d2c3f5f": {
+      "id": "0197c728-26b0-444d-ac5c-7b163d2c3f5f",
+      "topic": "test_topic",
+      "content": {
+        "data": "hello"
+      },
+      "timestamp": 1771512261.4444802,
+      "retry_count": 0,
+      "max_retries": 3,
+      "consumer_group": null
+    }
+  },
+  "pending_messages": {},
+  "consumer_groups": {}
+}

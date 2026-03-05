@@ -1,0 +1,32 @@
+Cover Letter
+
+February 5, 2026
+
+Editor-in-Chief
+Technology in Society
+
+Re: Submission of manuscript "Acceptance Is Not a Judgment: Operationalizing Accountability with Auditable Acceptance Events"
+
+Dear Editor-in-Chief,
+
+Please consider my manuscript, "Acceptance Is Not a Judgment: Operationalizing Accountability with Auditable Acceptance Events," for publication as a Research Article in Technology in Society.
+
+Governance failures in AI-assisted, high-velocity software production often arise because "acceptance" is treated as a psychological judgment ("it seems fine") rather than an auditable operation. The paper's contribution is a governance primitive: redefining acceptance as an acceptance event that institutionally binds artifact, versioned constraints, and an evidence bundle digest to an authorized sign-off at time t.
+
+I further introduce a constraint referencing requirement ("no acceptance without citation"), requiring every acceptance decision to cite a registered constraint set. This mechanism does not replace software supply-chain security layers such as provenance and attestation (e.g., SLSA, Sigstore); instead, it adds a governance layer that makes responsibility explicitly queryable: who accepted what, under which constraints, with which evidence, and when.
+
+I also address governance risks of auditability (e.g., compliance theater and evidence-gaming) and explicitly argue against fully automated acceptance decisions, emphasizing meaningful human control for high-impact deployments.
+
+This work is original, has not been published previously, and is not under consideration elsewhere.
+
+Data availability: No datasets were generated or analyzed for this article.
+
+Conflicts of interest: The author declares no competing interests.
+
+Thank you for your consideration.
+
+Sincerely,
+
+Yi Fu
+Department of Logistics Management, North Sichuan Medical College, Nanchong, Sichuan, China
+Email: fuyi@nsmc.edu.cn

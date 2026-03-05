@@ -1,0 +1,80 @@
+Response to the Editor and Reviewers
+Journal: Journal of Responsible Technology
+Manuscript title: “From Judgment to Responsibility Anchors: Operationalizing Accountability with Auditable Acceptance Events”
+Manuscript ID: [to be filled]
+Date: [to be filled]
+
+Dear Editor-in-Chief,
+Thank you for the opportunity to revise our manuscript. We appreciate the reviewers’ detailed critiques and requests to strengthen the socio-technical and ethical grounding of the proposal, sharpen its technical differentiation, and avoid governance-solutionism.
+
+We revised the manuscript substantially. Because the decision letter synthesized many overlapping concerns, we respond below point-by-point to the major requested changes, using section numbers in the revised manuscript for navigation.
+
+Summary of major revisions
+1) Revised the Introduction to front-load responsible-technology framing, clarify conceptual scope (a governance semantics intervention, not a DevOps prescription), and make the “responsibility boundary, not monopoly” stance explicit; we also added explicit definitions of operationalization and the governance-semantics gap to bridge the problem statement to the proposal. Detailed differentiation is positioned where it belongs: in technical comparison and governance discussion.
+   - Where: revised manuscript, §1 (Introduction) and §2.5.
+2) Reduced formalism and mathematical symbolism in the core definition; clarified institutional sign-off vs. cryptographic signing; added epistemic humility about evidence bundles.
+   - Where: revised manuscript, §2.1.
+3) Added a dedicated critical-reflexivity subsection addressing formalism, ritualistic compliance, decoupling, and isomorphic copying (“auditability” → “tick-box compliance”), with concrete anti-formalism safeguards.
+   - Where: revised manuscript, §3.4.
+4) Added a deeper technical comparison against SLSA provenance, attestations, Sigstore/cosign, and policy-as-code, clarifying that our contribution is a governance semantics layer (responsibility-binding meaning), not a new signing mechanism or another gate.
+   - Where: revised manuscript, §2.5 and §6.2.3.
+5) Expanded the vignette to an organization- and operations-grounded illustration (including exceptions and rollback windows) and sharpened the “Result” in terms of temporal anchoring and institutional non-deniability; we also broadened the mini-case set (healthcare AI, AV testing, content moderation, credit scoring) to show cross-domain recurrence of acceptance gaps.
+   - Where: revised manuscript, §4 and §4.5.
+6) Strengthened the governance and ethics discussion: responsibility justice (distributed responsibility, anti-scapegoating), the shadow of auditability (gaming/compliance theater), power/labor/political economy, Global South feasibility concerns, and the need for meaningful human control (against automated acceptance). We also explicitly address the agility/continuous-deployment tension and operationalize meaningful human control via constraint-set governance, exception governance, and interpretive discretion over evidence.
+   - Where: revised manuscript, §6.1 and §6.2.1–§6.2.5.
+7) Strengthened the conclusion with explicit boundary-setting and ethical warnings (not a governance panacea; compliance without accountability is a misuse; acceptance should not be fully automated).
+   - Where: revised manuscript, §7.
+8) Updated and expanded the reference list to support the added socio-technical claims.
+   - Where: revised manuscript, §8.
+
+Point-by-point responses to major requested changes
+1) Comment (socio-technical depth / STS / institutional critique): The manuscript should include critical reflexivity and explicitly address the risk that auditability becomes ceremonial compliance and that standards decouple from practice.
+   Response: We added a new critical-reflexivity subsection that draws on institutional theory and STS/standards scholarship to explain how visible procedures and documents can become symbolic “myths and ceremonies,” how constraint sets can be reified into KPIs/checklists, and how isomorphic copying can turn “citation” into a substitute for substantive safety. We also propose concrete anti-formalism safeguards (eventizing constraint-set changes, bounded exceptions with TTLs and remediation, reproducibility-focused audits, visible contestation channels, and rejecting full automation of acceptance).
+   Where: revised manuscript, §3.4.
+
+2) Comment (audit culture / gaming): The paper should address how audit regimes induce strategic documentation, evidence-production gaming, and compliance theater (“shadow of auditability”).
+   Response: We added a dedicated subsection explaining how audit and metrics reshape behavior and can incentivize evidence-production optimized for “being auditable” rather than “being safe.” We also propose mitigations such as sample-and-replay audits and exception-frequency reviews.
+   Where: revised manuscript, §6.2.2; also referenced in §3.4.
+
+3) Comment (evidence epistemology / humility): Evidence bundles should be treated with epistemic humility; “having evidence” is not equivalent to “having truth.”
+   Response: We explicitly frame the evidence bundle digest as a minimum traceability commitment rather than sufficient proof of safety/legitimacy, emphasizing selection, reification, and optimization pressures.
+   Where: revised manuscript, §2.1; reinforced in §3.4.
+
+4) Comment (technical differentiation): Please clarify how this differs from (or relates to) SLSA provenance, attestations, Sigstore signing, and policy-as-code, and avoid the impression of “renaming sign-off/release gates.”
+   Response: We added a comparison section that contrasts the primary questions and binding objects of these practices and positions acceptance events as a governance semantics layer: they bind responsibility to “who accepted what under which constraints citing which evidence,” while reusing provenance/attestations/policy enforcement as inputs and evidence.
+   Where: revised manuscript, §2.5 and §6.2.3.
+
+5) Comment (avoid defensive “de-homogenization” in the Introduction): Please remove “this is not X” defensive language from the Introduction and improve the manuscript’s structure.
+   Response: We removed the longer defensive framing and instead added a concise disambiguation note to prevent a common misreading (that this is a DevOps best practice, a security control, or “just another gate”). Substantive differentiation is positioned in the comparison section and the discussion.
+   Where: revised manuscript, §1; §2.5; §6.2.3.
+
+6) Comment (case depth): The vignette should be substantially expanded with concrete organizational/technical context, including exceptions/rollback and how accountability queries work.
+   Response: We expanded the vignette into a practice-oriented organizational scenario (fintech payments, microservices, high-frequency change, AI-assisted generation) and made explicit the investigation entry point (acceptance events), the shift from narrative dispute toward query-based audit, and a learning loop (updating constraint sets and issuing new acceptance events). We also included exception and rollback-window handling with TTLs and remediation obligations. In addition, we broadened the mini-case set across additional domains (content moderation, credit scoring) and referenced these as empirical signals in the Introduction.
+   Where: revised manuscript, §4 and §4.5; also referenced in §1.
+
+7) Comment (responsibility justice / scapegoating / liability shifting): The manuscript should address responsibility distribution and prevent the acceptor from becoming a scapegoat.
+   Response: We added a responsibility-justice subsection that distinguishes distributed responsibility chains (constraint authorship/approval, evidence integrity, acceptance sign-off, operations/rollback) and argues for forward-looking institutional responsibility rather than only backward-looking blame.
+   Where: revised manuscript, §6.2.1.
+
+8) Comment (power, labor, political economy, Global South feasibility): The paper should discuss who can afford auditability, how auditability can become a power instrument, and the risk of excluding resource-constrained actors.
+   Response: We added a subsection on the non-neutrality of auditability (infrastructure and staffing assumptions), potential labor cost shifting and surveillance effects, and cross-border supply-chain exclusion dynamics. We also reject a context-free “one-size-fits-all” reading and propose tiered constraints and minimum viable evidence as necessary adaptations.
+   Where: revised manuscript, §6.2.4.
+
+9) Comment (meaningful human control; anti-automation): The paper should explicitly oppose fully automated acceptance and clarify the role of human decision-makers.
+   Response: We added a dedicated subsection arguing that acceptance is an irreducibly normative responsibility-binding act and should not be delegated to automated gates or model scores; automation can assist evidence summarization, but acceptance must remain under meaningful human control.
+   Where: revised manuscript, §6.2.5; reinforced in §7.
+
+10) Comment (reduce mathematical symbolism / improve readability): Please reduce formal math and improve narrative clarity.
+   Response: We rewrote the definition to remove equation-style formalism and to focus on a minimal, implementation-agnostic binding structure, while keeping the “queryability” criterion explicit. We also standardized core terminology (constraint referencing requirement) and added explicit definitions of “operationalization” and the governance-semantics gap to reduce misreading.
+   Where: revised manuscript, §2.1; terminology/bridges in §1 and §3.0.
+
+11) Comment (conclusion / ethical warning): The conclusion should be sharper, include ethical warnings, and avoid a “governance panacea” tone.
+   Response: We strengthened the conclusion to set explicit boundaries, warn against compliance-without-accountability, and reiterate the prohibition on fully automating acceptance.
+   Where: revised manuscript, §7.
+
+We hope these revisions address the concerns and improve the manuscript’s fit for the Journal of Responsible Technology. We would be grateful for further feedback.
+
+Sincerely,
+[Corresponding author name]
+[Affiliation]
+[Email]

@@ -1,0 +1,14 @@
+Figure 3 (conceptual decision logic)
+Caption: Governance-level, implementation-agnostic logic for triggering acceptance events and allowing bounded exceptions (with TTL and remediation obligations).
+
+```mermaid
+flowchart TB
+  S["Artifact Change Ready"] --> P{"Entering Production?"}
+  P -->|No| X["No acceptance event yet"]
+  P -->|Yes| M{"Constraints Satisfied?"}
+  M -->|Yes| A["ACCEPT<br/>bind artifact + constraints + evidence"]
+  M -->|No| EM{"Emergency?"}
+  EM -->|No| R["REJECT"]
+  EM -->|Yes| EX["Exception Event<br/>TTL + remediation"]
+  EX --> F["Complete evidence within TTL"]
+```

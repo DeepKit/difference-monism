@@ -1,0 +1,8 @@
+Dear Editor-in-Chief,
+
+Please consider my manuscript, “Output-Driven Development (ODD): Foundations of Artifact Legitimacy in AI-Native Software Engineering,” for publication in IEEE Software. Large Language Models are making code generation abundant and inexpensive, shifting the bottleneck of software engineering from producing code to governing outcomes; when output exceeds human review bandwidth, authorship- and review-based responsibility anchors no longer scale. I propose Output-Driven Development (ODD), a practitioner-oriented control paradigm that treats artifacts as the unit of governance, uses contracts as legitimacy boundaries, reallocates responsibility to explicit arbitration decisions, and relies on evidence-based verification (including adversarial probing and mutation testing) with sealing as an auditable acceptance record. The article is written for IEEE Software’s practitioner readership, emphasizing key takeaways, an illustrative vignette, and actionable adoption guidance; detailed figures and extended comparisons are provided as supplementary material. This submission is original and is not under review elsewhere. A preprint version is available via Zenodo (DOI: 10.5281/zenodo.18207648).
+
+Sincerely,
+Yi Fu
+ODDFounder
+fuyi.it@live.cn

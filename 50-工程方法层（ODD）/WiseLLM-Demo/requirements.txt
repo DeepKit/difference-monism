@@ -1,0 +1,4 @@
+# WiseLLM Runtime Demo - 依赖文件
+# 运行: pip install -r requirements.txt
+
+requests>=2.28.0

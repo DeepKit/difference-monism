@@ -1,0 +1,24 @@
+Figure 2 (conceptual process comparison)
+Caption: Governance-level, implementation-agnostic comparison: traditional review-as-control vs acceptance-event-based control that produces a queryable responsibility anchor.
+
+Figure 2a: Traditional Path (Review-as-Control)
+```mermaid
+flowchart LR
+  A1["Change"] --> R1["Code Review"]
+  R1 --> T1["Tests / Scans"]
+  T1 --> D1["Deploy"]
+  D1 --> I1["Incident"]
+  I1 --> N1["Narrative Dispute"]
+```
+
+Figure 2b: Acceptance-Event Path (Sign-off-as-Control)
+```mermaid
+flowchart LR
+  A2["Change"] --> EV["Evidence Bundle"]
+  EV --> CS["Cite Constraint Set"]
+  CS --> AE["Acceptance Event"]
+  AE --> D2["Deploy"]
+  D2 --> I2["Incident"]
+  I2 --> Q["Queryable Accountability"]
+  Q --> L["Update Constraints"]
+```
