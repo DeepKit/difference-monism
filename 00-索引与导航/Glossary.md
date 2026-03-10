@@ -2,7 +2,6 @@
 ## Difference Monism Glossary
 
 > **单点真相源**：本文件是当前哲学版本的术语入口。
-> 旧跳转文件 `RM.Glossary.术语表.md` 保留，仅用于兼容旧链接。
 
 ---
 
