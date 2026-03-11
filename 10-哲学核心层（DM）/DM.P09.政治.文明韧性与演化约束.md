@@ -1,5 +1,5 @@
 # 差异一元论 · 规范
-## Difference Monism: Civilization, Resilience, and Evolutionary Constraints (v4.0)
+## Difference Monism: Civilization, Resilience, and Evolutionary Constraints (Sealed v1.0)
 ### DM.P09 · 文明韧性与演化约束
 
 > **延续是文明的第一前提，韧性是文明避免归零的核心能力。**

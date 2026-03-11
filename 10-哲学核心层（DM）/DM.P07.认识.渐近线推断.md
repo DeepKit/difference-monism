@@ -1,5 +1,5 @@
 # 差异一元论 · 认识
-## Difference Monism: Asymptotic Inference (v4.0)
+## Difference Monism: Asymptotic Inference (Sealed v1.0)
 ### DM.P07 · 渐近线推断
 
 > **我们不能占有绝对真理，但可以在不断修正中逼近更稳定的约束结构。**

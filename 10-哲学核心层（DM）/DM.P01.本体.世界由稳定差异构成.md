@@ -1,5 +1,5 @@
 # 差异一元论 · 本体
-## Difference Monism: Ontic Structures (v5.0)
+## Difference Monism: Ontic Structures (Sealed v1.0)
 ### DM.P01 · 世界由稳定差异结构构成
 
 > **世界不是由静态物体构成，而是由能在时间中维持其关联方式的差异结构构成。**

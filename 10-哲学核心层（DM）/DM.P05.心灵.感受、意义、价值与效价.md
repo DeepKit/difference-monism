@@ -1,5 +1,5 @@
 # 差异一元论 · 心灵
-## Difference Monism: Feeling, Meaning, Value, and Valence (v6.0)
+## Difference Monism: Feeling, Meaning, Value, and Valence (Sealed v1.0)
 ### DM.P05 · 从生命实现到感受、效价、意义与价值
 
 > **P05 不再把 qualia 当作纯结构前提的直接推出物，而更稳地把它理解为生命主体在 DNA 约束的神经-身体整体中形成的短路径暂稳态。**

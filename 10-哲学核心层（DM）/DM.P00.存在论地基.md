@@ -1,5 +1,5 @@
 # 差异一元论 · 存在论地基
-## Difference Monism: Ontological Foundation (v7.0)
+## Difference Monism: Ontological Foundation (Sealed v1.0)
 ### DM.P00 · 差异-结构-边界-时间性-规律-因果-涌现
 
 > **世界首先不是一组现成事物，而是差异关系形成的结构网络。**

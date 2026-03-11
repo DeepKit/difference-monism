@@ -1,5 +1,5 @@
 # 差异一元论 · 本体
-## Difference Monism: Structure and Emergence (v5.0)
+## Difference Monism: Structure and Emergence (Sealed v1.0)
 ### DM.P02 · 差异结构、层级与涌现
 
 > **涌现不是凭空长出新东西，而是下层结构耦合后形成新的整体边界、整体条件与反向约束。**

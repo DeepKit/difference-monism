@@ -1,5 +1,5 @@
 # 差异一元论 · 对话
-## Difference Monism: Dialogue with Major Traditions (v2.0)
+## Difference Monism: Dialogue with Major Traditions (Sealed v1.0)
 ### DM.P10 · 与主要传统对话
 
 > **DM不是凭空出现的。它在多条传统之间汲取资源，但在起点、时间、内部性与规范生成上形成自己的分叉。**

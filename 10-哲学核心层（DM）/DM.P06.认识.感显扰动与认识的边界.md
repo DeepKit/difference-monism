@@ -1,5 +1,5 @@
 # 差异一元论 · 认识
-## Difference Monism: Manifestation, Disturbance, and the Limits of Knowledge (v4.0)
+## Difference Monism: Manifestation, Disturbance, and the Limits of Knowledge (Sealed v1.0)
 ### DM.P06 · 感显扰动与认识的边界
 
 > **规律不说话，知识在叙述。**

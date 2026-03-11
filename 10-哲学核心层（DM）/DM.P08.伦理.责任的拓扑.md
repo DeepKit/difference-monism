@@ -1,5 +1,5 @@
 # 差异一元论 · 规范
-## Difference Monism: Responsibility and Normative Attribution (v4.0)
+## Difference Monism: Responsibility and Normative Attribution (Sealed v1.0)
 ### DM.P08 · 责任的结构与归属
 
 > **责任不是悬空道德命令，而是多主体共在中对高损伤路径的可归属性标记。**

@@ -1,5 +1,5 @@
 # 差异一元论 · 本体
-## Difference Monism: Metastability and Convertibility (v5.0)
+## Difference Monism: Metastability and Convertibility (Sealed v1.0)
 ### DM.P03 · 暂稳态、刚性稳定与可转换性
 
 > **稳定使结构得以成形，可转换性使结构更能跨时间持存。**

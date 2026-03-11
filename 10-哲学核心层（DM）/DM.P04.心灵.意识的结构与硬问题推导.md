@@ -1,5 +1,5 @@
 # 差异一元论 · 心灵
-## Difference Monism: Structural Preconditions of Consciousness (v4.0)
+## Difference Monism: Structural Preconditions of Consciousness (Sealed v1.0)
 ### DM.P04 · 意识的结构前提与硬问题的重写
 
 > **P04 说明“可感之位”，而不在此处完成“所感之相”的生物实现。**
