@@ -1,18 +1,19 @@
-﻿# **ASTO.E03. Web3：意图宪法与链上三权分立**
+# **ASTO.E03. Web3：意图宪法与链上三权分立**
 
 > **Version**: Γ.10 (Constitutional Web3 - Civilization Aligned)
-> **Status**: Living Document
-> **Author**: Fuyi (ODDFounder)
+> **Status**: 公开工程支线稿
+> **发布边界**：本文属于 ASTO 的公开工程支线稿，用于工程化表达与实践沟通，不纳入首轮公开主包。
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
 > **Audience**: 本文档面向**Web3开发者、DAO治理者与协议设计师**。
 > **Abstract**: 解决 Web3 核心悖论 (Code is Law vs Code has Bugs)，提出 Intent is Constitution 治理架构，构建基于 ASTO 文明元定义的链上社会。
-> **Context**: 本文解决了 Web3 的核心悖论：**Code is Law (代码即法律) vs. Code has Bugs (代码有漏洞)**。我们提出 **Intent is Constitution (意图即宪法)** 的治理架构，旨在构建一个符合 [ASTO 文明元定义](../ASTO.P04.宣言.Phil.v12.5.md#asto-civilization-meta-definition)（禁元/复数性/不可触达维 > 动变性 > 效率）的链上社会；并受 [ASTO.P05 公理之上：文明守护元公理](./ASTO.P05.公理.Phil.md#asto-meta-axiom-civilization-stewardship) 约束，以避免“代码即法律”被误用为技术极权。
+> **Context**: 本文解决了 Web3 的核心悖论：**Code is Law (代码即法律) vs. Code has Bugs (代码有漏洞)**。我们提出 **Intent is Constitution (意图即宪法)** 的治理架构，旨在构建一个符合 [ASTO 文明元定义](../ASTO.P04.宣言.Phil.md#asto-civilization-meta-definition)（禁行红线/复数性/不可触达维 > 动变性 > 效率）的链上社会；并受 [ASTO.P05 公理之上：文明守护元公理](../ASTO.P05a.公理.Phil.md#asto-meta-axiom-civilization-stewardship) 约束，以避免“代码即法律”被误用为技术极权。
 > **Compat Note**: 本文件原编号为 ASTO10。
 
 ---
 
 ## **0. 文明元定义对齐：链上宪法的上位约束（AGI 前默认保守）**
-> 对齐 [ASTO.P04.宣言 §0 文明元定义](../ASTO.P04.宣言.Phil.v12.5.md#asto-civilization-meta-definition) 与 [ASTO.P05 公理之上：文明守护元公理](./ASTO.P05.公理.Phil.md#asto-meta-axiom-civilization-stewardship)。
-> **优先级**：禁元/复数性/不可触达维 > 动变性 > 效率。
+> 对齐 [ASTO.P04.宣言 §0 文明元定义](../ASTO.P04.宣言.Phil.md#asto-civilization-meta-definition) 与 [ASTO.P05 公理之上：文明守护元公理](../ASTO.P05a.公理.Phil.md#asto-meta-axiom-civilization-stewardship)。
+> **优先级**：禁行红线/复数性/不可触达维 > 动变性 > 效率。
 
 *   **宪法先于代码**：把不可交易底线显式化为 Invariants，并把争议留给可异议/可退出的治理层。
 *   **不可逆默认保守（AGI 前）**：涉及资产、主权、身份、隐私等不可逆伤害时，默认进入慢轨（审计/冷却/多签/可回滚）。
@@ -131,19 +132,19 @@ Web3 的初衷是 **Trustless**，但这被误读为 **Responsibility-less**。
 ```text
 ASTO 文档体系
 ├── 🌟 P 系列：哲学核心 (Philosophy)
-│   ├── [P01. 非此](../ASTO.P01.非此.Phil.P.v8.0.md) (理论免疫宣言)
-│   ├── [P02. 序章](../ASTO.P02.序章.Phil.v8.0.md) (否定性导引与路径分流)
-│   ├── [P03. 认识论](../ASTO.P03.认识论.Phil.Paper.v1.1.md) (认知错误的必然性)
-│   ├── [P04. 宣言](../ASTO.P04.宣言.Phil.v12.5.md) (结构性处境与行动纲领)
-│   ├── [P05. 公理](./ASTO.P05.公理.Phil.md) (系统热力学与结构存在论)
-│   ├── [P06. 价值](../ASTO.P06.价值与边界.Phil.v1.0.md) (复数性测试与伦理熔断)
-│   ├── [P07. 自由](../ASTO.P07.自由论.Phil.v9.0.md) (边界即自由)
-│   ├── [P08. 例外](../ASTO.P08.例外.Phil.v8.0.md) (宗教体验与星际主权)
-│   ├── [P09. 批判](../ASTO.P09.批判.Phil.v9.0.md) (反极权宪章与系统免疫)
-│   ├── [P10. 民主](../ASTO.P10.民主.Phil.v8.0.md) (对话平台与 NCP 协议)
-│   ├── [P11. 韧性](../ASTO.P11.韧性.Phil.v8.0.md) (自我免疫与反脆弱)
-│   ├── [P12. 留白](../ASTO.P12.留白.Phil.v1.0.md) (预留扩展空间)
-│   └── [P13. 终章](../ASTO.P13.终章.Phil.v8.0.md) (系统的终极关怀)
+│   ├── [P01. 非此](../ASTO.P01.非此.Phil.md) (理论免疫宣言)
+│   ├── [P02. 序章](../ASTO.P02.序章.Phil.md) (否定性导引与路径分流)
+│   ├── [P03. 认识论](../ASTO.P03.认识论.Phil.md) (认知错误的必然性)
+│   ├── [P04. 宣言](../ASTO.P04.宣言.Phil.md) (结构性处境与行动纲领)
+│   ├── [P05. 公理](../ASTO.P05a.公理.Phil.md) (系统热力学与结构存在论)
+│   ├── [P06. 价值](../ASTO.P06.价值与边界.Phil.md) (复数性测试与伦理熔断)
+│   ├── [P07. 自由](../ASTO.P07.自由论.Phil.md) (边界即自由)
+│   ├── [P08. 例外](../ASTO.P08.例外.Phil.md) (宗教体验与星际主权)
+│   ├── [P09. 批判](../ASTO.P09a.批判.Phil.md) (反极权宪章与系统免疫)
+│   ├── [P10. 民主](../ASTO.P10.民主.Phil.md) (对话平台与 NCP 协议)
+│   ├── [P11. 韧性](../ASTO.P11.韧性.Phil.md) (自我免疫与反脆弱)
+│   ├── [P12. 留白](../ASTO.P12.留白.Phil.md) (预留扩展空间)
+│   └── [P13. 终章](../ASTO.P13.终章.Phil.md) (系统的终极关怀)
 │
 ├── 🛠️ E 系列：工程实践 (Engineering)
 │   ├── [E01. 实践指南](./ASTO.E01.实践指南.Eng.md) (生活|人文|工程三轨读本)
@@ -154,12 +155,12 @@ ASTO 文档体系
 │   └── [E06. 领域扩展](./ASTO.E06.领域扩展.Eng.md) (多领域应用索引)
 │
 ├── 🧩 H 系列：人文叙事 (Humanities)
-│   ├── [H01. 重构](./ASTO.H01.重构.Hum.md) (架构师的二十一种宇宙视角)
-│   ├── [H02. 导读](./ASTO.H02.导读：为什么读这本书.Hum.v1.0.md)
-│   ├── [H03. 故事](./ASTO.H03.故事：小陈的那条路.Hum.v1.0.md)
-│   ├── [H04. 认知冒险](./ASTO.H04.认知冒险.Hum.md)
-│   ├── [H05. 奇幻漂流](./ASTO.H05.奇幻漂流.Hum.md)
-│   └── [H06. 暮年的重构](./ASTO.H06.暮年的重构：给不再年轻的你.Hum.v1.0.md)
+│   ├── [H01. 重构](../人文版/ASTO.H01.重构.Hum.md) (架构师的二十一种宇宙视角)
+│   ├── [H02. 导读](../人文版/ASTO.H02.导读：为什么读这本书.Hum.md)
+│   ├── [H03. 故事](../人文版/ASTO.H03.故事：小陈的那条路.Hum.md)
+│   ├── [H04. 认知冒险](../人文版/ASTO.H04.认知冒险.Hum.md)
+│   ├── [H05. 奇幻漂流](../人文版/ASTO.H05.奇幻漂流.Hum.md)
+│   └── [H06. 暮年的重构](../人文版/ASTO.H06.暮年的重构：给不再年轻的你.Hum.md)
 │
 ├── 🎓 Lite 系列：青春版 (Youth)
 │   ├── [L01. 宣言 (Lite)](./青春版/ASTO04.宣言.Lite.v1.0.md)
@@ -178,4 +179,7 @@ ASTO 文档体系
 ```
 
 > 🔙 [返回总目录](../readme.md)
+
+
+
 

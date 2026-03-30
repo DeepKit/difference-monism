@@ -1,17 +1,19 @@
-﻿---
+---
 title: "ASTO.P13. 终章：过桥之后"
 date: "2026-01-27"
 version: "Ω.2"
-author: "Fuyi (ODDFounder)"
-status: "Living Document | Philosophically Reviewed"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "工作扩展稿"
+layer: "ASTO"
 abstract: "架桥者的归宿与具体的未来。"
 ---
 
 # **ASTO.P13. 终章：过桥之后**
 
 > **Version**: Ω.2 (Audit by Heidegger, Lévinas, Wittgenstein, Suzuki)
-> **Status**: Living Document
-> **第一扰动者**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: 工作扩展稿
+> **发布边界**：本文属于 ASTO 的活跃扩展支线，用于继续收束边界，不纳入首轮公开主包。
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
 > **扰动哈希**: `asto13-v8.1-phil-audit-integrated`
 > **Context**: 这是 属集变迁存在论(ASTO) 体系的最后一个文件。当你读完它，请关上电脑，去生活。本次修订引入了“放下与不执”、“他者的面容”以及“日常语言的救赎”等终极关怀维度。
 
@@ -201,11 +203,11 @@ ASTO 文档体系
 │
 ├── 🧩 H 系列：人文叙事 (Humanities)
 │   ├── [H01. 重构](./人文版/ASTO.H01.重构.Hum.v10.0.md) (架构师的二十一种宇宙视角)
-│   ├── [H02. 导读](./人文版/ASTO.H02.导读：为什么读这本书.Hum.v1.0.md)
-│   ├── [H03. 故事](./人文版/ASTO.H03.故事：小陈的那条路.Hum.v1.0.md)
-│   ├── [H04. 认知冒险](./人文版/ASTO.H04.认知冒险.Hum.v1.0.md)
-│   ├── [H05. 奇幻漂流](./人文版/ASTO.H05.奇幻漂流.Hum.v1.0.md)
-│   └── [H06. 暮年的重构](./人文版/ASTO.H06.暮年的重构：给不再年轻的你.Hum.v1.0.md)
+│   ├── [H02. 导读](./人文版/ASTO.H02.导读：为什么读这本书.Hum.md)
+│   ├── [H03. 故事](./人文版/ASTO.H03.故事：小陈的那条路.Hum.md)
+│   ├── [H04. 认知冒险](./人文版/ASTO.H04.认知冒险.Hum.md)
+│   ├── [H05. 奇幻漂流](./人文版/ASTO.H05.奇幻漂流.Hum.md)
+│   └── [H06. 暮年的重构](./人文版/ASTO.H06.暮年的重构：给不再年轻的你.Hum.md)
 │
 ├── 🎓 Lite 系列：青春版 (Youth)
 │   ├── [L01. 宣言 (Lite)](./青春版/ASTO04.宣言.Lite.v1.0.md)
@@ -224,4 +226,6 @@ ASTO 文档体系
 ```
 
 > 🔙 [返回总目录](./readme.md)
+
+
 

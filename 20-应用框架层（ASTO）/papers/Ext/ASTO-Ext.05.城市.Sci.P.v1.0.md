@@ -1,4 +1,4 @@
-﻿# **ASTO-Ext.05. 城市：人类的集体自画像**
+# **ASTO-Ext.05. 城市：人类的集体自画像**
 
 **副标题：** 当工具回归双手，蓝图归于梦想——城市作为属集的物理显形
 
@@ -273,6 +273,8 @@ class CityHealth:
 ---
 
 **关联文件**：
-- 理论基础：[ASTO04.宣言](../ASTO.P04.宣言.Phil.v12.5.md)、[ASTO06.公理](../ASTO.P05.公理.Phil.v9.1.md)
+- 理论基础：[ASTO04.宣言](../ASTO.P04.宣言.Phil.md)、[ASTO06.公理](../ASTO.P05a.公理.Phil.md)
 - 组织设计：[ASTO-Ext.03.组织](./ASTO-Ext.03.组织.Sci.P.v1.0.md)
-- 治理扩展：[ASTO14.民主](../ASTO.P10.民主.Phil.v8.0.md)
+- 治理扩展：[ASTO14.民主](../ASTO.P10.民主.Phil.md)
+
+

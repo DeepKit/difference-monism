@@ -1,17 +1,19 @@
-﻿---
+---
 title: "ASTO.H01. 重构：看清生活的底层逻辑 (The Life Logic of Reality)"
 date: "2026-01-30"
 version: "Hum.v11.5 (Life Logic Edition)"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "公开人文支线稿"
+layer: "ASTO"
 abstract: "生活中的困惑，往往是因为我们混淆了“本质”与“表象”。"
 ---
 
 # ASTO.H01. 重构：看清生活的底层逻辑 (The Life Logic of Reality)
 
 > **Version**: Hum.v11.5 (Life Logic Edition)
-> **Status**: Living Document
-> **Author**: Fuyi (ODDFounder)
+> **Status**: 公开人文支线稿
+> **发布边界**：本文属于 ASTO 的公开人文支线稿，用于理解、传播与低门槛转译，不纳入首轮公开主包。
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
 > **Audience**: 每一个认真生活的你
 > **Warning**: 这不是心灵鸡汤，这是对世界的**深度复盘**。
 
@@ -381,4 +383,7 @@ abstract: "生活中的困惑，往往是因为我们混淆了“本质”与“
 
 ---
 
-> 📖 [返回 ASTO 首页](../readme.md) | [深入阅读《公理体系》(Hardcore Mode)](../ASTO.P05.公理.Phil.v9.1.md)
+> 📖 [返回 ASTO 首页](../readme.md) | [深入阅读《公理体系》(Hardcore Mode)](.../ASTO.P05a.公理.Phil.md)
+
+
+

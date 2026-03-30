@@ -1,9 +1,10 @@
-﻿---
+---
 title: "ASTO.P07. Freedom: Boundary and Freedom"
-date: "2026-01-27"
+date: "2026-03-20"
 version: "v9.0 (Boundary is Freedom)"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "Discussing the core role of boundaries in Attribute-Set Transition Ontology (ASTO), freedom is the balance between control and chaos."
 ---
 
@@ -23,15 +24,15 @@ abstract: "Discussing the core role of boundaries in Attribute-Set Transition On
 
 ---
 > **Version**: v9.0 (Boundary is Freedom) (Audit by Berlin, Foucault, Arendt, Hayek)
-> **Status**: Living Document
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: Public Review Draft
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **Perturbation Hash**: `asto09-v9.4-phil-audit-integrated`
 > **Context**: This document explores the core role of **Boundaries** in **Attribute-Set Transition Ontology (ASTO)**. Audited philosophically, this revision fixes the totalitarian tendency of "positive freedom", introducing **negative freedom**, **right to resist**, and **ethical awakening** mechanisms. **Design of boundaries serves ASTO's ultimate purpose: guarding human homeland before technological singularity, and building better civilization on longer scale.**
 > **Compat Note**: Originally ASTO07.
 > **Declaration**: This perturbation may contain cognitive defects, logical holes, and bias. Welcome testing, critique, and overwriting. Retain right to self-mockery and obligation of self-negation.
 
 > **📌 Axiom Version Lock**
-> All axioms cited are based on **[ASTO.P05.Axioms.Phil.v9.1.md](./ASTO.EN.P05a.Axioms.Phil.md)**.
+> All axioms cited are based on **[ASTO.EN.P05a.Axioms.Phil.md](./ASTO.EN.P05a.Axioms.Phil.md)**.
 
 ---
 
@@ -537,4 +538,5 @@ ASTO Documentation System
 ```
 
 **(End)**
+
 

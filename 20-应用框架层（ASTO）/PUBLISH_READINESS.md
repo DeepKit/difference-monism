@@ -1,130 +1,132 @@
-﻿# ASTO 发表准备清单
+# ASTO 首轮公开预印本准备说明
 
-## 📅 发表日期: 2026-02-23
-
----
-
-## ✅ 中文版发布状态: READY
-
-### 核心文档 (15个)
-- [x] P01 非此 - 理论免疫宣言
-- [x] P02 序章 - 否定性导引
-- [x] P03 认识论 - 认知错误的必然性
-- [x] P04 宣言 - 属集变迁处境与行动纲领 (v12.6)
-- [x] P05a 公理 - 系统的热力学法则 (Γ.20.0)
-- [x] P05b 人类核心体验 - 死亡、自由、意义、爱 (v2.1)
-- [x] P06 价值与边界 - 复数性测试与伦理熔断
-- [x] P07 自由论 - 边界即自由
-- [x] P08 例外 - 从宗教体验到星际主权
-- [x] P09a 批判 - 反极权宪章与系统免疫
-- [x] P09b 批判与回应 - 来自哲学传统的挑战
-- [x] P10 民主 - 对话平台与NCP协议
-- [x] P11 韧性 - 自我免疫与反脆弱
-- [x] P12 留白 - 预留扩展空间
-- [x] P13 终章 - 系统的终极关怀
-
-### 已完成的质量控制
-- [x] 所有文档包含 C-Positioning Declaration
-- [x] 七序格式统一: `具身 {感知, 解析, 干预, 设计, 物化, 回溯, 消解}`
-- [x] P05/P09 已拆分为 a/b 版本
-- [x] 所有链接已移除版本号
-- [x] 版本号已统一
-- [x] 术语一致性检查通过
-- [x] 交叉引用完整性检查通过
+> **更新日期**：`2026-03-19`
+>
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
+>
+> **当前推荐口径**：`首轮公开包 / 公开预印本 / 征评版`
+>
+> **不推荐口径**：`完整定稿 / 与 DM 平行的第二终极本体论 / 只服务 AI 的单场景理论`
 
 ---
 
-## ✅ 英文版发布状态: READY
+## 1. 当前结论
 
-### 核心文档 (17个)
-- [x] P01 NotThis - Theoretical Immune Declaration
-- [x] P02 Prologue - Negative Guide and Path Divergence
-- [x] P03 Epistemology - Inevitability of Cognitive Error
-- [x] P04 Manifesto - Structural Situation and Program of Action (v12.6)
-- [x] P05a Axioms - Thermodynamic Laws of Systems (Γ.20.0)
-- [x] P05b Human Experience - Death, Freedom, Meaning, Love (v2.1)
-- [x] P06 Values - Plurality Test and Ethical Circuit Breaker
-- [x] P07 Freedom - Boundary is Freedom
-- [x] P08 Exception - From Religious Experience to Interstellar Sovereignty
-- [x] P09a Critique - Anti-Totalitarian Charter and System Immunity
-- [x] P09b CritiqueResponse - Challenges from Philosophical Traditions
-- [x] P10 Democracy - Dialogical Platform and NCP Protocol
-- [x] P11 Resilience - Self-Immunity and Anti-Fragility
-- [x] P12 WhiteSpace - Reserved Extension Space
-- [x] P13 Epilogue - Ultimate Concern of Systems
+ASTO 现在已经可以公开发表。
 
-### 辅助文档 (U系列)
-- [x] U01 Figure Index - 理论系统图表集
-- [x] U02 Glossary - 术语表 (中英文对照)
-- [x] U03 Theoretical System Charts - 完整可视化图表
-- [x] U04 Practice Loop - 实践循环系统
+但当前最稳的发表方式不是把全量历史材料一次性公开，而是按 `首轮公开预印本包` 的口径发布：
 
-### 已完成的质量控制
-- [x] 所有文档包含 C-Positioning Declaration
-- [x] 版本号已与中文版统一
-- [x] P05 → P05a/P05b 拆分完成
-- [x] P09 → P09a/P09b 拆分完成
-- [x] 所有交叉引用已更新
-- [x] 文档索引结构完整
+- 可用于预印本平台占位
+- 可用于公开征评
+- 可用于引用与后续版本累积
+- 不宜包装为已经完成同行评审的完整闭合体系
 
 ---
 
-## 📊 统计数据
+## 2. 当前建议发布对象
 
-| 指标 | 中文版 | 英文版 | 总计 |
-|------|--------|--------|------|
-| 核心文档 | 15 | 17 | 32 |
-| 辅助文档 | 4 | 4 | 8 |
-| 总字符数 | ~35万字 | ~35万字 | ~70万字 |
-| PDF版本 | 15 | 15 | 30 |
+首轮公开包建议限定为：
 
----
+- `U00`
+- `P01`
+- `P02`
+- `P03`
+- `P04`
+- `P05a`
+- `P05b`
+- `P06`
+- `P07`
+- `P08`
+- `P09a`
+- `P09b`
+- `P10`
+- `P11`
+- `P99.1`
+- `P99.2`
+- `P99.3`
+- `P99.4`
 
-## 🎯 建议发表渠道
+其中最适合作为平台主对象的是：
 
-### 学术渠道
-1. **哲学期刊**: 投稿认识论/技术哲学方向的期刊
-2. **跨学科期刊**: 探索技术与伦理交叉领域的期刊
-3. **会议论文**: 技术哲学、系统科学相关会议
-
-### 开源社区
-1. **GitHub**: 作为开源知识库发布
-2. **Zenodo**: 生成DOI，便于引用
-3. **Academia.edu / ResearchGate**: 学术社交分享
-
-### 传播渠道
-1. **网站**: 建立专门的ASTO网站
-2. ** newsletter**: 定期推送核心概念解读
-3. **播客/视频**: 制作入门解读内容
-
----
-
-## 📋 发表后待办
-
-### 高优先级
-- [ ] 生成官方PDF版本
-- [ ] 建立版本更新机制
-- [ ] 创建读者反馈渠道
-
-### 中优先级
-- [ ] 扩充P05b人类核心体验章节内容
-- [ ] 扩充P09b批判与回应章节内容
-- [ ] 翻译工程版文档(E系列)
-
-### 低优先级
-- [ ] 翻译人文版文档(H系列)
-- [ ] 制作视频课程
-- [ ] 组织线下读书会
+1. `papers/ASTO.U00.属集变迁存在论简明核心框架.md`
+2. `papers/ASTO.预印本发布说明.v1.0.md`
 
 ---
 
-## 🏆 版本标记
+## 3. 公开定位
 
-**当前版本**: v12.6 (中文版) / v12.6 (英文版)
-**状态**: 发布就绪
-**最后更新**: 2026-02-23
+当前最稳的公开定位应固定为：
+
+> **ASTO 是 DM 向多场景分析、审议、设计与裁决延展时形成的应用桥接框架。它不仅适用于 AI，也可用于软件工程、组织治理、制度设计、平台规则、教育、城市治理与个体实践中的结构分析与边界判断。**
+
+这句话要点有三条：
+
+- `它是桥接框架，不是第二终极本体论`
+- `它不只用于 AI`
+- `它已经足够公开，但还没有到闭合定稿状态`
+
+### 3.1 统一发布模板
+
+- `适用范围`：多场景应用桥接、结构分析、审议、设计、裁决与边界判断
+- `不是什么`：第二终极本体论、单一 AI 理论、脱离人类裁决的自动决策手册
+- `边界`：哲学地基回引 DM；文明治理回引 ECET；责任闭合回引 TAT；工程执行回引 ODD
+- `与上游关系`：ASTO 是 `DM -> ASTO -> ECET -> TAT -> ODD` 的应用桥接层
 
 ---
 
-*ASTO - Attribute-Set Transition Ontology*
-*属集变迁存在论*
+## 4. 本轮不进入主包的内容
+
+以下内容本轮默认不进入公开主包：
+
+- `P12`
+- `P13`
+- `tasks.md`
+- `read_p*.txt`
+- `read_p*_full.txt`
+- `papers/ASTO.Task.md`
+- `papers/better*.md`
+- `papers/传播/`
+- `归档/`
+- `顶刊/`
+- `P系列PDF/`
+- `better.md`
+
+理由很简单：
+
+- 这些文件会放大版本噪音
+- 会削弱主线清晰度
+- 会让首轮公开对象从“可评审”退化成“材料堆”
+
+---
+
+## 5. 最小上传策略
+
+如果预印本平台只允许一个主文：
+
+1. 上传 `ASTO.U00`
+2. 附上 `ASTO.预印本发布说明.v1.0`
+3. 其余 P 文作为补充材料
+
+如果平台允许主文 + 多附件：
+
+1. 主说明：`ASTO.预印本发布说明.v1.0`
+2. 主接口：`ASTO.U00`
+3. 主链支撑：`P03 / P05a / P06 / P04`
+4. 扩展支撑：`P01 / P02 / P07 / P08 / P09a / P09b / P10 / P11`
+5. 工具附录：`P99.1-4`
+
+---
+
+## 6. 上线前核对项
+
+- [x] 作者信息已统一为 `Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）`
+- [x] 公开入口已强调 ASTO 不只适用于 AI
+- [x] 首轮公开包边界已明确
+- [x] `U00 + P系列 + P99.1-4` 的公开次序已明确
+- [x] 不宜公开的缓存稿、归档稿与讨论稿已排除在主包之外
+
+---
+
+## 7. 当前结论句
+
+> **ASTO 现在适合发表，但适合的是“首轮公开预印本 / 占位版 / 征评版”，不是“完整终稿”。按这个口径发布，你就不会在公开表述上把自己推到过高承诺位置。**

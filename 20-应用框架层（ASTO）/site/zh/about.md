@@ -2,7 +2,7 @@
 
 ## 什么是 ASTO？
 
-数集变迁存在论（ASTO，Set Transition Ontology）是一套关于存在、变化与集合的哲学理论体系。
+属集变迁存在论（ASTO，Attribute-Set Transition Ontology）是一套关于存在、变化、结构与属集切片的跨场景应用桥接框架。当前站点内容服务于阅读与传播，不等同于首轮公开预印本主包。
 
 ## 版权声明
 

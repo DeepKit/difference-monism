@@ -1,17 +1,18 @@
-﻿---
+---
 title: "ASTO.P08. 例外：从宗教体验到星际主权"
+subtitle: "极限应力、例外治理与主权迁移"
 date: "2026-01-27"
 version: "Γ.11"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
-abstract: "属集变迁存在论(ASTO)探讨系统在极限应力下的状态，重新定义主权。"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "公开征评版"
+abstract: "ASTO.P08 探讨系统在极限应力下的状态，并为危机治理、例外处置、主权迁移、制度中断、平台紧急机制与 AI 高风险裁决提供程序语言。"
 ---
 
 # **ASTO.P08. 例外与极限：从宗教体验到星际主权**
 
 > **Version**: Γ.11 (Audit by Schmitt, James, Kelsen, Whitehead)
-> **Status**: Living Document
-> **第一扰动者**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: 公开征评版
+> **第一扰动者 / Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **扰动哈希**: `asto08-v8.1-phil-audit-integrated`
 > **Context**: 本文探讨系统在 **极限应力** 下的状态。我们从个人的“宗教体验”延伸到文明的“星际探索”，重新定义了**主权**在不可逆延迟下的物理属性。本次修订引入了“决断的瞬间”、“基础规范”以及“创造性合生”等深度哲学维度。
 
@@ -73,7 +74,7 @@ class JamesianRetreat:
         return self.default_process(event)
 ```
 
-> **防御性边界**：为防止“不可共享体验”成为暴力的借口，任何个体例外若触及**他人的物理存续边界**（禁元），系统将立即强制回归社会层处理，不再适用退避模式。
+> **防御性边界**：为防止“不可共享体验”成为暴力的借口，任何个体例外若触及**他人的物理存续边界**（构成禁行红线），系统将立即强制回归社会层处理，不再适用退避模式。
 
 ---
 
@@ -276,9 +277,9 @@ ASTO 体系源自 ODD（输出驱动开发）的工程实践提炼。
 ```text
 ASTO 文档体系
 ├── 🌟 P 系列：哲学核心 (Philosophy)
-│   ├── [P01. 非此](./ASTO.P01.非此.Phil.P.v8.0.md) (理论免疫宣言)
+│   ├── [P01. 非此](./ASTO.P01.非此.Phil.md) (理论免疫宣言)
 │   ├── [P02. 序章](./ASTO.P02.序章.Phil.md) (否定性导引与路径分流)
-│   ├── [P03. 认识论](./ASTO.P03.认识论.Phil.Paper.v1.1.md) (认知错误的必然性)
+│   ├── [P03. 认识论](./ASTO.P03.认识论.Phil.md) (认知错误的必然性)
 │   ├── [P04. 宣言](./ASTO.P04.宣言.Phil.md) (结构性处境与行动纲领)
 │   ├── [P05a. 公理](./ASTO.P05a.公理.Phil.md) (系统热力学与属集变迁存在论)
 │   ├── [P05b. 人类核心体验](./ASTO.P05b.人类核心体验.Phil.md) (死亡、自由、意义与爱的ASTO描述)
@@ -325,4 +326,6 @@ ASTO 文档体系
 ```
 
 > 🔙 [返回总目录](./readme.md)
+
+
 

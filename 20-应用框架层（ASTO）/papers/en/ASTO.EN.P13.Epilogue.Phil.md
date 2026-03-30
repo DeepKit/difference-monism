@@ -1,13 +1,16 @@
 ﻿---
 title: "ASTO.P13. Epilogue: After the Bridge"
-date: "2026-01-27"
+date: "2026-03-20"
 version: "Ω.2"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Working Extension Draft"
+layer: "ASTO"
 abstract: "The destination of the bridge-builder and the concrete future."
 ---
 
 # **ASTO.P13. Epilogue: After the Bridge**
+
+> **Status Note**: This extension is retained outside the current public preprint chain and should not be cited as the main ASTO statement.
 
 ---
 
@@ -23,8 +26,8 @@ abstract: "The destination of the bridge-builder and the concrete future."
 
 ---
 > **Version**: Ω.2 (Audit by Heidegger, Lévinas, Wittgenstein, Suzuki)
-> **Status**: Living Document
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: Working Extension Draft
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **Perturbation Hash**: `asto13-v8.1-phil-audit-integrated`
 > **Context**: This is the last file of the Attribute-Set Transition Ontology (ASTO) system. When you finish reading it, please close your computer and go live. This revision introduces ultimate concern dimensions such as "Letting Go and Non-Attachment", "Face of the Other", and "Redemption of Everyday Language".
 

@@ -1,9 +1,10 @@
-﻿---
+---
 title: "ASTO.P09a. Critique: Anti-Totalitarian Charter and System Immunity"
-date: "2026-01-27"
+date: "2026-03-20"
 version: "v9.2 (Anti-Totalitarian Charter)"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "Critique and immunity mechanisms against civilizational degradation in the name of technology."
 ---
 
@@ -23,8 +24,8 @@ abstract: "Critique and immunity mechanisms against civilizational degradation i
 
 ---
 > **Version**: v9.2 (Anti-Totalitarian Charter) (Audit by Adorno, Foucault, Deleuze, Žižek)
-> **Status**: Living Document
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: Public Review Draft
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **Perturbation Hash**: `asto09-v9.5-phil-audit-integrated`
 > **Context**: This article is the humanistic core of the Attribute-Set Transition Ontology (ASTO) system. It explores how to defend the meta-definition of civilization in the age of technocracy. This revision introduces deep critical dimensions such as "productive power," "action paradox," "symbiotic politics," and "ethics of the powerless."
 > **Compat Note**: This document was originally numbered ASTO08.
@@ -57,9 +58,9 @@ ASTO is a living tool, not dead dogma. It is evolving itself. When theory suppre
 ### **5. Reading Guide**
 
 If concepts are unclear, consult:
-- [ASTO.P04.Manifesto.Phil.v12.5.md](./ASTO.EN.P04.Manifesto.Phil.md) —— Core Framework and Unity of Knowledge and Action
-- [ASTO.P05.Axioms.Phil.v9.1.md](./ASTO.EN.P05a.Axioms.Phil.md) —— Axiom System
-- [ASTO.P07.Freedom.Phil.v9.0.md](./ASTO.EN.P07.Freedom.Phil.md) —— Boundary and Freedom
+- [ASTO.EN.P04.Manifesto.Phil.md](./ASTO.EN.P04.Manifesto.Phil.md) —— Core Framework and Unity of Knowledge and Action
+- [ASTO.EN.P05a.Axioms.Phil.md](./ASTO.EN.P05a.Axioms.Phil.md) —— Axiom System
+- [ASTO.EN.P07.Freedom.Phil.md](./ASTO.EN.P07.Freedom.Phil.md) —— Boundary and Freedom
 - [ASTO.EN.U02.Glossary](./ASTO.EN.U02.Glossary.en.md) —— Glossary
 
 ---
@@ -608,11 +609,11 @@ ASTO Documentation System
 │
 ├── 🧩 H-Series: Humanities
 │   ├── [H01. Refactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.v10.0.md) (Twenty-One Cosmic Perspectives of an Architect)
-│   ├── [H02. Guide](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H02.%E5%AF%BC%E8%AF%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%BB%E8%BF%99%E6%9C%AC%E4%B9%A6.Hum.v1.0.md)
-│   ├── [H03. Story](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H03.%E6%95%85%E4%BA%8B%EF%BC%9A%E5%B0%8F%E9%99%88%E7%9A%84%E9%82%A3%E6%9D%A1%E8%B7%AF.Hum.v1.0.md)
-│   ├── [H04. Adventure](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H04.%E8%AE%A4%E7%9F%A5%E5%86%92%E9%99%A9.Hum.v1.0.md)
-│   ├── [H05. Drifting](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H05.%E5%A5%87%E5%B9%BB%E6%BC%82%E6%B5%81.Hum.v1.0.md)
-│   └── [H06. Aging](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H06.%E6%9A%AE%E5%B9%B4%E7%9A%84%E9%87%8D%E6%9E%84%EF%BC%9A%E7%BB%99%E4%B8%8D%E5%86%8D%E5%B9%B4%E8%BD%BB%E7%9A%84%E4%BD%A0.Hum.v1.0.md)
+│   ├── [H02. Guide](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H02.%E5%AF%BC%E8%AF%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%BB%E8%BF%99%E6%9C%AC%E4%B9%A6.Hum.md)
+│   ├── [H03. Story](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H03.%E6%95%85%E4%BA%8B%EF%BC%9A%E5%B0%8F%E9%99%88%E7%9A%84%E9%82%A3%E6%9D%A1%E8%B7%AF.Hum.md)
+│   ├── [H04. Adventure](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H04.%E8%AE%A4%E7%9F%A5%E5%86%92%E9%99%A9.Hum.md)
+│   ├── [H05. Drifting](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H05.%E5%A5%87%E5%B9%BB%E6%BC%82%E6%B5%81.Hum.md)
+│   └── [H06. Aging](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H06.%E6%9A%AE%E5%B9%B4%E7%9A%84%E9%87%8D%E6%9E%84%EF%BC%9A%E7%BB%99%E4%B8%8D%E5%86%8D%E5%B9%B4%E8%BD%BB%E7%9A%84%E4%BD%A0.Hum.md)
 │
 ├── 🎓 Lite Series: Youth
 │   ├── [L01. Manifesto (Lite)](../%E9%9D%92%E6%98%A5%E7%89%88/ASTO04.%E5%AE%A3%E8%A8%80.Lite.v1.0.md)
@@ -631,4 +632,6 @@ ASTO Documentation System
 ```
 
 > 🔙 [Return to Table of Contents](../readme.md)
+
+
 

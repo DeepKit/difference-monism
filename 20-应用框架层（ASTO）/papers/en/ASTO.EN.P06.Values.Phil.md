@@ -1,9 +1,10 @@
 ﻿---
 title: "ASTO.P06. Values and Boundaries: Plurality Test and Ethical Circuit-Breaker"
-date: "2026-01-29"
+date: "2026-03-20"
 version: "v2.1 (Human Experience Focus)"
-author: "Fuyi (ODDFounder)"
-status: "Living Document | Philosophically Reviewed"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "Values and ethical boundaries in ASTO: Plurality Test, Face of the Other, Untouchable Dimension, and structural definitions of Beauty, Goodness, and Freedom. [Philosophically Reviewed Version]"
 ---
 
@@ -25,8 +26,8 @@ abstract: "Values and ethical boundaries in ASTO: Plurality Test, Face of the Ot
 > "The work undertaken in this document is a 'engineering translation of philosophical concepts'. We consciously and pragmatically reconstruct profound philosophical ideas into 'functional components' and 'boundary conditions' within the ASTO ontological system. We are fully aware that this constitutes a creative adaptation or even deviation from the original thoughts, but this is precisely the characteristic of ASTO as a practical thought system: it pursues not purity of interpretation, but effectiveness and heuristic value in structural dynamics."
 
 > **Version**: v2.1 (Human Experience Focus) (Philosophical Deepening)
-> **Status**: Living Document
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: Public Review Draft
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **Context**: This document is split from the original ASTO.P04 Manifesto, focusing on axiology and ethical boundaries under the Attribute-Set Transition Ontology (ASTO): Plurality Test, Face of the Other, Untouchable Dimension, and structural definitions of Beauty, Goodness, and Freedom.
 > **Methodology & Citation Note**: Philosophical quotes in this text are "philosophical rewrites/collages", pointing to intellectual lineage rather than verbatim citations; "Plurality Test" is a heuristic boundary hint, not a programmable verdict or final judgment.
 

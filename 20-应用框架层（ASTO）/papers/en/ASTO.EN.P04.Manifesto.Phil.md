@@ -1,9 +1,10 @@
 ﻿---
 title: "ASTO.P04. Manifesto: About Existence and Transition"
-date: "2026-01-27"
+date: "2026-03-20"
 version: "12.6 (C-Positioning Upgrade)"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "The structural situation and program of action of Attribute-Set Transition Ontology (ASTO), the 1-5-6-7-1 core structure."
 ---
 
@@ -23,8 +24,8 @@ abstract: "The structural situation and program of action of Attribute-Set Trans
 
 ---
 > **Version**: 12.6 (C-Positioning Upgrade) (Life-First Edition, Ontological Correction Retained)
-> **Status**: Living Document
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: Public Review Draft
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **Audience**: Philosophers, Naturalists, and Living Beings
 > **Context**: This document is the philosophical manifesto of the ASTO system.
 > **Revision Note (v12.5)**: **Major Ontological Correction**. Based on the "Pushing the Stone" model, reconstructed the core engine (1-2-3 structure) of Chapter 7, establishing the physical dynamic basis of "Existence precedes Observation" and "Transformation as Attribute Rate Modulation".

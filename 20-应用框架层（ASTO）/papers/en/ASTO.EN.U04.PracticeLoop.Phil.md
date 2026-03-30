@@ -1,5 +1,10 @@
 ﻿---
-title: "ASTO.EN.U04.PracticeLoop.Phil.v4.3"
+title: "ASTO.EN.U04. Practice Loop"
+date: "2026-03-20"
+version: "v4.3"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Working English Support Draft"
+layer: "ASTO"
 lang: "en"
 ---
 
@@ -8,6 +13,7 @@ lang: "en"
 ## Core Dynamics Mechanism
 
 > **Version**: v4.3 (2026.02 Optimized Stable Version)
+> **Status Note**: This file is retained as an English support draft. The current public entry remains `ASTO.U00` and the main `P` chain.
 > **Positioning Statement**: ASTO is a structural language connecting engineering practice with civilizational thinking. It is not an ultimate explanation, but an amendable, replaceable analytical framework.
 
 ---

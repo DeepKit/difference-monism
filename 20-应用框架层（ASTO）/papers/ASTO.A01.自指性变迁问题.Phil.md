@@ -1,9 +1,10 @@
-﻿---
+---
 title: "ASTO.A01. 自指性变迁问题：为什么过程哲学和系统论都不够用"
 date: "2026-02-06"
 version: "v1.0"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "公开补充稿"
+layer: "ASTO"
 abstract: "论证属集变迁存在论(ASTO)在'自指性变迁问题'上拥有不可替代的哲学解释力：一个持续运作的自指性变迁模式如何在维持同一性的同时不可避免地走向异化？本文与怀特海、卢曼、德勒兹的框架进行正面对比，指出各自的理论缺口，并展示ASTO如何填补这些缺口。"
 keywords: "self-referential transition, alienation, process philosophy, autopoiesis, ASTO, Whitehead, Luhmann, Deleuze"
 ---
@@ -11,8 +12,9 @@ keywords: "self-referential transition, alienation, process philosophy, autopoie
 # ASTO.A01. 自指性变迁问题：为什么过程哲学和系统论都不够用
 
 > **Version**: v1.0
-> **Status**: Living Document
-> **第一扰动者**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: 公开补充稿
+> **发布边界**：本文属于 ASTO 的公开补充件，用于外部比较与专题延展，不纳入首轮公开主包。
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
 > **定位**：本文是 ASTO 体系的**对外学术论文**，面向哲学研究者与跨学科理论工作者。它不是 ASTO 内部文档的组成部分，而是 ASTO 与既有哲学传统的正面对话。
 
 ---
@@ -129,7 +131,7 @@ keywords: "self-referential transition, alienation, process philosophy, autopoie
 
 ### 3.1 公理五与异化的内生性
 
-ASTO 公理五（结构自指公理）声明：**任何持续运作的自指性结构，其维护自身的成本随时间单调递增。** 这一公理的认识论地位是**高度可靠的经验概括**（参见 [ASTO.P05 §0-α](./ASTO.P05.公理.Phil.md)），而非逻辑必然。
+ASTO 公理五（结构自指公理）声明：**任何持续运作的自指性结构，其维护自身的成本随时间单调递增。** 这一公理的认识论地位是**高度可靠的经验概括**（参见 [ASTO.P05 §0-α](./ASTO.P05a.公理.Phil.md)），而非逻辑必然。
 
 公理五的关键推论：
 
@@ -251,3 +253,5 @@ ASTO 通过公理五（结构自指的内生异化）、跃迁定理（$M(t) > R
 ---
 
 > 🔙 [返回总目录](./readme.md)
+
+

@@ -1,18 +1,20 @@
-﻿---
+---
 title: "ASTO-Ext.10. 跨学科对话：ASTO元解释语言的多场域部署"
 date: "2026-02-21"
 version: "v1.0"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "工作扩展稿"
+layer: "ASTO"
 abstract: "本文档展示ASTO元解释语言在不同学科场域的部署方式，演示其作为跨学科通用描述语言的潜力与边界。"
 ---
 
 # ASTO-Ext.10. 跨学科对话
 
 > **Version**: v1.0
-> **Status**: Living Document
-> **第一扰动者**: Fuyi (ODDFounder fuyi.it@live.cn)
-> **前置文档**: [ASTO.P05a.公理与定理体系](../ASTO.P05a.公理.Phil.v9.1.md)
+> **Status**: 工作扩展稿
+> **发布边界**：本文属于 ASTO 的活跃扩展支线，用于跨学科延展与压力测试，不纳入首轮公开主包。
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
+> **前置文档**: [ASTO.P05a.公理与定理体系](../ASTO.P05a.公理.Phil.md)
 
 ---
 
@@ -430,3 +432,5 @@ ASTO作为跨学科元语言的**自我定位**：
 *文档版本：v1.0*
 *修订日期：2026-02-21*
 *状态：Living Document*
+
+

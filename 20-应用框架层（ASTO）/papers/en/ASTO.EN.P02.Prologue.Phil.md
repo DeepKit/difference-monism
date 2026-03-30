@@ -1,9 +1,10 @@
 ﻿---
 title: "ASTO.P02. Prologue: Negative Guide"
-date: "2026-01-27"
+date: "2026-03-20"
 version: "v8.0"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "Before understanding: The Negative Guide to Attribute-Set Transition Ontology (ASTO)."
 ---
 
@@ -22,7 +23,7 @@ abstract: "Before understanding: The Negative Guide to Attribute-Set Transition 
 > Three layers can be accepted independently. This document's argument chain marks the belonging layer at each key node.
 
 ---
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 
 > If you are looking for answers, please stop.
 > If you are looking for language, please continue.

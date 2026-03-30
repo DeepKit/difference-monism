@@ -1,4 +1,4 @@
-﻿# **ASTO-Ext.04. 教育：文明园丁与认知抗体**
+# **ASTO-Ext.04. 教育：文明园丁与认知抗体**
 
 **副标题：** 从工人培养到文明守护——ASTO 教育学的重构
 
@@ -12,7 +12,7 @@
 
 ## **Context：为什么我们要重写教育？**
 
-在 [ASTO 文明元定义](../ASTO.P04.宣言.Phil.v12.5.md#asto-civilization-meta-definition)（禁元/复数性/不可触达维 > 动变性 > 效率）确立之后，旧有的教育观（为了生产合格的工业劳动力）已经失效。
+在 [ASTO 文明元定义](../ASTO.P04.宣言.Phil.md#asto-civilization-meta-definition)（禁元/复数性/不可触达维 > 动变性 > 效率）确立之后，旧有的教育观（为了生产合格的工业劳动力）已经失效。
 如果文明的目标是在 AGI 到来之前守护人类家园，并在更长尺度上构建一个**“反脆弱的生态系统”**，那么教育的目标就不能是制造标准化的螺丝钉，而必须是培养能够维护这个生态的**“园丁”**。
 
 本文基于 ASTO v2.0 核心精神，彻底重构教育的本体论与方法论。
@@ -348,6 +348,7 @@ class CognitiveAttributeSet:
 ---
 
 **关联文件**：
-- 理论基础：[ASTO03.认识论](../ASTO.P03.认识论.Phil.Paper.v1.1.md)、[ASTO04.宣言](../ASTO.P04.宣言.Phil.v12.5.md)
+- 理论基础：[ASTO03.认识论](../ASTO.P03.认识论.Phil.md)、[ASTO04.宣言](../ASTO.P04.宣言.Phil.md)
 - AI应用：[ASTO13.AI](../工程版/ASTO.E04.AI对齐.Eng.v8.0.md)
 - 组织设计：[ASTO-Ext.03.组织](./ASTO-Ext.03.组织.Sci.P.v1.0.md)
+

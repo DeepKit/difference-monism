@@ -1,17 +1,18 @@
 ﻿---
 title: "ASTO.P09b. Critique and Response: Challenges from Philosophical Traditions"
-date: "2026-01-27"
+date: "2026-03-20"
 version: "v9.2 (Critique and Response)"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "Inward-facing reflection: responses to challenges from philosophical traditions and self-critique of ASTO."
 ---
 
 # ASTO.P09b. Critique and Response: Challenges from Philosophical Traditions
 
 > **Version**: v9.2 (Critique and Response) - **Philosophically Reviewed**
-> **Status**: Living Document
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: Public Review Draft
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **Perturbation Hash**: `asto09b-v9.2-phil-reviewed`
 > **Context**: This document faces inward. It gathers critiques from philosophical traditions against ASTO and provides sincere responses.
 

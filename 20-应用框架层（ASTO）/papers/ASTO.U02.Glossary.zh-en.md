@@ -53,7 +53,9 @@ This glossary has undergone rigorous philosophical disambiguation to avoid misre
 - 推石头 → Push-the-Stone (metaphor)
 - 技术是加速器 → Technology is an Accelerator
 - 基元（地板） → Fundamental Unit (Engineering base/floor; for engineering contexts use "Fundamental Unit")
-- 禁元（红线） → Taboo Zone (Ethical red line; for engineering contexts use "Taboo Zone")
+- 禁行红线（红线） → Normative Red Line / Taboo Zone (ethical or governance prohibition that triggers FREEZE)
+- 开放边界 / 存在剩余 → Open Boundary / Ontological Remainder (the model cannot exhaust reality; not a direct operational prohibition)
+- 禁元（旧混用词） → Legacy Ambiguous Term (avoid using without qualification; in runtime docs read as Normative Red Line, in ontological contexts replace with Open Boundary / Ontological Remainder)
 
 ## C. 五态（空间切片） Five States (Spatial Slice)
 - 自在态 → In-itself (Used descriptively for pre-articulated state, not Sartrean être-en-soi)
@@ -99,7 +101,9 @@ This glossary has undergone rigorous philosophical disambiguation to avoid misre
 - 复数性 → Plurality
 - 不可触达维 → Untouchable Dimension
 - 基元 → Fundamental (Base)
-- 禁元 → Taboo (Red Line)
+- 禁行红线 → Normative Red Line
+- 开放边界 / 存在剩余 → Open Boundary / Ontological Remainder
+- 禁元（旧称，不推荐单独使用） → Deprecated Ambiguous Legacy Term
 - 禁元触发阈值 → Taboo Trigger Threshold
 - 公共审议程序（NCP 协议） → Normative Consensus Protocol (NCP)
 - 反压制原则 → Anti-Subjugation Principle

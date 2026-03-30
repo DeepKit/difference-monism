@@ -1,8 +1,15 @@
 ﻿---
-title: "ASTO.EN.U03.TheoreticalSystemCharts.Phil.v1.0"
+title: "ASTO.EN.U03. Theoretical System Charts"
+date: "2026-03-20"
+version: "v1.0"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Reference Diagram Set"
+layer: "ASTO"
 lang: "en"
 ---
 ## **ASTO Complete Theoretical System Visualization Chart Set**
+
+> **Status Note**: This file is a reference chart set for orientation and is not a standalone main paper in the current ASTO public-review chain.
 
 ### **1. 1-2-3 Theory and Attribute-Set Transition Ontology**
 ```mermaid

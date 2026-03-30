@@ -1,0 +1,12 @@
+# ODD 推广目录说明
+
+> **定位**：本目录用于 ODD 的传播、推广和外部沟通材料。
+>
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
+>
+> **当前状态**：本目录属于传播辅助区，不属于 ODD 首轮公开主包。
+
+## 边界
+
+- 推广文案不替代 ODD 主论文、白皮书与根入口
+- 若对外正式引用，应优先使用 `README.md`、`PUBLISH_READINESS.md`、`ODD.预印本发布说明.v1.0.md`

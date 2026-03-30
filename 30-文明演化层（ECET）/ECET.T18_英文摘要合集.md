@@ -3,12 +3,17 @@ title: "ECET English Abstracts"
 subtitle: "Abstracts for the Current Document System (A/B/C Series)"
 date: "2026-02-25"
 version: "2.0"
-author: "ECET Project"
-status: "正式"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "公开补充件"
+layer: "ECET"
 ---
 
 # ECET English Abstracts
 
+> **Status**: 公开补充件
+> **发布边界**：本文用于汇总当前 `A/B/C` 主文档组的英文摘要，服务于公开征评、预印本占位和对外比较，不替代 ECET 主文。
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
+>
 > Abstracts for the current ECET document system. For the legacy archive series (T01–T18), see `归档/ECET.T18_英文摘要合集.md`.
 
 ---

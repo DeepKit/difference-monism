@@ -1,17 +1,19 @@
-﻿---
+---
 title: "ASTO.Ext.04. 教育：文明园丁与认知抗体"
 date: "2026-01-27"
 version: "Sci.P.v2.1"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "公开应用扩展稿"
+layer: "ASTO"
 abstract: "从工人培养到文明守护——ASTO 教育学的重构。"
 ---
 
 # ASTO.Ext.04. 教育：文明园丁与认知抗体
 
 > **Version**: Sci.P.v2.1 (Civilization Gardener Edition)
-> **Status**: Living Document
-> **Author**: Fuyi (ODDFounder)
+> **Status**: 公开应用扩展稿
+> **发布边界**：本文属于 ASTO 的公开应用扩展支线，用于场景化说明，不纳入首轮公开主包。
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
 > **Audience**: 教育改革者、教师、家长。
 > **Abstract**: 从工人培养到文明守护——ASTO 教育学的重构。
 > **Context**: 本文档属于 ASTO 应用扩展系列 (Ext)，探讨教育作为文明级属集工程的重构。
@@ -20,7 +22,7 @@ abstract: "从工人培养到文明守护——ASTO 教育学的重构。"
 
 ## **Context：为什么我们要重写教育？**
 
-在 [ASTO 文明元定义](../ASTO.P04.宣言.Phil.v12.5.md#asto-civilization-meta-definition)（禁元/复数性/不可触达维 > 动变性 > 效率）确立之后，旧有的教育观（为了生产合格的工业劳动力）已经失效。
+在 [ASTO 文明元定义](../ASTO.P04.宣言.Phil.md#asto-civilization-meta-definition)（禁元/复数性/不可触达维 > 动变性 > 效率）确立之后，旧有的教育观（为了生产合格的工业劳动力）已经失效。
 如果文明的目标是在 AGI 到来之前守护人类家园，并在更长尺度上构建一个**“反脆弱的生态系统”**，那么教育的目标就不能是制造标准化的螺丝钉，而必须是培养能够维护这个生态的**“园丁”**。
 
 本文基于 ASTO v2.0 核心精神，彻底重构教育的本体论与方法论。
@@ -364,7 +366,7 @@ class CognitiveAttributeSet:
 ---
 
 **关联文件**：
-- 理论基础：[ASTO.P03.认识论](../ASTO.P03.认识论.Phil.Paper.v1.1.md)、[ASTO.P04.宣言](../ASTO.P04.宣言.Phil.v12.5.md)
+- 理论基础：[ASTO.P03.认识论](../ASTO.P03.认识论.Phil.md)、[ASTO.P04.宣言](../ASTO.P04.宣言.Phil.md)
 - AI应用：[ASTO.E04.AI对齐](./ASTO.E04.AI对齐.Eng.md)
 - 组织设计：[ASTO.Ext.03.组织](./ASTO.Ext.03.组织.Sci.P.md)
 
@@ -375,19 +377,19 @@ class CognitiveAttributeSet:
 ```text
 ASTO 文档体系
 ├── 🌟 P 系列：哲学核心 (Philosophy)
-│   ├── [P01. 非此](../ASTO.P01.非此.Phil.P.v8.0.md) (理论免疫宣言)
-│   ├── [P02. 序章](../ASTO.P02.序章.Phil.v8.0.md) (否定性导引与路径分流)
-│   ├── [P03. 认识论](../ASTO.P03.认识论.Phil.Paper.v1.1.md) (认知错误的必然性)
-│   ├── [P04. 宣言](../ASTO.P04.宣言.Phil.v12.5.md) (结构性处境与行动纲领)
-│   ├── [P05. 公理](./ASTO.P05.公理.Phil.md) (系统热力学与结构存在论)
-│   ├── [P06. 价值](../ASTO.P06.价值与边界.Phil.v1.0.md) (复数性测试与伦理熔断)
-│   ├── [P07. 自由](../ASTO.P07.自由论.Phil.v9.0.md) (边界即自由)
-│   ├── [P08. 例外](../ASTO.P08.例外.Phil.v8.0.md) (宗教体验与星际主权)
-│   ├── [P09. 批判](../ASTO.P09.批判.Phil.v9.0.md) (反极权宪章与系统免疫)
-│   ├── [P10. 民主](../ASTO.P10.民主.Phil.v8.0.md) (对话平台与 NCP 协议)
-│   ├── [P11. 韧性](../ASTO.P11.韧性.Phil.v8.0.md) (自我免疫与反脆弱)
-│   ├── [P12. 留白](../ASTO.P12.留白.Phil.v1.0.md) (预留扩展空间)
-│   └── [P13. 终章](../ASTO.P13.终章.Phil.v8.0.md) (系统的终极关怀)
+│   ├── [P01. 非此](../ASTO.P01.非此.Phil.md) (理论免疫宣言)
+│   ├── [P02. 序章](../ASTO.P02.序章.Phil.md) (否定性导引与路径分流)
+│   ├── [P03. 认识论](../ASTO.P03.认识论.Phil.md) (认知错误的必然性)
+│   ├── [P04. 宣言](../ASTO.P04.宣言.Phil.md) (结构性处境与行动纲领)
+│   ├── [P05. 公理](../ASTO.P05a.公理.Phil.md) (系统热力学与结构存在论)
+│   ├── [P06. 价值](../ASTO.P06.价值与边界.Phil.md) (复数性测试与伦理熔断)
+│   ├── [P07. 自由](../ASTO.P07.自由论.Phil.md) (边界即自由)
+│   ├── [P08. 例外](../ASTO.P08.例外.Phil.md) (宗教体验与星际主权)
+│   ├── [P09. 批判](../ASTO.P09a.批判.Phil.md) (反极权宪章与系统免疫)
+│   ├── [P10. 民主](../ASTO.P10.民主.Phil.md) (对话平台与 NCP 协议)
+│   ├── [P11. 韧性](../ASTO.P11.韧性.Phil.md) (自我免疫与反脆弱)
+│   ├── [P12. 留白](../ASTO.P12.留白.Phil.md) (预留扩展空间)
+│   └── [P13. 终章](../ASTO.P13.终章.Phil.md) (系统的终极关怀)
 │
 ├── 🛠️ E 系列：工程实践 (Engineering)
 │   ├── [E01. 实践指南](./ASTO.E01.实践指南.Eng.md) (生活|人文|工程三轨读本)
@@ -398,12 +400,12 @@ ASTO 文档体系
 │   └── [E06. 领域扩展](./ASTO.E06.领域扩展.Eng.md) (多领域应用索引)
 │
 ├── 🧩 H 系列：人文叙事 (Humanities)
-│   ├── [H01. 重构](./ASTO.H01.重构.Hum.md) (架构师的二十一种宇宙视角)
-│   ├── [H02. 导读](./ASTO.H02.导读：为什么读这本书.Hum.v1.0.md)
-│   ├── [H03. 故事](./ASTO.H03.故事：小陈的那条路.Hum.v1.0.md)
-│   ├── [H04. 认知冒险](./ASTO.H04.认知冒险.Hum.md)
-│   ├── [H05. 奇幻漂流](./ASTO.H05.奇幻漂流.Hum.md)
-│   └── [H06. 暮年的重构](./ASTO.H06.暮年的重构：给不再年轻的你.Hum.v1.0.md)
+│   ├── [H01. 重构](../人文版/ASTO.H01.重构.Hum.md) (架构师的二十一种宇宙视角)
+│   ├── [H02. 导读](../人文版/ASTO.H02.导读：为什么读这本书.Hum.md)
+│   ├── [H03. 故事](../人文版/ASTO.H03.故事：小陈的那条路.Hum.md)
+│   ├── [H04. 认知冒险](../人文版/ASTO.H04.认知冒险.Hum.md)
+│   ├── [H05. 奇幻漂流](../人文版/ASTO.H05.奇幻漂流.Hum.md)
+│   └── [H06. 暮年的重构](../人文版/ASTO.H06.暮年的重构：给不再年轻的你.Hum.md)
 │
 ├── 🎓 Lite 系列：青春版 (Youth)
 │   ├── [L01. 宣言 (Lite)](./青春版/ASTO04.宣言.Lite.v1.0.md)
@@ -422,3 +424,8 @@ ASTO 文档体系
 ```
 
 > 🔙 [返回总目录](../readme.md)
+
+
+
+
+

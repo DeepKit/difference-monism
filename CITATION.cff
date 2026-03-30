@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this repository snapshot or cite the theory stack, please cite it using the metadata below."
+title: "Difference Monism Theory Stack / 差异一元论理论栈"
+type: software
+version: "publication-snapshot-2026-03-20"
+date-released: 2026-03-20
+authors:
+  - family-names: Fu
+    given-names: Yi
+    affiliation: "ODDFounder"
+    email: "fuyi.it@live.cn"
+abstract: >-
+  Public repository snapshot for the theory stack DM -> ASTO -> ECET -> TAT -> ODD,
+  including canonical texts, release notes, publication manifests, and bounded
+  supplementary materials.
+keywords:
+  - Difference Monism
+  - DM
+  - ASTO
+  - ECET
+  - TAT
+  - ODD
+  - philosophy
+  - governance
+  - AI

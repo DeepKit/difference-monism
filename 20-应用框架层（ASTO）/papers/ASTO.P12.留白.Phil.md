@@ -1,9 +1,10 @@
-﻿---
+---
 title: "ASTO.P12. 留白"
 date: "2026-01-27"
 version: "v1.0"
-author: "Fuyi (ODDFounder)"
-status: "Living Document | Philosophically Reviewed"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "工作扩展稿"
+layer: "ASTO"
 abstract: "世界是不完美的，有时候残缺也是一种美。"
 ---
 
@@ -20,8 +21,9 @@ abstract: "世界是不完美的，有时候残缺也是一种美。"
 # **ASTO.P12. 留白**
 
 > **Version**: v1.0
-> **Status**: Living Document | Philosophically Reviewed
-> **第一扰动者**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: 工作扩展稿
+> **发布边界**：本文属于 ASTO 的活跃扩展支线，用于继续收束边界，不纳入首轮公开主包。
+> **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
 > **扰动哈希**: `asto12-v1.0-intentional-blank`
 
 > **世界是不完美的，有时候残缺也是一种美。**
@@ -37,4 +39,5 @@ abstract: "世界是不完美的，有时候残缺也是一种美。"
 ---
 
 > 
+
 

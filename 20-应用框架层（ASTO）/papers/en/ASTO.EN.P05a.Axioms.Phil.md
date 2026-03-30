@@ -1,9 +1,10 @@
-﻿---
+---
 title: "ASTO.P05a. Axiom System: Thermodynamic Laws of Systems and Attribute-Set Mode Ontology"
-date: "2026-01-29"
+date: "2026-03-20"
 version: "Γ.20.0 (Restructured: Axioms + Theorems)"
-author: "Fuyi (ODDFounder)"
-status: "Living Document | Philosophically Reviewed"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "Establishes the underlying physical axioms of Attribute-Set Transition Ontology (ASTO). This version introduces ontological status clauses, dual temporal structure, and reconstructs monism and the position of humans. Reviewed philosophically to clarify dialogue with traditional philosophical schools and strengthen immunity against category mistakes. [Philosophically Reviewed Version]"
 ---
 
@@ -23,8 +24,8 @@ abstract: "Establishes the underlying physical axioms of Attribute-Set Transitio
 
 ---
 > **Version**: Γ.20.0 (Restructured: Axioms + Theorems) (Critical Philosophy Upgrade: From Physicalism to Critical Philosophy of Technical Practice) - **Philosophically Reviewed**
-> **Status**: Living Document
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: Public Review Draft
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **Perturbation Hash**: `asto05-v9.1-phil-reviewed`
 > **Context**: This document establishes the underlying physical axioms of Attribute-Set Transition Ontology (ASTO). We view the survival of systems as a war against entropy increase, and seek anti-fragile ways of survival on this basis.
 > **Declaration**: From the moment this perturbation is injected into the Field, the rights to interpret, modify, critique, and transcend it belong to all perturbers. The First Perturber only retains the right to self-mockery and the obligation of self-negation. Forks, tampering, transcendence, and oblivion in any form are welcome.
@@ -1617,11 +1618,11 @@ ASTO Document System
 │
 ├── 🧩 H-Series: Humanities Narrative (Humanities)
 │   ├── [H01. Refactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.v10.0.md) (Twenty-One Universal Perspectives of the Architect)
-│   ├── [H02. Guide](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H02.%E5%AF%BC%E8%AF%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%BB%E8%BF%99%E6%9C%AC%E4%B9%A6.Hum.v1.0.md)
-│   ├── [H03. Story](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H03.%E6%95%85%E4%BA%8B%EF%BC%9A%E5%B0%8F%E9%99%88%E7%9A%84%E9%82%A3%E6%9D%A1%E8%B7%AF.Hum.v1.0.md)
-│   ├── [H04. CognitiveAdventure](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H04.%E8%AE%A4%E7%9F%A5%E5%86%92%E9%99%A9.Hum.v1.0.md)
-│   ├── [H05. FantasyDrift](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H05.%E5%A5%87%E5%B9%BB%E6%BC%82%E6%B5%81.Hum.v1.0.md)
-│   └── [H06. AgingRefactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H06.%E6%9A%AE%E5%B9%B4%E7%9A%84%E9%87%8D%E6%9E%84%EF%BC%9A%E7%BB%99%E4%B8%8D%E5%86%8D%E5%B9%B4%E8%BD%BB%E7%9A%84%E4%BD%A0.Hum.v1.0.md)
+│   ├── [H02. Guide](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H02.%E5%AF%BC%E8%AF%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%BB%E8%BF%99%E6%9C%AC%E4%B9%A6.Hum.md)
+│   ├── [H03. Story](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H03.%E6%95%85%E4%BA%8B%EF%BC%9A%E5%B0%8F%E9%99%88%E7%9A%84%E9%82%A3%E6%9D%A1%E8%B7%AF.Hum.md)
+│   ├── [H04. CognitiveAdventure](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H04.%E8%AE%A4%E7%9F%A5%E5%86%92%E9%99%A9.Hum.md)
+│   ├── [H05. FantasyDrift](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H05.%E5%A5%87%E5%B9%BB%E6%BC%82%E6%B5%81.Hum.md)
+│   └── [H06. AgingRefactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H06.%E6%9A%AE%E5%B9%B4%E7%9A%84%E9%87%8D%E6%9E%84%EF%BC%9A%E7%BB%99%E4%B8%8D%E5%86%8D%E5%B9%B4%E8%BD%BB%E7%9A%84%E4%BD%A0.Hum.md)
 │
 ├── 🎓 Lite-Series: Youth Edition (Youth)
 │   ├── [L01. Manifesto (Lite)](../%E9%9D%92%E6%98%A5%E7%89%88/ASTO04.%E5%AE%A3%E8%A8%80.Lite.v1.0.md)
@@ -1640,4 +1641,5 @@ ASTO Document System
 ```
 
 > 🔙 [Return to Main Directory](../readme.md)
+
 

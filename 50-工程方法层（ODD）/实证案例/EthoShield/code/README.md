@@ -1,6 +1,8 @@
 ﻿# ASTO MVP 1.0 代码
 
 > 运行: `cd docs/EthoShield/code && python demo.py`
+>
+> **公开边界**：本目录是案例化 PoC 代码，不是当前首轮公开主包，也不应被表述为已经完成正式工程化验证的稳定产品。
 
 ## 文件列表
 

@@ -1,0 +1,29 @@
+# Repository hygiene
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python caches
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.pyo
+
+# Build and temp artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.bak
+*.new
+
+# Binary and local runtime artifacts
+*.db
+*.dll
+*.exe
+*.zip
+
+# Local workspaces that should not re-enter the public snapshot
+.Story/
+.works/

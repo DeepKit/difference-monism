@@ -1,17 +1,18 @@
 ﻿---
 title: "ASTO.P05b. Human Core Experiences: Death, Freedom, Meaning, and Love in ASTO"
-date: "2026-02-21"
+date: "2026-03-20"
 version: "v2.1 (Human Experience Focus)"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "Extension of the P05a axiom and theorem system. Uses ASTO structural language to describe human core experiences: identity, death, freedom, meaning, AI and digital life, evil, consciousness, pain, joy, and love."
 ---
 
 # ASTO.P05b. Human Core Experiences
 
 > **Version**: v2.1 (Human Experience Focus)
-> **Status**: Living Document
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: Public Review Draft
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **Prerequisite**: [ASTO.P05a. Axiom System](./ASTO.EN.P05a.Axioms.Phil.md)
 
 ---

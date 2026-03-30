@@ -1,16 +1,17 @@
 ﻿---
 title: "ASTO.U01. Figure Index: Panoramic Visual Index"
-date: "2026-01-29"
+date: "2026-03-20"
 version: "Γ.2"
-author: "Fuyi (ODDFounder)"
-status: "Generated"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Generated Reference Index"
+layer: "ASTO"
 abstract: "A collection of all core diagrams in the ASTO system as a panoramic visual index."
 ---
 
 # **ASTO.U01. Figure Index: Panoramic Visual Index**
 
 > **Version**: Γ.2 (Index Synced)
-> **Status**: Generated
+> **Status**: Generated Reference Index
 > **Context**: This document collects all core diagrams in the Attribute-Set Transition Ontology (ASTO) system as a panoramic visual index.
 
 ---

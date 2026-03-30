@@ -1,9 +1,10 @@
 ﻿---
 title: "ASTO.P03. Epistemology: Inevitability of Cognitive Errors and Evidentiary Cognition"
-date: "2026-01-27"
+date: "2026-03-20"
 version: "Paper.Rich.v1.3"
-author: "Fuyi (ODDFounder)"
-status: "Living Document"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "Proposed Evidentiary Cognition and Perturbation Epistemology, where cognitive error is a structural feature."
 ---
 
@@ -24,9 +25,9 @@ abstract: "Proposed Evidentiary Cognition and Perturbation Epistemology, where c
 ---
 > **Version**: Paper.Rich.v1.3 (Audit by Quine, Kuhn, Polanyi, Goldman)
 >
-> **Status**: Living Document
+> **Status**: Public Review Draft
 >
-> **First Perturber**: Fuyi (ODDFounder)
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 >
 > **Audience**: Philosophers / epistemology-trained readers
 >

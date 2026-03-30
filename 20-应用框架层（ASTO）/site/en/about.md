@@ -2,7 +2,7 @@
 
 ## What is ASTO?
 
-ASTO (Set Transition Ontology) is a philosophical theory system about existence, change, and sets.
+ASTO (Attribute-Set Transition Ontology) is a cross-scenario application bridge about existence, change, structure, and attribute-set slices. The site content is designed for reading and dissemination, and should not be confused with the first-round public preprint package.
 
 ## Copyright
 

@@ -1,7 +1,7 @@
-﻿# ASTO 核心哲学文档发表对齐计划 (Alignment Task)
+# ASTO 核心哲学文档发表对齐计划 (Alignment Task)
 
 > **目标**：确保 ASTO 哲学核心 (P01-P13 + U01-U03) 文档在术语、格式与结构上完全对齐，达到可发表标准。
-> **基准**：以 `ASTO.P03.认识论.Phil.Paper.v1.1.md` 的内容和 `ASTO.U02.Glossary.zh-en.v1.0.md` 的定义为最高准则。
+> **基准**：以 `ASTO.P03.认识论.Phil.md` 的内容和 `ASTO.U02.Glossary.zh-en.v1.0.md` 的定义为最高准则。
 
 ## 1. 基础设施与标准 (Infrastructure)
 
@@ -59,3 +59,4 @@
 
 - [x] **构建测试**：尝试将一份核心文档转换为 PDF/HTML，验证排版效果。（P04 → HTML 143KB，Python markdown 构建通过）
 - [x] **交叉引用测试**：随机抽取 5 处跨文档引用进行核实。（A01:132/222/223、P03:1202、P04:1481，全部解析正常）
+

@@ -1,9 +1,10 @@
-﻿---
+---
 title: "ASTO.P01. Not-This: Manifesto of Theoretical Immunity"
-date: "2026-01-27"
+date: "2026-03-20"
 version: "Γ.1"
-author: "Fuyi (ODDFounder)"
-status: "Fixed"
+author: "Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)"
+status: "Public Review Draft"
+layer: "ASTO"
 abstract: "Attribute-Set Transition Ontology (ASTO) Manifesto of Theoretical Immunity: Why 'What it is not' is more important than 'What it is'."
 ---
 
@@ -23,8 +24,8 @@ abstract: "Attribute-Set Transition Ontology (ASTO) Manifesto of Theoretical Imm
 
 ---
 > **Version**: Γ.1
-> **Status**: Fixed
-> **First Perturber**: Fuyi (ODDFounder fuyi.it@live.cn)
+> **Status**: Public Review Draft
+> **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
 > **Context**: Every powerful framework must declare its forbidden forms.
 > Every powerful structure must deny in advance the forms it might degenerate into.
 
@@ -256,11 +257,11 @@ ASTO Document System
 │
 ├── 🧩 H-Series: Humanities Narrative (Humanities)
 │   ├── [H01. Refactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.v10.0.md) (Twenty-One Universal Perspectives of the Architect)
-│   ├── [H02. Guide](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H02.%E5%AF%BC%E8%AF%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%BB%E8%BF%99%E6%9C%AC%E4%B9%A6.Hum.v1.0.md)
-│   ├── [H03. Story](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H03.%E6%95%85%E4%BA%8B%EF%BC%9A%E5%B0%8F%E9%99%88%E7%9A%84%E9%82%A3%E6%9D%A1%E8%B7%AF.Hum.v1.0.md)
-│   ├── [H04. CognitiveAdventure](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H04.%E8%AE%A4%E7%9F%A5%E5%86%92%E9%99%A9.Hum.v1.0.md)
-│   ├── [H05. FantasyDrift](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H05.%E5%A5%87%E5%B9%BB%E6%BC%82%E6%B5%81.Hum.v1.0.md)
-│   └── [H06. AgingRefactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H06.%E6%9A%AE%E5%B9%B4%E7%9A%84%E9%87%8D%E6%9E%84%EF%BC%9A%E7%BB%99%E4%B8%8D%E5%86%8D%E5%B9%B4%E8%BD%BB%E7%9A%84%E4%BD%A0.Hum.v1.0.md)
+│   ├── [H02. Guide](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H02.%E5%AF%BC%E8%AF%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%BB%E8%BF%99%E6%9C%AC%E4%B9%A6.Hum.md)
+│   ├── [H03. Story](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H03.%E6%95%85%E4%BA%8B%EF%BC%9A%E5%B0%8F%E9%99%88%E7%9A%84%E9%82%A3%E6%9D%A1%E8%B7%AF.Hum.md)
+│   ├── [H04. CognitiveAdventure](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H04.%E8%AE%A4%E7%9F%A5%E5%86%92%E9%99%A9.Hum.md)
+│   ├── [H05. FantasyDrift](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H05.%E5%A5%87%E5%B9%BB%E6%BC%82%E6%B5%81.Hum.md)
+│   └── [H06. AgingRefactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H06.%E6%9A%AE%E5%B9%B4%E7%9A%84%E9%87%8D%E6%9E%84%EF%BC%9A%E7%BB%99%E4%B8%8D%E5%86%8D%E5%B9%B4%E8%BD%BB%E7%9A%84%E4%BD%A0.Hum.md)
 │
 ├── 🎓 Lite-Series: Youth Edition (Youth)
 │   ├── [L01. Manifesto (Lite)](../%E9%9D%92%E6%98%A5%E7%89%88/ASTO04.%E5%AE%A3%E8%A8%80.Lite.v1.0.md)
@@ -279,4 +280,5 @@ ASTO Document System
 ```
 
 > 🔙 [Return to Main Directory](../readme.md)
+
 
