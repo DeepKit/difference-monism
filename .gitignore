@@ -27,3 +27,4 @@ __pycache__/
 # Local workspaces that should not re-enter the public snapshot
 .Story/
 .works/
+_progee2_sync/

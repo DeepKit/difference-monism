@@ -4,14 +4,23 @@
 
 ## 代码主位
 
-- 工程目录：`D:\_Progs\02Business\progee2`
+- 建议对外交付写法：`<repo-root>/`
 
 ## 当前复现入口
 
-- [Replication.md](D:\_Progs\02Business\progee2\docs\Replication.md)
-- [run_e2e_tests.ps1](D:\_Progs\02Business\progee2\scripts\run_e2e_tests.ps1)
+- `docs/Replication.md`
+- `scripts/run_e2e_tests.ps1`
+- `scripts/export_eval_metrics.ps1`
 
 ## 当前边界
 
 1. 当前更稳的是“给出代码主位 + 复现入口 + artifact 说明”，而不是把整仓直接打进投稿包。
 2. 若目标 venue 要求正式 artifact 包，后续应从 `progee2` 单独裁出精简复现包。
+
+## 默认执行模板入口
+
+- [英文系统期刊默认执行模板.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\英文系统期刊默认执行模板.md)
+- [Artifact 最小执行模板.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\Artifact-最小执行模板.md)
+- [Artifact 交付目录草案.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\Artifact-交付目录草案.md)
+- [结果与主张映射表.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\结果与主张映射表.md)
+- [审稿人最小复核路径.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\审稿人最小复核路径.md)

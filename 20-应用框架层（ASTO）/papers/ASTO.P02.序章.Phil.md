@@ -230,10 +230,10 @@ ASTO 不试图打破规范。
 
 ### **Path C: 问题驱动者**
 > "我有具体的问题，给我直接的答案。"
-- **AI对齐** → [ASTO.E04. AI](./工程版/ASTO.E04.AI对齐.Eng.v8.0.md)
-- **Web3治理** → [ASTO.E03. Web3](./工程版/ASTO.E03.Web3.Eng.v8.0.md)
-- **数字化转型** → [ASTO.E02. 自动化](./工程版/ASTO.E02.自动化.Eng.v8.0.md)
-- **团队自动化** → [ASTO.E02. 自动化](./工程版/ASTO.E02.自动化.Eng.v8.0.md)
+- **AI对齐** → [ASTO.E04. AI](./工程版/ASTO.E04.AI对齐.Eng.md)
+- **Web3治理** → [ASTO.E03. Web3](./工程版/ASTO.E03.Web3.Eng.md)
+- **数字化转型** → [ASTO.E02. 自动化](./工程版/ASTO.E02.自动化.Eng.md)
+- **团队自动化** → [ASTO.E02. 自动化](./工程版/ASTO.E02.自动化.Eng.md)
 - **法律/组织/教育** → 见下方附录
 
 ### **Path D: 青春版 (Lite)**
@@ -265,14 +265,14 @@ ASTO 不试图打破规范。
 
 | 编号 | 领域 | 核心洞见 | 典型读者 | 原型 (Ext) |
 |:---|:---|:---|:---|:---|
-| [E06.01](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-01-universe) | **宇宙** | 主权随光速延迟迁移 | 航天工程、星际治理 | [Ext.07](./工程版/ASTO.Ext.07.宇宙.Sci.P.v1.0.md) |
-| [E06.02](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-02-law) | **法律** | 红绿灯司法分流 | 法律工程师 | [Ext.01](./工程版/ASTO.Ext.01.法律.Sci.P.v1.0.md) |
-| [E06.03](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-03-science) | **科学** | 证伪是系统的垃圾回收 | 科学哲学爱好者 | [Ext.02](./工程版/ASTO.Ext.02.科学.Sci.P.v1.0.md) |
-| [E06.04](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-04-organization) | **组织** | AI取代中层，神经系统涌现 | 管理者、组织设计者 | [Ext.03](./工程版/ASTO.Ext.03.组织.Sci.P.v1.0.md) |
-| [E06.05](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-05-education) | **教育** | 从灌输EN到孵化NEN | 教育者 | [Ext.04](./工程版/ASTO.Ext.04.教育.Sci.P.v1.0.md) |
-| [E06.06](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-06-city) | **城市** | 街道是算法，市民是数据流 | 城市规划者 | [Ext.05](./工程版/ASTO.Ext.05.城市.Sci.P.v1.0.md) |
-| [E06.07](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-07-healthcare) | **医疗** | 疾病是属性的异常解离 | 医疗从业者 | [Ext.06](./工程版/ASTO.Ext.06.医疗.Sci.P.v1.0.md) |
-| [E05](./工程版/ASTO.E05.工程实践手册.Eng.v1.0.md) | **工程实践** | 对抗测试/赛马/封板完整手册 | **所有工程师（必读）** | — |
+| [E06.01](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-01-universe) | **宇宙** | 主权随光速延迟迁移 | 航天工程、星际治理 | [Ext.07](./工程版/ASTO.Ext.07.宇宙.Sci.P.md) |
+| [E06.02](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-02-law) | **法律** | 红绿灯司法分流 | 法律工程师 | [Ext.01](./工程版/ASTO.Ext.01.法律.Sci.P.md) |
+| [E06.03](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-03-science) | **科学** | 证伪是系统的垃圾回收 | 科学哲学爱好者 | [Ext.02](./工程版/ASTO.Ext.02.科学.Sci.P.md) |
+| [E06.04](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-04-organization) | **组织** | AI取代中层，神经系统涌现 | 管理者、组织设计者 | [Ext.03](./工程版/ASTO.Ext.03.组织.Sci.P.md) |
+| [E06.05](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-05-education) | **教育** | 从灌输EN到孵化NEN | 教育者 | [Ext.04](./工程版/ASTO.Ext.04.教育.Sci.P.md) |
+| [E06.06](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-06-city) | **城市** | 街道是算法，市民是数据流 | 城市规划者 | [Ext.05](./工程版/ASTO.Ext.05.城市.Sci.P.md) |
+| [E06.07](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-07-healthcare) | **医疗** | 疾病是属性的异常解离 | 医疗从业者 | [Ext.06](./工程版/ASTO.Ext.06.医疗.Sci.P.md) |
+| [E05](./工程版/ASTO.E05.工程实践手册.Eng.md) | **工程实践** | 对抗测试/赛马/封板完整手册 | **所有工程师（必读）** | — |
 
 ### **三、按问题快速索引 (FAQ)**
 
@@ -280,11 +280,11 @@ ASTO 不试图打破规范。
 *   **我想发币/做DAO** → ASTO.E03 Web3
 *   **我想训练大模型** → ASTO.E04 AI
 *   **我想设计投票系统** → ASTO.P10 民主
-*   **我想去火星** → ASTO.P08 例外 / [ASTO.E06.01 宇宙](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-01-universe)
-*   **系统总挂怎么办** → ASTO.P11 韧性 / [ASTO.E05 工程实践手册](./工程版/ASTO.E05.工程实践手册.Eng.v1.0.md)
-*   **公司管理太僵化** → [ASTO.E06.04 组织](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-04-organization)
-*   **教育太卷怎么办** → [ASTO.E06.05 教育](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-05-education)
-*   **智慧城市怎么搞** → [ASTO.E06.06 城市](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md#asto-e06-06-city)
+*   **我想去火星** → ASTO.P08 例外 / [ASTO.E06.01 宇宙](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-01-universe)
+*   **系统总挂怎么办** → ASTO.P11 韧性 / [ASTO.E05 工程实践手册](./工程版/ASTO.E05.工程实践手册.Eng.md)
+*   **公司管理太僵化** → [ASTO.E06.04 组织](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-04-organization)
+*   **教育太卷怎么办** → [ASTO.E06.05 教育](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-05-education)
+*   **智慧城市怎么搞** → [ASTO.E06.06 城市](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-06-city)
 
 
 ---
@@ -331,15 +331,15 @@ ASTO 文档体系
 │   └── [P13. 终章](./ASTO.P13.终章.Phil.md) (系统的终极关怀)
 │
 ├── 🛠️ E 系列：工程实践 (Engineering)
-│   ├── [E01. 实践指南](./工程版/ASTO.E01.实践指南.Eng.v2.0.md) (生活|人文|工程三轨读本)
-│   ├── [E02. 自动化](./工程版/ASTO.E02.自动化.Eng.v8.0.md) (可执行规范与零摩擦治理)
-│   ├── [E03. Web3](./工程版/ASTO.E03.Web3.Eng.v8.0.md) (意图宪法与链上三权分立)
-│   ├── [E04. AI对齐](./工程版/ASTO.E04.AI对齐.Eng.v8.0.md) (逆熵智能体与文明传承)
-│   ├── [E05. 工程手册](./工程版/ASTO.E05.工程实践手册.Eng.v1.0.md) (对抗测试与赛马机制)
-│   └── [E06. 领域扩展](./工程版/ASTO.E06.领域扩展.Eng.v1.0.md) (多领域应用索引)
+│   ├── [E01. 实践指南](./工程版/ASTO.E01.实践指南.Eng.md) (生活|人文|工程三轨读本)
+│   ├── [E02. 自动化](./工程版/ASTO.E02.自动化.Eng.md) (可执行规范与零摩擦治理)
+│   ├── [E03. Web3](./工程版/ASTO.E03.Web3.Eng.md) (意图宪法与链上三权分立)
+│   ├── [E04. AI对齐](./工程版/ASTO.E04.AI对齐.Eng.md) (逆熵智能体与文明传承)
+│   ├── [E05. 工程手册](./工程版/ASTO.E05.工程实践手册.Eng.md) (对抗测试与赛马机制)
+│   └── [E06. 领域扩展](./工程版/ASTO.E06.领域扩展.Eng.md) (多领域应用索引)
 │
 ├── 🧩 H 系列：人文叙事 (Humanities)
-│   ├── [H01. 重构](./人文版/ASTO.H01.重构.Hum.v10.0.md) (架构师的二十一种宇宙视角)
+│   ├── [H01. 重构](./人文版/ASTO.H01.重构.Hum.md) (架构师的二十一种宇宙视角)
 │   ├── [H02. 导读](./人文版/ASTO.H02.导读：为什么读这本书.Hum.md)
 │   ├── [H03. 故事](./人文版/ASTO.H03.故事：小陈的那条路.Hum.md)
 │   ├── [H04. 认知冒险](./人文版/ASTO.H04.认知冒险.Hum.md)
@@ -352,14 +352,14 @@ ASTO 文档体系
 │   └── [L03. 价值 (Lite)](./青春版/ASTO05.价值与边界.Lite.v1.0.md)
 │
 └── 🌍 Ext 系列：领域扩展 (Extensions)
-    ├── [Ext.01 法律](./工程版/ASTO.Ext.01.法律.Sci.P.v1.0.md)
-    ├── [Ext.02 科学](./工程版/ASTO.Ext.02.科学.Sci.P.v1.0.md)
-    ├── [Ext.03 组织](./工程版/ASTO.Ext.03.组织.Sci.P.v1.0.md)
-    ├── [Ext.04 教育](./工程版/ASTO.Ext.04.教育.Sci.P.v1.0.md)
-    ├── [Ext.05 城市](./工程版/ASTO.Ext.05.城市.Sci.P.v1.0.md)
-    ├── [Ext.06 医疗](./工程版/ASTO.Ext.06.医疗.Sci.P.v1.0.md)
-    ├── [Ext.07 宇宙](./工程版/ASTO.Ext.07.宇宙.Sci.P.v1.0.md)
-    └── [Ext.08 留白](./工程版/ASTO.Ext.08.留白.Sci.P.v8.0.md)
+    ├── [Ext.01 法律](./工程版/ASTO.Ext.01.法律.Sci.P.md)
+    ├── [Ext.02 科学](./工程版/ASTO.Ext.02.科学.Sci.P.md)
+    ├── [Ext.03 组织](./工程版/ASTO.Ext.03.组织.Sci.P.md)
+    ├── [Ext.04 教育](./工程版/ASTO.Ext.04.教育.Sci.P.md)
+    ├── [Ext.05 城市](./工程版/ASTO.Ext.05.城市.Sci.P.md)
+    ├── [Ext.06 医疗](./工程版/ASTO.Ext.06.医疗.Sci.P.md)
+    ├── [Ext.07 宇宙](./工程版/ASTO.Ext.07.宇宙.Sci.P.md)
+    └── [Ext.08 留白](./工程版/ASTO.Ext.08.留白.Sci.P.md)
 ```
 
 > 🔙 [返回总目录](./readme.md)

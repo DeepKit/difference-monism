@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ECET English Abstracts"
 subtitle: "Abstracts for the Current Document System (A/B/C Series)"
 date: "2026-02-25"
@@ -72,7 +72,7 @@ This document provides the scientific interface for ECET by deriving ten testabl
 
 **Abstract**
 
-This document applies ECET's three axioms to AI agent safety architecture, proposing a constraint-driven alignment strategy based on the principle that output verification is superior to process inspection. The core architecture implements a three-layer constraint system: resource constraints (energy constraint), behavioral contracts (adaptive selection constraint), and uncertainty handling (incompleteness constraint). The operational mechanism is a seven-step cycle: receive request → resource check → contract validation → generation → output verification → FREEZE/PASS/FAIL judgment → feedback. The document argues that the fundamental problem with current AI alignment approaches is their focus on inspecting the generation process rather than verifying outputs against independently specified contracts. ECET's contribution is the theoretical justification for why independent verification is structurally superior: it implements the adaptive selection constraint by creating a筛选 mechanism genuinely independent of the generation source.
+This document applies ECET's three axioms to AI agent safety architecture, proposing a constraint-driven alignment strategy based on the principle that output verification is superior to process inspection. The core architecture implements a three-layer constraint system: resource constraints (energy constraint), behavioral contracts (adaptive selection constraint), and uncertainty handling (incompleteness constraint). The operational mechanism is a seven-step cycle: receive request → resource check → contract validation → generation → output verification → FREEZE/PASS/FAIL judgment → feedback. The document argues that the fundamental problem with current AI alignment approaches is their focus on inspecting the generation process rather than verifying outputs against independently specified contracts. ECET's contribution is the theoretical justification for why independent verification is structurally superior: it implements the adaptive selection constraint by creating a filtering mechanism genuinely independent of the generation source.
 
 **Keywords**: AI safety, constraint-driven alignment, output verification, behavioral contracts, FREEZE mechanism, ODD framework
 
@@ -98,13 +98,13 @@ This document traces the intellectual genealogy of ECET and clarifies its origin
 
 ---
 
-## C17: Simulation Verification Report — ABM Validation of H1, H2, H4
+## C17: Simulation Report — Concept-Level Support for H1a, H2a, H4a
 
 **Abstract**
 
-This document provides initial empirical support for three ECET hypotheses through agent-based modeling (ABM) simulations. Experiment 1 (H1 validation) varies global constraint strength $C \in [0,1]$ across 50 agents over 1000 time steps, finding a robust inverted-U relationship between constraint strength and creative output, with peak performance at $C \approx 0.4$–$0.6$. Experiment 2 (H2 validation) compares deviation-utilization strategies against deviation-elimination strategies across environments with varying volatility, finding that utilization strategies significantly outperform elimination strategies in high-volatility environments while showing no significant difference in low-volatility environments. Experiment 3 (H4 validation) varies agent cognitive precision from 1.0 to 0.05, finding that exploration diversity increases monotonically with simplification while adaptive fitness follows an inverted-U curve, with peak fitness at precision $\approx 0.4$–$0.6$. All three hypotheses receive empirical support. Limitations include small agent populations, simplified interaction rules, and parameters derived from theoretical reasoning rather than empirical calibration.
+This document reports proof-of-concept agent-based modeling (ABM) results aligned with three ECET sub-hypotheses rather than full validation of the corresponding formal hypotheses. Experiment 1 supports `H1a` by showing an inverted-U interval between constraint or deviation intensity and system performance, with peak results around $C \approx 0.4$–$0.6$. Experiment 2 supports `H2a` by showing that strategies retaining non-zero deviation or uncertainty channels can outperform zero-tolerance rollback strategies in volatile environments. Experiment 3 supports `H4a` by showing that cognitive simplification can increase exploration diversity, but only within a bounded range before adaptive fitness declines. These results provide early shape or mechanism support only; they do not constitute completed empirical validation of the formal `H1 / H2 / H4` claims. Limitations include small agent populations, simplified interaction rules, and parameters derived from theoretical reasoning rather than empirical calibration.
 
-**Keywords**: agent-based modeling, simulation verification, inverted-U curve, deviation utilization, cognitive simplification, H1, H2, H4
+**Keywords**: agent-based modeling, proof of concept, inverted-U curve, deviation utilization, cognitive simplification, H1a, H2a, H4a
 
 ---
 
@@ -142,7 +142,7 @@ This document provides initial empirical support for three ECET hypotheses throu
 
 **版本**：2.0
 **日期**：2026-02-25
-**状态**：正式
+**状态**：公开补充件
 
 ---
 
@@ -151,3 +151,8 @@ This document provides initial empirical support for three ECET hypotheses throu
 > This section derives from [ECET.A00 Theoretical Foundation](./ECET.A00_理论基础.md).
 
 ECET.T18 (English Abstract) summarises the full framework. A00 provides the formal derivation chain (ASTO → ECET) that underpins all claims in this abstract. Readers seeking the axiomatic basis for the constraint triad, FREEZE/FAIL conditions, and ODD boundary definitions should consult A00 §3–§4.
+
+
+
+
+

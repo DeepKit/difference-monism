@@ -1,7 +1,10 @@
 # COP · Phase 1 · V2 — 加权判定引擎
 
-> **可立即部署**：这是判定算法的核心权重配置层
-> **工程化优先级**：🔴 最高（与 V1 同步上线）
+> **可立即部署**：这是 `Phase 1` 的核心判定层
+>
+> **当前角色**：用统一权重矩阵产生 `候选类型 + 分类集中度 + 结构风险 + 分流状态`
+>
+> **边界提醒**：V2 负责分类与分流，不单独完成责任裁决、合法性判断或强制干预授权
 
 ---
 
@@ -53,53 +56,135 @@
 ## 二、判定逻辑
 
 ### Step 1：计算四类总分
-```
+
+```text
 Score_A = 所有 A 列加总
 Score_B = 所有 B 列加总
 Score_C = 所有 C 列加总
 Score_D = 所有 D 列加总
 ```
 
-### Step 2：选主类型
-```
-主类型 = 分数最高的类型
+### Step 2：取得候选排序
+
+```text
+PrimaryCandidate = 最高分类型
+SecondaryCandidate = 第二高分类型
 ```
 
-### Step 3：副类型判定
-```
-副类型 = 第二高分（必须 ≥ 主类型的 60%）
-否则：不显示副类型（避免噪音）
+### Step 3：硬规则覆盖
+
+当出现以下高强度结构信号时，允许覆盖单纯加总排序：
+
+1. `死锁优先`
+若 `Q4 = D`，则 `PrimaryCandidate = B`
+
+2. `沉没成本锁定`
+若 `Q5 = D` 且 `Q2 = D`，则 `PrimaryCandidate = D`
+
+3. `共识幻觉覆盖`
+若 `Q2 = A` 且 `Q3 = C or D`，则 `PrimaryCandidate = A`
+
+### Step 4：副类型判定
+
+```text
+若 SecondaryScore >= 0.60 * PrimaryScore
+则保留 SecondaryCandidate
+否则 SecondaryType = null
 ```
 
 ---
 
-## 三、冲突消解规则（优先级机制）
+## 三、从本轮起正式拆开的两个量
 
-> 当多个类型分数接近时，以下规则强制覆盖：
+### 1. 分类集中度 `classification_confidence`
 
-**规则1（死锁优先）**：
-若 Q4 = D（多方循环依赖） → **强制主类型 = 死锁型（B）**
-（物理结构问题，优先级最高）
+```text
+classification_confidence = MaxScore / TotalScore
+```
 
-**规则2（沉没成本锁定）**：
-若 Q5 = D 且 Q2 = D → **强制主类型 = 沉没成本型（D）**
+它只回答：
 
-**规则3（共识幻觉覆盖）**：
-若 Q2 = A 且 Q3 = C 或 D → **主类型优先 = 共识幻觉型（A）**
+> 当前分类有多集中。
+
+它不回答：
+
+- 真实风险有多高
+- 是否应自动继续
+- 是否应直接进入高强度动作
+
+### 2. 结构风险 `structural_risk`
+
+结构风险由 `高风险标签` 与 `强触发信号` 共同决定。
+
+#### 高风险标签计数
+
+以下命中一次记一分：
+
+- `Q2 in [C, D]`
+- `Q3 in [C, D]`
+- `Q4 in [C, D]`
+- `Q5 in [C, D]`
+- `Q7 in [C, D]`
+- `Q8 in [C, D]`
+- `Q9 in [C, D]`
+
+以下命中一次额外再记一分：
+
+- `Q4 = D`
+- `Q5 = D and Q2 = D`
+
+#### 风险等级
+
+```text
+若命中强触发信号，或高风险标签分 >= 4  -> HIGH
+若高风险标签分 in [2, 3]                   -> MEDIUM
+若高风险标签分 <= 1                         -> LOW
+```
+
+最短判断：
+
+1. `classification_confidence` 可以很高，但 `structural_risk` 仍然很低。
+2. `classification_confidence` 可以很低，但 `structural_risk` 反而很高。
 
 ---
 
-## 四、风险等级计算
+## 四、分流状态 `triage_status`
 
-```
-Total Score = A + B + C + D
-Max Score = max(A, B, C, D)
+V2 现在必须允许五种状态：
 
-风险值（Confidence）= Max Score / Total Score
+### `UNKNOWN`
 
-< 0.4  → 🟢 低风险
-0.4-0.6 → 🟡 中风险
-> 0.6  → 🔴 高风险
+若 `TotalScore < 6`，说明当前激活信号太弱，不应伪装成已有明确分类。
+
+### `FREEZE`
+
+若同时出现下列任一情况，进入冻结：
+
+1. 多条硬规则同时触发
+2. `classification_confidence < 0.40` 且 `structural_risk = HIGH`
+
+### `REFER`
+
+若 `structural_risk = HIGH`，或命中以下任一条：
+
+- `Q4 = D`
+- `Q8 in [C, D]`
+- `Q9 = D`
+
+则默认需要转人工或转更高位接口，不应自动闭环。
+
+### `MIXED`
+
+若 `SecondaryScore >= 0.85 * PrimaryScore`，说明类型竞争过于接近，应保留混合态。
+
+### `RESOLVE`
+
+不满足上述条件时，才进入 `RESOLVE`。
+
+### 状态优先级
+
+```text
+UNKNOWN > FREEZE > REFER > MIXED > RESOLVE
 ```
 
 ---
@@ -110,7 +195,43 @@ Max Score = max(A, B, C, D)
 |:---|:---|
 | Q4 = C 或 D | 结构循环依赖 |
 | Q3 = C 或 D | 信息失真 |
-| Q6 = C 或 D | 样本偏差（幸存者偏差） |
-| Q7 = C 或 D | 系统被套利（眼镜蛇效应） |
+| Q6 = C 或 D | 样本偏差 |
+| Q7 = C 或 D | 系统被套利 |
 | Q8 = C 或 D | 无阈值控制 |
 | Q5 = C 或 D | 时间轴污染 |
+| Q9 = C 或 D | 外部约束过强 |
+
+---
+
+## 六、动作输出纪律
+
+1. `RESOLVE`
+可输出类型相关的有限动作建议。
+
+2. `MIXED`
+可输出双候选类型与差异标签，但动作建议必须收缩为低强度探针。
+
+3. `FREEZE`
+只允许输出：
+   - 补充信息
+   - 暂停自动动作
+   - 升级人工复核
+
+4. `UNKNOWN`
+只允许输出：
+   - 当前模型覆盖不足
+   - 需要更多输入
+   - 暂不分类
+
+5. `REFER`
+可保留候选类型，但默认转：
+   - `HUMAN_REVIEW`
+   - `TAT_REVIEW`
+   - `ODD_AUDIT`
+
+---
+
+## 七、最短压缩句
+
+1. `V2 的进步不在于分得更猛，而在于允许自己不分。`
+2. `高风险诊断必须区分“我看到了什么”与“我现在该不该继续自动给答案”。`

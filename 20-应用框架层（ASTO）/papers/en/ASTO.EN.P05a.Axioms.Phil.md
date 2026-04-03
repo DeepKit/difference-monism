@@ -46,7 +46,7 @@ abstract: "Establishes the underlying physical axioms of Attribute-Set Transitio
 >
 > This document is a crossover text between **Philosophy of Technology** and **Engineering Ontology**. It is neither pure metaphysical speculation nor a simple engineering manual, but an attempt to establish a reflective medium between **Practice** (πρᾶξις) and **Theory** (θεωρία).
 >
-> *   If you seek best practices for current software engineering, please read [ASTO.E01 Engineering Practice Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.v2.0.md)
+> *   If you seek best practices for current software engineering, please read [ASTO.E01 Engineering Practice Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.md)
 > *   If you question "Why another philosophy is needed", please read [ASTO.P04 Manifesto](./ASTO.EN.P04.Manifesto.Phil.md)
 > *   Intended Audience: Architects and Thinkers with systems thinking who realize **technical decisions are ethical decisions**.
 
@@ -790,7 +790,7 @@ flowchart TB
 
 > **Progression**: Law-based → Emergent → Goal-based → Model-building, increasing complexity and autonomy.
 
-**Relation to evolution**: "variation" corresponds to law-based/emergent motility; "natural selection" corresponds to environmental tension filtering attribute-sets. See [ASTO.E01 Engineering Practice Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.v2.0.md).
+**Relation to evolution**: "variation" corresponds to law-based/emergent motility; "natural selection" corresponds to environmental tension filtering attribute-sets. See [ASTO.E01 Engineering Practice Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.md).
 
 > **Ontological clarification**: Axiom 4 does not deify humans as creators outside the system; it acknowledges humans as **high-energy perturbation sources inside the Field**. Human specialness lies in model-building motility — the capacity to revise one's own cognitive model, thus to reflect and redesign impedance structures themselves. Humans are both the perturbation source of the Field and a condition for the Field's manifestation.
 
@@ -1609,15 +1609,15 @@ ASTO Document System
 │   └── [P13. Epilogue](./ASTO.EN.P13.Epilogue.Phil.md) (Ultimate Concern of the System)
 │
 ├── 🛠️ E-Series: Engineering Practice (Engineering)
-│   ├── [E01. Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.v2.0.md) (Life|Humanities|Engineering Triple-Track Reader)
-│   ├── [E02. Automation](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E02.%E8%87%AA%E5%8A%A8%E5%8C%96.Eng.v8.0.md) (Executable Norms and Zero-Friction Governance)
-│   ├── [E03. Web3](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E03.Web3.Eng.v8.0.md) (Intent Constitution and On-Chain Separation of Powers)
-│   ├── [E04. AI Alignment](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E04.AI%E5%AF%B9%E9%BD%90.Eng.v8.0.md) (Anti-Entropy Agents and Civilization Inheritance)
-│   ├── [E05. Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) (Adversarial Testing and Horse Race Mechanism)
-│   └── [E06. DomainExt](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E06.%E9%A2%86%E5%9F%9F%E6%89%A9%E5%B1%95.Eng.v1.0.md) (Multi-Domain Application Index)
+│   ├── [E01. Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.md) (Life|Humanities|Engineering Triple-Track Reader)
+│   ├── [E02. Automation](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E02.%E8%87%AA%E5%8A%A8%E5%8C%96.Eng.md) (Executable Norms and Zero-Friction Governance)
+│   ├── [E03. Web3](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E03.Web3.Eng.md) (Intent Constitution and On-Chain Separation of Powers)
+│   ├── [E04. AI Alignment](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E04.AI%E5%AF%B9%E9%BD%90.Eng.md) (Anti-Entropy Agents and Civilization Inheritance)
+│   ├── [E05. Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) (Adversarial Testing and Horse Race Mechanism)
+│   └── [E06. DomainExt](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E06.%E9%A2%86%E5%9F%9F%E6%89%A9%E5%B1%95.Eng.md) (Multi-Domain Application Index)
 │
 ├── 🧩 H-Series: Humanities Narrative (Humanities)
-│   ├── [H01. Refactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.v10.0.md) (Twenty-One Universal Perspectives of the Architect)
+│   ├── [H01. Refactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.md) (Twenty-One Universal Perspectives of the Architect)
 │   ├── [H02. Guide](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H02.%E5%AF%BC%E8%AF%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%BB%E8%BF%99%E6%9C%AC%E4%B9%A6.Hum.md)
 │   ├── [H03. Story](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H03.%E6%95%85%E4%BA%8B%EF%BC%9A%E5%B0%8F%E9%99%88%E7%9A%84%E9%82%A3%E6%9D%A1%E8%B7%AF.Hum.md)
 │   ├── [H04. CognitiveAdventure](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H04.%E8%AE%A4%E7%9F%A5%E5%86%92%E9%99%A9.Hum.md)
@@ -1630,14 +1630,14 @@ ASTO Document System
 │   └── [L03. Values (Lite)](../%E9%9D%92%E6%98%A5%E7%89%88/ASTO05.%E4%BB%B7%E5%80%BC%E4%B8%8E%E8%BE%B9%E7%95%8C.Lite.v1.0.md)
 │
 └── 🌍 Ext-Series: Domain Extensions (Extensions)
-│   ├── [Ext.01 Law](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.01.%E6%B3%95%E5%BE%8B.Sci.P.v1.0.md)
-│   ├── [Ext.02 Science](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.02.%E7%A7%91%E5%AD%A6.Sci.P.v1.0.md)
-│   ├── [Ext.03 Organization](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.03.%E7%BB%84%E7%BB%87.Sci.P.v1.0.md)
-│   ├── [Ext.04 Education](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.04.%E6%95%99%E8%82%B2.Sci.P.v1.0.md)
-│   ├── [Ext.05 City](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.05.%E5%9F%8E%E5%B8%82.Sci.P.v1.0.md)
-│   ├── [Ext.06 Healthcare](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.06.%E5%8C%BB%E7%96%97.Sci.P.v1.0.md)
-│   ├── [Ext.07 Universe](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.07.%E5%AE%87%E5%AE%99.Sci.P.v1.0.md)
-│   └── [Ext.08 WhiteSpace](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.08.%E7%95%99%E7%99%BD.Sci.P.v8.0.md)
+│   ├── [Ext.01 Law](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.01.%E6%B3%95%E5%BE%8B.Sci.P.md)
+│   ├── [Ext.02 Science](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.02.%E7%A7%91%E5%AD%A6.Sci.P.md)
+│   ├── [Ext.03 Organization](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.03.%E7%BB%84%E7%BB%87.Sci.P.md)
+│   ├── [Ext.04 Education](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.04.%E6%95%99%E8%82%B2.Sci.P.md)
+│   ├── [Ext.05 City](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.05.%E5%9F%8E%E5%B8%82.Sci.P.md)
+│   ├── [Ext.06 Healthcare](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.06.%E5%8C%BB%E7%96%97.Sci.P.md)
+│   ├── [Ext.07 Universe](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.07.%E5%AE%87%E5%AE%99.Sci.P.md)
+│   └── [Ext.08 WhiteSpace](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.08.%E7%95%99%E7%99%BD.Sci.P.md)
 ```
 
 > 🔙 [Return to Main Directory](../readme.md)

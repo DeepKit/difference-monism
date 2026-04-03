@@ -5,13 +5,13 @@
 
 **英文标题**：Emergency Compression Must Be Reversible: A Minimal Procedural Theory of Correction Capacity, Exit Realization, and Deep Harm
 
-**摘要**：本文主张，可复归程序而非抽象效率或抽象自由，应构成危机治理的最低裁决层。危机压缩并非天然不正当，但它若要保持可辩护性，至少必须保留外部复审入口、可执行的退出触发器，以及对继续限制一方的举证责任。为把这一判断写成可复核命题，本文提出四项最小硬字段：纠错能力、纠错载体、退出兑现度、深度伤害，并据此处理魏玛紧急状态、日裔美国人拘禁、USA PATRIOT Act 与纽伦堡审判四个制度域样本。本文不提供制度终局排名，只捍卫一个更窄的程序结论：危机压缩若不可复归，就会反向侵蚀它声称要保卫的共同体承诺结构。文章的目标不是给出完整宪制蓝图，而是把危机治理争论压到可比较的程序接口、案例快照与结论边界。
+**摘要**：本文主张，危机压缩并非天然不正当，但若要保持可辩护性，至少必须保留外部复审入口、可执行的退出触发器，以及对继续限制一方的举证责任。与把争论简化为效率与自由对立不同，本文把最低裁决层压到四项硬字段：纠错能力、纠错载体、退出兑现度与深度伤害，并要求每一案都回答谁能记录错误、谁能启动复审、退出条件如何兑现、伤害是否已深到不应被事后修辞冲销。文章据此重读魏玛紧急状态、日裔美国人拘禁、USA PATRIOT Act 与纽伦堡审判，区分“失控压缩”与“回缩或追责”两组程序样本，并明确禁止把它们写成制度终局排名或同级历史复现。本文只依赖法律文本、判例与官方报告构成的最小事实链，因此宁可缩限结论，也不把材料并列误写成同级历史类比。文章不提供完整宪制蓝图，只保留程序门槛、案例快照与禁止结论。本文捍卫的只是一个较窄结论：危机压缩若不能被复审、被限制、被拉回，就会反向侵蚀它声称要保卫的共同体承诺结构。
 
-**关键词**：危机治理；纠错能力；可复归程序；退出兑现度；深度伤害；制度比较
+**关键词**：危机治理；纠错能力；可复归程序；退出兑现度；深度伤害
 
 **Abstract**: This article argues that reversible procedure, rather than abstract efficiency or abstract liberty, should constitute the minimal level of adjudication in crisis governance. Crisis compression is not illegitimate by definition, but it remains defensible only if a polity preserves an external review channel, an executable exit trigger, and a burden of proof on those who seek to continue restrictions. To render this claim reviewable, the article introduces four minimal hard fields: correction capacity, correction carriers, exit realization, and deep harm. It applies them to four first-round institutional samples: the Weimar emergency regime, the incarceration of Japanese Americans, the USA PATRIOT Act, and the Nuremberg trials. The article does not offer a final ranking of institutions or civilizations. Its narrower procedural claim is that when crisis compression ceases to be reversible, it begins to erode the commitment structure it claims to protect. The aim is not to provide a complete constitutional blueprint, but to relocate the debate to comparable procedural interfaces, case snapshots, and conclusion boundaries.
 
-**Keywords**: crisis governance; correction capacity; reversible procedure; exit realization; deep harm; institutional comparison
+**Keywords**: crisis governance; correction capacity; reversible procedure; exit realization; deep harm
 
 ## 一、引言
 

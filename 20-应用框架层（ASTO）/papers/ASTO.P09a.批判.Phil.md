@@ -669,14 +669,14 @@ ASTO 文档体系
 │   └── [L03. 价值 (Lite)](./青春版/ASTO05.价值与边界.Lite.v1.0.md)
 │
 └── 🌍 Ext 系列：领域扩展 (Extensions)
-    ├── [Ext.01 法律](./工程版/ASTO.Ext.01.法律.Sci.P.v1.0.md)
-    ├── [Ext.02 科学](./工程版/ASTO.Ext.02.科学.Sci.P.v1.0.md)
-    ├── [Ext.03 组织](./工程版/ASTO.Ext.03.组织.Sci.P.v1.0.md)
-    ├── [Ext.04 教育](./工程版/ASTO.Ext.04.教育.Sci.P.v1.0.md)
-    ├── [Ext.05 城市](./工程版/ASTO.Ext.05.城市.Sci.P.v1.0.md)
-    ├── [Ext.06 医疗](./工程版/ASTO.Ext.06.医疗.Sci.P.v1.0.md)
-    ├── [Ext.07 宇宙](./工程版/ASTO.Ext.07.宇宙.Sci.P.v1.0.md)
-    └── [Ext.08 留白](./工程版/ASTO.Ext.08.留白.Sci.P.v8.0.md)
+    ├── [Ext.01 法律](./工程版/ASTO.Ext.01.法律.Sci.P.md)
+    ├── [Ext.02 科学](./工程版/ASTO.Ext.02.科学.Sci.P.md)
+    ├── [Ext.03 组织](./工程版/ASTO.Ext.03.组织.Sci.P.md)
+    ├── [Ext.04 教育](./工程版/ASTO.Ext.04.教育.Sci.P.md)
+    ├── [Ext.05 城市](./工程版/ASTO.Ext.05.城市.Sci.P.md)
+    ├── [Ext.06 医疗](./工程版/ASTO.Ext.06.医疗.Sci.P.md)
+    ├── [Ext.07 宇宙](./工程版/ASTO.Ext.07.宇宙.Sci.P.md)
+    └── [Ext.08 留白](./工程版/ASTO.Ext.08.留白.Sci.P.md)
 ```
 
 > 🔙 [返回总目录](./readme.md)

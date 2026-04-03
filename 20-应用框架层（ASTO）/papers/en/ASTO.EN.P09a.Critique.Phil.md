@@ -600,15 +600,15 @@ ASTO Documentation System
 │   └── [P13. Epilogue](./ASTO.EN.P13.Epilogue.Phil.md) (Ultimate Concern of the System)
 │
 ├── 🛠️ E-Series: Engineering
-│   ├── [E01. Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.v2.0.md) (Life|Humanities|Engineering Three-Track Reader)
-│   ├── [E02. Automation](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E02.%E8%87%AA%E5%8A%A8%E5%8C%96.Eng.v8.0.md) (Executable Norms and Zero-Friction Governance)
-│   ├── [E03. Web3](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E03.Web3.Eng.v8.0.md) (Intent Constitution and On-Chain Separation of Powers)
-│   ├── [E04. AI Alignment](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E04.AI%E5%AF%B9%E9%BD%90.Eng.v8.0.md) (Negentropy Agents and Civilizational Inheritance)
-│   ├── [E05. Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) (Adversarial Testing and Horse Racing Mechanism)
-│   └── [E06. Extension](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E06.%E9%A2%86%E5%9F%9F%E6%89%A9%E5%B1%95.Eng.v1.0.md) (Multi-Domain Application Index)
+│   ├── [E01. Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.md) (Life|Humanities|Engineering Three-Track Reader)
+│   ├── [E02. Automation](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E02.%E8%87%AA%E5%8A%A8%E5%8C%96.Eng.md) (Executable Norms and Zero-Friction Governance)
+│   ├── [E03. Web3](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E03.Web3.Eng.md) (Intent Constitution and On-Chain Separation of Powers)
+│   ├── [E04. AI Alignment](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E04.AI%E5%AF%B9%E9%BD%90.Eng.md) (Negentropy Agents and Civilizational Inheritance)
+│   ├── [E05. Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) (Adversarial Testing and Horse Racing Mechanism)
+│   └── [E06. Extension](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E06.%E9%A2%86%E5%9F%9F%E6%89%A9%E5%B1%95.Eng.md) (Multi-Domain Application Index)
 │
 ├── 🧩 H-Series: Humanities
-│   ├── [H01. Refactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.v10.0.md) (Twenty-One Cosmic Perspectives of an Architect)
+│   ├── [H01. Refactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.md) (Twenty-One Cosmic Perspectives of an Architect)
 │   ├── [H02. Guide](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H02.%E5%AF%BC%E8%AF%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%BB%E8%BF%99%E6%9C%AC%E4%B9%A6.Hum.md)
 │   ├── [H03. Story](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H03.%E6%95%85%E4%BA%8B%EF%BC%9A%E5%B0%8F%E9%99%88%E7%9A%84%E9%82%A3%E6%9D%A1%E8%B7%AF.Hum.md)
 │   ├── [H04. Adventure](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H04.%E8%AE%A4%E7%9F%A5%E5%86%92%E9%99%A9.Hum.md)
@@ -621,14 +621,14 @@ ASTO Documentation System
 │   └── [L03. Values (Lite)](../%E9%9D%92%E6%98%A5%E7%89%88/ASTO05.%E4%BB%B7%E5%80%BC%E4%B8%8E%E8%BE%B9%E7%95%8C.Lite.v1.0.md)
 │
 └── 🌍 Ext Series: Extensions
-    ├── [Ext.01 Law](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.01.%E6%B3%95%E5%BE%8B.Sci.P.v1.0.md)
-    ├── [Ext.02 Science](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.02.%E7%A7%91%E5%AD%A6.Sci.P.v1.0.md)
-    ├── [Ext.03 Organization](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.03.%E7%BB%84%E7%BB%87.Sci.P.v1.0.md)
-    ├── [Ext.04 Education](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.04.%E6%95%99%E8%82%B2.Sci.P.v1.0.md)
-    ├── [Ext.05 City](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.05.%E5%9F%8E%E5%B8%82.Sci.P.v1.0.md)
-    ├── [Ext.06 Medical](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.06.%E5%8C%BB%E7%96%97.Sci.P.v1.0.md)
-    ├── [Ext.07 Universe](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.07.%E5%AE%87%E5%AE%99.Sci.P.v1.0.md)
-    └── [Ext.08 Blank](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.08.%E7%95%99%E7%99%BD.Sci.P.v8.0.md)
+    ├── [Ext.01 Law](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.01.%E6%B3%95%E5%BE%8B.Sci.P.md)
+    ├── [Ext.02 Science](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.02.%E7%A7%91%E5%AD%A6.Sci.P.md)
+    ├── [Ext.03 Organization](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.03.%E7%BB%84%E7%BB%87.Sci.P.md)
+    ├── [Ext.04 Education](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.04.%E6%95%99%E8%82%B2.Sci.P.md)
+    ├── [Ext.05 City](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.05.%E5%9F%8E%E5%B8%82.Sci.P.md)
+    ├── [Ext.06 Medical](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.06.%E5%8C%BB%E7%96%97.Sci.P.md)
+    ├── [Ext.07 Universe](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.07.%E5%AE%87%E5%AE%99.Sci.P.md)
+    └── [Ext.08 Blank](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.08.%E7%95%99%E7%99%BD.Sci.P.md)
 ```
 
 > 🔙 [Return to Table of Contents](../readme.md)

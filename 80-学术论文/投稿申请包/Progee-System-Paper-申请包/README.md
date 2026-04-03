@@ -1,13 +1,12 @@
 # Progee System Paper 申请包
 
-> 日期：2026-03-30
 > 论文：`Progee v2：一种证据优先、由状态机治理的 AI 辅助软件工程系统`
-> 当前状态：系统 / 工具论文，已形成申请包骨架
+> 当前状态：中英文主稿已具；匿名送审初稿已具；投稿材料已标准化
 
 ## 当前包内有什么
 
 1. `paper/`
-中文主稿、英文主稿入口与匿名版状态说明。
+中文主稿、英文主稿入口与匿名版入口。
 
 2. `submission/`
 申请指南、投稿检查清单、目标期刊/会议分流说明。
@@ -22,16 +21,39 @@
 
 - 中文主稿
 - 英文主稿
+- 匿名送审初稿
 - 复现路径与 artifact 说明基础
+- artifact 交付目录草案
+- 结果与主张映射表
+- 审稿人最小复核路径
+- 附录与实现锚点表
 - 单篇申请包目录
+- 投稿信模板
+- 作者信息与投稿元数据
+- 摘要版简介
+- 目标期刊适配表
+- 退修最小回应模板
+- 补充材料说明
 
 ## 当前还缺
 
-- 匿名送审版
 - 最终目标期刊 / 会议定案
+- artifact 与复现材料按唯一 venue 体例统一并冻结交付版本
+- 作者机构 / ORCID / 平台字段最终填实
 - 外部投稿平台动作
 
 ## 主文入口
 
-- 中文稿：[10-Progee-System-Paper-CN.md](D:\_Progs\02Business\progee2\docs\articles\10-Progee-System-Paper-CN.md)
-- 英文稿：[10-Progee-System-Paper-EN.md](D:\_Progs\02Business\progee2\docs\articles\10-Progee-System-Paper-EN.md)
+- 中文稿：[10-Progee-System-Paper-CN.md](D:\_Progs\一元论\80-学术论文\外部迁入正文\02Business\progee2\docs\articles\10-Progee-System-Paper-CN.md)
+- 英文稿：[10-Progee-System-Paper-EN.md](D:\_Progs\一元论\80-学术论文\外部迁入正文\02Business\progee2\docs\articles\10-Progee-System-Paper-EN.md)
+- 包内英文入口：[Progee-System-Paper.en.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\paper\en\Progee-System-Paper.en.md)
+- 包内匿名稿：[Progee-System-Paper.blind.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\paper\blind\Progee-System-Paper.blind.md)
+
+## 提交入口
+
+- 期刊适配：[目标期刊适配表.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\目标期刊适配表.md)
+- 投稿信：[投稿信模板.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\投稿信模板.md)
+- 元数据：[作者信息与投稿元数据.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\作者信息与投稿元数据.md)
+- 摘要版简介：[摘要版简介.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\摘要版简介.md)
+- 退修模板：[退修最小回应模板.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\退修最小回应模板.md)
+- 补充材料说明：[补充材料说明.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\补充材料说明.md)

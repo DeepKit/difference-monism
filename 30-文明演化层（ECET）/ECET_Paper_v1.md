@@ -1,4 +1,4 @@
-﻿# Evolutionary Constraint Existential Theory (ECET): A Cross-Domain Governance Framework for Accountability in Complex and AI-Driven Systems
+# Evolutionary Constraint Existential Theory (ECET): A Cross-Domain Governance Framework for Accountability in Complex and AI-Driven Systems
 
 **Author**: Yi Fu (付毅)
 **Affiliation**: ODDFounder
@@ -410,6 +410,8 @@ Rules:
 
 ECET's three axioms are not directly falsifiable — this is the same epistemic status as Darwinism and the second law of thermodynamics. But a framework that generates no testable predictions is philosophy, not a scientific tool.
 
+For public consistency, the current formal hypothesis layer remains H1-H10. The existing simulation appendix should only be read as concept-level support for H1a / H2a / H4a, not as completed empirical validation of the full H1 / H2 / H4 claims.
+
 ECET resolves this through derived hypotheses: the axioms themselves are not falsifiable, but specific hypotheses derived from the axioms can be experimentally verified or falsified.
 
 > If the majority of H1–H10 are falsified, the ECET framework requires revision. This is the scientific honesty of the theory.
@@ -532,7 +534,7 @@ Existing frameworks can be reinterpreted, evaluated, and improved under ECET's m
 
 **Operationalization gaps**: The three boundary conditions provide structural guidance but not specific parameter values (e.g., the specific thresholds T₁ and T₂ for scale-triggered hierarchical accountability). Domain-specific calibration is required.
 
-**Empirical validation**: H1–H10 are derived hypotheses, not yet empirically validated at scale. Preliminary simulation evidence supports H1, H2, and H4 (see companion simulation report), but large-scale empirical validation remains future work.
+**Empirical validation**: H1–H10 are derived hypotheses, not yet empirically validated at scale. The current simulation appendix provides proof-of-concept support only for the sub-hypotheses H1a, H2a, and H4a, rather than completed empirical validation of the full H1, H2, and H4 claims. Large-scale empirical validation remains future work.
 
 **Self-reference**: ECET itself is subject to the incompleteness constraint — it cannot claim to be a complete description of incompleteness. This is acknowledged and handled through pragmatic truncation: ECET aims to be useful at a sufficient level of abstraction, not to achieve infinite regress.
 
@@ -653,3 +655,5 @@ Turing, A. M. (1936). On computable numbers, with an application to the Entschei
 This manuscript belongs to the ECET framework package. For the ASTO to ECET derivation chain, framework positioning, and core terminology definitions, see:
 
 **[ECET.A00 Theoretical Foundation](./ECET.A00_理论基础.md)**
+
+

@@ -1047,7 +1047,7 @@ If Fundamental and Taboo are static boundaries, the **Traffic Light Protocol** i
 > **Conclusion**: The progress of civilization is not in turning every red light into green, but in **guarding red, optimizing yellow, and releasing green**.
 
 ### 10.4 Engineering Hint (Moved to E05)
-The engineering part is moved to **[ASTO.E05. Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md)**, including: adversarial testing, horse racing, seal/unseal, artifact elevation, and concrete templates/metrics.
+The engineering part is moved to **[ASTO.E05. Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md)**, including: adversarial testing, horse racing, seal/unseal, artifact elevation, and concrete templates/metrics.
 This chapter in the Manifesto only keeps the philosophical framework of "red lines" and "anchors", leaving engineering to be landed and refined in the E-series.
 
 ---
@@ -1258,12 +1258,12 @@ ASTO is not only philosophical speculation; it must be materialized in code and 
 
 | Mechanism | Core Intent (Why) | Philosophical Mapping | See |
 | :--- | :--- | :--- | :--- |
-| **Functional Tree** | **Structure visualization**: decompose a large system into a visible tree, clarifying dependencies and responsibility boundaries. | "Structure is skeleton" | [E01 Practice Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.v2.0.md) |
-| **Bug Intention Map** | **Intent alignment**: bugs are often deviations between intent and reality. The map restores original intent and assumptions. | Resolve | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) |
-| **Mutation Testing** | **Trust transfer**: do not trust code, trust tests. Mutate code on purpose and see if tests catch it. | Anti-fragility | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) |
-| **Adversarial Testing** | **Pressure injection**: validate not only "it works" but "it resists attack". | Perturbation universality | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) |
-| **Horse Racing** | **Evolutionary choice**: for uncertain oriented-dimension paths, do not pre-commit to a single solution; run multiple options in parallel and select. | Field selection | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) |
-| **Best Practices** | **Experience condensation**: solidify successful perturbation patterns into reusable templates (Re-origin). | Re-origin (Return) | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) |
+| **Functional Tree** | **Structure visualization**: decompose a large system into a visible tree, clarifying dependencies and responsibility boundaries. | "Structure is skeleton" | [E01 Practice Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.md) |
+| **Bug Intention Map** | **Intent alignment**: bugs are often deviations between intent and reality. The map restores original intent and assumptions. | Resolve | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) |
+| **Mutation Testing** | **Trust transfer**: do not trust code, trust tests. Mutate code on purpose and see if tests catch it. | Anti-fragility | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) |
+| **Adversarial Testing** | **Pressure injection**: validate not only "it works" but "it resists attack". | Perturbation universality | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) |
+| **Horse Racing** | **Evolutionary choice**: for uncertain oriented-dimension paths, do not pre-commit to a single solution; run multiple options in parallel and select. | Field selection | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) |
+| **Best Practices** | **Experience condensation**: solidify successful perturbation patterns into reusable templates (Re-origin). | Re-origin (Return) | [E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) |
 
 > Hint: Manifesto gives the "why"; engineering handbooks give the "how". Read the E-series for operational guidance.
 
@@ -1415,7 +1415,7 @@ Purpose: translate ASTO philosophical concepts into engineering "executable lang
 | **Perturbation** | interaction / coupling (high-intensity interval / extreme degree) | like a storm that tests structural stability |
 | **Motility** | evolvability / rollbackability | like joints: without movement you cannot survive |
 
-> For further engineering details, see: **[ASTO.E05. Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md)**.
+> For further engineering details, see: **[ASTO.E05. Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md)**.
 
 ## Appendix B: System Map and Toolbox Index (Full Version)
 
@@ -1429,19 +1429,19 @@ ASTO v2.0 is large. Choose your path by role.
 ### B.2 If you are an engineer solving real systems...
 
 *   Read **[P05a. Axioms](./ASTO.EN.P05a.Axioms.Phil.md)**: the "physics" of systems.
-*   Read **[H01. Reconstruction](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.v10.0.md)**: the architect's viewpoint.
+*   Read **[H01. Reconstruction](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.md)**: the architect's viewpoint.
 *   Most importantly, use the toolbox index below.
 
 ### B.3 Engineering Toolbox Index
 
 | Core Question | Tool / Mechanism | Document |
 | :--- | :--- | :--- |
-| How to ensure compliance? | Traffic Light Protocol | [ASTO.E02 Automation](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E02.%E8%87%AA%E5%8A%A8%E5%8C%96.Eng.v8.0.md) |
-| How to test system limits? | Adversarial Testing | [ASTO.E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) |
-| How to choose among multiple plans? | Horse Racing | [ASTO.E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) |
-| How to release without rollback? | Seal/Unseal | [ASTO.E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.v1.0.md) |
-| Web3 contracts have bugs, what to do? | Intent Constitution | [ASTO.E03 Web3](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E03.Web3.Eng.v8.0.md) |
-| AI hallucinates, what to do? | RLEN (Executable Norms) | [ASTO.E04 AI Alignment](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E04.AI%E5%AF%B9%E9%BD%90.Eng.v8.0.md) |
+| How to ensure compliance? | Traffic Light Protocol | [ASTO.E02 Automation](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E02.%E8%87%AA%E5%8A%A8%E5%8C%96.Eng.md) |
+| How to test system limits? | Adversarial Testing | [ASTO.E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) |
+| How to choose among multiple plans? | Horse Racing | [ASTO.E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) |
+| How to release without rollback? | Seal/Unseal | [ASTO.E05 Engineering Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) |
+| Web3 contracts have bugs, what to do? | Intent Constitution | [ASTO.E03 Web3](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E03.Web3.Eng.md) |
+| AI hallucinates, what to do? | RLEN (Executable Norms) | [ASTO.E04 AI Alignment](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E04.AI%E5%AF%B9%E9%BD%90.Eng.md) |
 | How to prevent vote manipulation? | NCP Protocol | [P10. Democracy](./ASTO.EN.P10.Democracy.Phil.md) |
 | The system collapsed, how to restart? | Theory Immune System (TIS) | [P11. Resilience](./ASTO.EN.P11.Resilience.Phil.md) |
 
@@ -1501,13 +1501,13 @@ According to the field model, identify "leverage points": positions where minima
 | 04 | [ASTO.EN.P04. Manifesto](./ASTO.EN.P04.Manifesto.Phil.md) | The manifesto of Attribute-Set transition |
 | 05 | [ASTO.EN.P06. Values](./ASTO.EN.P06.Values.Phil.md) | Plurality test and ethical circuit-breaker |
 | 06 | [ASTO.EN.P05. Axioms](./ASTO.EN.P05a.Axioms.Phil.md) | Thermodynamics and structural ontology |
-| 07 | [H01. Reconstruction](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.v10.0.md) | Architect's viewpoint (CN, humanities track) |
-| 08 | [E01. Practice Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.v2.0.md) | Engineering practice entry |
+| 07 | [H01. Reconstruction](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.md) | Architect's viewpoint (CN, humanities track) |
+| 08 | [E01. Practice Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.md) | Engineering practice entry |
 | 09 | [ASTO.EN.P07. Freedom](./ASTO.EN.P07.Freedom.Phil.md) | Boundary is freedom |
 | 10 | [ASTO.EN.P09. Critique](./ASTO.EN.P09a.Critique.Phil.md) | Anti-totalitarian charter |
-| 11 | [E02. Automation](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E02.%E8%87%AA%E5%8A%A8%E5%8C%96.Eng.v8.0.md) | Executable norms and frictionless governance |
-| 12 | [E03. Web3](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E03.Web3.Eng.v8.0.md) | Intent constitution and on-chain separation of powers |
-| 13 | [E04. AI Alignment](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E04.AI%E5%AF%B9%E9%BD%90.Eng.v8.0.md) | Anti-entropy agents and civilization transmission |
+| 11 | [E02. Automation](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E02.%E8%87%AA%E5%8A%A8%E5%8C%96.Eng.md) | Executable norms and frictionless governance |
+| 12 | [E03. Web3](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E03.Web3.Eng.md) | Intent constitution and on-chain separation of powers |
+| 13 | [E04. AI Alignment](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E04.AI%E5%AF%B9%E9%BD%90.Eng.md) | Anti-entropy agents and civilization transmission |
 | 14 | [ASTO.EN.P10. Democracy](./ASTO.EN.P10.Democracy.Phil.md) | Dialogue platform and NCP protocol |
 | 15 | [ASTO.EN.P08. Exception](./ASTO.EN.P08.Exception.Phil.md) | From religious experience to interstellar sovereignty |
 | 16 | [ASTO.EN.P11. Resilience](./ASTO.EN.P11.Resilience.Phil.md) | Self-immunity and anti-fragility |

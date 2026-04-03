@@ -349,6 +349,6 @@ class CognitiveAttributeSet:
 
 **关联文件**：
 - 理论基础：[ASTO03.认识论](../ASTO.P03.认识论.Phil.md)、[ASTO04.宣言](../ASTO.P04.宣言.Phil.md)
-- AI应用：[ASTO13.AI](../工程版/ASTO.E04.AI对齐.Eng.v8.0.md)
+- AI应用：[ASTO13.AI](../工程版/ASTO.E04.AI对齐.Eng.md)
 - 组织设计：[ASTO-Ext.03.组织](./ASTO-Ext.03.组织.Sci.P.v1.0.md)
 

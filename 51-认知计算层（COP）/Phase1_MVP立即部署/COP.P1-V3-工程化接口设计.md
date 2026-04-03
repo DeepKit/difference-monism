@@ -1,13 +1,17 @@
 # COP · Phase 1 · V3 — 工程化接口设计
 
 > **可立即部署**：开发团队拿到这份文件，即可开始工程实现
-> **目标产品**：`asto.cc/diag` 的后端计算服务
+>
+> **目标产品**：任何调用 COP `Phase 1` 协议的前台，都应以本接口为准
+>
+> **本轮变化**：输出字段从“一个类型 + 一个风险值”升级为“类型候选 + 分类集中度 + 结构风险 + 分流状态 + 转介接口”
 
 ---
 
 ## 一、数据结构
 
 ### 1. 用户输入结构（Request Body）
+
 ```json
 {
   "answers": {
@@ -25,6 +29,7 @@
 ```
 
 ### 2. 标准输出结构（Response Body）
+
 ```json
 {
   "primary_type": "A",
@@ -35,22 +40,27 @@
     "C": 3,
     "D": 5
   },
-  "confidence": 0.61,
-  "risk_level": "HIGH",
+  "classification_confidence": 0.41,
+  "structural_risk": "HIGH",
+  "triage_status": "REFER",
   "tags": ["结构循环依赖", "信息失真"],
+  "refer_to": ["HUMAN_REVIEW", "TAT_REVIEW"],
   "actions": [
-    "投放负向探针",
-    "私下验证真实意见",
-    "书面确认责任"
+    "暂停自动闭环",
+    "升级人工复核",
+    "补录责任接口与阈值信息"
   ],
   "anti_actions": [
-    "继续沉默",
-    "默认共识"
+    "直接执行高强度动作",
+    "把分类集中度当成低风险证明"
   ]
 }
 ```
 
-### 3. 权重矩阵配置（必须外置为配置文件，不能写死在代码里）
+### 3. 权重矩阵配置
+
+权重矩阵必须外置为配置文件，不能写死在代码里。
+
 ```json
 {
   "Q1": {
@@ -67,52 +77,109 @@
   }
 }
 ```
-> ⚠️ 完整权重矩阵见 `COP.P1-V2-加权判定引擎.md`
+
+> 完整矩阵见 `COP.P1-V2-加权判定引擎.md`
 
 ---
 
 ## 二、核心算法伪代码
 
 ```python
-# Step 1：初始化
 score = {"A": 0, "B": 0, "C": 0, "D": 0}
 
-# Step 2：遍历所有问题
-for q in answers:
-    selected = answers[q]
+# Step 1：累积分数
+for q, selected in answers.items():
     weights = WEIGHT_MATRIX[q][selected]
-    for t in ["A","B","C","D"]:
+    for t in ["A", "B", "C", "D"]:
         score[t] += weights[t]
 
-# Step 3：冲突规则（优先级覆盖）
+# Step 2：基础排序
+sorted_types = sorted(score, key=score.get, reverse=True)
+primary = sorted_types[0]
+secondary = sorted_types[1]
+primary_score = score[primary]
+secondary_score = score[secondary]
+total_score = sum(score.values())
+
+# Step 3：硬规则
+hard_rule_hits = 0
 if answers["Q4"] == "D":
-    primary = "B"                         # 死锁优先
-elif answers["Q5"] == "D" and answers["Q2"] == "D":
-    primary = "D"                         # 沉没成本锁定
-elif answers["Q2"] == "A" and answers["Q3"] in ["C","D"]:
-    primary = "A"                         # 共识幻觉覆盖
-else:
-    primary = max(score, key=score.get)   # 取最高分
+    primary = "B"
+    hard_rule_hits += 1
+if answers["Q5"] == "D" and answers["Q2"] == "D":
+    primary = "D"
+    hard_rule_hits += 1
+if answers["Q2"] == "A" and answers["Q3"] in ["C", "D"]:
+    primary = "A"
+    hard_rule_hits += 1
+
+primary_score = score[primary]
 
 # Step 4：副类型
-sorted_types = sorted(score, key=score.get, reverse=True)
-secondary = sorted_types[1]
-if score[secondary] < 0.6 * score[primary]:
+if secondary_score < 0.60 * primary_score:
     secondary = None
 
-# Step 5：风险等级
-total = sum(score.values())
-confidence = score[primary] / total if total > 0 else 0
-risk = "HIGH" if confidence > 0.6 else ("MEDIUM" if confidence > 0.4 else "LOW")
+# Step 5：分类集中度
+classification_confidence = primary_score / total_score if total_score > 0 else 0
 
-# Step 6：副标签生成
+# Step 6：结构风险
+risk_points = 0
+for q in ["Q2", "Q3", "Q4", "Q5", "Q7", "Q8", "Q9"]:
+    if answers[q] in ["C", "D"]:
+        risk_points += 1
+if answers["Q4"] == "D":
+    risk_points += 1
+if answers["Q5"] == "D" and answers["Q2"] == "D":
+    risk_points += 1
+
+if answers["Q4"] == "D" or (answers["Q5"] == "D" and answers["Q2"] == "D") or risk_points >= 4:
+    structural_risk = "HIGH"
+elif risk_points >= 2:
+    structural_risk = "MEDIUM"
+else:
+    structural_risk = "LOW"
+
+# Step 7：分流状态
+if total_score < 6:
+    triage_status = "UNKNOWN"
+    primary = None
+    secondary = None
+elif hard_rule_hits >= 2 or (classification_confidence < 0.40 and structural_risk == "HIGH"):
+    triage_status = "FREEZE"
+    primary = None
+    secondary = None
+elif structural_risk == "HIGH" or answers["Q8"] in ["C", "D"] or answers["Q9"] == "D":
+    triage_status = "REFER"
+elif secondary is not None and secondary_score >= 0.85 * primary_score:
+    triage_status = "MIXED"
+else:
+    triage_status = "RESOLVE"
+
+# Step 8：标签
 tags = []
-if answers["Q4"] in ["C","D"]: tags.append("结构循环依赖")
-if answers["Q3"] in ["C","D"]: tags.append("信息失真")
-if answers["Q5"] in ["C","D"]: tags.append("时间轴污染")
-if answers["Q7"] in ["C","D"]: tags.append("系统被套利")
-if answers["Q6"] in ["C","D"]: tags.append("样本偏差")
-if answers["Q8"] in ["C","D"]: tags.append("无阈值控制")
+if answers["Q4"] in ["C", "D"]:
+    tags.append("结构循环依赖")
+if answers["Q3"] in ["C", "D"]:
+    tags.append("信息失真")
+if answers["Q5"] in ["C", "D"]:
+    tags.append("时间轴污染")
+if answers["Q7"] in ["C", "D"]:
+    tags.append("系统被套利")
+if answers["Q6"] in ["C", "D"]:
+    tags.append("样本偏差")
+if answers["Q8"] in ["C", "D"]:
+    tags.append("无阈值控制")
+if answers["Q9"] in ["C", "D"]:
+    tags.append("外部约束过强")
+
+# Step 9：转介接口
+refer_to = []
+if triage_status in ["FREEZE", "UNKNOWN", "REFER"]:
+    refer_to.append("HUMAN_REVIEW")
+if structural_risk == "HIGH":
+    refer_to.append("TAT_REVIEW")
+if answers["Q8"] in ["C", "D"] or answers["Q9"] == "D":
+    refer_to.append("ODD_AUDIT")
 ```
 
 ---
@@ -120,71 +187,103 @@ if answers["Q8"] in ["C","D"]: tags.append("无阈值控制")
 ## 三、API 接口规范
 
 ### POST `/analyze`
+
 **功能**：提交 9 题答案，返回结构诊断结果
 
-**请求示例**：
+**请求示例**
+
 ```json
 POST https://api.asto.cc/analyze
 Content-Type: application/json
 
 {
-  "answers": { "Q1":"C","Q2":"B","Q3":"D","Q4":"C","Q5":"B","Q6":"C","Q7":"B","Q8":"C","Q9":"C" }
+  "answers": {
+    "Q1": "C",
+    "Q2": "B",
+    "Q3": "D",
+    "Q4": "C",
+    "Q5": "B",
+    "Q6": "C",
+    "Q7": "B",
+    "Q8": "C",
+    "Q9": "C"
+  }
 }
 ```
 
-**返回示例**：
+**返回示例**
+
 ```json
 {
   "primary_type": "B",
   "secondary_type": "A",
-  "confidence": 0.67,
-  "risk_level": "HIGH",
-  "tags": ["结构循环依赖","信息失真"],
-  "actions": ["拉所有相关方进同一沟通场","明确指出依赖冲突","引入上级强制决策"],
-  "anti_actions": ["单点沟通","继续当中间人"]
+  "classification_confidence": 0.52,
+  "structural_risk": "HIGH",
+  "triage_status": "REFER",
+  "tags": ["结构循环依赖", "信息失真", "无阈值控制"],
+  "refer_to": ["HUMAN_REVIEW", "TAT_REVIEW", "ODD_AUDIT"],
+  "actions": [
+    "暂停默认推进",
+    "转人工复核依赖链",
+    "补录阈值控制与责任接口"
+  ],
+  "anti_actions": [
+    "把分类结果直接当作执行许可",
+    "在高风险下继续自动推进"
+  ]
 }
 ```
 
----
+### POST `/feedback`
 
-### POST `/feedback`（Phase 2 预留接口）
-**功能**：收集用户执行动作后的真实结果，为 V4 动态权重训练提供数据燃料
+**功能**：收集用户执行动作后的真实结果，为 `Phase 2` 提供训练素材
 
 ```json
 POST /feedback
 {
   "user_id": "xxx",
   "primary_type": "B",
+  "triage_status": "REFER",
   "action_taken": true,
-  "which_action": "拉群对撞",
-  "result": "improved"  // improved | unchanged | worse
+  "which_action": "升级人工复核",
+  "result": "improved"
 }
 ```
 
-> ⚠️ 此接口在 Phase 1 可以仅做数据记录，Phase 2 启动后开始触发权重修正逻辑
+> `Phase 1` 只做数据记录；在补齐标签质量控制、版本回滚和对照规则前，不自动进入权重更新。
 
 ---
 
-## 四、动作映射配置（外置，可热更新）
+## 四、动作映射规则
+
+### 1. `RESOLVE`
+
+允许返回类型相关的有限动作集。
+
+### 2. `MIXED`
+
+动作集必须收缩为低强度探针，例如：
+
+- 补充信息
+- 对撞验证
+- 小步试探
+
+### 3. `FREEZE / UNKNOWN / REFER`
+
+优先返回安全动作，而不是强处置动作：
 
 ```json
 {
-  "A": {
-    "actions": ["投放负向探针","私下验证真实意见","书面确认责任"],
-    "anti": ["继续沉默","顺从共识"]
-  },
-  "B": {
-    "actions": ["拉所有相关方进同一沟通场","明确指出依赖冲突","引入上级强制决策"],
-    "anti": ["单点沟通","继续当中间人"]
-  },
-  "C": {
-    "actions": ["立即设定硬停止条件","新增需求必须交换代价","强制封板当前版本"],
-    "anti": ["接受顺手改一下","等待临界点"]
-  },
-  "D": {
-    "actions": ["强制归零（假设从未投入）","只计算未来收益","设定退出触发点"],
-    "anti": ["因已投入继续决策","用未来填补过去"]
-  }
+  "safe_actions": [
+    "暂停自动闭环",
+    "转人工复核",
+    "补录缺失信息",
+    "回接责任门槛与工程审计"
+  ],
+  "anti": [
+    "直接执行高强度动作",
+    "省略复核与升级接口"
+  ]
 }
 ```
 
@@ -192,10 +291,17 @@ POST /feedback
 
 ## 五、MVP 上线检查清单
 
-- [ ] 前端：9题问卷页面（单选，禁止多选）
-- [ ] 前端：结果展示页（类型 + 副标签 + 风险等级 + 动作指令）
-- [ ] 后端：权重矩阵配置文件（JSON，外置）
-- [ ] 后端：`/analyze` 接口（Python/Node.js 均可）
-- [ ] 后端：`/feedback` 接口（Phase2预留，先只存数据）
-- [ ] 结果页底部：《TAT首诊申请表》硬植入入口
-- [ ] 权限限制：申请表限"一号位"才能提交（选否则跳出页面）
+- [ ] 前端：9题问卷页面
+- [ ] 前端：结果展示页显示 `classification_confidence / structural_risk / triage_status`
+- [ ] 后端：权重矩阵配置文件外置
+- [ ] 后端：`/analyze` 接口返回 `refer_to`
+- [ ] 后端：`/feedback` 接口只记录，不自动改权重
+- [ ] 高风险结果默认触发 `HUMAN_REVIEW`
+- [ ] 命中 `Q8/Q9` 的高风险结果默认附带 `TAT_REVIEW / ODD_AUDIT`
+
+---
+
+## 六、最短压缩句
+
+1. `V3 不是把 V2 包成 API，而是把“允许停止自动化”写进接口。`
+2. `只要进入高风险现实，API 就必须会说：请升级，不要自动闭环。`

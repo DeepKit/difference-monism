@@ -2,7 +2,7 @@
 
 > Attribute-Set Transition Ontology
 
-> **当前状态**：本站是 ASTO 的面向阅读网站入口，服务于分层阅读与传播，不等同于当前首轮公开预印本主包。当前正式公开口径仍以 `20-应用框架层（ASTO）/README.md`、`PUBLISH_READINESS.md`、`papers/ASTO.预印本发布说明.v1.0.md` 与 `U00 + P01-P11 + P99.1-4` 为准。
+> **当前状态**：本站是 ASTO 的面向阅读网站入口，服务于分层阅读与传播，不等同于当前首轮公开预印本主包。当前正式公开口径仍以 `20-应用框架层（ASTO）/README.md`、`PUBLISH_READINESS.md`、`papers/ASTO.预印本发布说明.v1.0.md` 与主链 `U00 + P03 + P05a + P06 + P04 + P99.1-5` 为准；`P01 / P02` 为外围入口，`P05b / P07-P11` 按扩展层附加。
 
 欢迎来到属集变迁存在论的文档站点。
 

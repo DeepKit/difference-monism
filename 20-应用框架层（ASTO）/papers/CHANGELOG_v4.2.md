@@ -184,7 +184,7 @@
 
 ## 🔗 相关文档
 
-- [better.md](../better.md) - 前5个问题的讨论记录
+- [history.md](../history.md) - ASTO 优化与封板归档
 - [better3.md](./better3.md) - 后8个问题 + 6条建议的完整记录
 - [ASTO.P05.公理.Phil.v9.1.md](./ASTO.P05.公理.Phil.v9.1.md) - 核心修订文档
 
