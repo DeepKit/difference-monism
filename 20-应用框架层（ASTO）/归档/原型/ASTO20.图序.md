@@ -1,4 +1,4 @@
-﻿# **ASTO20. 图序：全景视觉索引**
+# **ASTO20. 图序：全景视觉索引**
 
 > **Version**: Γ.2 (Index Synced)
 > **Status**: Generated
@@ -241,7 +241,7 @@ graph TD
 ---
 
 ## **图 10：ASTO 文明全景图 (The Civilization Panorama)**
-*   **来源**：[ASTO04.宣言 §0 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition)
+*   **来源**：ASTO04.宣言.Proto.v11.0.md
 *   **描述**：展示了 ASTO 追求的“反脆弱、非零和、动变性最大化”的共生文明图景。
 
 ```mermaid
@@ -278,3 +278,4 @@ graph TB
 ---
 
 **(全书图表索引完)**
+

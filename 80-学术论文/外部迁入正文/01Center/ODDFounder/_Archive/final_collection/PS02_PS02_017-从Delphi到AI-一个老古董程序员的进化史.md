@@ -1,0 +1,73 @@
+# 从Delphi到AI：一个"老古董"程序员的进化史
+
+> **作者**: Fuyi ( ODDFounder  fuyi.it@live.cn )
+> **日期**: 2026-01-11
+> **标签**: 个人故事, Delphi, 技术演进, 程序员生涯
+
+---
+
+## 一个被视为"恐龙"的技术栈
+
+在这个满屏都是 React、Rust、Go 的年代，如果我说我还在用 **Delphi** 写核心业务，很多年轻程序员可能会瞪大眼睛："那不是上个世纪的东西吗？"
+
+是的，我是一个 Delphi 老兵。从 Delphi 3 到 Delphi 12，这门语言陪伴了我快30年。
+我也用 Python 做 AI，用 TypeScript 写前端，用 Rust 写高性能组件。但在我的技术雷达里，Delphi 依然占据着重要的位置。
+
+为什么？
+
+## RAD（快速应用开发）的灵魂
+
+Delphi 的灵魂是 **RAD (Rapid Application Development)**。
+在那个年代，你拖一个 Button 到窗体上，双击它，写一行代码，按 F9，程序就跑起来了。这种"所见即所得"、"逻辑与界面分离"的设计，在当年是革命性的。
+
+如今，我看着 AI 编程，突然有一种强烈的既视感。
+
+**AI 编程，不就是新时代的 RAD 吗？**
+
+*   当年：拖控件 -> 设置属性 -> 写事件代码。
+*   现在：定义契约 -> 设置Prompt -> AI生成代码。
+
+我惊讶地发现，几十年前 Delphi 训练我的那种思维方式——**组件化、属性驱动、事件驱动**——在 AI 时代不仅没有过时，反而成了最核心的竞争力。
+
+## 属性设置 vs Prompt Engineering
+
+在 Delphi 里，如果你想改变一个按钮的行为，你通常不会去改它的底层绘制代码（Paint方法），你会去 Object Inspector 里改它的 **属性 (Properties)**。
+*   `Caption = "OK"`
+*   `Enabled = True`
+*   `OnClick = SubmitData`
+
+在 ODD（输出驱动开发）中，我在做完全一样的事情：
+*   我不再自己写 `def sort_list()`。
+*   我是在设置 AI 的"属性"：`Input_Schema`, `Output_Schema`, `Constraints`。
+
+**Prompt Engineering，本质上就是对 AI 这个超级组件的属性配置。**
+Delphi 程序员最擅长的就是"通过配置属性来复用通用组件"，这正是我们在 AI 时代最需要的能力。
+
+## "老古董"的系统思维
+
+现在的年轻程序员，很多是从 Web 开发起步的。他们习惯了 Request/Response，习惯了无状态。
+而我们这些写过 Desktop App 的"老古董"，习惯了**状态管理**。
+
+*   窗体有生命周期 (OnCreate, OnDestroy)。
+*   数据库连接有事务边界。
+*   内存需要分配和释放。
+
+这种对**系统状态**的敏感度，在构建复杂的 AI Agent（智能体）时变得无比珍贵。
+Agent 不是一个简单的 API 调用，它是一个**有状态的、长生命周期的进程**。它有记忆（Memory），有计划（Plan），有反思（Reflection）。
+
+当我设计 WizAxis 的六层记忆体系时，我脑子里浮现的不是向量数据库的文档，而是 Delphi 的 `TDataModule` 和 `TComponent` 的所有权机制。
+
+## 技术没有新旧，只有适不适合
+
+我依然用 Delphi 写一些核心的 Windows 工具（比如 TwoKeyRun），因为它的启动速度极快，依赖极少，且原生支持 Windows API。
+我用 Python 连接 LLM，因为它的生态最好。
+我用 ODD 方法论串联一切。
+
+**不要因为使用了"老"技术而羞愧，也不要盲目崇拜"新"技术。**
+作为程序员，我们最重要的资产不是掌握了哪门语言的语法，而是**对系统的理解、对抽象的把握，以及解决问题的直觉**。
+
+从 Delphi 到 AI，工具变了，但**"用逻辑构建世界"**的乐趣，从未改变。
+
+---
+
+*下一篇预告：《018-Progee是什么：开发工厂 vs AI辅助IDE》*

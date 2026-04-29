@@ -341,7 +341,7 @@ $$A_{feasible}(t) = A_{full} \cdot \sigma(P(t) - P_{threshold})$$
 
 ## 十、ODD 最小化定义
 
-> ODD（Output-Driven Development，输出驱动开发）是 ASTO 的工程映射层，在 ECET 中作为执行层的验证协议使用。完整定义见 ASTO.P03。
+> ODD（Output-Driven Development，产出物驱动开发）是 ASTO 的工程映射层，在 ECET 中作为执行层的验证协议使用。完整定义见 ASTO.P03。
 
 **ECET 语境下的 ODD 定义：**
 
@@ -361,8 +361,9 @@ ODD 是一种**以可观测输出为锚点**的系统验证协议。其核心原
 
 ## 理论基础
 
-> 本节继承自 [ECET.A00 理论基础](./ECET.A00_理论基础.md)。
+> 本节继承自 ECET.A00_理论基础.md。
 
 ECET.B03 的能量–不完备处理耦合动力学（$dP/dt$、$dR/dt$ 方程）是 A00 第 3 节“约束来源三元组”的数学展开：能量约束变量 $R(t)$ 与准备度变量 $P(t)$ 共同刻画系统在约束压力下的可行域。ODD 节（A00 §4.4）为本文 ODD 扩展提供了规范性定义。
+
 
 

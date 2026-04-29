@@ -299,8 +299,9 @@ class TheoryHealth:
 ---
 
 **关联文件**：
-- 理论基础：[ASTO03.认识论](../ASTO.P03.认识论.Phil.md)、[ASTO06.公理](../ASTO.P05a.公理.Phil.md)
-- 免疫系统：[ASTO16.韧性](../ASTO.P11.韧性.Phil.md)
-- 工程实践：[Ext.09.工程实践指南](./ASTO-Ext.09.工程实践指南.v1.0.md)
+- 理论基础：ASTO.P03.认识论.Phil.md、ASTO.P05a.公理.Phil.md
+- 免疫系统：ASTO.P11.韧性.Phil.md
+- 工程实践：ASTO-Ext.09.工程实践指南.v1.0.md
+
 
 

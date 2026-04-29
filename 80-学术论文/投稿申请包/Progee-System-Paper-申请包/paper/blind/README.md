@@ -8,4 +8,5 @@
 
 当前主稿：
 
-- [Progee-System-Paper.blind.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\paper\blind\Progee-System-Paper.blind.md)
+- Progee-System-Paper.blind.md
+

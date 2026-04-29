@@ -80,12 +80,12 @@ DM 在这里还需要把自己的身份说得更准确，
 
 ### 配套工具
 
-- [DM.P99.5.内部.术语表](./internal/DM.P99.5.内部.术语表.md)
-- [DM.P99.6.内部.失败条件总表](./internal/DM.P99.6.内部.失败条件总表.md)
-- [DM.P99.7.内部.版本修订表](./internal/DM.P99.7.内部.版本修订表.md)
-- [DM.P99.21.内部.DM对外一页定位表](./internal/DM.P99.21.内部.DM对外一页定位表.md)
-- [DM.P99.29.内部.定稿与宣传门槛](./internal/DM.P99.29.内部.定稿与宣传门槛.md)
-- [DM.P99.31.内部.物理接口备忘](./internal/DM.P99.31.内部.物理接口备忘.md)
+- DM.P99.5.内部.术语表.md
+- DM.P99.6.内部.失败条件总表.md
+- DM.P99.7.内部.版本修订表.md
+- DM.P99.21.内部.DM对外一页定位表.md
+- DM.P99.29.内部.定稿与宣传门槛.md
+- DM.P99.31.内部.物理接口备忘.md
 
 ---
 
@@ -749,3 +749,4 @@ DM 就应被视作一套正在受压的研究纲领，
 - Kuhn, T. S. (1962). *The Structure of Scientific Revolutions*. University of Chicago Press.
 - Maturana, H. R. & Varela, F. J. (1980). *Autopoiesis and Cognition*. D. Reidel.
 - Sellars, W. (1956). "Empiricism and the Philosophy of Mind." *Minnesota Studies in the Philosophy of Science*.
+

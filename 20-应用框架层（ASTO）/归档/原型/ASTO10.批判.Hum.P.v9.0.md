@@ -1,9 +1,9 @@
-﻿# **ASTO10. 批判：反极权宪章与系统免疫**
+# **ASTO10. 批判：反极权宪章与系统免疫**
 
 > **Version**: Γ.11
 > **Status**: Living Document
 > **作者**: Fuyi (ODDFounder [fuyi.it@live.cn](mailto:fuyi.it@live.cn))
-> **Context**: 本文是 属集变迁存在论(ASTO) 体系的人文核心。它不是给工程师的操作手册，而是给哲学评论家和社会观察者的**思想檬文**。它探讨的是：在一个追求效率与自动化的技术统治时代（尤其在 AGI 到来之前），如何守住 [ASTO 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition) 的优先级：禁元/复数性/不可触达维 > 动变性 > 效率？
+> **Context**: 本文是 属集变迁存在论(ASTO) 体系的人文核心。它不是给工程师的操作手册，而是给哲学评论家和社会观察者的**思想檬文**。它探讨的是：在一个追求效率与自动化的技术统治时代（尤其在 AGI 到来之前），如何守住 ASTO04.宣言.Proto.v11.0.md 的优先级：禁元/复数性/不可触达维 > 动变性 > 效率？
 > **Compat Note**: 本文件原编号为 ASTO08。
 
 ---
@@ -22,14 +22,14 @@
 | **效用公理** | 只有对存续有效用的属性才被保留 | 我们只能认识对我们有效用的部分 |
 | **节能公理** | 结构倾向于最低能耗的维持方式 | 我们倾向于用最省力的方式认知，可能忽略复杂性 |
 
-> 详细公理定义见 [ASTO06.公理.Proto.v8.0.md](./ASTO06.公理.Proto.v8.0.md)
+> 详细公理定义见 ASTO06.公理.Proto.v8.0.md
 
 ### **3. 但认知缺陷是创造力的来源**
 
 - 如果认知完美，就没有探索、没有发明、没有进步
 - 缺陷是想象力的空间，是试错与涌现的温床
 - ASTO 不否认缺陷，而是承认：**缺陷是创造力的代价，也是创造力的前提**
-- (详见 [ASTO03.认识论 § 1.6](./ASTO03.认识论.Proto.v1.0.md))
+- (详见 ASTO03.认识论.Proto.v1.0.md)
 
 ### **4. 不要把 ASTO 当圣经**
 
@@ -38,15 +38,15 @@ ASTO 是活的工具，不是死的教条。它本身也在演化。当理论压
 ### **5. 阅读指引**
 
 如有概念不清楚，可查阅：
-- [ASTO04.宣言.Proto.v11.0.md](./ASTO04.宣言.Proto.v11.0.md) —— 核心框架与知行合一
-- [ASTO06.公理.Proto.v8.0.md](./ASTO06.公理.Proto.v8.0.md) —— 公理体系
-- [ASTO09.边界.Proto.v9.0.md](./ASTO09.边界.Proto.v9.0.md) —— 边界与自由
-- [ASTO19.附录.Glossary.md](./ASTO19.附录.Glossary.md) —— 术语表
+- ASTO04.宣言.Proto.v11.0.md —— 核心框架与知行合一
+- ASTO06.公理.Proto.v8.0.md —— 公理体系
+- ASTO09.边界.Proto.v9.0.md —— 边界与自由
+- ASTO19.附录.Glossary.md —— 术语表
 
 ---
 
 ## **文明元定义对齐：批判的目的不是破坏，而是守护**
-> 对齐 [ASTO04.宣言 §0 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition) 与 [ASTO05 §1.1 文明选择函数](./ASTO05.价值与边界.Proto.v1.0.md)，并受 [ASTO06 公理之上：文明守护元公理](./ASTO06.公理.Proto.v8.0.md#asto-meta-axiom-civilization-stewardship) 约束。
+> 对齐 ASTO04.宣言.Proto.v11.0.md 与 ASTO05.价值与边界.Proto.v1.0.md，并受 ASTO06.公理.Proto.v8.0.md 约束。
 
 **优先级声明**：禁元/复数性/不可触达维 > 动变性 > 效率。
 
@@ -437,4 +437,5 @@ ASTO 的本体论基础。世界没有实体，只有属性的集合。
 - **基元**：系统必须满足的最低条件（必须做）
 - **禁元**：系统绝不能违反的边界（不可做）
 
-> 详细定义见 [ASTO19.附录.Glossary.md](./ASTO19.附录.Glossary.md)
+> 详细定义见 ASTO19.附录.Glossary.md
+

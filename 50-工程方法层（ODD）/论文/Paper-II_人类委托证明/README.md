@@ -1,4 +1,4 @@
-﻿# Paper II — 人类委托证明
+# Paper II — 人类委托证明
 
 > **英文标题**: Human Delegation Proof: Progressive Trust Transfer from Human Review to Verifiable Mechanisms in AI-Native Software Engineering
 > **中文标题**: 人类委托证明：AI 原生软件工程中从人类审查到可验证机制的渐进信任迁移
@@ -41,4 +41,5 @@ Paper I 建立了"人类是仲裁者而非执行者"的范式。Paper II 回答*
 
 ## 详细提纲
 
-→ **[提纲.md](提纲.md)**
+→ **提纲.md**
+

@@ -1,4 +1,4 @@
-# ODD 输出驱动开发
+# ODD 产出物驱动开发
 ## Output-Driven Development
 
 > **当前公开口径**：`v1.0 公开征评包 / 工程方法层 / 已有主论文 DOI`
@@ -8,7 +8,15 @@
 >
 > **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
 >
-> **文件名说明**：目录中保留的 `RM.ODD.工程方法论.md` 属于历史命名阶段的路径保留，用于兼容既有引用；当前对外主品牌与层级口径仍以 `DM -> ASTO -> ECET -> TAT -> ODD` 为准。
+> **文件名说明**：旧文件 `RM.ODD.工程方法论.md` 已退出现行主位；当前对外主品牌与层级口径统一以 `DM -> ASTO -> ECET -> TAT -> ODD` 为准。
+
+> **目录说明**：本文件只负责 `ODD` 目录说明、阅读顺序与发布口径，不承担给 AI 的单文件入口职责。
+>
+> **AI 单文件入口**：若只发一个文件给 AI 或协作者看 `ODD`，优先发 `ai产出物驱动开发总览.md`。
+
+> **跨层主从关系**：整条治理/执行链仍按 `LMM -> COP -> TAT -> ODD -> Harness` 理解；若看其中 `COP / TAT / ODD / Harness` 这一段的分工，以 `TAT-COP-ODD-Harness 接口白皮书（现行版）` 为准；本目录文件只负责 `ODD` 本层定义、主文与工具层入口。
+
+> **当前纪律**：`README.md` 只负责目录说明；旧文件名只保留为历史说明，不再作为当前入口候选。
 
 ---
 
@@ -93,15 +101,15 @@ ODD 当前最适合被公开描述为：
 
 建议按以下顺序阅读：
 
-1. [论文/论文-学术版.md](./论文/论文-学术版.md)
-2. [Paper_01_ODD_Core_English_2026-01-16.md](./Paper_01_ODD_Core_English_2026-01-16.md)
-3. [论文/白皮书.md](./论文/白皮书.md)
-4. [ODD-main/README.md](./ODD-main/README.md)
-5. [guide/快速上手.md](./guide/快速上手.md)
+1. 论文-学术版.md
+2. Paper_01_ODD_Core_English_2026-01-16.md
+3. 白皮书.md
+4. README.md
+5. 快速上手.md
 
 如需理解上游来源：
 
-6. [guide/哲学溯源.md](./guide/哲学溯源.md)
+6. 哲学溯源.md
 
 ---
 
@@ -119,8 +127,8 @@ ODD 当前最适合被公开描述为：
 
 | 文件 | 当前用途 |
 |------|---------|
-| `README.md` | 根入口 |
-| `RM.ODD.工程方法论.md` | 层级入口说明 |
+| `README.md` | 目录说明 |
+| `ai产出物驱动开发总览.md` | AI 单文件入口 |
 | `ODD-main/README.md` | 完整规格入口 |
 | `guide/快速上手.md` | 上手入口 |
 | `guide/方法论对比.md` | 与传统方法对比 |
@@ -165,10 +173,10 @@ ODD 当前最适合被公开描述为：
 以下内容更适合保留在仓库中作为研发材料，而不是首轮公开主包：
 
 - `message_queue.db`
-- `message_queue.json`
-- `test_mq_*.json`
-- `任务清单.md`
-- `LLM.md`
+- `实证案例/message_queue.json`
+- `实证案例/test_mq_*.json`
+- `_archive/任务清单.md`
+- `tools/LLM.md`
 - `.pytest_cache/`
 - `_archive/`
 - `tools/`
@@ -181,7 +189,6 @@ ODD 当前最适合被公开描述为：
 - `实证案例/任务清单.md`
 - `实证案例/tasks.md`
 - `实证案例/paper_draft.md`
-- `论文/better.md`
 
 ---
 
@@ -215,3 +222,4 @@ ODD 当前已有主论文 DOI：
 **版本**：1.0  
 **日期**：2026-03-19  
 **状态**：公开征评版
+

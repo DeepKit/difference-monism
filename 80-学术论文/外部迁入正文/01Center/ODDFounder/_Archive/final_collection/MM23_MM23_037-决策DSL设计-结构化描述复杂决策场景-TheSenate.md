@@ -1,0 +1,125 @@
+# 决策DSL设计：结构化描述复杂决策场景
+
+> **作者**: Fuyi ( ODDFounder  fuyi.it@live.cn )
+> **日期**: 2026-01-11
+> **标签**: DSL, 领域特定语言, 决策逻辑, TheSenate
+
+---
+
+## 摘要
+
+如何让 AI 理解一个复杂的商业决策场景？仅仅用自然语言描述往往不够精确。TheSenate 项目设计了一套**决策领域特定语言（Decision DSL）**。通过 `Scenario`, `Option`, `Constraint`, `Impact` 等关键字，将模糊的决策问题转化为计算机可处理的结构化代码。本文解析这套 DSL 的设计与实现。
+
+---
+
+## 一、为什么需要 DSL？
+
+商业决策往往涉及复杂的变量和逻辑。
+*   "如果预算 > 100万，且 ROI > 20%，则批准，否则需董事会复议。"
+*   "方案 A 的风险是法律合规，方案 B 的风险是技术实现。"
+
+如果用自然语言写，很容易产生歧义。
+如果用 Python/Pascal 写，业务人员看不懂。
+我们需要一种**介于自然语言和代码之间**的语言——DSL。
+
+---
+
+## 二、Decision DSL 语法概览
+
+TheSenate 的 DSL 采用 YAML/JSON 风格，强调可读性和层级关系。
+
+### 2.1 Scenario (场景定义)
+
+```yaml
+scenario: "ERP系统选型"
+context: "当前系统已使用10年，维护成本高，需替换。"
+variables:
+  - budget: { type: "money", value: 2000000 }
+  - timeline: { type: "duration", value: "6m" }
+```
+
+### 2.2 Options (选项)
+
+```yaml
+options:
+  - id: "buy_sap"
+    name: "购买 SAP"
+    cost: 1500000
+    time: "3m"
+    pros: ["功能成熟", "行业标准"]
+    cons: ["太贵", "定制难"]
+    
+  - id: "self_dev"
+    name: "自研系统"
+    cost: 800000
+    time: "9m"
+    pros: ["完全贴合业务", "自主可控"]
+    cons: ["研发风险大", "工期长"]
+```
+
+### 2.3 Constraints (约束与规则)
+
+这是 DSL 的核心。我们定义了一套简单的表达式语言：
+
+```yaml
+rules:
+  - rule: "BudgetCheck"
+    condition: "option.cost <= scenario.budget"
+    on_fail: "reject"
+    message: "超出预算"
+
+  - rule: "TimeCheck"
+    condition: "option.time <= scenario.timeline"
+    on_fail: "warn"
+    message: "工期可能有风险"
+```
+
+### 2.4 Impact Analysis (影响分析)
+
+```yaml
+impacts:
+  - dimension: "financial"
+    weight: 0.4
+  - dimension: "technical"
+    weight: 0.3
+  - dimension: "user_experience"
+    weight: 0.3
+```
+
+---
+
+## 三、解析引擎实现
+
+在 `SenateAdminBackend` 中，我们实现了一个轻量级的 DSL 解析器。
+
+### 3.1 变量绑定
+解析器首先读取 `variables`，构建符号表。
+*   `budget` -> 2,000,000
+
+### 3.2 规则求值
+针对每个 Option，遍历执行 `rules`。
+*   对于 "buy_sap": `1500000 <= 2000000` -> True (Pass)
+*   对于 "self_dev": `9m <= 6m` -> False (Warn)
+
+### 3.3 AI 增强评估
+对于无法用简单数学公式计算的维度（如"用户体验"），解析器会生成一个 Prompt，调用 LLM 进行打分：
+> "作为用户体验专家，请评估'自研系统'在用户体验维度的得分（0-10），依据是..."
+
+---
+
+## 四、DSL 的价值
+
+1.  **标准化输入**：无论是什么类型的决策（买房、招聘、技术选型），都可以映射到这就套 DSL 结构中。
+2.  **自动化初筛**：通过硬规则（Hard Constraints），系统可以瞬间筛掉那些明显不靠谱的方案（如严重超支），减少 AI 的计算量。
+3.  **可解释性**：决策结果不是黑盒。我们可以清楚地展示："方案 B 被否决，因为它触发了 'TimeCheck' 规则。"
+
+---
+
+## 五、结语
+
+**Decision DSL** 是 TheSenate 的大脑皮层。它将感性的"权衡"变成了理性的"计算"。
+通过这套 DSL，我们不仅能让 AI 参与决策，更能让 AI **理解决策的规则**。
+
+---
+
+*下一篇预告：《071-Junction链接迁移：让C盘瘦身程序无感知》*

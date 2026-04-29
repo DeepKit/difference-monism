@@ -1,9 +1,9 @@
-﻿# **ASTO16. 韧性：理论的自我免疫与反脆弱**
+# **ASTO16. 韧性：理论的自我免疫与反脆弱**
 
 > **Version**: Γ.10 (Theoretical Immunity)
 > **Status**: Living Document
 > **作者**: Fuyi (ODDFounder fuyi.it@live.cn)
-> **Context**: 本文是 属集变迁存在论(ASTO) 的“自我审计报告”。如果一个理论不能解释并修复自身的脆弱性，它就没有资格解释世界；同时对齐 [ASTO 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition)，把“韧性”视为在 AGI 到来之前守护家园的必要条件。
+> **Context**: 本文是 属集变迁存在论(ASTO) 的“自我审计报告”。如果一个理论不能解释并修复自身的脆弱性，它就没有资格解释世界；同时对齐 ASTO04.宣言.Proto.v11.0.md，把“韧性”视为在 AGI 到来之前守护家园的必要条件。
 > **Compat Note**: 本文件原编号为 ASTO14。
 
 ---
@@ -18,7 +18,7 @@
 ---
 
 ## **0. 文明元定义对齐：韧性为何是守护家园的技术语言**
-> 对齐 [ASTO04.宣言 §0 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition) 与 [ASTO06 公理之上：文明守护元公理](./ASTO06.公理.Proto.v8.0.md#asto-meta-axiom-civilization-stewardship)。
+> 对齐 ASTO04.宣言.Proto.v11.0.md 与 ASTO06.公理.Proto.v8.0.md。
 
 韧性不是“更强的控制”，而是让文明在冲击中保持三件事。
 
@@ -113,3 +113,4 @@
 它承诺无论遭遇何种冲击，我们都拥有一套重建秩序的语言和工具。
 
 **(本文档是理论的自我保护机制。)**
+

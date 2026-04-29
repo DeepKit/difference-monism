@@ -258,8 +258,9 @@ ASTO 给出的回答是：**看它如何对待成员最深的脆弱。**
 ---
 
 **关联文件**：
-- 理论基础：[ASTO04.宣言](../ASTO.P04.宣言.Phil.md)、[ASTO06.公理](../ASTO.P05a.公理.Phil.md)
-- 人的位置：[ASTO05.价值与边界](../ASTO.P06.价值与边界.Phil.md)
-- AI应用：[ASTO13.AI](../工程版/ASTO.E04.AI对齐.Eng.md)
+- 理论基础：ASTO.P04.宣言.Phil.md、ASTO.P05a.公理.Phil.md
+- 人的位置：ASTO.P06.价值与边界.Phil.md
+- AI应用：ASTO.E04.AI对齐.Eng.md
+
 
 

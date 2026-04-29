@@ -13,4 +13,4 @@
 - `P05b / P07-P11` are extension or scenario texts, included only when topical expansion is needed
 - `P12 / P13`, `read_p*.txt`, `read_p*_full.txt`, archived directories, PDF bundles, and release-history files are not part of the first-round public package
 - Files explicitly marked as `Historical English Draft`, `Working Extension Draft`, `Working English Support Draft`, or reference sets should be treated as support materials
-- For formal release framing, always return to `../readme.md` and `../ASTO.预印本发布说明.v1.0.md`
+- For formal release framing, always return to `../README.md` and `../ASTO.预印本发布说明.v1.0.md`

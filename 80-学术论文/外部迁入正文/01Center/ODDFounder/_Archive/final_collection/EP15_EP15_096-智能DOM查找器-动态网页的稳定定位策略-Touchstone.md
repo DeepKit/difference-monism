@@ -1,0 +1,68 @@
+# 智能DOM查找器：动态网页的稳定定位策略
+
+> **作者**: Fuyi ( ODDFounder  fuyi.it@live.cn )
+> **日期**: 2026-01-11
+> **标签**: 自动化, DOM, CSS选择器, 鲁棒性, Touchstone
+
+---
+
+## 摘要
+
+Web 自动化最大的痛点是 **"页面改版"**。今天 `id="input-box"`，明天变成了 `class="sc-xyz..."` 随机类名。脚本瞬间失效。**Touchstone** 引入了一套**智能 DOM 查找器 (Smart DOM Finder)**，支持多策略备用、模糊匹配和自动修复，让自动化脚本在面对动态网页时具有了"抗震"能力。
+
+---
+
+## 一、脆弱的选择器
+
+在 React/Vue 时代，CSS 类名通常是 hash 值（如 `css-1a2b3c`）。
+传统的硬编码选择器（Hardcoded Selectors）如 `#main > div > div:nth-child(2)` 极其脆弱。只要开发者加了一个 wrapper div，脚本就挂了。
+
+---
+
+## 二、Smart Finder 策略
+
+Touchstone 的 `CtrlProvider.pas` 和注入的 JS 脚本中，实现了一套多级查找策略。
+
+### 2.1 策略一：语义属性优先 (Semantic Attributes)
+优先查找 `aria-label`, `placeholder`, `data-testid` 等语义化属性。这些属性通常是为了无障碍访问或测试设计的，比 CSS 类名更稳定。
+*   `[data-testid="send-button"]` > `.btn-primary`
+
+### 2.2 策略二：多选备用 (Fallback List)
+在 `Selectors.json` 配置中，我们不只存一个选择器，而是存一个列表：
+```json
+"input": [
+  "#prompt-textarea",
+  "textarea[placeholder='Send a message']",
+  "div[role='textbox']"
+]
+```
+查找器会按顺序尝试，直到找到一个存在的元素。
+
+### 2.3 策略三：文本内容定位 (Text Content)
+如果属性都变了，但这还是一个"发送"按钮，它的文本大概率还是 "Send" 或图标是 SVG。
+Smart Finder 支持 XPath 风格的文本查找：
+*   `//button[contains(text(), 'Send')]`
+
+### 2.4 策略四：相对定位 (Relative Positioning)
+"找到包含 'Chat history' 的侧边栏，然后找它里面的第三个按钮"。
+通过锚点元素（Anchor）来定位目标元素，减少对全局结构的依赖。
+
+---
+
+## 三、配置热更新
+
+即使有智能查找，页面大改版还是会挂。
+Touchstone 的 **Provider 插件架构** 允许**热更新配置**。
+*   `Selectors.json` 存储在云端或本地配置文件夹。
+*   当 ChatGPT 改版时，用户只需要更新这个 JSON 文件（或者通过 Sync 自动拉取），而不需要重新编译/下载整个 App。
+
+---
+
+## 四、总结
+
+**自动化脚本的生命力，取决于选择器的鲁棒性。**
+Touchstone 的 Smart DOM Finder 并没有什么高深的 AI 算法，它只是把人类找元素的逻辑（看属性、看文字、看位置、试错）固化成了代码。这种**防御性编程**思维，是维护长期稳定的 Web 自动化的关键。
+
+---
+
+*下一篇预告：《091-多格式导出引擎：HTML/PDF/PPT的统一方案》*

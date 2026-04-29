@@ -1,0 +1,3624 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{the-odd-series-paper-i-foundations-of-artifact-legitimacy-in-ai-native-software-engineering}{%
+\section{The ODD Series Paper I: Foundations of Artifact Legitimacy in
+AI-Native Software
+Engineering}\label{the-odd-series-paper-i-foundations-of-artifact-legitimacy-in-ai-native-software-engineering}}
+
+\begin{quote}
+\textbf{统一确权引用 / Canonical Reference (Zenodo DOI)}\\
+中文（推荐引用）：Yi Fu. 《输出驱动开发：AI辅助软件工程的范式转变》.
+Zenodo, 2026. DOI: 10.5281/zenodo.18207648.
+(\url{https://doi.org/10.5281/zenodo.18207648})\\
+English (recommended citation): Yi Fu. \emph{Output-Driven Development:
+A Paradigm Shift in AI-Assisted Software Engineering}. Zenodo, 2026.
+DOI: 10.5281/zenodo.18207648.
+(\url{https://doi.org/10.5281/zenodo.18207648})\\
+Record: \url{https://zenodo.org/records/18207648}
+\end{quote}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\VariableTok{@misc}\NormalTok{\{}\OtherTok{odd\_zenodo\_18207648}\NormalTok{,}
+  \DataTypeTok{author}\NormalTok{    = \{Yi Fu\},}
+  \DataTypeTok{title}\NormalTok{     = \{Output{-}Driven Development: A Paradigm Shift in AI{-}Assisted Software Engineering\},}
+  \DataTypeTok{year}\NormalTok{      = \{2026\},}
+  \DataTypeTok{publisher}\NormalTok{ = \{Zenodo\},}
+  \DataTypeTok{doi}\NormalTok{       = \{10.5281/zenodo.18207648\},}
+  \DataTypeTok{url}\NormalTok{       = \{https://doi.org/10.5281/zenodo.18207648\}}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{quote}
+\textbf{Author}: Yi Fu . (ODDFounder,
+\href{mailto:fuyi.it@live.cn}{\nolinkurl{fuyi.it@live.cn}})\\
+\textbf{Date}: 2026-01-12\\
+\textbf{Version}: v7.1 (English Edition)
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{abstract}{%
+\subsection{Abstract}\label{abstract}}
+
+The code generation capabilities of Large Language Models (LLMs)
+underwent a qualitative transformation between 2023-2025, creating an
+unprecedented engineering dilemma: \textbf{AI generates code far faster
+than humans can review it}. Traditional software development
+methodologies (Agile, TDD, BDD, etc.) all assume "human code review" as
+the final line of defense for quality assurance---an assumption that
+fails in the AI era.
+
+This paper proposes \textbf{Output-Driven Development (ODD)}, a new
+paradigm designed specifically for AI-assisted software engineering.
+ODD's core innovations include:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Artifact-centric}: The goal of software development is not
+  generating code, but generating artifacts that satisfy human needs
+\item
+  \textbf{Contract-driven}: Using precise contracts to define artifact
+  specifications, making requirements quantifiable, verifiable, and
+  testable
+\item
+  \textbf{Mutation testing trust}: Replacing human review with mutation
+  testing as the foundation of trust
+\item
+  \textbf{Sealing protection}: Protecting verified code through
+  auditable, traceable version management
+\end{enumerate}
+
+We argue that ODD is not merely a methodological innovation, but a
+\textbf{systematic restructuring of production relations} in software
+development: achieving the historic separation of intellectual labor
+from executive labor, propelling the software industry from "craft
+workshop mode" to "intelligent factory mode."
+
+\textbf{Keywords}: ODD, Output-Driven Development, Artifact, Contract,
+AI-assisted development, Software engineering, Paradigm shift, Mutation
+testing
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{1-introduction}{%
+\section{1. Introduction}\label{1-introduction}}
+
+\hypertarget{11-background-the-broken-control-surface}{%
+\subsection{1.1 Background: The Broken Control
+Surface}\label{11-background-the-broken-control-surface}}
+
+Recent advances in large language models (LLMs) have fundamentally
+altered how software is produced {[}6, 7{]}.\\
+Code generation systems such as Copilot, ChatGPT, and Claude are no
+longer auxiliary tools; they increasingly act as \emph{primary
+producers} of executable artifacts.
+
+However, while generation capability has advanced rapidly, \textbf{the
+control structures of software engineering have not evolved
+accordingly}.
+
+Traditional software engineering methodologies---including Agile,
+DevOps, Test-Driven Development (TDD), and Model-Driven Engineering
+(MDE)---implicitly assume that:
+
+\begin{itemize}
+\item
+  source code is authored by humans,
+\item
+  reasoning about behavior is mediated through code inspection,
+\item
+  responsibility can be traced through authorship and commit history.
+\end{itemize}
+
+These assumptions no longer reliably hold in AI-assisted production.
+
+As a result, modern software systems increasingly exhibit a paradoxical
+condition:
+
+\begin{quote}
+\textbf{Code is abundant, yet responsibility is diffuse.\\
+Automation is powerful, yet control is fragile.}
+\end{quote}
+
+\hypertarget{12-the-core-problem-loss-of-responsibility-anchors}{%
+\subsection{1.2 The Core Problem: Loss of Responsibility
+Anchors}\label{12-the-core-problem-loss-of-responsibility-anchors}}
+
+The central challenge introduced by AI-assisted software generation is
+\textbf{not correctness alone}, but the erosion of \emph{responsibility
+anchors}.
+
+In conventional workflows, responsibility is implicitly attached to:
+
+\begin{itemize}
+\item
+  the human author of the code,
+\item
+  the review process,
+\item
+  or the ownership of a module.
+\end{itemize}
+
+In AI-assisted workflows, however:
+
+\begin{itemize}
+\item
+  code may be generated, revised, and regenerated multiple times,
+\item
+  generation paths are opaque and non-deterministic,
+\item
+  multiple agents (human and AI) may contribute asynchronously.
+\end{itemize}
+
+Under such conditions, \textbf{the question "Who is responsible?"
+becomes structurally ill-defined}.
+
+Existing responses largely attempt to restore control by:
+
+\begin{itemize}
+\item
+  improving prompt engineering {[}8{]},
+\item
+  adding more tests,
+\item
+  constraining models or sandboxing execution.
+\end{itemize}
+
+While useful, these approaches operate \emph{within} the code-centric
+paradigm and therefore fail to address the deeper structural shift.
+
+\hypertarget{13-why-code-centric-control-no-longer-suffices}{%
+\subsection{1.3 Why Code-Centric Control No Longer
+Suffices}\label{13-why-code-centric-control-no-longer-suffices}}
+
+Code-centric methodologies assume that:
+
+\begin{itemize}
+\item
+  understanding code implies understanding system behavior,
+\item
+  reviewing code implies validating intent,
+\item
+  maintaining code implies preserving correctness over time.
+\end{itemize}
+
+In AI-assisted development, these assumptions degrade for three reasons:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Human unreadability}\\
+  Generated code may be syntactically valid and functionally correct,
+  yet cognitively opaque.
+\item
+  \textbf{Ephemeral implementations}\\
+  Code becomes disposable: regeneration is often cheaper than
+  maintenance.
+\item
+  \textbf{Decoupling of intent and implementation}\\
+  The entity expressing intent (human) is no longer the entity producing
+  implementation (AI).
+\end{enumerate}
+
+Consequently, code can no longer serve as the primary locus of control,
+verification, or responsibility.
+
+\hypertarget{14-reframing-the-question-from-how-is-code-written-to-what-is-produced}{%
+\subsection{1.4 Reframing the Question: From "How Is Code Written?" to
+"What Is
+Produced?"}\label{14-reframing-the-question-from-how-is-code-written-to-what-is-produced}}
+
+This work argues that the appropriate response is not to further
+optimize code generation, but to \textbf{reframe the unit of software
+engineering itself}.
+
+Instead of asking:
+
+\begin{itemize}
+\item
+  \emph{How should code be written?}
+\item
+  \emph{How can AI generate better code?}
+\end{itemize}
+
+We propose to ask:
+
+\begin{itemize}
+\item
+  \emph{What outputs are acceptable?}
+\item
+  \emph{How can those outputs be verified, audited, and owned?}
+\item
+  \emph{Where does responsibility reside when implementations are
+  transient?}
+\end{itemize}
+
+This shift motivates a paradigm in which \textbf{the produced output
+artifact, rather than the code or generation process, becomes the
+primary object of control}.
+
+\begin{quote}
+\textbf{Definition}: An \emph{Artifact} in ODD is a verifiable output
+produced during software development that satisfies specific human needs
+and has use-value. Artifacts are the true goal of software
+development---not code itself.
+\end{quote}
+
+\hypertarget{15-output-driven-development-odd-a-paradigm-shift}{%
+\subsection{1.5 Output-Driven Development (ODD): A Paradigm
+Shift}\label{15-output-driven-development-odd-a-paradigm-shift}}
+
+To address the above challenges, we introduce \textbf{Output-Driven
+Development (ODD)}, an artifact-centric methodology for AI-assisted
+software engineering.
+
+ODD is founded on three core principles:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Outputs as first-class entities}\\
+  Artifacts are explicitly specified, validated, and audited.
+\item
+  \textbf{Contracts before generation}\\
+  Acceptable output spaces are defined prior to any AI execution.
+\item
+  \textbf{Responsibility through arbitration}\\
+  Humans are positioned as contract reviewers and final arbiters, not
+  routine implementers.
+\end{enumerate}
+
+Rather than attempting to eliminate human involvement, ODD
+\textbf{concentrates human attention on irreducible decision points},
+while delegating routine generation and validation to AI systems.
+
+\hypertarget{16-contributions}{%
+\subsection{1.6 Contributions}\label{16-contributions}}
+
+This paper makes the following contributions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Conceptual reframing}\\
+  We formally define Output-Driven Development as an alternative control
+  paradigm for AI-native software engineering.
+\item
+  \textbf{Foundational axioms}\\
+  We articulate the core axioms that distinguish ODD from code-centric
+  methodologies.
+\item
+  \textbf{Responsibility reallocation}\\
+  We redefine the role of humans in AI-assisted workflows as reviewers
+  and arbiters of artifacts and contracts.
+\item
+  \textbf{A basis for future verification}\\
+  We establish a framework upon which empirical validation, tooling, and
+  governance mechanisms can be built.
+\end{enumerate}
+
+\hypertarget{17-scope-and-limitations}{%
+\subsection{1.7 Scope and Limitations}\label{17-scope-and-limitations}}
+
+This paper focuses on \textbf{foundational definitions and conceptual
+structure}.
+
+We do not claim:
+
+\begin{itemize}
+\item
+  empirical superiority across all domains,
+\item
+  immediate applicability to exploratory or creative programming,
+\item
+  replacement of existing engineering practices.
+\end{itemize}
+
+Instead, this work provides a \textbf{structural lens} for reasoning
+about responsibility, control, and legitimacy in AI-assisted software
+production.
+
+Empirical evaluation and system-level validation are addressed in
+subsequent papers in the ODD series.
+
+\begin{quote}
+\emph{This work does not aim to maximize automation or replace human
+intelligence. Instead, it introduces structural constraints to ensure
+that responsibility, auditability, and human arbitration remain intact
+and scalable under AI-assisted production.}
+\end{quote}
+
+\textbf{Disclaimer}: This paper establishes a conceptual framework and
+testable hypotheses. Empirical validation using production data from our
+reference implementation (Progee) is planned as immediate future work.
+\emph{This work is released as a preprint and has not undergone peer
+review.}
+
+\hypertarget{18-paper-organization}{%
+\subsection{1.8 Paper Organization}\label{18-paper-organization}}
+
+The remainder of this paper is organized as follows:
+
+\begin{itemize}
+\item
+  Section 2 formally defines Output-Driven Development and its core
+  axioms.
+\item
+  Section 3 contrasts ODD with existing software engineering paradigms.
+\item
+  Section 4 discusses implications for verification, responsibility, and
+  governance.
+\item
+  Section 5 outlines limitations and directions for future work.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{2-core-concepts}{%
+\section{2. Core Concepts}\label{2-core-concepts}}
+
+\hypertarget{21-artifacts-the-true-goal-of-software-development}{%
+\subsection{2.1 Artifacts: The True Goal of Software
+Development}\label{21-artifacts-the-true-goal-of-software-development}}
+
+\hypertarget{211-what-is-an-artifact}{%
+\subsubsection{2.1.1 What is an
+Artifact?}\label{211-what-is-an-artifact}}
+
+\textbf{Definition}: An Artifact is a verifiable output produced during
+software development that can satisfy specific human needs.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                  Essential Definition of Artifact                │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Artifact = Verifiable Output + Satisfies Specific Need + Has Use Value │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Three core properties of artifacts:                             │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │ 1. Verifiability                                           │ │}
+\NormalTok{│  │    • Correctness can be confirmed through testing          │ │}
+\NormalTok{│  │    • Compliance can be checked against contracts           │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │ 2. Need{-}fulfilling                                         │ │}
+\NormalTok{│  │    • Corresponds to explicit human needs                   │ │}
+\NormalTok{│  │    • Solves concrete business problems                     │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │ 3. Use{-}value                                               │ │}
+\NormalTok{│  │    • Can be directly used by users                         │ │}
+\NormalTok{│  │    • Produces actual utility                               │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{12-the-relationship-between-artifacts-and-human-needs}{%
+\subsubsection{1.2 The Relationship Between Artifacts and Human
+Needs}\label{12-the-relationship-between-artifacts-and-human-needs}}
+
+\textbf{Philosophical insight}: Humans fundamentally need
+\textbf{results}, not processes.
+
+\textbf{Analogy 1: Sausage and the Hundred-Dollar Bill}
+
+Imagine this scenario: You're hungry and want sausage. You have \$100.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                The Essence of the Sausage Transaction            │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  [$100]  ─────────────────────────────────────→  [Sausage]      │}
+\NormalTok{│  (Input)      Do you care what happens in between?   (Artifact) │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  The meat factory\textquotesingle{}s machines? The chef\textquotesingle{}s cooking? The cashier?  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ──────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Answer: You don\textquotesingle{}t care at all. You just want sausage.          │}
+\NormalTok{│  If a magic box could turn money directly into sausage,         │}
+\NormalTok{│  you\textquotesingle{}d use it without hesitation.                               │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Insight: Process is developer self{-}indulgence;                 │}
+\NormalTok{│          Artifact is the customer\textquotesingle{}s real need.                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Analogy 2: The Official Stamp and Blank Paper}
+
+You go to a government office. You hold a paper filled with text (an
+application).
+
+What's your purpose? Not "queuing," not "talking to the clerk," not
+"watching them press down on the paper."
+
+Your only purpose is: \textbf{To get a red official stamp on this
+paper.}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                    Artifact State Transition                     │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  State A: Paper without stamp                                   │}
+\NormalTok{│          Value = 0                                              │}
+\NormalTok{│                    ↓                                             │}
+\NormalTok{│          [Queue → Submit → Review → Stamp]                      │}
+\NormalTok{│                    ↓                                             │}
+\NormalTok{│  State B: Paper with stamp                                      │}
+\NormalTok{│          Value = Permission/Rights                               │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Insight: Work is essentially artifact state transition.        │}
+\NormalTok{│          All processes exist only to transform artifacts        │}
+\NormalTok{│          from State A to State B.                               │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Software domain mapping}:
+
+A client gives you \$1 million for an e-commerce system. They don't care
+if you use Java or Go, microservices or monolith. They only care about:
+
+\begin{itemize}
+\item
+  Can users place orders?
+\item
+  Can payments succeed?
+\item
+  Can shipping be tracked?
+\end{itemize}
+
+\textbf{These are artifacts---things that can be used and create value.}
+
+\hypertarget{13-artifact-classification-system}{%
+\subsubsection{1.3 Artifact Classification
+System}\label{13-artifact-classification-system}}
+
+ODD categorizes software development artifacts into 698 types, each with
+clear definitions, templates, and acceptance criteria.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│            698 Artifact Types Classification (Excerpt)           │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  01. Functional Artifacts (\textasciitilde{}300 types)                          │}
+\NormalTok{│      01.01 API Endpoints    01.02 Business Services             │}
+\NormalTok{│      01.03 Data Processors  01.04 User Interfaces               │}
+\NormalTok{│      01.05 Background Tasks 01.06 Integration Adapters          │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  02. Verification Artifacts (\textasciitilde{}150 types)                        │}
+\NormalTok{│      02.01 Unit Tests       02.02 Integration Tests             │}
+\NormalTok{│      02.03 E2E Tests        02.04 Performance Tests             │}
+\NormalTok{│      02.05 Security Tests   02.06 Mutation Test Configs         │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  03. Configuration Artifacts (\textasciitilde{}100 types)                       │}
+\NormalTok{│      03.01 App Config       03.02 Environment Config            │}
+\NormalTok{│      03.03 Build Config     03.04 Deployment Config             │}
+\NormalTok{│      03.05 Monitoring Config 03.06 Security Config              │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  04. Documentation Artifacts (\textasciitilde{}80 types)                        │}
+\NormalTok{│      04.01 API Docs         04.02 Architecture Docs             │}
+\NormalTok{│      04.03 User Manuals     04.04 Operations Manuals            │}
+\NormalTok{│      04.05 Changelogs       04.06 Decision Records              │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  05. Contract Artifacts (\textasciitilde{}68 types)                             │}
+\NormalTok{│      05.01 Feature Contracts 05.02 API Contracts                │}
+\NormalTok{│      05.03 Data Contracts   05.04 Performance Contracts         │}
+\NormalTok{│      05.05 Security Contracts 05.06 Integration Contracts       │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Why 698 types?                                                 │}
+\NormalTok{│  • Finer classification = More accurate AI understanding        │}
+\NormalTok{│  • Each type has dedicated templates, reducing AI "creativity"  │}
+\NormalTok{│  • AI understands these categories; humans define once          │}
+\NormalTok{│  • Enables automated acceptance and quality metrics             │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{2-why-generate-artifacts-not-code}{%
+\subsection{2. Why Generate Artifacts, Not
+Code?}\label{2-why-generate-artifacts-not-code}}
+
+\hypertarget{21-the-true-status-of-code}{%
+\subsubsection{2.1 The True Status of
+Code}\label{21-the-true-status-of-code}}
+
+Traditional thinking holds that programmers' work is "writing code," and
+code is the programmer's "creation." But this is a \textbf{historical
+misunderstanding}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                    The True Status of Code                       │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Traditional view:                                              │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  Requirements → Code → Value                               │ │}
+\NormalTok{│  │                  ↑                                         │ │}
+\NormalTok{│  │              (Core product)                                │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ODD perspective:                                               │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  Requirements → Contract → Code → Tests → Artifact → Value │ │}
+\NormalTok{│  │                             ↑              ↑               │ │}
+\NormalTok{│  │                      (Intermediate)    (Core product)      │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Analogy: Sausage Factory                                       │}
+\NormalTok{│  • Sausage = Artifact (what customers want)                     │}
+\NormalTok{│  • Meat grinder, mixer = Code (production tools)                │}
+\NormalTok{│  • Wastewater, scraps = Code byproducts (unavoidable outputs)   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  When you buy sausage, you don\textquotesingle{}t ask about the grinder model.   │}
+\NormalTok{│  When clients buy software, they shouldn\textquotesingle{}t care how "elegant"   │}
+\NormalTok{│  your code is.                                                  │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{22-three-illusions-of-traditional-programming-thinking}{%
+\subsubsection{2.2 Three Illusions of Traditional Programming
+Thinking}\label{22-three-illusions-of-traditional-programming-thinking}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│          Three Illusions of Traditional Programming              │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Illusion 1: Writing code itself is value                       │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  → Truth: Code is just a means to an end                        │}
+\NormalTok{│  → Analogy: You obsess over knife sharpening,                   │}
+\NormalTok{│            but the customer just wants the dish                 │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Illusion 2: Code is an asset                                   │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  → Truth: Code is a liability (more = harder to maintain,       │}
+\NormalTok{│           harder to understand, more bugs)                      │}
+\NormalTok{│  → Analogy: More factory machines = higher maintenance costs    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Illusion 3: Code quality = Software quality                    │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  → Truth: Artifact correctness = Software quality               │}
+\NormalTok{│  → Analogy: Whether sausage tastes good doesn\textquotesingle{}t depend on       │}
+\NormalTok{│            how clean the meat grinder is                        │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Common programmer "self{-}indulgences":                          │}
+\NormalTok{│  • Knife skills (code style)  → Customer just wants the dish    │}
+\NormalTok{│  • Plating (architecture)     → Customer only cares about taste │}
+\NormalTok{│  • Cookware (framework)       → Customer just wants to be fed   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  These matter to professional chefs, but for hungry customers,  │}
+\NormalTok{│  they\textquotesingle{}re secondary.                                             │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{23-why-odd-focuses-on-artifacts}{%
+\subsubsection{2.3 Why ODD Focuses on
+Artifacts}\label{23-why-odd-focuses-on-artifacts}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                Why ODD Focuses on Artifacts                      │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Reason 1: Artifacts are verifiable                             │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • Whether code is "elegant" is subjective                      │}
+\NormalTok{│  • Whether artifacts are "correct" is objective fact            │}
+\NormalTok{│  • We can test artifacts; we can\textquotesingle{}t test "code aesthetics"       │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Reason 2: Artifacts correspond to human needs                  │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • Code corresponds to "implementation approach"                │}
+\NormalTok{│  • Artifacts correspond to "user stories"                       │}
+\NormalTok{│  • Clients accept artifacts, not lines of code                  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Reason 3: Artifacts can be sealed and protected                │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • Code can be accidentally modified or overwritten             │}
+\NormalTok{│  • Once accepted, artifacts can be sealed                       │}
+\NormalTok{│  • Sealed artifacts are stable "building blocks"                │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Reason 4: AI excels at generating code, but acceptance         │}
+\NormalTok{│           requires humans                                        │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • AI can rapidly generate vast amounts of code                 │}
+\NormalTok{│  • But AI can\textquotesingle{}t judge "is this what the user wanted?"           │}
+\NormalTok{│  • Artifact definition and acceptance is human work             │}
+\NormalTok{│  • ODD: Humans focus on "define what"; AI focuses on "how"      │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{24-paradigm-shift-from-generating-code-to-generating-artifacts}{%
+\subsubsection{2.4 Paradigm Shift: From "Generating Code" to "Generating
+Artifacts"}\label{24-paradigm-shift-from-generating-code-to-generating-artifacts}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│     Paradigm Shift: From "Code" to "Artifacts"                   │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Traditional AI{-}assisted development (e.g., GitHub Copilot):    │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  Human writes → AI completes → Human reviews → Human tests │ │}
+\NormalTok{│  │       ↑             ↑              ↑                       │ │}
+\NormalTok{│  │   (Human{-}led)   (AI assists)  (Bottleneck!)               │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Problem: AI generates 100x faster than humans,                 │}
+\NormalTok{│          but review speed remains human speed                   │}
+\NormalTok{│  Result: Faster AI = Busier humans = Bigger bottleneck          │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ODD approach:                                                   │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  Human defines contract → AI generates → System verifies → Auto{-}seal │}
+\NormalTok{│  │       ↑                                    ↑               │ │}
+\NormalTok{│  │   (Human{-}led)                      (No human bottleneck)   │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Key shifts:                                                    │}
+\NormalTok{│  • Humans no longer review code—they define contracts           │}
+\NormalTok{│  • System verifies via mutation testing, not human eyes         │}
+\NormalTok{│  • Artifacts are central; code is just means to produce them    │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{3-output-driven-development-in-context}{%
+\section{3. Output-Driven Development in
+Context}\label{3-output-driven-development-in-context}}
+
+\hypertarget{31-why-odd-is-not-an-incremental-improvement}{%
+\subsection{3.1 Why ODD Is Not an Incremental
+Improvement}\label{31-why-odd-is-not-an-incremental-improvement}}
+
+At first glance, Output-Driven Development (ODD) may appear to be an
+incremental refinement of existing software engineering practices.\\
+However, such an interpretation fundamentally misunderstands its intent.
+
+ODD does not optimize \emph{how} software is produced.\\
+It redefines \emph{what} constitutes the object of engineering control.
+
+This section situates ODD relative to established paradigms and
+clarifies why ODD cannot be reduced to, or subsumed by, any of them.
+
+\hypertarget{32-odd-vs-agile-and-devops}{%
+\subsection{3.2 ODD vs. Agile and
+DevOps}\label{32-odd-vs-agile-and-devops}}
+
+Agile and DevOps emphasize:
+
+\begin{itemize}
+\item
+  rapid iteration,
+\item
+  continuous feedback,
+\item
+  close alignment between development and deployment.
+\end{itemize}
+
+These methodologies assume that:
+
+\begin{itemize}
+\item
+  code changes are traceable to human decisions,
+\item
+  system behavior evolves incrementally,
+\item
+  responsibility can be inferred from process participation.
+\end{itemize}
+
+ODD differs in a fundamental way.
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule()
+Dimension & Agile / DevOps & ODD \\
+\midrule()
+\endhead
+Primary control unit & Code \& process & Output artifact \\
+Change cost & Managed incrementally & Often regenerated \\
+Responsibility & Distributed by role & Anchored by arbitration \\
+Assumption & Human-authored code & AI-generated artifacts \\
+\bottomrule()
+\end{longtable}
+
+ODD is compatible with Agile delivery pipelines, but \textbf{orthogonal
+to their control assumptions}.
+
+\hypertarget{33-odd-vs-test-driven-development-tdd}{%
+\subsection{3.3 ODD vs. Test-Driven Development
+(TDD)}\label{33-odd-vs-test-driven-development-tdd}}
+
+Test-Driven Development enforces correctness by:
+
+\begin{itemize}
+\item
+  writing tests before implementation,
+\item
+  treating tests as executable specifications.
+\end{itemize}
+
+While TDD elevates tests, it remains fundamentally
+\textbf{code-centric}:
+
+\begin{itemize}
+\item
+  tests validate implementations,
+\item
+  test coverage approximates behavioral confidence,
+\item
+  responsibility is mediated through test authorship.
+\end{itemize}
+
+In contrast, ODD:
+
+\begin{itemize}
+\item
+  specifies \emph{acceptable output spaces} via contracts,
+\item
+  evaluates artifacts directly,
+\item
+  uses tests, mutation analysis, and adversarial validation as
+  supporting mechanisms---not as the primary specification.
+\end{itemize}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule()
+Aspect & TDD & ODD \\
+\midrule()
+\endhead
+Specification form & Tests & Contracts over artifacts \\
+Verification target & Implementation behavior & Output validity \\
+Failure interpretation & Test fails & Artifact violates contract \\
+\bottomrule()
+\end{longtable}
+
+Thus, ODD does not replace TDD, but \textbf{repositions it as a
+subordinate verification layer}.
+
+\hypertarget{34-odd-vs-model-driven-engineering-mde}{%
+\subsection{3.4 ODD vs. Model-Driven Engineering
+(MDE)}\label{34-odd-vs-model-driven-engineering-mde}}
+
+Model-Driven Engineering promotes:
+
+\begin{itemize}
+\item
+  abstract models as primary artifacts,
+\item
+  code generation from models,
+\item
+  consistency between model and implementation.
+\end{itemize}
+
+Despite superficial similarity, ODD diverges in two critical aspects:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Epistemic status}\\
+  MDE models are intended to \emph{represent} system structure.\\
+  ODD contracts define \emph{acceptable outcomes} without claiming
+  representational completeness.
+\item
+  \textbf{Responsibility locus}\\
+  In MDE, correctness flows from model fidelity.\\
+  In ODD, correctness flows from artifact validation and arbitration.
+\end{enumerate}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule()
+Dimension & MDE & ODD \\
+\midrule()
+\endhead
+Primary abstraction & Structural model & Output contract \\
+Failure mode & Model-code divergence & Artifact violation \\
+Human role & Model author & Contract arbiter \\
+\bottomrule()
+\end{longtable}
+
+ODD explicitly avoids treating contracts as full system models.
+
+\hypertarget{35-odd-vs-prompt-engineering-and-llm-oriented-practices}{%
+\subsection{3.5 ODD vs. Prompt Engineering and LLM-Oriented
+Practices}\label{35-odd-vs-prompt-engineering-and-llm-oriented-practices}}
+
+Recent AI-assisted workflows emphasize:
+
+\begin{itemize}
+\item
+  prompt engineering,
+\item
+  chain-of-thought control,
+\item
+  fine-tuning or retrieval augmentation.
+\end{itemize}
+
+These approaches focus on \textbf{shaping generation behavior}.
+
+ODD deliberately decouples itself from generation mechanisms:
+
+\begin{quote}
+In ODD, the quality of an artifact must be defensible regardless of how
+it was generated.
+\end{quote}
+
+This design choice has two consequences:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  ODD remains model-agnostic.
+\item
+  Responsibility is not diluted by generation complexity.
+\end{enumerate}
+
+Prompt engineering may improve outputs, but it cannot substitute for
+\textbf{artifact-level accountability}.
+
+\hypertarget{36-odd-vs-human-in-the-loop-hitl-systems}{%
+\subsection{3.6 ODD vs. Human-in-the-Loop (HITL)
+Systems}\label{36-odd-vs-human-in-the-loop-hitl-systems}}
+
+Human-in-the-loop systems emphasize:
+
+\begin{itemize}
+\item
+  frequent human intervention,
+\item
+  oversight during generation,
+\item
+  interactive correction.
+\end{itemize}
+
+ODD reframes this relationship.
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule()
+Dimension & HITL & ODD \\
+\midrule()
+\endhead
+Human involvement & Continuous & Conditional \\
+Intervention trigger & Process stage & Irreducible disagreement \\
+Cognitive load & High & Concentrated \\
+\bottomrule()
+\end{longtable}
+
+ODD is not "human-out-of-the-loop".\\
+It is \textbf{human-at-the-decision-point}.
+
+\hypertarget{37-summary-orthogonality-not-replacement}{%
+\subsection{3.7 Summary: Orthogonality, Not
+Replacement}\label{37-summary-orthogonality-not-replacement}}
+
+ODD does not seek to replace existing methodologies.\\
+Instead, it introduces a \textbf{new axis of control} orthogonal to
+code-centric practices.
+
+\begin{quote}
+Existing methods optimize production.\\
+ODD governs legitimacy.
+\end{quote}
+
+This distinction explains why ODD becomes increasingly relevant as AI
+systems scale, implementations become transient, and responsibility must
+remain explicit.
+
+\hypertarget{38-transition-to-section-4}{%
+\subsection{3.8 Transition to Section
+4}\label{38-transition-to-section-4}}
+
+Having situated ODD relative to existing paradigms, the next section
+examines the \textbf{implications of an artifact-centric control model}
+for:
+
+\begin{itemize}
+\item
+  verification strategies,
+\item
+  responsibility allocation,
+\item
+  and governance in AI-native software systems.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{4-implications-of-an-artifact-centric-control-model}{%
+\section{4. Implications of an Artifact-Centric Control
+Model}\label{4-implications-of-an-artifact-centric-control-model}}
+
+\hypertarget{41-responsibility-reallocation-in-ai-assisted-production}{%
+\subsection{4.1 Responsibility Reallocation in AI-Assisted
+Production}\label{41-responsibility-reallocation-in-ai-assisted-production}}
+
+In traditional software engineering, responsibility is implicitly
+anchored in authorship.\\
+Code is written, reviewed, and maintained by identifiable individuals or
+teams, enabling post hoc attribution.
+
+In AI-assisted development, this linkage weakens substantially:
+
+\begin{itemize}
+\item
+  generation paths are non-deterministic,
+\item
+  code authorship is diluted across multiple agents,
+\item
+  implementations are frequently regenerated.
+\end{itemize}
+
+Under such conditions, responsibility can no longer be reliably inferred
+from process participation.
+
+ODD addresses this issue by \textbf{reallocating responsibility from
+authorship to arbitration}.
+
+\begin{quote}
+Responsibility in ODD is not derived from who wrote the code,\\
+but from who accepted the artifact under a specified contract.
+\end{quote}
+
+This shift preserves accountability without requiring transparency into
+AI internals.
+
+\hypertarget{42-contracts-as-responsibility-anchors}{%
+\subsection{4.2 Contracts as Responsibility
+Anchors}\label{42-contracts-as-responsibility-anchors}}
+
+In ODD, contracts serve a dual function:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Constraint definition}\\
+  They define the acceptable space of outputs.
+\item
+  \textbf{Responsibility anchoring}\\
+  They establish explicit decision points at which acceptance or
+  rejection occurs.
+\end{enumerate}
+
+By requiring human confirmation at contract boundaries---rather than
+continuous supervision---ODD makes responsibility:
+
+\begin{itemize}
+\item
+  explicit,
+\item
+  auditable,
+\item
+  and scalable.
+\end{itemize}
+
+Importantly, contracts in ODD are not assumed to be complete system
+descriptions.\\
+They are \textbf{control instruments}, not ontological models.
+
+\hypertarget{43-verification-beyond-correctness}{%
+\subsection{4.3 Verification Beyond
+Correctness}\label{43-verification-beyond-correctness}}
+
+Verification in conventional workflows is largely concerned with
+correctness relative to implementation.
+
+ODD broadens the notion of verification to include:
+
+\begin{itemize}
+\item
+  \textbf{contract compliance},
+\item
+  \textbf{robustness under perturbation},
+\item
+  \textbf{adversarial resistance}.
+\end{itemize}
+
+This motivates a layered verification structure in which:
+
+\begin{itemize}
+\item
+  unit and integration tests assess functional behavior,
+\item
+  mutation testing evaluates test adequacy,
+\item
+  adversarial testing probes boundary conditions and misuse scenarios.
+\end{itemize}
+
+Crucially, verification targets the \emph{artifact}, not the
+implementation.
+
+\begin{quote}
+An implementation may vary;\\
+an accepted artifact must remain defensible.
+\end{quote}
+
+\hypertarget{44-progressive-trust-and-conditional-human-intervention}{%
+\subsection{4.4 Progressive Trust and Conditional Human
+Intervention}\label{44-progressive-trust-and-conditional-human-intervention}}
+
+A central design principle of ODD is \textbf{progressive trust}.
+
+Rather than applying uniform scrutiny to all tasks, ODD dynamically
+adjusts verification rigor based on:
+
+\begin{itemize}
+\item
+  estimated complexity,
+\item
+  safety sensitivity,
+\item
+  external dependencies.
+\end{itemize}
+
+Human intervention is triggered only when:
+
+\begin{itemize}
+\item
+  contracts are ambiguous,
+\item
+  adversarial agents disagree,
+\item
+  or high-risk conditions are detected.
+\end{itemize}
+
+This approach preserves human authority while preventing cognitive
+overload.
+
+\begin{quote}
+Human attention is treated as a scarce governance resource.
+\end{quote}
+
+\hypertarget{45-governance-without-full-transparency}{%
+\subsection{4.5 Governance Without Full
+Transparency}\label{45-governance-without-full-transparency}}
+
+A common objection to AI-assisted systems is the lack of model
+transparency.
+
+ODD deliberately avoids assuming:
+
+\begin{itemize}
+\item
+  interpretable models,
+\item
+  explainable generation paths,
+\item
+  or deterministic outputs.
+\end{itemize}
+
+Instead, it adopts a governance strategy based on \textbf{observable
+outcomes} and \textbf{documented acceptance decisions}.
+
+This makes ODD compatible with:
+
+\begin{itemize}
+\item
+  proprietary models,
+\item
+  evolving AI architectures,
+\item
+  and heterogeneous toolchains.
+\end{itemize}
+
+Governance is achieved not by introspection, but by \textbf{controlled
+acceptance}.
+
+\hypertarget{46-risk-failure-and-explicit-non-goals}{%
+\subsection{4.6 Risk, Failure, and Explicit
+Non-Goals}\label{46-risk-failure-and-explicit-non-goals}}
+
+ODD does not eliminate risk.\\
+It makes risk \emph{legible}.
+
+Failures in ODD manifest as:
+
+\begin{itemize}
+\item
+  contract violations,
+\item
+  failed verification stages,
+\item
+  or unresolved arbitration.
+\end{itemize}
+
+These failure modes are explicit and auditable.
+
+Equally important are ODD's non-goals:
+
+\begin{itemize}
+\item
+  It does not aim to automate ethical judgment.
+\item
+  It does not guarantee optimal implementations.
+\item
+  It does not replace domain expertise.
+\end{itemize}
+
+ODD provides structure, not omniscience.
+
+\hypertarget{47-implications-for-ai-native-organizations}{%
+\subsection{4.7 Implications for AI-Native
+Organizations}\label{47-implications-for-ai-native-organizations}}
+
+As AI systems become primary producers rather than assistants,
+organizations face a structural challenge:
+
+\begin{quote}
+How can legitimacy be maintained when production is automated?
+\end{quote}
+
+ODD suggests an answer:
+
+\begin{itemize}
+\item
+  legitimacy derives from controlled acceptance,
+\item
+  authority is exercised through arbitration,
+\item
+  and responsibility is preserved through explicit contracts.
+\end{itemize}
+
+These implications extend beyond software engineering into
+organizational design and governance, which are explored further in
+subsequent work.
+
+\hypertarget{48-transition-to-limitations-and-future-work}{%
+\subsection{4.8 Transition to Limitations and Future
+Work}\label{48-transition-to-limitations-and-future-work}}
+
+The implications discussed above suggest both strengths and inherent
+limitations.
+
+The following section examines:
+
+\begin{itemize}
+\item
+  scenarios where ODD is unsuitable,
+\item
+  potential failure modes,
+\item
+  and directions for empirical validation.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{5-limitations-and-future-work}{%
+\section{5. Limitations and Future
+Work}\label{5-limitations-and-future-work}}
+
+\hypertarget{51-scope-limitations}{%
+\subsection{5.1 Scope Limitations}\label{51-scope-limitations}}
+
+ODD, as presented in this paper, is a conceptual framework rather than a
+fully validated engineering methodology. Several limitations constrain
+its current applicability:
+
+\textbf{Domain constraints.} ODD is most naturally suited to domains
+where:
+
+\begin{itemize}
+\item
+  outputs are objectively verifiable,
+\item
+  contracts can be precisely specified,
+\item
+  and mutation testing is computationally feasible.
+\end{itemize}
+
+Domains involving subjective judgment (e.g., UI aesthetics), emergent
+behavior (e.g., complex simulations), or real-time physical interaction
+(e.g., robotics) may require significant adaptation.
+
+\textbf{Contract expressiveness.} Not all requirements are easily
+contractifiable. Tacit knowledge, contextual nuance, and evolving user
+expectations resist formalization. ODD does not claim to eliminate this
+gap---it aims to make the gap explicit and manageable.
+
+\textbf{Verification costs.} Mutation testing, while mathematically
+grounded, is computationally expensive. Current implementations may not
+scale to very large codebases without optimization strategies such as
+incremental mutation, sampling, or parallelization.
+
+\hypertarget{52-methodological-limitations}{%
+\subsection{5.2 Methodological
+Limitations}\label{52-methodological-limitations}}
+
+\textbf{Lack of empirical validation.} This paper presents ODD as a
+theoretical framework. Rigorous empirical studies---controlled
+experiments, longitudinal case studies, and industry deployments---are
+necessary to validate its claimed benefits.
+
+\textbf{Organizational adoption.} ODD implies significant changes to
+development workflows, team structures, and skill requirements. The
+sociotechnical challenges of adoption are not addressed in this paper.
+
+\textbf{Tool maturity.} While ODD is tool-agnostic in principle,
+practical adoption depends on mature tooling for contract authoring,
+mutation testing, and artifact sealing. Current tool ecosystems are
+fragmented.
+
+\hypertarget{53-explicit-non-goals}{%
+\subsection{5.3 Explicit Non-Goals}\label{53-explicit-non-goals}}
+
+To prevent misinterpretation, we state what ODD does \emph{not} aim to
+achieve:
+
+\begin{itemize}
+\item
+  \textbf{Fully autonomous development.} ODD requires human judgment for
+  contract definition, acceptance decisions, and exception handling. It
+  is not a path to unsupervised AI coding.
+\item
+  \textbf{Elimination of all bugs.} ODD reduces certain classes of
+  defects (those detectable by mutation testing) but does not guarantee
+  bug-free software.
+\item
+  \textbf{Replacement of domain expertise.} Contracts encode domain
+  knowledge; they do not generate it. Domain experts remain essential.
+\item
+  \textbf{Universal applicability.} ODD is designed for AI-assisted
+  development contexts. It may offer limited value in environments where
+  AI code generation is not used.
+\end{itemize}
+
+\hypertarget{54-future-work}{%
+\subsection{5.4 Future Work}\label{54-future-work}}
+
+The ODD framework opens several research directions:
+
+\textbf{Empirical validation.} Controlled studies comparing ODD-based
+workflows against traditional and AI-assisted baselines, measuring
+productivity, defect rates, and developer experience.
+
+\textbf{Contract languages.} Development of domain-specific contract
+languages that balance expressiveness with verifiability, potentially
+leveraging formal methods or lightweight specification techniques.
+
+\textbf{Scalable verification.} Research into mutation testing
+optimization, including machine learning-guided mutant selection,
+incremental analysis, and cloud-native parallelization.
+
+\textbf{Organizational models.} Investigation of team structures, skill
+transitions, and governance frameworks suited to ODD adoption.
+
+\textbf{Integration with formal methods.} Exploration of how ODD
+contracts can interface with formal verification, model checking, or
+proof assistants for high-assurance domains.
+
+\hypertarget{55-the-odd-paper-series}{%
+\subsection{5.5 The ODD Paper Series}\label{55-the-odd-paper-series}}
+
+This paper (Paper I) establishes the core paradigm. Subsequent papers in
+the series address complementary concerns:
+
+\begin{itemize}
+\item
+  \textbf{Paper II --- Human Delegation Proof}: How trust transfers
+  progressively from human review to verifiable mechanisms while
+  preserving human-legible accountability.
+\item
+  \textbf{Paper III --- Contract Execution}: Why contract precision
+  determines artifact correctness; methods for measuring and improving
+  contract clarity.
+\item
+  \textbf{Paper IV --- Legitimacy Evolution}: How to govern
+  re-legitimation and lifecycle management under changing requirements.
+\item
+  \textbf{Paper S1 --- Context Engineering}: A practical
+  context-engineering stack (layering, token budgets, evidence-first
+  memory) for scalable ODD implementation.
+\end{itemize}
+
+Together, these papers aim to make ODD not merely a conceptual proposal,
+but a complete, implementable, and auditable methodology for AI-native
+software production.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{6-conclusion}{%
+\section{6. Conclusion}\label{6-conclusion}}
+
+This paper has proposed \textbf{Output-Driven Development (ODD)}, a
+software development paradigm designed for the AI era.
+
+\hypertarget{61-summary-of-contributions}{%
+\subsection{6.1 Summary of
+Contributions}\label{61-summary-of-contributions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Reframed the control problem.} We argued that AI-assisted
+  development breaks the traditional control surface of software
+  engineering, where human code review served as the final quality gate.
+  ODD addresses this by shifting control from process supervision to
+  artifact acceptance.
+\item
+  \textbf{Introduced artifact-centric governance.} ODD centers on
+  \emph{artifacts}---verifiable outputs that satisfy human
+  needs---rather than code. This reorientation aligns development goals
+  with user value and enables systematic verification.
+\item
+  \textbf{Established contracts as responsibility anchors.} In ODD,
+  contracts define what constitutes acceptable output, creating explicit
+  decision points for human acceptance. Responsibility derives from
+  arbitration, not authorship.
+\item
+  \textbf{Proposed verification beyond code review.} ODD replaces human
+  code review with layered verification (contract compliance, mutation
+  testing, adversarial probing), enabling scalable quality assurance
+  without cognitive bottlenecks.
+\item
+  \textbf{Articulated governance without transparency.} ODD demonstrates
+  that effective governance of AI-assisted systems does not require
+  model interpretability---it requires controlled acceptance and
+  auditable decisions.
+\end{enumerate}
+
+\hypertarget{62-the-core-insight}{%
+\subsection{6.2 The Core Insight}\label{62-the-core-insight}}
+
+The central insight of ODD is simple but consequential:
+
+\begin{quote}
+In AI-assisted development, humans should define \emph{what} is
+acceptable, not supervise \emph{how} it is produced.
+\end{quote}
+
+This shift preserves human authority while accommodating AI's generative
+capacity. It transforms the developer's role from code author to
+artifact architect---from someone who writes implementations to someone
+who specifies outcomes.
+
+\hypertarget{63-implications}{%
+\subsection{6.3 Implications}\label{63-implications}}
+
+If ODD's premises are correct, several implications follow:
+
+\begin{itemize}
+\item
+  \textbf{For practitioners}: The skills that matter shift from coding
+  proficiency to contract specification, verification design, and
+  acceptance judgment.
+\item
+  \textbf{For organizations}: Development workflows must be restructured
+  around artifact pipelines rather than code commits.
+\item
+  \textbf{For researchers}: New research agendas emerge around contract
+  languages, scalable mutation testing, and human-AI collaboration
+  patterns.
+\item
+  \textbf{For the field}: Software engineering may be entering a
+  paradigm transition comparable to the shift from assembly to
+  high-level languages---a transition in which the unit of human concern
+  moves up the abstraction stack.
+\end{itemize}
+
+\hypertarget{64-subsequent-work-in-the-odd-series}{%
+\subsection{6.4 Subsequent Work in the ODD
+Series}\label{64-subsequent-work-in-the-odd-series}}
+
+While this paper introduces Output-Driven Development (ODD) as an
+artifact-centric paradigm grounded in artifact legitimacy rather than
+code correctness, it does not yet address several critical questions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Contract acquisition}: How can contracts be acquired with low
+  human effort and without requiring formal-methods expertise?
+\item
+  \textbf{Enforcement mechanisms}: How can such contracts be enforced
+  through systematic validation during AI-dominant production?
+\item
+  \textbf{Legitimacy evolution}: How do legitimacy standards evolve over
+  time as contexts change?
+\item
+  \textbf{Context engineering}: How can context be assembled under token
+  budgets with hard boundaries and traceability guarantees?
+\end{enumerate}
+
+These questions are addressed in subsequent papers in the ODD series:
+
+\begin{itemize}
+\item
+  \textbf{Paper II} (\emph{Human Delegation Proof}) studies contract
+  acquisition and human role minimization through clarity assessment and
+  structured context injection.
+\item
+  \textbf{Paper III} (\emph{Contract Precision}) investigates contract
+  precision as a control variable and proposes adversarial enforcement
+  mechanisms with empirical evidence.
+\item
+  \textbf{Paper IV} (\emph{Legitimacy Evolution}) examines the evolution
+  of legitimacy standards across temporal and organizational settings.
+\item
+  \textbf{Paper S1} (\emph{Context Engineering}) provides supporting
+  infrastructure for auditable, cost-effective context assembly.
+\end{itemize}
+
+\hypertarget{65-closing-remarks}{%
+\subsection{6.5 Closing Remarks}\label{65-closing-remarks}}
+
+ODD is not a finished methodology. It is a proposal, a direction, a bet
+on how software development might evolve as AI capabilities advance. Its
+validity will be determined not by theoretical argument alone, but by
+empirical evidence, practical adoption, and the judgment of the
+engineering community.
+
+What we offer here is a framework for thinking about a problem that will
+only grow more pressing: How do humans maintain meaningful control over
+software systems when they no longer write---or even fully
+understand---the code?
+
+ODD suggests an answer: by defining what we want, verifying what we get,
+and accepting responsibility for the difference.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+{[}1{]} Kuhn, T. S. (1962). \emph{The Structure of Scientific
+Revolutions}. University of Chicago Press.
+
+{[}2{]} Meyer, B. (1992). Design by Contract. \emph{IEEE Computer},
+25(10), 40-51.
+
+{[}3{]} Beck, K. (2002). \emph{Test-Driven Development: By Example}.
+Addison-Wesley.
+
+{[}4{]} Jia, Y., \& Harman, M. (2011). An Analysis and Survey of the
+Development of Mutation Testing. \emph{IEEE Transactions on Software
+Engineering}, 37(5), 649-678.
+
+{[}5{]} DeMillo, R. A., Lipton, R. J., \& Sayward, F. G. (1978). Hints
+on Test Data Selection: Help for the Practicing Programmer. \emph{IEEE
+Computer}, 11(4), 34-41.
+
+{[}6{]} Bubeck, S., Chandrasekaran, V., Eldan, R., et al. (2023). Sparks
+of Artificial General Intelligence: Early experiments with GPT-4.
+\emph{arXiv preprint arXiv:2303.12712}.
+
+{[}7{]} Chen, M., Tworek, J., Jun, H., et al. (2021). Evaluating Large
+Language Models Trained on Code. \emph{arXiv preprint arXiv:2107.03374}.
+
+{[}8{]} Austin, J., Odena, A., Nye, M., et al. (2021). Program Synthesis
+with Large Language Models. \emph{arXiv preprint arXiv:2108.07732}.
+
+{[}9{]} Amershi, S., Begel, A., Bird, C., et al. (2019). Software
+Engineering for Machine Learning: A Case Study. \emph{Proceedings of the
+41st International Conference on Software Engineering: Software
+Engineering in Practice}, 291-300.
+
+{[}10{]} Fowler, M. (2004). \emph{UML Distilled: A Brief Guide to the
+Standard Object Modeling Language} (3rd ed.). Addison-Wesley.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{appendix-a-supplementary-material}{%
+\section{Appendix A: Supplementary
+Material}\label{appendix-a-supplementary-material}}
+
+The detailed technical content---including the 698 artifact
+classification system, contract templates, mutation testing
+configurations, sealing record structures, and implementation
+architecture---is available in the companion whitepaper:
+
+\begin{quote}
+\textbf{Output-Driven Development: Complete Technical Reference}\\
+Available at: {[}Zenodo DOI{]} / {[}GitHub Repository{]}
+\end{quote}
+
+This supplementary material provides:
+
+\begin{itemize}
+\item
+  Complete artifact taxonomy with examples
+\item
+  Contract specification language reference
+\item
+  Mutation testing configuration guides
+\item
+  Multi-agent architecture details
+\item
+  Case studies and worked examples
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{End of Academic Paper}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{supplementary-material-for-whitepaper-version}{%
+\section{SUPPLEMENTARY MATERIAL (For Whitepaper
+Version)}\label{supplementary-material-for-whitepaper-version}}
+
+\hypertarget{part-ii-problem-definition-extended}{%
+\section{Part II: Problem Definition
+(Extended)}\label{part-ii-problem-definition-extended}}
+
+\hypertarget{5-the-core-contradiction-of-the-ai-era}{%
+\subsection{5. The Core Contradiction of the AI
+Era}\label{5-the-core-contradiction-of-the-ai-era}}
+
+\hypertarget{31-qualitative-leap-in-productivity}{%
+\subsubsection{3.1 Qualitative Leap in
+Productivity}\label{31-qualitative-leap-in-productivity}}
+
+AI code generation technology underwent a qualitative leap between
+2023-2025:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│          Qualitative Leap in AI Code Generation                  │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Dimension       Pre{-}2023           2025            Change      │}
+\NormalTok{│  ────────────────────────────────────────────────────────────── │}
+\NormalTok{│  Generation      Human: 1 day/     AI: minutes/    100x+        │}
+\NormalTok{│  Speed           feature           feature                      │}
+\NormalTok{│  Token Cost      $0.03/1k tokens   $0.001/1k       30x↓         │}
+\NormalTok{│  Code Quality    "Barely usable"   "Production"    Qualitative  │}
+\NormalTok{│  Context         Single file       Entire codebase Qualitative  │}
+\NormalTok{│  Multi{-}language  Limited           Almost all      Qualitative  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Conclusion: AI can now generate production{-}grade code          │}
+\NormalTok{│             at 100x+ human speed                                │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{32-the-impossible-triangle}{%
+\subsubsection{3.2 The Impossible
+Triangle}\label{32-the-impossible-triangle}}
+
+This creates an \textbf{impossible triangle}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│              The AI Era\textquotesingle{}s Impossible Triangle                    │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│                      [Speed]                                    │}
+\NormalTok{│                       /\textbackslash{}                                         │}
+\NormalTok{│                      /  \textbackslash{}                                        │}
+\NormalTok{│                     /    \textbackslash{}                                       │}
+\NormalTok{│                    /      \textbackslash{}                                      │}
+\NormalTok{│                   /   ??   \textbackslash{}                                     │}
+\NormalTok{│                  /          \textbackslash{}                                    │}
+\NormalTok{│                 /\_\_\_\_\_\_\_\_\_\_\_\_\textbackslash{}                                   │}
+\NormalTok{│            [Quality]      [Human Control]                       │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ──────────────────────────────────────────────────────────────  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Traditional: Sacrifice speed for quality and control           │}
+\NormalTok{│  → Humans write code, humans review code                        │}
+\NormalTok{│  → Slow but controllable                                        │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Uncontrolled AI: Sacrifice quality and control for speed       │}
+\NormalTok{│  → AI generates code, deploy directly                           │}
+\NormalTok{│  → Fast but uncontrollable, quality not guaranteed              │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ODD solution: Achieve all three                                │}
+\NormalTok{│  → Replace human review with mutation testing                   │}
+\NormalTok{│  → Fast, quality assured, human control via contracts           │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Core question}: \textbf{How can we trust AI-generated code
+without reviewing it?}
+
+\hypertarget{4-why-traditional-methods-fail}{%
+\subsection{4. Why Traditional Methods
+Fail}\label{4-why-traditional-methods-fail}}
+
+\hypertarget{41-hidden-assumptions-of-traditional-methodologies}{%
+\subsubsection{4.1 Hidden Assumptions of Traditional
+Methodologies}\label{41-hidden-assumptions-of-traditional-methodologies}}
+
+All traditional software development methodologies share a common
+\textbf{hidden assumption}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│           Hidden Assumptions of Traditional Methods              │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Method          Hidden Assumption       Why It Fails in AI Era │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  TDD            Human writes tests+code  "Self{-}grading" untrusted│}
+\NormalTok{│  BDD            Human defines+implements AI still needs review   │}
+\NormalTok{│  DbC            Contract embedded in code Contract{-}code coupling │}
+\NormalTok{│  Code Review    Human reviews human code AI volume exceeds review│}
+\NormalTok{│  Agile          Team understands context AI can\textquotesingle{}t read between lines│}
+\NormalTok{│  Waterfall      Document{-}driven         Docs can\textquotesingle{}t be auto{-}verified│}
+\NormalTok{│  Spec Programming  Markdown specs       Vague, untestable        │}
+\NormalTok{│  Vibe Coding    Natural language        No precise acceptance    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Shared assumption: Human code review is the final defense      │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  This assumption fails in the AI era.                           │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Because:                                                       │}
+\NormalTok{│  • AI generation speed \textgreater{}\textgreater{} Human review speed                    │}
+\NormalTok{│  • AI generation volume \textgreater{}\textgreater{} Human review capacity                │}
+\NormalTok{│  • Human review of AI code \textless{}\textless{} Human review of human code        │}
+\NormalTok{│    (AI\textquotesingle{}s logic may differ completely from human thinking)       │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{42-comprehensive-comparison-odd-vs-traditional-methods}{%
+\subsubsection{4.2 Comprehensive Comparison: ODD vs Traditional
+Methods}\label{42-comprehensive-comparison-odd-vs-traditional-methods}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌────────────────────────────────────────────────────────────────────────────┐}
+\NormalTok{│               ODD vs Traditional Methodologies Comparison                   │}
+\NormalTok{├────────────────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                            │}
+\NormalTok{│  Dimension        Waterfall    Agile/Scrum    TDD          ODD            │}
+\NormalTok{│  ──────────────────────────────────────────────────────────────────────── │}
+\NormalTok{│  Requirements     Documents    User Stories   Test Cases   Contracts      │}
+\NormalTok{│  Code Author      Human        Human          Human        AI             │}
+\NormalTok{│  Test Author      QA Team      Developers     Developers   AI             │}
+\NormalTok{│  Quality Assurance Manual QA   CI             Coverage     Mutation Test  │}
+\NormalTok{│  Review Mechanism Code Review  Code Review    Code Review  System Verify  │}
+\NormalTok{│  Trust Foundation Human Judge  Human Judge    Tests Pass   Math Proof     │}
+\NormalTok{│  Scaling Method   Add People   Add People     Add People   Add Compute    │}
+\NormalTok{│  Iteration Cycle  Months       Weeks          Days         Hours          │}
+\NormalTok{│  Knowledge Store  Documents    Wiki           Tests        Contracts      │}
+\NormalTok{│  Precision        Low          Medium         Medium{-}High  High           │}
+\NormalTok{│  Verifiability    Low          Low            Medium       High           │}
+\NormalTok{│                                                                            │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════════════   │}
+\NormalTok{│                                                                            │}
+\NormalTok{│  AI Era Fitness   ✗            △              △            ✓              │}
+\NormalTok{│                                                                            │}
+\NormalTok{│  Legend:                                                                   │}
+\NormalTok{│  ✗ = Not adapted (core assumptions fail)                                  │}
+\NormalTok{│  △ = Partially adapted (requires heavy human involvement)                 │}
+\NormalTok{│  ✓ = Fully adapted (designed for AI era)                                  │}
+\NormalTok{│                                                                            │}
+\NormalTok{│  ──────────────────────────────────────────────────────────────────────── │}
+\NormalTok{│                                                                            │}
+\NormalTok{│  Why Spec Programming and Vibe Coding aren\textquotesingle{}t enough?                      │}
+\NormalTok{│                                                                            │}
+\NormalTok{│  Specification Programming:                                               │}
+\NormalTok{│  • Describes requirements in Markdown                                     │}
+\NormalTok{│  • Problem: Vague, non{-}quantifiable, not auto{-}testable                   │}
+\NormalTok{│  • Example: "System should respond quickly" → How fast? Unverifiable     │}
+\NormalTok{│                                                                            │}
+\NormalTok{│  Vibe Coding:                                                             │}
+\NormalTok{│  • Natural language interaction with AI                                   │}
+\NormalTok{│  • Problem: No precise acceptance criteria, unpredictable results        │}
+\NormalTok{│  • Example: "Write me a login feature" → AI may understand differently   │}
+\NormalTok{│                                                                            │}
+\NormalTok{│  ODD Contracts:                                                           │}
+\NormalTok{│  • Precisely define inputs, outputs, boundaries, acceptance criteria     │}
+\NormalTok{│  • Quantifiable, testable, verifiable                                    │}
+\NormalTok{│  • Example: Contract defines "response time \textless{} 200ms", auto{-}verifiable    │}
+\NormalTok{│                                                                            │}
+\NormalTok{└────────────────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{part-iii-what-is-odd}{%
+\section{Part III: What is ODD}\label{part-iii-what-is-odd}}
+
+\hypertarget{5-odd-definition}{%
+\subsection{5. ODD Definition}\label{5-odd-definition}}
+
+\hypertarget{51-one-sentence-definition}{%
+\subsubsection{5.1 One-Sentence
+Definition}\label{51-one-sentence-definition}}
+
+\begin{quote}
+\textbf{ODD (Output-Driven Development)} is a software development
+paradigm for the AI era:\\
+\textbf{Humans define artifact specifications (contracts), AI generates
+implementation code, the system verifies correctness through mutation
+testing, and correct artifacts are protected through sealing.}
+\end{quote}
+
+\hypertarget{52-odd-core-formula}{%
+\subsubsection{5.2 ODD Core Formula}\label{52-odd-core-formula}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                       ODD Core Formula                           │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│    ODD = Contract Definition + AI Execution + Mutation Verify + Seal │}
+\NormalTok{│                                                                  │}
+\NormalTok{│    ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐       │}
+\NormalTok{│    │Contract │ → │   AI    │ → │Mutation │ → │  Seal   │       │}
+\NormalTok{│    │ Define  │   │ Execute │   │  Test   │   │ Protect │       │}
+\NormalTok{│    │ (Human) │   │  (AI)   │   │(System) │   │(System) │       │}
+\NormalTok{│    └─────────┘   └─────────┘   └─────────┘   └─────────┘       │}
+\NormalTok{│        ↑                                           │             │}
+\NormalTok{│        └───────────────────────────────────────────┘             │}
+\NormalTok{│                        Feedback Loop                             │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Responsibilities at each stage:                                │}
+\NormalTok{│  • Contract Definition: Human responsibility—define "what"      │}
+\NormalTok{│  • AI Execution: AI responsibility—decide "how"                 │}
+\NormalTok{│  • Mutation Testing: System responsibility—verify "correct?"    │}
+\NormalTok{│  • Sealing: System responsibility—protect "verified results"    │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{53-five-core-characteristics-of-odd}{%
+\subsubsection{5.3 Five Core Characteristics of
+ODD}\label{53-five-core-characteristics-of-odd}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│               Five Core Characteristics of ODD                   │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ① Humans Don\textquotesingle{}t Write Code                                      │}
+\NormalTok{│     • Humans only define contracts; 100\% code by AI             │}
+\NormalTok{│     • All complexity delegated to AI                            │}
+\NormalTok{│     • Domain experts can participate directly (no coding skills)│}
+\NormalTok{│     • Human value is "defining what," not "implementing how"    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ② Humans Can Skip Code Review                                  │}
+\NormalTok{│     • Mutation testing provides trust foundation (math, not intuition)│}
+\NormalTok{│     • "Is code correct?" verified by system, not human judgment │}
+\NormalTok{│     • Frees human bandwidth to focus on defining value          │}
+\NormalTok{│     • Human review goes from "mandatory" to "optional"          │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ③ Sealed Code Can\textquotesingle{}t Be Modified by AI                          │}
+\NormalTok{│     • Verified code is protected from accidental AI changes     │}
+\NormalTok{│     • Prevents AI from breaking B while fixing A                │}
+\NormalTok{│     • Auditable: Every seal has complete records (who, when, why)│}
+\NormalTok{│     • Traceable: Any version can be restored                    │}
+\NormalTok{│     • System has "regret capability": Errors can be rolled back │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ④ Infinite Parallel Scaling                                    │}
+\NormalTok{│     • AI "worker" count limited only by compute and LLM speed   │}
+\NormalTok{│     • Distributed development scales infinitely                 │}
+\NormalTok{│     • 1 person + ODD ≈ Traditional small team (5{-}8 people)      │}
+\NormalTok{│     • No interpersonal communication cost, no meeting overhead  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ⑤ Define on Phone, Produce in Cloud                            │}
+\NormalTok{│     • Support contract definition on mobile                     │}
+\NormalTok{│     • Invoke cloud computing resources to generate artifacts    │}
+\NormalTok{│     • Deliver use{-}value humans need                             │}
+\NormalTok{│     • Anytime, anywhere, on{-}demand production                   │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{54-odd-is-tool-agnostic}{%
+\subsubsection{5.4 ODD is Tool-Agnostic}\label{54-odd-is-tool-agnostic}}
+
+\textbf{Important declaration}: ODD is a \textbf{methodology}, not a
+product. It can be implemented with any tools.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                    ODD Tool Independence                         │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Component         Implementation Options                        │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  LLM Engine        Claude, GPT{-}4, Gemini, LLaMA, Qwen,          │}
+\NormalTok{│                    DeepSeek, Local models, Any code{-}gen LLM     │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Mutation Testing  Stryker (JS/TS), Pitest (Java),              │}
+\NormalTok{│                    mutmut (Python), Mull (C++), Custom tools    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Version/Sealing   Git + Custom extensions, Database + Code mgmt,│}
+\NormalTok{│                    SVN, Mercurial, Even manual management       │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Contract Storage  Database + Code, JSON, YAML, XML,            │}
+\NormalTok{│                    Natural language + Structured templates      │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Execution Env     Cloud, Local, Hybrid, Edge computing         │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Progee is a reference implementation of ODD, but ODD itself    │}
+\NormalTok{│  is an open methodology. Anyone can practice ODD with any tools.│}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ODD\textquotesingle{}s value is in the ideas, not specific tools:               │}
+\NormalTok{│  • Artifact{-}centric                                             │}
+\NormalTok{│  • Contract{-}driven development                                  │}
+\NormalTok{│  • Mutation testing verification                                │}
+\NormalTok{│  • Sealing protection mechanism                                 │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{part-iv-contract-system}{%
+\section{Part IV: Contract System}\label{part-iv-contract-system}}
+
+\hypertarget{6-contracts-precise-agreements-defining-artifacts}{%
+\subsection{6. Contracts: Precise Agreements Defining
+Artifacts}\label{6-contracts-precise-agreements-defining-artifacts}}
+
+\hypertarget{61-contract-definition}{%
+\subsubsection{6.1 Contract Definition}\label{61-contract-definition}}
+
+\textbf{Traditional understanding} (incomplete): A contract is an
+"agreement" between humans and AI.
+
+\textbf{ODD definition} (complete):
+
+\begin{quote}
+\textbf{Contract} is a precise agreement defining artifacts---a
+specification that transforms requirements into utility.\\
+Contracts can be used for collaboration between humans, between humans
+and AI, or between AI agents.\\
+Contracts are particularly suitable for AI understanding because they
+are structured, quantifiable, and testable.
+\end{quote}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                 Complete Definition of Contract                  │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Contract = Precise Artifact Definition + Requirements as Utility + Quantifiable \& Testable │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Three core characteristics of contracts:                       │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │ 1. Precision                                               │ │}
+\NormalTok{│  │    • Defines explicit inputs, outputs, boundary conditions │ │}
+\NormalTok{│  │    • No gray areas, no "roughly," no "close enough"        │ │}
+\NormalTok{│  │    • Machine{-}parseable and understandable                  │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │ 2. Utility{-}oriented                                        │ │}
+\NormalTok{│  │    • Focuses on artifact use{-}value                         │ │}
+\NormalTok{│  │    • Defines "what to do," not "how to do it"              │ │}
+\NormalTok{│  │    • Acceptance based on utility, not implementation       │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │ 3. Verifiability                                           │ │}
+\NormalTok{│  │    • Every stipulation can be verified through testing     │ │}
+\NormalTok{│  │    • Acceptance criteria are executable                    │ │}
+\NormalTok{│  │    • Success or failure is binary—no "partial success"     │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Contract applicability:                                        │}
+\NormalTok{│  • Human ↔ Human: Clear division among team members            │}
+\NormalTok{│  • Human ↔ AI: Human defines requirements, AI implements       │}
+\NormalTok{│  • AI ↔ AI: Multi{-}agent collaboration                          │}
+\NormalTok{│  • System ↔ System: API contracts between microservices        │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{62-contracts-vs-other-requirement-expression-methods}{%
+\subsubsection{6.2 Contracts vs Other Requirement Expression
+Methods}\label{62-contracts-vs-other-requirement-expression-methods}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│        Contracts vs Other Requirement Expression Methods         │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Method            Characteristics        Problems              │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Natural Language  "System should respond  Vague, untestable   │}
+\NormalTok{│                    quickly"                                     │}
+\NormalTok{│  User Stories      "As a user I want..."  Lacks precise bounds │}
+\NormalTok{│  Markdown Docs     Structured natural lang Still vague          │}
+\NormalTok{│  UML Diagrams      Graphical description  Hard to auto{-}verify  │}
+\NormalTok{│  Test Cases        Executable verification Lacks full picture  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ODD Contracts     Precise+Utility+Verifiable ← Best for AI era│}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Concrete example:                                              │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Natural language:                                              │}
+\NormalTok{│  "When users fail login too many times, lock the account"       │}
+\NormalTok{│  Problems: How many is "too many"? How long locked? How unlock? │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Markdown document:                                             │}
+\NormalTok{│  "\#\# Account Locking Feature                                    │}
+\NormalTok{│   {-} Lock when failures exceed threshold                         │}
+\NormalTok{│   {-} Notify user when locked"                                    │}
+\NormalTok{│  Problems: What threshold? What notification content?           │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ODD Contract:                                                  │}
+\NormalTok{│  \{                                                               │}
+\NormalTok{│    "feature": "account\_lock",                                    │}
+\NormalTok{│    "trigger": \{"failed\_attempts": 5, "window": "5min"\},          │}
+\NormalTok{│    "action": \{"lock\_duration": "30min"\},                         │}
+\NormalTok{│    "response": \{"code": "ACCOUNT\_LOCKED", "message": "..."\},     │}
+\NormalTok{│    "acceptance": [                                               │}
+\NormalTok{│      "Given 4 failures When 5th attempt Then lock account",      │}
+\NormalTok{│      "Given locked account When login Then return ACCOUNT\_LOCKED"│}
+\NormalTok{│    ]                                                             │}
+\NormalTok{│  \}                                                               │}
+\NormalTok{│  Advantages: Precise, testable, AI{-}understandable, auto{-}verifiable │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{63-contract-structure}{%
+\subsubsection{6.3 Contract Structure}\label{63-contract-structure}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\{}
+  \DataTypeTok{"contract\_id"}\FunctionTok{:} \StringTok{"LOGIN{-}001"}\FunctionTok{,}
+  \DataTypeTok{"version"}\FunctionTok{:} \StringTok{"1.0.0"}\FunctionTok{,}
+  \DataTypeTok{"name"}\FunctionTok{:} \StringTok{"User Login"}\FunctionTok{,}
+  \DataTypeTok{"description"}\FunctionTok{:} \StringTok{"Verify user credentials and return authentication token"}\FunctionTok{,}
+  
+  \DataTypeTok{"input"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"username"}\FunctionTok{:} \FunctionTok{\{}
+      \DataTypeTok{"type"}\FunctionTok{:} \StringTok{"string"}\FunctionTok{,}
+      \DataTypeTok{"constraints"}\FunctionTok{:} \OtherTok{[}\StringTok{"non{-}empty"}\OtherTok{,} \StringTok{"length 3{-}20"}\OtherTok{,} \StringTok{"alphanumeric and underscore only"}\OtherTok{]}
+    \FunctionTok{\},}
+    \DataTypeTok{"password"}\FunctionTok{:} \FunctionTok{\{}
+      \DataTypeTok{"type"}\FunctionTok{:} \StringTok{"string"}\FunctionTok{,} 
+      \DataTypeTok{"constraints"}\FunctionTok{:} \OtherTok{[}\StringTok{"non{-}empty"}\OtherTok{,} \StringTok{"length 8{-}128"}\OtherTok{]}
+    \FunctionTok{\}}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"output"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"success\_case"}\FunctionTok{:} \FunctionTok{\{}
+      \DataTypeTok{"token"}\FunctionTok{:} \StringTok{"JWT token, valid for 3600 seconds"}\FunctionTok{,}
+      \DataTypeTok{"expires\_in"}\FunctionTok{:} \StringTok{"number, seconds"}
+    \FunctionTok{\},}
+    \DataTypeTok{"failure\_cases"}\FunctionTok{:} \OtherTok{[}
+      \FunctionTok{\{}\DataTypeTok{"code"}\FunctionTok{:} \StringTok{"INVALID\_CREDENTIALS"}\FunctionTok{,} \DataTypeTok{"message"}\FunctionTok{:} \StringTok{"Invalid username or password"}\FunctionTok{\}}\OtherTok{,}
+      \FunctionTok{\{}\DataTypeTok{"code"}\FunctionTok{:} \StringTok{"ACCOUNT\_LOCKED"}\FunctionTok{,} \DataTypeTok{"message"}\FunctionTok{:} \StringTok{"Account locked, try again in 30 minutes"}\FunctionTok{\}}\OtherTok{,}
+      \FunctionTok{\{}\DataTypeTok{"code"}\FunctionTok{:} \StringTok{"ACCOUNT\_DISABLED"}\FunctionTok{,} \DataTypeTok{"message"}\FunctionTok{:} \StringTok{"Account disabled, contact administrator"}\FunctionTok{\}}
+    \OtherTok{]}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"acceptance\_criteria"}\FunctionTok{:} \OtherTok{[}
+    \StringTok{"Given valid credentials When login Then return valid JWT token, expires in 3600s"}\OtherTok{,}
+    \StringTok{"Given invalid password When login Then return INVALID\_CREDENTIALS, don\textquotesingle{}t reveal specifics"}\OtherTok{,}
+    \StringTok{"Given 5 consecutive failures (within 5 min) When 6th attempt Then return ACCOUNT\_LOCKED"}\OtherTok{,}
+    \StringTok{"Given disabled account When login Then return ACCOUNT\_DISABLED"}
+  \OtherTok{]}\FunctionTok{,}
+  
+  \DataTypeTok{"boundary\_conditions"}\FunctionTok{:} \OtherTok{[}
+    \StringTok{"Empty username → Reject immediately, no DB query, return 400"}\OtherTok{,}
+    \StringTok{"Empty password → Reject immediately, no DB query, return 400"}\OtherTok{,}
+    \StringTok{"Overlong password (\textgreater{}128 chars) → Reject immediately, return 400"}\OtherTok{,}
+    \StringTok{"Username with special chars → Reject immediately, return 400"}
+  \OtherTok{]}\FunctionTok{,}
+  
+  \DataTypeTok{"non\_functional"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"performance"}\FunctionTok{:} \StringTok{"Response time \textless{} 200ms (p99)"}\FunctionTok{,}
+    \DataTypeTok{"security"}\FunctionTok{:} \StringTok{"Password not logged, use bcrypt(cost=12) hashing"}\FunctionTok{,}
+    \DataTypeTok{"availability"}\FunctionTok{:} \StringTok{"99.9\% uptime"}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"metadata"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"author"}\FunctionTok{:} \StringTok{"contract{-}architect@example.com"}\FunctionTok{,}
+    \DataTypeTok{"created"}\FunctionTok{:} \StringTok{"2026{-}01{-}10"}\FunctionTok{,}
+    \DataTypeTok{"status"}\FunctionTok{:} \StringTok{"approved"}
+  \FunctionTok{\}}
+\FunctionTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{64-relationship-between-contracts-and-tasks}{%
+\subsubsection{6.4 Relationship Between Contracts and
+Tasks}\label{64-relationship-between-contracts-and-tasks}}
+
+After contract confirmation, the system automatically decomposes it into
+specific tasks. Each task produces one concrete artifact.
+
+\textbf{Contract and Task Interface Display}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────────────────┐}
+\NormalTok{│ Contract: Order Creation Feature                                             │}
+\NormalTok{├─────────────────────────────────────────────────────────────────────────────┤}
+\NormalTok{│ Belongs to:  [Order Module ▼] / [— ▼]                                       │}
+\NormalTok{│ Do:          [Create order, check inventory, reject if insufficient    ]    │}
+\NormalTok{│ Don\textquotesingle{}t do:    [Don\textquotesingle{}t process payment; don\textquotesingle{}t send notifications          ]    │}
+\NormalTok{│ Files:       [order.py] [order\_api.py] [+]                                  │}
+\NormalTok{│ Dependencies:[User Account ▼] [+]                                           │}
+\NormalTok{│ Precondition:[User table exists; Product table exists                  ]    │}
+\NormalTok{│ Postcondition:[Order table has record; Inventory deducted              ]    │}
+\NormalTok{└─────────────────────────────────────────────────────────────────────────────┘}
+
+\NormalTok{┌─────────────────────────────────────────────────────────────────────────────┐}
+\NormalTok{│ Task List                                 [+ Add] [Merge Selected] [AI Re{-}decompose] │}
+\NormalTok{├─────────────────────────────────────────────────────────────────────────────┤}
+\NormalTok{│ ┌─────────────────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│ │ Task 1: Order Table Model                                    ✓ Approved │ │}
+\NormalTok{│ │─────────────────────────────────────────────────────────────────────────│ │}
+\NormalTok{│ │ Input:  [user\_id, items[]                      ]                        │ │}
+\NormalTok{│ │ Output: [orders table: id, user\_id, total, status]                      │ │}
+\NormalTok{│ │ Verify: [SQL•] [pytest] [curl] [manual]                                 │ │}
+\NormalTok{│ │ Command:[SELECT COUNT(*) FROM orders           ]                        │ │}
+\NormalTok{│ │                                                                         │ │}
+\NormalTok{│ │ Pre:    [Database connection OK    ]  Post: [orders table created  ]    │ │}
+\NormalTok{│ │                                             [Rename] [Delete] [Edit]    │ │}
+\NormalTok{│ └─────────────────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                             │}
+\NormalTok{│ ┌─────────────────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│ │ Task 2: Order API                                            ○ Pending  │ │}
+\NormalTok{│ │─────────────────────────────────────────────────────────────────────────│ │}
+\NormalTok{│ │ Input:  [POST \{user\_id, items[], address\}      ]                        │ │}
+\NormalTok{│ │ Output: [\{order\_id, status, total\}             ]                        │ │}
+\NormalTok{│ │ Verify: [SQL] [pytest] [curl•] [manual]                                 │ │}
+\NormalTok{│ │ Command:[curl {-}X POST /api/orders → 200        ]                        │ │}
+\NormalTok{│ │                                                                         │ │}
+\NormalTok{│ │ Pre:    [orders table created      ]  Post: [API callable          ]    │ │}
+\NormalTok{│ │                                     [Rename] [Delete] [Approve] [Edit]  │ │}
+\NormalTok{│ └─────────────────────────────────────────────────────────────────────────┘ │}
+\NormalTok{├─────────────────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                          [Approve Contract \& Save] (All tasks must be approved) │}
+\NormalTok{└─────────────────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Key Elements Explained}:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule()
+Element & Description \\
+\midrule()
+\endhead
+Do/Don't do & Define contract boundaries, prevent AI "overreach" \\
+Dependencies & Declare inter-contract dependencies, system
+auto-orders \\
+Pre/Post conditions & Define execution conditions before and after \\
+Input/Output & Precisely define task I/O specifications \\
+Verification method & Specify how to verify task completion
+(SQL/pytest/curl/manual) \\
+Approved/Pending & Human confirms if task decomposition is reasonable \\
+\bottomrule()
+\end{longtable}
+
+\hypertarget{7-clarity-assessment-mechanism}{%
+\subsection{7. Clarity Assessment
+Mechanism}\label{7-clarity-assessment-mechanism}}
+
+\hypertarget{71-why-clarity-assessment}{%
+\subsubsection{7.1 Why Clarity
+Assessment?}\label{71-why-clarity-assessment}}
+
+Human natural language is full of ambiguity. ODD uses clarity assessment
+to identify and resolve ambiguity before code generation.
+
+\hypertarget{72-red-yellow-green-clarity-scoring}{%
+\subsubsection{7.2 Red-Yellow-Green Clarity
+Scoring}\label{72-red-yellow-green-clarity-scoring}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│           Clarity Assessment: Red{-}Yellow{-}Green System            │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  🟢 Green (Clarity 80{-}100\%)                                     │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • Contract is precisely defined, no ambiguity                  │}
+\NormalTok{│  • Can proceed directly to code generation                      │}
+\NormalTok{│  • Example: "When order amount ≥ $10,000, notify finance via SMS"│}
+\NormalTok{│                                                                  │}
+\NormalTok{│  🟡 Yellow (Clarity 50{-}79\%)                                     │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • Contract mostly clear, but has minor ambiguities             │}
+\NormalTok{│  • Need human confirmation on few questions before generation   │}
+\NormalTok{│  • Example: "When order amount is large, notify manager"        │}
+\NormalTok{│         → Need clarification: How large? Which manager?         │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  🔴 Red (Clarity 0{-}49\%)                                         │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • Contract has major ambiguity or contradictions               │}
+\NormalTok{│  • Cannot generate code, must clarify first                     │}
+\NormalTok{│  • Example: "System should be user{-}friendly"                    │}
+\NormalTok{│         → What\textquotesingle{}s "user{-}friendly"? No testable definition        │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{73-clarity-assessment-example}{%
+\subsubsection{7.3 Clarity Assessment
+Example}\label{73-clarity-assessment-example}}
+
+\textbf{Original contract}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{"When processing large orders, the system should notify the manager."}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Clarity assessment result}: 🟡 Yellow (Clarity 45\%)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│ Found 4 ambiguities, please clarify:                             │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│ Q1: What is the threshold for "large order"?      [Impact: 25\%] │}
+\NormalTok{│ [A] $1,000+                                                      │}
+\NormalTok{│ [B] $5,000+                                                      │}
+\NormalTok{│ [C] $10,000+  ← AI recommended (industry standard)              │}
+\NormalTok{│ [D] Other: [\_\_\_\_]                                                │}
+\NormalTok{│                                                                  │}
+\NormalTok{│ Q2: What notification method?                     [Impact: 20\%] │}
+\NormalTok{│ [A] In{-}system message only                                       │}
+\NormalTok{│ [B] Email                                                        │}
+\NormalTok{│ [C] SMS  ← AI recommended (large orders need immediate attention)│}
+\NormalTok{│ [D] Multiple methods combined                                    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│ Q3: Who is "the manager"?                         [Impact: 20\%] │}
+\NormalTok{│ [A] All system administrators                                    │}
+\NormalTok{│ [B] Order department manager  ← AI recommended                  │}
+\NormalTok{│ [C] Designated on{-}duty manager                                   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│ Q4: When does "processing" occur?                 [Impact: 15\%] │}
+\NormalTok{│ [A] Order creation  ← AI recommended                            │}
+\NormalTok{│ [B] Order payment                                                │}
+\NormalTok{│ [C] Order shipment                                               │}
+\NormalTok{│                                                                  │}
+\NormalTok{│ ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│ Current clarity: 45\% 🔴 → After answering all: Expected 95\% 🟢  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Clarified contract} (Clarity 95\% 🟢):
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\{}
+  \DataTypeTok{"feature"}\FunctionTok{:} \StringTok{"large\_order\_notification"}\FunctionTok{,}
+  \DataTypeTok{"trigger"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"event"}\FunctionTok{:} \StringTok{"order\_created"}\FunctionTok{,}
+    \DataTypeTok{"condition"}\FunctionTok{:} \StringTok{"amount \textgreater{}= 10000"}
+  \FunctionTok{\},}
+  \DataTypeTok{"action"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"method"}\FunctionTok{:} \StringTok{"sms"}\FunctionTok{,}
+    \DataTypeTok{"recipient"}\FunctionTok{:} \StringTok{"department\_manager\_of\_order"}
+  \FunctionTok{\},}
+  \DataTypeTok{"acceptance\_criteria"}\FunctionTok{:} \OtherTok{[}
+    \StringTok{"Given order amount = $10,000 When created Then SMS notify dept manager"}\OtherTok{,}
+    \StringTok{"Given order amount = $9,999 When created Then no notification"}\OtherTok{,}
+    \StringTok{"Given order amount = $50,000 When created Then SMS notify dept manager"}
+  \OtherTok{]}
+\FunctionTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{part-v-odd-methodology-framework}{%
+\section{Part V: ODD Methodology
+Framework}\label{part-v-odd-methodology-framework}}
+
+\hypertarget{8-odd-five-step-development-cycle}{%
+\subsection{8. ODD Five-Step Development
+Cycle}\label{8-odd-five-step-development-cycle}}
+
+\hypertarget{81-cycle-overview}{%
+\subsubsection{8.1 Cycle Overview}\label{81-cycle-overview}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                   ODD Five{-}Step Development Cycle                │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ┌─────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐         │}
+\NormalTok{│  │1.Define │ → │2.Generate│ → │3.Verify │ → │ 4.Seal  │         │}
+\NormalTok{│  │ (Human) │   │  (AI)   │   │(System) │   │(System) │         │}
+\NormalTok{│  └────┬────┘   └─────────┘   └────┬────┘   └────┬────┘         │}
+\NormalTok{│       │                           │ Fail        │               │}
+\NormalTok{│       │                           ↓              │               │}
+\NormalTok{│       │                      ┌─────────┐        │               │}
+\NormalTok{│       │                      │ AI Fix  │        │               │}
+\NormalTok{│       │                      └────┬────┘        │               │}
+\NormalTok{│       │                           │ Return       │               │}
+\NormalTok{│       │                           └──────────────┤               │}
+\NormalTok{│       │                                          │               │}
+\NormalTok{│       │                      ┌─────────┐        │               │}
+\NormalTok{│       │                      │5.Evolve │ ←──────┘               │}
+\NormalTok{│       │                      │ (Human) │                         │}
+\NormalTok{│       │                      └────┬────┘                         │}
+\NormalTok{│       │                           │ New requirements             │}
+\NormalTok{│       └───────────────────────────┘                              │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Step descriptions:                                             │}
+\NormalTok{│  1. Define: Human writes contract, defines artifact specs       │}
+\NormalTok{│  2. Generate: AI generates code and tests from contract         │}
+\NormalTok{│  3. Verify: System runs mutation testing, verifies correctness  │}
+\NormalTok{│  4. Seal: After verification, code is sealed and protected      │}
+\NormalTok{│  5. Evolve: Based on new needs, human updates contract          │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{82-artifact-pipeline-artifact-ux2192-pipeline-ux2192-new-artifact}{%
+\subsubsection{8.2 Artifact Pipeline: Artifact → Pipeline → New
+Artifact}\label{82-artifact-pipeline-artifact-ux2192-pipeline-ux2192-new-artifact}}
+
+ODD's core insight: \textbf{Every artifact is input for the next
+contract}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                     Artifact Pipeline                            │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Contract₁ ────────────→ Artifact₁ (User Auth Module)           │}
+\NormalTok{│                              │                                   │}
+\NormalTok{│                              ↓ [Pipeline: Verify + Seal]         │}
+\NormalTok{│                              │                                   │}
+\NormalTok{│  Contract₂ ────────────→ Artifact₂ (Order Service, deps on ₁)   │}
+\NormalTok{│       (refs Artifact₁)       │                                   │}
+\NormalTok{│                              ↓ [Pipeline: Verify + Seal]         │}
+\NormalTok{│                              │                                   │}
+\NormalTok{│  Contract₃ ────────────→ Artifact₃ (Payment, deps on ₁+₂)       │}
+\NormalTok{│       (refs Artifact₁+₂)     │                                   │}
+\NormalTok{│                              ↓ [Pipeline: Verify + Seal]         │}
+\NormalTok{│                              │                                   │}
+\NormalTok{│                             ...                                  │}
+\NormalTok{│                              │                                   │}
+\NormalTok{│                              ↓                                   │}
+\NormalTok{│                        ┌───────────┐                            │}
+\NormalTok{│                        │Final System│                            │}
+\NormalTok{│                        └───────────┘                            │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Key insights:                                                  │}
+\NormalTok{│  • System builds through layers of sealed artifacts             │}
+\NormalTok{│  • Like assembly line parts becoming a complete vehicle         │}
+\NormalTok{│  • Each artifact is a stable "building block"                   │}
+\NormalTok{│  • Dependencies between artifacts are explicit, traceable       │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Difference from traditional development:                       │}
+\NormalTok{│  • Traditional: Code depends on code, dependencies unclear      │}
+\NormalTok{│  • ODD: Artifacts depend on artifacts, explicit \& verifiable    │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{9-sealing-mechanism-materialization-of-trust}{%
+\subsection{9. Sealing Mechanism: Materialization of
+Trust}\label{9-sealing-mechanism-materialization-of-trust}}
+
+\hypertarget{91-three-fold-value-of-sealing}{%
+\subsubsection{9.1 Three-fold Value of
+Sealing}\label{91-three-fold-value-of-sealing}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│               Three{-}fold Value of Sealing Mechanism              │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ┌──────────────────────────────────────────────────────────┐   │}
+\NormalTok{│  │ 1. Immutability                                          │   │}
+\NormalTok{│  │    • Sealed code cannot be modified by AI                │   │}
+\NormalTok{│  │    • Prevents AI from breaking B while fixing A          │   │}
+\NormalTok{│  │    • Accepted code is protected, stable "building blocks"│   │}
+\NormalTok{│  │    • Analogy: Released software versions shouldn\textquotesingle{}t be    │   │}
+\NormalTok{│  │              secretly modified                            │   │}
+\NormalTok{│  └──────────────────────────────────────────────────────────┘   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ┌──────────────────────────────────────────────────────────┐   │}
+\NormalTok{│  │ 2. Auditability                                          │   │}
+\NormalTok{│  │    • Every seal records: who, when, mutation score       │   │}
+\NormalTok{│  │    • Complete decision chain is traceable: why this way  │   │}
+\NormalTok{│  │    • Meets compliance requirements (SOX, GDPR, medical)  │   │}
+\NormalTok{│  │    • Analogy: Bank statement, every transaction recorded │   │}
+\NormalTok{│  └──────────────────────────────────────────────────────────┘   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ┌──────────────────────────────────────────────────────────┐   │}
+\NormalTok{│  │ 3. Traceability                                          │   │}
+\NormalTok{│  │    • Complete version history                            │   │}
+\NormalTok{│  │    • Can trace back to any version at any time           │   │}
+\NormalTok{│  │    • System has "regret capability": Errors can rollback │   │}
+\NormalTok{│  │    • Analogy: Git history, but stronger (includes verify)│   │}
+\NormalTok{│  └──────────────────────────────────────────────────────────┘   │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{92-seal-record-structure}{%
+\subsubsection{9.2 Seal Record
+Structure}\label{92-seal-record-structure}}
+
+Seal records can be stored in database + code management systems:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\{}
+  \DataTypeTok{"seal\_id"}\FunctionTok{:} \StringTok{"SEAL{-}2026{-}01{-}10{-}001"}\FunctionTok{,}
+  \DataTypeTok{"artifact\_id"}\FunctionTok{:} \StringTok{"USER{-}AUTH{-}001"}\FunctionTok{,}
+  \DataTypeTok{"version"}\FunctionTok{:} \StringTok{"1.0.0"}\FunctionTok{,}
+  \DataTypeTok{"sealed\_at"}\FunctionTok{:} \StringTok{"2026{-}01{-}10T14:32:00Z"}\FunctionTok{,}
+  \DataTypeTok{"sealed\_by"}\FunctionTok{:} \StringTok{"system"}\FunctionTok{,}
+  
+  \DataTypeTok{"verification\_results"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"mutation\_score"}\FunctionTok{:} \FloatTok{92.5}\FunctionTok{,}
+    \DataTypeTok{"total\_mutants"}\FunctionTok{:} \DecValTok{156}\FunctionTok{,}
+    \DataTypeTok{"killed\_mutants"}\FunctionTok{:} \DecValTok{144}\FunctionTok{,}
+    \DataTypeTok{"survived\_mutants"}\FunctionTok{:} \DecValTok{12}\FunctionTok{,}
+    \DataTypeTok{"test\_count"}\FunctionTok{:} \DecValTok{48}\FunctionTok{,}
+    \DataTypeTok{"test\_pass\_rate"}\FunctionTok{:} \DecValTok{100}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"hashes"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"contract\_hash"}\FunctionTok{:} \StringTok{"sha256:a1b2c3d4e5f6..."}\FunctionTok{,}
+    \DataTypeTok{"code\_hash"}\FunctionTok{:} \StringTok{"sha256:f6e5d4c3b2a1..."}\FunctionTok{,}
+    \DataTypeTok{"test\_hash"}\FunctionTok{:} \StringTok{"sha256:1a2b3c4d5e6f..."}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"dependencies"}\FunctionTok{:} \OtherTok{[}
+    \FunctionTok{\{}\DataTypeTok{"artifact\_id"}\FunctionTok{:} \StringTok{"COMMON{-}UTILS{-}001"}\FunctionTok{,} \DataTypeTok{"version"}\FunctionTok{:} \StringTok{"2.1.0"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"artifact\_id"}\FunctionTok{:} \StringTok{"DATABASE{-}001"}\FunctionTok{,} \DataTypeTok{"version"}\FunctionTok{:} \StringTok{"1.5.0"}\FunctionTok{\}}
+  \OtherTok{]}\FunctionTok{,}
+  
+  \DataTypeTok{"rollback\_info"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"previous\_version"}\FunctionTok{:} \StringTok{"0.9.0"}\FunctionTok{,}
+    \DataTypeTok{"can\_rollback"}\FunctionTok{:} \KeywordTok{true}\FunctionTok{,}
+    \DataTypeTok{"rollback\_command"}\FunctionTok{:} \StringTok{"odd rollback USER{-}AUTH{-}001 {-}{-}to=0.9.0"}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"audit\_trail"}\FunctionTok{:} \OtherTok{[}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"contract\_created"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"architect@example.com"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}05"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"contract\_approved"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"tech{-}lead@example.com"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}08"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"code\_generated"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"ai{-}worker{-}3"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}09T10:15:00Z"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"mutation\_test\_started"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"system"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}10T13:00:00Z"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"mutation\_test\_passed"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"system"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}10T14:30:00Z"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"sealed"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"system"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}10T14:32:00Z"}\FunctionTok{\}}
+  \OtherTok{]}
+\FunctionTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{93-seal-history-example}{%
+\subsubsection{9.3 Seal History Example}\label{93-seal-history-example}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Seal History:}
+\NormalTok{├── v1.0.0 (2026{-}01{-}10 14:32, mutation 92\%, sealed by: system)  ← Current production}
+\NormalTok{│   └── Contract: LOGIN{-}001 v3}
+\NormalTok{│   └── Audit: Complete records available}
+\NormalTok{├── v0.9.0 (2026{-}01{-}08 10:15, mutation 88\%, sealed by: system)  ← Rollback available}
+\NormalTok{│   └── Contract: LOGIN{-}001 v2}
+\NormalTok{│   └── Change reason: Added account locking}
+\NormalTok{├── v0.8.0 (2026{-}01{-}05 09:00, mutation 85\%, sealed by: system)  ← Rollback available}
+\NormalTok{│   └── Contract: LOGIN{-}001 v1}
+\NormalTok{│   └── Change reason: Initial version}
+\NormalTok{└── v0.1.0 (2026{-}01{-}01 08:00, mutation 70\%, sealed by: human)   ← Manual seal (prototype)}
+\NormalTok{    └── Note: Prototype validation, mutation below threshold, manually approved}
+
+\NormalTok{If v1.0.0 has problems:}
+\NormalTok{  → Execute: odd rollback USER{-}AUTH{-}001 {-}{-}to=0.9.0}
+\NormalTok{  → System auto{-}rollbacks to v0.9.0 (system has "regret" capability)}
+\NormalTok{  → Records rollback reason and operator}
+\NormalTok{  → New contract fixes issue → Generate v1.1.0 → Verify → Seal}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{part-vi-trust-system}{%
+\section{Part VI: Trust System}\label{part-vi-trust-system}}
+
+\hypertarget{10-mutation-testing-mathematical-foundation-of-trust}{%
+\subsection{10. Mutation Testing: Mathematical Foundation of
+Trust}\label{10-mutation-testing-mathematical-foundation-of-trust}}
+
+\hypertarget{101-why-can-mutation-testing-replace-human-review}{%
+\subsubsection{10.1 Why Can Mutation Testing Replace Human
+Review?}\label{101-why-can-mutation-testing-replace-human-review}}
+
+\textbf{Core question}: How do you know your tests are effective?
+
+Traditional approach: Code Coverage. But coverage has a fatal flaw:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                   The Lie of Code Coverage                       │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  function divide(a, b) \{                                         │}
+\NormalTok{│    return a / b;  // No check for b == 0                        │}
+\NormalTok{│  \}                                                               │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Test: divide(10, 2)  →  Result: 5  ✓                           │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Code Coverage: 100\%  ✓                                         │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Question: Are the tests actually effective?                    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  If code changes to: return a * b;                              │}
+\NormalTok{│  Test divide(10, 2) expects 5, gets 20, test fails ✓            │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  But if code changes to: return a / b + 0;                      │}
+\NormalTok{│  Test divide(10, 2) expects 5, gets 5, test still passes ✗      │}
+\NormalTok{│  This mutant "survives"—tests aren\textquotesingle{}t strict enough              │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Key: Coverage only shows "code was executed,"                  │}
+\NormalTok{│       not "tests can detect errors"                             │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Core idea of mutation testing}:
+
+\begin{quote}
+Good tests should detect any subtle error in the code.\\
+If we deliberately introduce errors (mutants), good tests should "kill"
+these mutants.
+\end{quote}
+
+\hypertarget{102-how-mutation-testing-works}{%
+\subsubsection{10.2 How Mutation Testing
+Works}\label{102-how-mutation-testing-works}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                  Mutation Testing Workflow                       │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Original code:                                                 │}
+\NormalTok{│  function isAdult(age) \{                                         │}
+\NormalTok{│    return age \textgreater{}= 18;                                             │}
+\NormalTok{│  \}                                                               │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  System generates mutants:                                       │}
+\NormalTok{│  ┌──────────────────────────────────────────────────────────┐   │}
+\NormalTok{│  │ Mutant 1: return age \textgreater{} 18;    // \textgreater{}= changed to \textgreater{}         │   │}
+\NormalTok{│  │ Mutant 2: return age \textgreater{}= 17;   // 18 changed to 17        │   │}
+\NormalTok{│  │ Mutant 3: return age \textgreater{}= 19;   // 18 changed to 19        │   │}
+\NormalTok{│  │ Mutant 4: return age \textless{}= 18;   // \textgreater{}= changed to \textless{}=        │   │}
+\NormalTok{│  │ Mutant 5: return true;        // Logic replaced          │   │}
+\NormalTok{│  └──────────────────────────────────────────────────────────┘   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Run tests against each mutant:                                 │}
+\NormalTok{│  ┌──────────────────────────────────────────────────────────┐   │}
+\NormalTok{│  │ Mutant 1: Test isAdult(18) expects true, gets false → Killed │}
+\NormalTok{│  │ Mutant 2: Test isAdult(17) expects false, gets true → Killed │}
+\NormalTok{│  │ Mutant 3: Test isAdult(18) expects true, gets false → Killed │}
+\NormalTok{│  │ Mutant 4: Test isAdult(17) expects false, gets true → Killed │}
+\NormalTok{│  │ Mutant 5: Test isAdult(10) expects false, gets true → Killed │}
+\NormalTok{│  └──────────────────────────────────────────────────────────┘   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Mutation Score = Killed Mutants / Total Mutants = 5/5 = 100\%   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Why mutation testing provides trust:                           │}
+\NormalTok{│  • If a mutant survives, tests have a blind spot                │}
+\NormalTok{│  • If all mutants are killed, tests are comprehensive           │}
+\NormalTok{│  • This is mathematical proof, not human intuition              │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{103-coverage-vs-mutation-score}{%
+\subsubsection{10.3 Coverage vs Mutation
+Score}\label{103-coverage-vs-mutation-score}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│             Code Coverage vs Mutation Score Comparison           │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Metric           Code Coverage        Mutation Score           │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Measures         How much code ran    Can tests detect errors  │}
+\NormalTok{│  Tells you        Execution paths      Test effectiveness       │}
+\NormalTok{│  Fakeability      Easy to fake         Hard to fake             │}
+\NormalTok{│  Compute cost     Low                  High                     │}
+\NormalTok{│  Trust level      Low                  High                     │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Analogy:                                                       │}
+\NormalTok{│  • Coverage = Number of pages you\textquotesingle{}ve turned in the textbook     │}
+\NormalTok{│  • Mutation = Score on the exam                                 │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  You can flip through all pages (100\% coverage) without         │}
+\NormalTok{│  learning anything (0\% mutation score).                         │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ──────────────────────────────────────────────────────────────  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Why mutation testing can replace human review:                 │}
+\NormalTok{│  • Human review relies on intuition and experience              │}
+\NormalTok{│  • Mutation testing relies on mathematical exhaustiveness       │}
+\NormalTok{│  • Humans can miss errors; mutation testing finds all testable ones │}
+\NormalTok{│  • Human review doesn\textquotesingle{}t scale; mutation testing scales with compute │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{104-trust-transfer-from-human-review-to-system-verification}{%
+\subsubsection{10.4 Trust Transfer: From Human Review to System
+Verification}\label{104-trust-transfer-from-human-review-to-system-verification}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│    Trust Transfer: From Human Review to System Verification      │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Traditional model:                                             │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │                                                            │ │}
+\NormalTok{│  │  Code ─────→ [Human Review] ─────→ Trust                  │ │}
+\NormalTok{│  │                    ↑                                       │ │}
+\NormalTok{│  │              Relies on:                                    │ │}
+\NormalTok{│  │              • Experience                                  │ │}
+\NormalTok{│  │              • Intuition                                   │ │}
+\NormalTok{│  │              • Available time                              │ │}
+\NormalTok{│  │              • Cognitive load                              │ │}
+\NormalTok{│  │                                                            │ │}
+\NormalTok{│  │  Problems: Doesn\textquotesingle{}t scale, varies by person, can miss errors│ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ODD model:                                                     │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │                                                            │ │}
+\NormalTok{│  │  Code ─────→ [Mutation Testing] ─────→ Trust              │ │}
+\NormalTok{│  │                    ↑                                       │ │}
+\NormalTok{│  │              Relies on:                                    │ │}
+\NormalTok{│  │              • Mathematical exhaustiveness                 │ │}
+\NormalTok{│  │              • Automated execution                         │ │}
+\NormalTok{│  │              • Quantifiable results                        │ │}
+\NormalTok{│  │              • Infinite scalability                        │ │}
+\NormalTok{│  │                                                            │ │}
+\NormalTok{│  │  Advantages: Scales, consistent, finds all testable errors │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Key insight:                                                   │}
+\NormalTok{│  Trust doesn\textquotesingle{}t disappear—it transfers from human to system.    │}
+\NormalTok{│  The source of trust changes, not its existence.               │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{part-vii-paradigm-evolution-and-production-relations-restructuring}{%
+\section{Part VII: Paradigm Evolution and Production Relations
+Restructuring}\label{part-vii-paradigm-evolution-and-production-relations-restructuring}}
+
+\hypertarget{11-software-development-paradigm-evolution-roadmap}{%
+\subsection{11. Software Development Paradigm Evolution
+Roadmap}\label{11-software-development-paradigm-evolution-roadmap}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│          Software Development Paradigm Evolution                 │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  1960s    │ Waterfall    │ Document{-}driven, sequential          │}
+\NormalTok{│           │              │ Problem: Assumes stable requirements │}
+\NormalTok{│           ↓              │                                       │}
+\NormalTok{│  1990s    │ Agile        │ Iterative, user{-}story driven        │}
+\NormalTok{│           │              │ Problem: Still human{-}writes{-}code    │}
+\NormalTok{│           ↓              │                                       │}
+\NormalTok{│  2000s    │ TDD          │ Test{-}first, red{-}green{-}refactor      │}
+\NormalTok{│           │              │ Problem: Self{-}grading is untrusted  │}
+\NormalTok{│           ↓              │                                       │}
+\NormalTok{│  2020s    │ AI{-}assisted  │ Copilot{-}style code completion       │}
+\NormalTok{│           │              │ Problem: AI generates, human reviews│}
+\NormalTok{│           ↓              │                                       │}
+\NormalTok{│  2025+    │ ODD          │ Contract{-}driven, mutation{-}verified  │}
+\NormalTok{│           │              │ Solution: System verifies, human    │}
+\NormalTok{│           │              │           defines value              │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Each paradigm solves previous paradigm\textquotesingle{}s core contradiction    │}
+\NormalTok{│  ODD solves AI era\textquotesingle{}s core contradiction:                        │}
+\NormalTok{│  "AI generates faster than humans can review"                   │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{12-why-is-odd-a-paradigm-innovation}{%
+\subsection{12. Why is ODD a Paradigm
+Innovation?}\label{12-why-is-odd-a-paradigm-innovation}}
+
+According to Thomas Kuhn's definition, a paradigm shift requires:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                  ODD as Paradigm Shift (Kuhn)                    │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Kuhn\textquotesingle{}s Criteria                 ODD Fulfillment                │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  1. Solves problems old          Old paradigm can\textquotesingle{}t handle AI   │}
+\NormalTok{│     paradigm cannot solve        code volume; ODD solves this   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  2. Redefines core concepts      Code → Artifact (intermediate) │}
+\NormalTok{│                                  Human → Contract definer       │}
+\NormalTok{│                                  Review → Mutation testing      │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  3. Changes fundamental          From "human writes \& reviews"  │}
+\NormalTok{│     assumptions                  to "human defines, AI executes,│}
+\NormalTok{│                                  system verifies"               │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  4. Creates new vocabulary       Artifact, Contract, Sealing,   │}
+\NormalTok{│                                  Clarity Assessment, Mutation   │}
+\NormalTok{│                                  Score, Trust Transfer          │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  5. Opens new research           Contract language design,      │}
+\NormalTok{│     directions                   mutation testing optimization, │}
+\NormalTok{│                                  multi{-}agent collaboration      │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Conclusion: ODD meets all criteria for paradigm shift          │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{13-separation-of-intellectual-and-executive-labor}{%
+\subsection{13. Separation of Intellectual and Executive
+Labor}\label{13-separation-of-intellectual-and-executive-labor}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│         Separation of Intellectual and Executive Labor           │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Traditional model:                                             │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  Programmer = Think about what to do + How to implement    │ │}
+\NormalTok{│  │                       ↑                    ↑                │ │}
+\NormalTok{│  │              (Intellectual labor)  (Executive labor)       │ │}
+\NormalTok{│  │                       └────────┬───────────┘               │ │}
+\NormalTok{│  │                               Bundled together              │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ODD model:                                                     │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  Human = Define contracts (Intellectual labor)             │ │}
+\NormalTok{│  │                              │                              │ │}
+\NormalTok{│  │                              ↓ Contract transfer            │ │}
+\NormalTok{│  │                              │                              │ │}
+\NormalTok{│  │  AI = Generate implementation (Executive labor)            │ │}
+\NormalTok{│  │                              │                              │ │}
+\NormalTok{│  │                              ↓ Verification                 │ │}
+\NormalTok{│  │                              │                              │ │}
+\NormalTok{│  │  System = Verify and protect (Quality assurance)           │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Historical significance:                                       │}
+\NormalTok{│  • Industry separated intellectual from physical labor          │}
+\NormalTok{│  • ODD first separates intellectual from executive labor        │}
+\NormalTok{│    in software industry                                         │}
+\NormalTok{│  • This is production relations restructuring                   │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{14-from-craft-workshop-to-intelligent-factory}{%
+\subsection{14. From Craft Workshop to Intelligent
+Factory}\label{14-from-craft-workshop-to-intelligent-factory}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│          From Craft Workshop to Intelligent Factory              │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Craft Workshop (Traditional Development):                      │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  • Each craftsman works independently                      │ │}
+\NormalTok{│  │  • Quality depends on individual skill                     │ │}
+\NormalTok{│  │  • Production doesn\textquotesingle{}t scale                                │ │}
+\NormalTok{│  │  • Knowledge exists in artisan\textquotesingle{}s head                      │ │}
+\NormalTok{│  │  • Losing an artisan means losing knowledge                │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Intelligent Factory (ODD Development):                         │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  • Standardized contracts as "blueprints"                  │ │}
+\NormalTok{│  │  • Quality guaranteed by system verification               │ │}
+\NormalTok{│  │  • Production scales with compute                          │ │}
+\NormalTok{│  │  • Knowledge exists in contracts (explicit)                │ │}
+\NormalTok{│  │  • Contracts are organizational assets                     │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Transformation comparison:                                     │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Dimension        Workshop          Factory                     │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Productivity     Person{-}dependent  Process{-}dependent          │}
+\NormalTok{│  Quality          Person{-}dependent  System{-}guaranteed          │}
+\NormalTok{│  Scalability      Add people        Add compute                │}
+\NormalTok{│  Knowledge        In heads          In contracts               │}
+\NormalTok{│  Onboarding       Months            Days (read contracts)      │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{15-odd-empowers-all-groups}{%
+\subsection{15. ODD Empowers All
+Groups}\label{15-odd-empowers-all-groups}}
+
+\hypertarget{151-independent-developer-+-odd-=-small-team}{%
+\subsubsection{15.1 Independent Developer + ODD = Small
+Team}\label{151-independent-developer-+-odd-=-small-team}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│          Independent Developer + ODD = Small Team                │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Traditional independent developer:                             │}
+\NormalTok{│  • Must handle: Requirements, design, coding, testing, ops      │}
+\NormalTok{│  • Productivity limited by individual capacity                  │}
+\NormalTok{│  • Can only complete small projects                             │}
+\NormalTok{│  • Exhausted, hard to scale                                     │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Independent developer + ODD:                                   │}
+\NormalTok{│  • Focus only on: Requirements definition, contract writing     │}
+\NormalTok{│  • AI handles: Design, coding, testing                          │}
+\NormalTok{│  • System handles: Verification, sealing, protection            │}
+\NormalTok{│  • Productivity equivalent to traditional 5{-}8 person team       │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Quantified effect:                                             │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Metric              Traditional    With ODD       Improvement  │}
+\NormalTok{│  Features/month      2{-}3            15{-}20          5{-}8x         │}
+\NormalTok{│  Code review time    40\%            5\%             8x↓          │}
+\NormalTok{│  Bug rate            Industry avg   Below avg      Significant↓ │}
+\NormalTok{│  Working hours/day   10{-}12          6{-}8            Healthier    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  One person with ODD has the firepower of a startup team        │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{152-it-department-+-odd-=-professional-software-factory}{%
+\subsubsection{15.2 IT Department + ODD = Professional Software
+Factory}\label{152-it-department-+-odd-=-professional-software-factory}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│        IT Department + ODD = Professional Software Factory       │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Traditional IT department pain points:                         │}
+\NormalTok{│  • Business requests pile up, development backlogged            │}
+\NormalTok{│  • Legacy system maintenance consumes most resources            │}
+\NormalTok{│  • Talent recruitment/retention is difficult                    │}
+\NormalTok{│  • Internal systems low quality but "good enough to use"        │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  IT department + ODD transformation:                            │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  Business staff → Contract definition (after training)     │ │}
+\NormalTok{│  │  IT engineers  → Contract review + system maintenance      │ │}
+\NormalTok{│  │  AI workers    → Code generation + test generation         │ │}
+\NormalTok{│  │  ODD system    → Quality assurance + version control       │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Transformation effects:                                        │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • Development capacity increases 3{-}5x with same headcount      │}
+\NormalTok{│  • Business staff participate directly, shorter communication  │}
+\NormalTok{│  • Internal system quality rises to professional level          │}
+\NormalTok{│  • IT staff upgrade to "software architects," higher value      │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  IT department transforms from "support unit" to                │}
+\NormalTok{│  "professional software factory"                                │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{153-software-company-+-odd-=-productivity-revolution}{%
+\subsubsection{15.3 Software Company + ODD = Productivity
+Revolution}\label{153-software-company-+-odd-=-productivity-revolution}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│        Software Company + ODD = Productivity Revolution          │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Traditional software company model:                            │}
+\NormalTok{│  • Revenue ∝ Developer headcount                                │}
+\NormalTok{│  • Gross margin limited by labor costs                          │}
+\NormalTok{│  • Scaling requires hiring, training, management                │}
+\NormalTok{│  • Talent is bottleneck                                         │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Software company + ODD model:                                  │}
+\NormalTok{│  • Revenue ∝ Contract definition capacity                       │}
+\NormalTok{│  • Gross margin significantly improved (AI replaces labor)      │}
+\NormalTok{│  • Scaling requires compute, not hiring                         │}
+\NormalTok{│  • Contract quality is bottleneck                               │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Business model transformation:                                 │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  Before: Sell developer time → Labor{-}intensive             │ │}
+\NormalTok{│  │  After:  Sell artifact output → Knowledge{-}intensive        │ │}
+\NormalTok{│  │                                                            │ │}
+\NormalTok{│  │  Before: Linear scaling (add people = add capacity)        │ │}
+\NormalTok{│  │  After:  Exponential scaling (add compute = multiply cap)  │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Competitive advantage restructuring:                           │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • Contract library becomes core IP                             │}
+\NormalTok{│  • Domain knowledge encapsulated in reusable contracts          │}
+\NormalTok{│  • Delivery speed becomes order{-}of{-}magnitude advantage          │}
+\NormalTok{│  • Quality consistency becomes trust foundation                 │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Software companies transform from "body shop" to               │}
+\NormalTok{│  "intelligent manufacturing enterprise"                         │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{154-non-technical-users-+-odd-=-ideas-realized}{%
+\subsubsection{15.4 Non-Technical Users + ODD = Ideas
+Realized}\label{154-non-technical-users-+-odd-=-ideas-realized}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│           Non{-}Technical Users + ODD = Ideas Realized             │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Traditional barriers for non{-}technical users:                  │}
+\NormalTok{│  • Have ideas but can\textquotesingle{}t implement                               │}
+\NormalTok{│  • Hiring developers is expensive and hard to communicate       │}
+\NormalTok{│  • Low{-}code/no{-}code platforms have limited functionality        │}
+\NormalTok{│  • Technical debt piles up, maintenance becomes nightmare       │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Non{-}technical users + ODD:                                     │}
+\NormalTok{│  ┌────────────────────────────────────────────────────────────┐ │}
+\NormalTok{│  │  1. Describe what you want in natural language             │ │}
+\NormalTok{│  │  2. System guides clarity assessment, resolves ambiguity   │ │}
+\NormalTok{│  │  3. Generate structured contract (human readable)          │ │}
+\NormalTok{│  │  4. AI generates implementation, system verifies           │ │}
+\NormalTok{│  │  5. Verified artifact delivered for use                    │ │}
+\NormalTok{│  └────────────────────────────────────────────────────────────┘ │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Empowerment effects:                                           │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  • Business experts directly produce business software          │}
+\NormalTok{│  • Teachers directly create teaching tools                      │}
+\NormalTok{│  • Researchers directly build research aids                     │}
+\NormalTok{│  • Entrepreneurs directly implement MVP                         │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Core principle:                                                │}
+\NormalTok{│  "Know what you want" is the only required skill                │}
+\NormalTok{│  "Know how to implement" is no longer necessary                 │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Non{-}technical users gain the ability to turn ideas into       │}
+\NormalTok{│  software—the biggest leap in democratizing software creation  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{155-odd-empowerment-summary}{%
+\subsubsection{15.5 ODD Empowerment
+Summary}\label{155-odd-empowerment-summary}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                   ODD Empowerment Summary                        │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Group                    + ODD =           Key Transformation  │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Independent Developer    Small Team        5{-}8x productivity   │}
+\NormalTok{│  IT Department           Software Factory   Professional output │}
+\NormalTok{│  Software Company        Productivity Rev   Exponential scaling │}
+\NormalTok{│  Non{-}Technical User      Ideas Realized     Zero coding barrier │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Common pattern:                                                │}
+\NormalTok{│  • Before: Execution labor is bottleneck                        │}
+\NormalTok{│  • After: Definition capability is bottleneck                   │}
+\NormalTok{│  • Shift: From "how to do" to "what to do"                      │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Ultimate vision:                                               │}
+\NormalTok{│  Anyone with a clear vision of what they want can create       │}
+\NormalTok{│  software, regardless of technical background.                  │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{part-viii-engineering-implementation}{%
+\section{Part VIII: Engineering
+Implementation}\label{part-viii-engineering-implementation}}
+
+\hypertarget{16-multi-agent-architecture}{%
+\subsection{16. Multi-Agent
+Architecture}\label{16-multi-agent-architecture}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                    Multi{-}Agent Architecture                      │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ═══════════════════════════════════════════════════════════    │}
+\NormalTok{│                     👤 HUMAN LAYER                               │}
+\NormalTok{│  ═══════════════════════════════════════════════════════════    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ┌──────────────────────────────────────────────────────────┐   │}
+\NormalTok{│  │ Contract Definition Interface                            │   │}
+\NormalTok{│  │ • Natural language input                                 │   │}
+\NormalTok{│  │ • Clarity assessment feedback                            │   │}
+\NormalTok{│  │ • Contract approval/modification                         │   │}
+\NormalTok{│  │ • Seal confirmation                                      │   │}
+\NormalTok{│  └──────────────────────────────────────────────────────────┘   │}
+\NormalTok{│                              │                                   │}
+\NormalTok{│                              ↓                                   │}
+\NormalTok{│  ═══════════════════════════════════════════════════════════    │}
+\NormalTok{│                      🤖 AI LAYER                                 │}
+\NormalTok{│  ═══════════════════════════════════════════════════════════    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ┌─────────────┐   ┌─────────────┐   ┌─────────────┐           │}
+\NormalTok{│  │ 🤖 Contract │   │ 🤖 Code     │   │ 🤖 Test     │           │}
+\NormalTok{│  │   Agent     │   │   Agent     │   │   Agent     │           │}
+\NormalTok{│  │             │   │             │   │             │           │}
+\NormalTok{│  │ •Parse reqs │   │ •Gen code   │   │ •Gen tests  │           │}
+\NormalTok{│  │ •Clarify    │   │ •Refactor   │   │ •Mutation   │           │}
+\NormalTok{│  │ •Structure  │   │ •Fix bugs   │   │ •Coverage   │           │}
+\NormalTok{│  └─────────────┘   └─────────────┘   └─────────────┘           │}
+\NormalTok{│         │                 │                 │                    │}
+\NormalTok{│         └────────────────┼─────────────────┘                    │}
+\NormalTok{│                          ↓                                       │}
+\NormalTok{│  ┌──────────────────────────────────────────────────────────┐   │}
+\NormalTok{│  │                  🤖 Coordinator Agent                    │   │}
+\NormalTok{│  │  • Task scheduling        • Dependency resolution        │   │}
+\NormalTok{│  │  • Conflict resolution    • Progress tracking            │   │}
+\NormalTok{│  └──────────────────────────────────────────────────────────┘   │}
+\NormalTok{│                              │                                   │}
+\NormalTok{│                              ↓                                   │}
+\NormalTok{│  ═══════════════════════════════════════════════════════════    │}
+\NormalTok{│                    🤖 VERIFICATION LAYER                         │}
+\NormalTok{│  ═══════════════════════════════════════════════════════════    │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ┌─────────────┐   ┌─────────────┐   ┌─────────────┐           │}
+\NormalTok{│  │ 🤖 Mutation │   │ 🤖 Seal     │   │ 🤖 Audit    │           │}
+\NormalTok{│  │   Engine    │   │   Manager   │   │   Logger    │           │}
+\NormalTok{│  └─────────────┘   └─────────────┘   └─────────────┘           │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{17-implementation-technology-stack}{%
+\subsection{17. Implementation Technology
+Stack}\label{17-implementation-technology-stack}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                 Implementation Technology Stack                  │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Layer              Technology Options                          │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  LLM Engine         Claude / GPT{-}4 / Gemini / Local LLM        │}
+\NormalTok{│  Agent Framework    LangChain / AutoGen / Custom                │}
+\NormalTok{│  Mutation Testing   Stryker / Pitest / mutmut / Custom          │}
+\NormalTok{│  Version/Sealing    Database                                    │}
+\NormalTok{│  Contract Storage   Database                                    │}
+\NormalTok{│  Monitoring         Prometheus / Grafana / Custom Code          │}
+\NormalTok{│  Execution Env      Docker / K8s / Serverless                   │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Note: ODD is tool{-}agnostic; any combination works              │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{part-ix-evaluation-and-discussion}{%
+\section{Part IX: Evaluation and
+Discussion}\label{part-ix-evaluation-and-discussion}}
+
+\hypertarget{18-odd-effectiveness-evaluation}{%
+\subsection{18. ODD Effectiveness
+Evaluation}\label{18-odd-effectiveness-evaluation}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                   ODD Effectiveness Evaluation                   │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Metric                    Traditional    ODD        Improvement│}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Development speed         1x             5{-}10x      5{-}10x      │}
+\NormalTok{│  Human review time         40\% of cycle   5\%         8x↓        │}
+\NormalTok{│  Code quality (defects)    Industry avg   Below avg  Significant│}
+\NormalTok{│  Onboarding time           2{-}3 months     1{-}2 weeks  4{-}6x↓      │}
+\NormalTok{│  Knowledge retention       In heads       In contracts Permanent │}
+\NormalTok{│  Scalability               Add people     Add compute Unlimited │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  ══════════════════════════════════════════════════════════════  │}
+\NormalTok{│  Note: Actual improvements depend on project type and team      │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{19-limitations-and-countermeasures}{%
+\subsection{19. Limitations and
+Countermeasures}\label{19-limitations-and-countermeasures}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{┌─────────────────────────────────────────────────────────────────┐}
+\NormalTok{│                 Limitations and Countermeasures                  │}
+\NormalTok{├─────────────────────────────────────────────────────────────────┤}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Limitation 1: Mutation testing compute cost is high            │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Countermeasures:                                               │}
+\NormalTok{│  • Incremental mutation (only test changed parts)               │}
+\NormalTok{│  • Intelligent mutant sampling (statistical coverage)           │}
+\NormalTok{│  • Parallel execution (distribute across compute nodes)         │}
+\NormalTok{│  • Cache mutation results (skip unchanged code)                 │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Limitation 2: Contract writing has learning curve              │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Countermeasures:                                               │}
+\NormalTok{│  • Natural language to contract AI assistance                   │}
+\NormalTok{│  • Contract templates and examples library                      │}
+\NormalTok{│  • Clarity assessment guides users to improve                   │}
+\NormalTok{│  • Gradual adoption (start with simple contracts)               │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Limitation 3: Not all domains are easily contractifiable       │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Countermeasures:                                               │}
+\NormalTok{│  • Start with well{-}defined domains (CRUD, APIs)                 │}
+\NormalTok{│  • Develop domain{-}specific contract languages                   │}
+\NormalTok{│  • Hybrid approach (ODD for testable parts, traditional for rest)│}
+\NormalTok{│  • Research into creative/exploratory domain contracts          │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Limitation 4: Organizational change resistance                 │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Countermeasures:                                               │}
+\NormalTok{│  • Start with pilot projects, demonstrate value                 │}
+\NormalTok{│  • Training and education programs                              │}
+\NormalTok{│  • Gradual transition, not big bang                             │}
+\NormalTok{│  • Highlight career evolution (coder → architect)               │}
+\NormalTok{│                                                                  │}
+\NormalTok{│  Limitation 5: LLM capability boundaries                        │}
+\NormalTok{│  ─────────────────────────────────────────────────────────────  │}
+\NormalTok{│  Countermeasures:                                               │}
+\NormalTok{│  • Contract decomposition (smaller, simpler tasks)              │}
+\NormalTok{│  • Human{-}in{-}the{-}loop for complex decisions                      │}
+\NormalTok{│  • Multiple LLM ensemble for verification                       │}
+\NormalTok{│  • Continuous improvement as LLMs advance                       │}
+\NormalTok{│                                                                  │}
+\NormalTok{└─────────────────────────────────────────────────────────────────┘}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{195-discussion-scope-and-future-work-odd-paper-series}{%
+\subsection{19.5 Discussion: Scope and Future Work (ODD Paper
+Series)}\label{195-discussion-scope-and-future-work-odd-paper-series}}
+
+This paper (Paper I) establishes the core paradigm of Output-Driven
+Development (ODD): artifact-centric governance, contract-driven
+execution, mutation testing as the trust foundation, and sealing for
+auditability.
+
+However, several key questions are intentionally scoped out and will be
+addressed in the rest of the ODD paper series:
+
+\begin{itemize}
+\item
+  \textbf{Paper II --- Human Delegation Proof}: How a system can
+  progressively transfer trust from human review to verifiable
+  mechanisms, enabling humans to stop writing and reviewing code while
+  keeping accountability human-legible.
+\item
+  \textbf{Paper III --- Contract Execution}: Why contract precision is
+  the first-class determinant of artifact correctness; how to measure,
+  improve, and operationalize contract clarity and execution quality.
+\item
+  \textbf{Paper IV --- Legitimacy Evolution}: How legitimacy drifts over
+  time, and how to govern re-legitimation and lifecycle management of
+  contracts, tests, and sealed artifacts under changing requirements and
+  environments.
+\item
+  \textbf{Paper S1 --- Context Engineering}: A practical, auditable
+  context-engineering stack (layering, token budgets, evidence-first
+  memory) that makes ODD scalable and cost-efficient in real projects.
+\end{itemize}
+
+Together, these papers aim to make ODD not merely a high-level idea, but
+a complete, implementable, and auditable methodology for AI-native
+software production.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{part-x-conclusion}{%
+\section{Part X: Conclusion}\label{part-x-conclusion}}
+
+\hypertarget{20-summary}{%
+\subsection{20. Summary}\label{20-summary}}
+
+This paper proposes \textbf{Output-Driven Development (ODD)}, a
+completely new software development paradigm designed for the AI era.
+
+\textbf{Core contributions}:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Established the central role of artifacts}: The goal of
+  software development is not generating code, but generating artifacts
+  that satisfy human needs. Code is merely an intermediate product.
+\item
+  \textbf{Redefined contracts}: Contracts are precise agreements
+  defining artifacts---specifications that transform requirements into
+  utility. Contracts are quantifiable, testable, verifiable---more
+  suitable for the AI era than Markdown documents.
+\item
+  \textbf{Solved the AI review paradox}: Using mutation testing to
+  replace human review achieves "humans don't write code and don't need
+  to review code."
+\item
+  \textbf{Achieved production relations restructuring}: First-ever
+  separation of intellectual from executive labor in the software
+  industry, moving from "craft workshop" to "intelligent factory."
+\item
+  \textbf{Empowers all groups}: Independent developer + ODD = Small
+  team; IT department + ODD = Professional software factory; Software
+  company + ODD = Productivity revolution; Non-technical users + ODD =
+  Ideas realized.
+\end{enumerate}
+
+\textbf{The essence of ODD}: Let humans return to the role of "defining
+value," and delegate "implementing value" to AI.
+
+\begin{quote}
+\textbf{The future software engineer}: Not someone who writes code, but
+someone who \textbf{defines artifact specifications}---like a sausage
+factory's product manager who defines what sausage should be, not
+someone who personally grinds meat.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{appendices}{%
+\section{Appendices}\label{appendices}}
+
+\hypertarget{appendix-a-complete-contract-example}{%
+\subsection{Appendix A: Complete Contract
+Example}\label{appendix-a-complete-contract-example}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\{}
+  \DataTypeTok{"contract\_id"}\FunctionTok{:} \StringTok{"USER{-}AUTH{-}001"}\FunctionTok{,}
+  \DataTypeTok{"version"}\FunctionTok{:} \StringTok{"1.0.0"}\FunctionTok{,}
+  \DataTypeTok{"name"}\FunctionTok{:} \StringTok{"User Authentication Module"}\FunctionTok{,}
+  \DataTypeTok{"description"}\FunctionTok{:} \StringTok{"Handle user login, registration, password reset"}\FunctionTok{,}
+  
+  \DataTypeTok{"interfaces"}\FunctionTok{:} \OtherTok{[}
+    \FunctionTok{\{}
+      \DataTypeTok{"name"}\FunctionTok{:} \StringTok{"login"}\FunctionTok{,}
+      \DataTypeTok{"input"}\FunctionTok{:} \FunctionTok{\{}
+        \DataTypeTok{"username"}\FunctionTok{:} \FunctionTok{\{}\DataTypeTok{"type"}\FunctionTok{:} \StringTok{"string"}\FunctionTok{,} \DataTypeTok{"min\_length"}\FunctionTok{:} \DecValTok{3}\FunctionTok{,} \DataTypeTok{"max\_length"}\FunctionTok{:} \DecValTok{20}\FunctionTok{\},}
+        \DataTypeTok{"password"}\FunctionTok{:} \FunctionTok{\{}\DataTypeTok{"type"}\FunctionTok{:} \StringTok{"string"}\FunctionTok{,} \DataTypeTok{"min\_length"}\FunctionTok{:} \DecValTok{8}\FunctionTok{,} \DataTypeTok{"max\_length"}\FunctionTok{:} \DecValTok{128}\FunctionTok{\}}
+      \FunctionTok{\},}
+      \DataTypeTok{"output"}\FunctionTok{:} \FunctionTok{\{}
+        \DataTypeTok{"success"}\FunctionTok{:} \FunctionTok{\{}\DataTypeTok{"token"}\FunctionTok{:} \StringTok{"string"}\FunctionTok{,} \DataTypeTok{"expires\_in"}\FunctionTok{:} \StringTok{"number"}\FunctionTok{\},}
+        \DataTypeTok{"errors"}\FunctionTok{:} \OtherTok{[}\StringTok{"INVALID\_CREDENTIALS"}\OtherTok{,} \StringTok{"ACCOUNT\_LOCKED"}\OtherTok{,} \StringTok{"ACCOUNT\_DISABLED"}\OtherTok{]}
+      \FunctionTok{\},}
+      \DataTypeTok{"acceptance\_criteria"}\FunctionTok{:} \OtherTok{[}
+        \StringTok{"Given valid credentials When login Then return JWT token, valid 3600s"}\OtherTok{,}
+        \StringTok{"Given invalid password When login Then return INVALID\_CREDENTIALS"}\OtherTok{,}
+        \StringTok{"Given 5 failures in 5min When 6th attempt Then return ACCOUNT\_LOCKED"}
+      \OtherTok{]}
+    \FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}
+      \DataTypeTok{"name"}\FunctionTok{:} \StringTok{"register"}\FunctionTok{,}
+      \DataTypeTok{"input"}\FunctionTok{:} \FunctionTok{\{}
+        \DataTypeTok{"username"}\FunctionTok{:} \FunctionTok{\{}\DataTypeTok{"type"}\FunctionTok{:} \StringTok{"string"}\FunctionTok{,} \DataTypeTok{"min\_length"}\FunctionTok{:} \DecValTok{3}\FunctionTok{,} \DataTypeTok{"max\_length"}\FunctionTok{:} \DecValTok{20}\FunctionTok{\},}
+        \DataTypeTok{"email"}\FunctionTok{:} \FunctionTok{\{}\DataTypeTok{"type"}\FunctionTok{:} \StringTok{"email"}\FunctionTok{\},}
+        \DataTypeTok{"password"}\FunctionTok{:} \FunctionTok{\{}\DataTypeTok{"type"}\FunctionTok{:} \StringTok{"string"}\FunctionTok{,} \DataTypeTok{"min\_length"}\FunctionTok{:} \DecValTok{8}\FunctionTok{,} \DataTypeTok{"pattern"}\FunctionTok{:} \StringTok{"(?=.*[A{-}Z])(?=.*[0{-}9])"}\FunctionTok{\}}
+      \FunctionTok{\},}
+      \DataTypeTok{"output"}\FunctionTok{:} \FunctionTok{\{}
+        \DataTypeTok{"success"}\FunctionTok{:} \FunctionTok{\{}\DataTypeTok{"user\_id"}\FunctionTok{:} \StringTok{"string"}\FunctionTok{,} \DataTypeTok{"verification\_sent"}\FunctionTok{:} \StringTok{"boolean"}\FunctionTok{\},}
+        \DataTypeTok{"errors"}\FunctionTok{:} \OtherTok{[}\StringTok{"USERNAME\_EXISTS"}\OtherTok{,} \StringTok{"EMAIL\_EXISTS"}\OtherTok{,} \StringTok{"WEAK\_PASSWORD"}\OtherTok{]}
+      \FunctionTok{\}}
+    \FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}
+      \DataTypeTok{"name"}\FunctionTok{:} \StringTok{"resetPassword"}\FunctionTok{,}
+      \DataTypeTok{"input"}\FunctionTok{:} \FunctionTok{\{}
+        \DataTypeTok{"email"}\FunctionTok{:} \FunctionTok{\{}\DataTypeTok{"type"}\FunctionTok{:} \StringTok{"email"}\FunctionTok{\}}
+      \FunctionTok{\},}
+      \DataTypeTok{"output"}\FunctionTok{:} \FunctionTok{\{}
+        \DataTypeTok{"success"}\FunctionTok{:} \FunctionTok{\{}\DataTypeTok{"message"}\FunctionTok{:} \StringTok{"string"}\FunctionTok{\},}
+        \DataTypeTok{"errors"}\FunctionTok{:} \OtherTok{[}\StringTok{"EMAIL\_NOT\_FOUND"}\OtherTok{,} \StringTok{"RATE\_LIMITED"}\OtherTok{]}
+      \FunctionTok{\}}
+    \FunctionTok{\}}
+  \OtherTok{]}\FunctionTok{,}
+  
+  \DataTypeTok{"non\_functional"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"performance"}\FunctionTok{:} \FunctionTok{\{}
+      \DataTypeTok{"login\_response\_time"}\FunctionTok{:} \StringTok{"\textless{}200ms p99"}\FunctionTok{,}
+      \DataTypeTok{"max\_concurrent\_users"}\FunctionTok{:} \DecValTok{10000}
+    \FunctionTok{\},}
+    \DataTypeTok{"security"}\FunctionTok{:} \FunctionTok{\{}
+      \DataTypeTok{"password\_hashing"}\FunctionTok{:} \StringTok{"bcrypt with cost 12"}\FunctionTok{,}
+      \DataTypeTok{"rate\_limiting"}\FunctionTok{:} \StringTok{"5 attempts per minute per IP"}
+    \FunctionTok{\}}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"metadata"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"author"}\FunctionTok{:} \StringTok{"contract{-}architect@example.com"}\FunctionTok{,}
+    \DataTypeTok{"created"}\FunctionTok{:} \StringTok{"2026{-}01{-}10"}\FunctionTok{,}
+    \DataTypeTok{"status"}\FunctionTok{:} \StringTok{"approved"}
+  \FunctionTok{\}}
+\FunctionTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{appendix-b-mutation-testing-configuration-example}{%
+\subsection{Appendix B: Mutation Testing Configuration
+Example}\label{appendix-b-mutation-testing-configuration-example}}
+
+\textbf{Stryker Configuration (JavaScript/TypeScript)}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\{}
+  \DataTypeTok{"$schema"}\FunctionTok{:} \StringTok{"https://raw.githubusercontent.com/stryker{-}mutator/stryker/master/packages/core/schema/stryker{-}schema.json"}\FunctionTok{,}
+  \DataTypeTok{"packageManager"}\FunctionTok{:} \StringTok{"npm"}\FunctionTok{,}
+  \DataTypeTok{"reporters"}\FunctionTok{:} \OtherTok{[}\StringTok{"html"}\OtherTok{,} \StringTok{"progress"}\OtherTok{,} \StringTok{"dashboard"}\OtherTok{]}\FunctionTok{,}
+  \DataTypeTok{"testRunner"}\FunctionTok{:} \StringTok{"jest"}\FunctionTok{,}
+  \DataTypeTok{"coverageAnalysis"}\FunctionTok{:} \StringTok{"perTest"}\FunctionTok{,}
+  \DataTypeTok{"thresholds"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"high"}\FunctionTok{:} \DecValTok{90}\FunctionTok{,}
+    \DataTypeTok{"low"}\FunctionTok{:} \DecValTok{80}\FunctionTok{,}
+    \DataTypeTok{"break"}\FunctionTok{:} \DecValTok{75}
+  \FunctionTok{\},}
+  \DataTypeTok{"mutate"}\FunctionTok{:} \OtherTok{[}
+    \StringTok{"src/**/*.ts"}\OtherTok{,}
+    \StringTok{"!src/**/*.spec.ts"}\OtherTok{,}
+    \StringTok{"!src/**/*.test.ts"}
+  \OtherTok{]}\FunctionTok{,}
+  \DataTypeTok{"mutator"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"excludedMutations"}\FunctionTok{:} \OtherTok{[}\StringTok{"StringLiteral"}\OtherTok{]}
+  \FunctionTok{\}}
+\FunctionTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{appendix-c-seal-record-structure}{%
+\subsection{Appendix C: Seal Record
+Structure}\label{appendix-c-seal-record-structure}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\{}
+  \DataTypeTok{"seal\_id"}\FunctionTok{:} \StringTok{"SEAL{-}2026{-}01{-}10{-}001"}\FunctionTok{,}
+  \DataTypeTok{"artifact\_id"}\FunctionTok{:} \StringTok{"USER{-}AUTH{-}001"}\FunctionTok{,}
+  \DataTypeTok{"version"}\FunctionTok{:} \StringTok{"1.0.0"}\FunctionTok{,}
+  \DataTypeTok{"sealed\_at"}\FunctionTok{:} \StringTok{"2026{-}01{-}10T14:32:00Z"}\FunctionTok{,}
+  \DataTypeTok{"sealed\_by"}\FunctionTok{:} \StringTok{"system"}\FunctionTok{,}
+  
+  \DataTypeTok{"verification\_results"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"mutation\_score"}\FunctionTok{:} \FloatTok{92.5}\FunctionTok{,}
+    \DataTypeTok{"total\_mutants"}\FunctionTok{:} \DecValTok{156}\FunctionTok{,}
+    \DataTypeTok{"killed\_mutants"}\FunctionTok{:} \DecValTok{144}\FunctionTok{,}
+    \DataTypeTok{"survived\_mutants"}\FunctionTok{:} \DecValTok{12}\FunctionTok{,}
+    \DataTypeTok{"test\_count"}\FunctionTok{:} \DecValTok{48}\FunctionTok{,}
+    \DataTypeTok{"test\_pass\_rate"}\FunctionTok{:} \DecValTok{100}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"hashes"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"contract\_hash"}\FunctionTok{:} \StringTok{"sha256:a1b2c3d4e5f6..."}\FunctionTok{,}
+    \DataTypeTok{"code\_hash"}\FunctionTok{:} \StringTok{"sha256:f6e5d4c3b2a1..."}\FunctionTok{,}
+    \DataTypeTok{"test\_hash"}\FunctionTok{:} \StringTok{"sha256:1a2b3c4d5e6f..."}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"dependencies"}\FunctionTok{:} \OtherTok{[}
+    \FunctionTok{\{}\DataTypeTok{"artifact\_id"}\FunctionTok{:} \StringTok{"COMMON{-}UTILS{-}001"}\FunctionTok{,} \DataTypeTok{"version"}\FunctionTok{:} \StringTok{"2.1.0"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"artifact\_id"}\FunctionTok{:} \StringTok{"DATABASE{-}001"}\FunctionTok{,} \DataTypeTok{"version"}\FunctionTok{:} \StringTok{"1.5.0"}\FunctionTok{\}}
+  \OtherTok{]}\FunctionTok{,}
+  
+  \DataTypeTok{"rollback\_info"}\FunctionTok{:} \FunctionTok{\{}
+    \DataTypeTok{"previous\_version"}\FunctionTok{:} \StringTok{"0.9.0"}\FunctionTok{,}
+    \DataTypeTok{"can\_rollback"}\FunctionTok{:} \KeywordTok{true}\FunctionTok{,}
+    \DataTypeTok{"rollback\_command"}\FunctionTok{:} \StringTok{"odd rollback USER{-}AUTH{-}001 {-}{-}to=0.9.0"}
+  \FunctionTok{\},}
+  
+  \DataTypeTok{"audit\_trail"}\FunctionTok{:} \OtherTok{[}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"contract\_created"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"architect@example.com"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}05"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"contract\_approved"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"tech{-}lead@example.com"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}08"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"code\_generated"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"ai{-}worker{-}3"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}09T10:15:00Z"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"mutation\_test\_started"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"system"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}10T13:00:00Z"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"mutation\_test\_passed"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"system"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}10T14:30:00Z"}\FunctionTok{\}}\OtherTok{,}
+    \FunctionTok{\{}\DataTypeTok{"action"}\FunctionTok{:} \StringTok{"sealed"}\FunctionTok{,} \DataTypeTok{"by"}\FunctionTok{:} \StringTok{"system"}\FunctionTok{,} \DataTypeTok{"at"}\FunctionTok{:} \StringTok{"2026{-}01{-}10T14:32:00Z"}\FunctionTok{\}}
+  \OtherTok{]}
+\FunctionTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{appendix-d-glossary}{%
+\subsection{Appendix D: Glossary}\label{appendix-d-glossary}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule()
+Term & Definition \\
+\midrule()
+\endhead
+ODD & Output-Driven Development, a development paradigm centered on
+artifact correctness \\
+Artifact & Verifiable output of software development that satisfies
+specific human needs and has use-value \\
+Contract & Precise agreement defining artifacts---specifications
+transforming requirements into utility \\
+Mutation Testing & Method to evaluate test quality by introducing code
+mutations \\
+Mutation Score & Percentage of mutants killed by tests, measuring test
+effectiveness \\
+Sealing & Locking verified code to prevent modification, with complete
+audit information \\
+Clarity Assessment & Process of identifying ambiguity in contracts,
+shown as red/yellow/green \\
+Trust Transfer & Shift of trust source from human review to system
+verification \\
+Artifact Pipeline & Process of building artifacts layer by layer, each
+artifact input for the next \\
+\bottomrule()
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{references-2}{%
+\subsection{References}\label{references-2}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Kuhn, T. (1962). \emph{The Structure of Scientific Revolutions}.
+  University of Chicago Press.
+\item
+  Meyer, B. (1992). "Design by Contract". \emph{IEEE Computer}, 25(10),
+  40-51.
+\item
+  Beck, K. (2002). \emph{Test-Driven Development: By Example}.
+  Addison-Wesley.
+\item
+  Jia, Y., \& Harman, M. (2011). "An Analysis and Survey of the
+  Development of Mutation Testing". \emph{IEEE Transactions on Software
+  Engineering}, 37(5), 649-678.
+\item
+  DeMillo, R. A., Lipton, R. J., \& Sayward, F. G. (1978). "Hints on
+  Test Data Selection: Help for the Practicing Programmer". \emph{IEEE
+  Computer}, 11(4), 34-41.
+\item
+  Bubeck, S., et al. (2023). "Sparks of Artificial General Intelligence:
+  Early experiments with GPT-4". \emph{arXiv preprint arXiv:2303.12712}.
+\item
+  Chen, M., et al. (2021). "Evaluating Large Language Models Trained on
+  Code". \emph{arXiv preprint arXiv:2107.03374}.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\emph{End of Document}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\textbf{ODD Series \textbar{} Week 37 . Friday \textbar{} 40 Weeks
+Total}\\
+Previous: "学术论文-Utility-First"\\
+Next: "深度架构-WizMem"
+\end{quote}
+
+\end{document}

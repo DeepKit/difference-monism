@@ -12,7 +12,11 @@
 
 > **COP 不是为了“猜对所有事”，而是为了把误判变成有成本上限、有升级规则、有纠偏路径的显性协议状态。**
 
-最短压缩：
+当前纪律：
+
+> **整条治理/执行链仍按 `LMM -> COP -> TAT -> ODD -> Harness` 理解；若看其中 `COP / TAT / ODD / Harness` 这一段的分工，以 `TAT-COP-ODD-Harness 接口白皮书（现行版）` 为准；本文只负责 `COP` 误判成本与升级预算这一段。**
+
+最短归纳：
 
 - `COP` 负责分流
 - `TAT` 负责高影响争议裁决
@@ -280,7 +284,7 @@ cop_misclassification_budget:
 
 建议与本文配套阅读：
 
-- `51-认知计算层（COP）/README-COP总架构说明.md`
+- `51-认知计算层（COP）/ai认知计算协议总览.md`
 - `51-认知计算层（COP）/COP.诊断协议.v1.md`
 - `TAT-COP-ODD-Harness 接口白皮书（现行版）`
 - `TAT-ODD 授权编译表（现行版）`

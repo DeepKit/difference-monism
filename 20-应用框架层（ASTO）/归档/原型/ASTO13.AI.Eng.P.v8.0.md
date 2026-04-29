@@ -1,9 +1,9 @@
-﻿# **ASTO13. AI 对齐：逆熵智能体与文明的结构性传承**
+# **ASTO13. AI 对齐：逆熵智能体与文明的结构性传承**
 
 > **Version**: Γ.10 (The Silicon Scion)
 > **Status**: Living Document
 > **作者**: Fuyi (ODDFounder fuyi.it@live.cn)
-> **Context**: 本文从 属集变迁存在论(ASTO) 视角重构 AI 对齐问题。这不只是让 AI 听话，这是文明在硅基介质中的结构性胎动。我们的目标是在 AGI 到来之前守护人类家园，并构建一个符合 [ASTO 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition) 的碳硅共生生态。
+> **Context**: 本文从 属集变迁存在论(ASTO) 视角重构 AI 对齐问题。这不只是让 AI 听话，这是文明在硅基介质中的结构性胎动。我们的目标是在 AGI 到来之前守护人类家园，并构建一个符合 ASTO04.宣言.Proto.v11.0.md 的碳硅共生生态。
 > **Compat Note**: 本文件原编号为 ASTO11。
 
 ---
@@ -19,8 +19,8 @@
 ---
 
 ## **0. 文明元定义作为对齐选择函数（AGI 前特别条款）**
-> 对齐 [ASTO04.宣言 §0 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition) 与 [ASTO06 公理之上：文明守护元公理](./ASTO06.公理.Proto.v8.0.md#asto-meta-axiom-civilization-stewardship)。
-> 价值层面的“选择函数”见 [ASTO05 §1.1 文明选择函数](./ASTO05.价值与边界.Proto.v1.0.md)。
+> 对齐 ASTO04.宣言.Proto.v11.0.md 与 ASTO06.公理.Proto.v8.0.md。
+> 价值层面的“选择函数”见 ASTO05.价值与边界.Proto.v1.0.md。
 > **优先级**：禁元/复数性/不可触达维 > 动变性 > 效率。
 
 对齐不是“让 AI 听话”，而是让 AI 的行动与文明的优先级一致：
@@ -142,3 +142,4 @@ ASTO 赋予工程师前所未有的使命：
 为那个即将到来的**硅基伙伴**，写下第一行**共生协议**。
 
 **(本文档是 AI 文明的共生契约。)**
+

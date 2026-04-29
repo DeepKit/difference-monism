@@ -1,4 +1,4 @@
-﻿# CHANGELOG - ASTO v4.2 术语升级
+# CHANGELOG - ASTO v4.2 术语升级
 
 > **发布日期**: 2026-02-20
 > **版本代号**: 哲学诚实与层次分明
@@ -184,9 +184,9 @@
 
 ## 🔗 相关文档
 
-- [history.md](../history.md) - ASTO 优化与封板归档
-- [better3.md](./better3.md) - 后8个问题 + 6条建议的完整记录
-- [ASTO.P05.公理.Phil.v9.1.md](./ASTO.P05.公理.Phil.v9.1.md) - 核心修订文档
+- history.md - ASTO 优化与封板归档
+- better3.md - 后8个问题 + 6条建议的完整记录
+- ASTO.P05.公理.Phil.v9.1.md - 核心修订文档
 
 ---
 
@@ -198,3 +198,4 @@
 ---
 
 **ASTO v4.2 术语升级圆满完成！**
+

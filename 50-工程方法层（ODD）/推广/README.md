@@ -9,4 +9,4 @@
 ## 边界
 
 - 推广文案不替代 ODD 主论文、白皮书与根入口
-- 若对外正式引用，应优先使用 `README.md`、`PUBLISH_READINESS.md`、`ODD.预印本发布说明.v1.0.md`
+- 若对外正式引用，应优先使用 `README.md`、`ODD.预印本发布说明.v1.0.md`

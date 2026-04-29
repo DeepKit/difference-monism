@@ -1,4 +1,4 @@
-﻿# **ASTO04. 宣言：结构性处境与行动纲领**
+# **ASTO04. 宣言：结构性处境与行动纲领**
 
 > **Version**: Γ.16 (Civilization Telos Clarified)
 > **Status**: Living Document
@@ -800,26 +800,26 @@ ASTO 的概念体系与其他哲学传统之间存在精确的映射关系。本
 ASTO v2.0 体系庞大，请根据你的角色选择路径：
 
 ### **14.1 如果你是寻求意义的探索者...**
-*   去读 **[ASTO03. 认识论](ASTO03.认识论.Proto.v1.0.md)**：理解为什么你会迷茫。
-*   去读 **[ASTO05. 价值与边界](ASTO05.价值与边界.Proto.v1.0.md)**：寻找伦理的锚点。
+*   去读 **ASTO03.认识论.Proto.v1.0.md**：理解为什么你会迷茫。
+*   去读 **ASTO05.价值与边界.Proto.v1.0.md**：寻找伦理的锚点。
 
 ### **14.2 如果你是解决问题的工程师...**
-*   去读 **[ASTO06. 公理](ASTO06.公理.Proto.v8.0.md)**：理解系统的物理法则。
-*   去读 **[ASTO07. 重构](ASTO07.重构.Proto.v10.0.md)**：学习架构师的视角。
+*   去读 **ASTO06.公理.Proto.v8.0.md**：理解系统的物理法则。
+*   去读 **ASTO07.重构.Proto.v10.0.md**：学习架构师的视角。
 *   **最重要的**，请看下面的工具箱索引 ↓
 
 ### **14.3 工程工具箱索引**
 
 | 核心问题 | 工具/机制 | 对应文档 |
 | :--- | :--- | :--- |
-| **如何确保代码合规？** | **红绿灯协议** (Traffic Light Protocol) | [ASTO11.自动化](ASTO11.自动化.Eng.P.v8.0.md) |
-| **如何测试系统极限？** | **对抗测试** (Adversarial Testing) | [Ext.09.工程实践](Ext/ASTO-Ext.09.工程实践指南.v1.0.md) |
-| **多方案怎么选？** | **赛马机制** (Horse Race) | [Ext.09.工程实践](Ext/ASTO-Ext.09.工程实践指南.v1.0.md) |
-| **如何发布不回滚？** | **封板/解封** (Seal/Unseal) | [Ext.09.工程实践](Ext/ASTO-Ext.09.工程实践指南.v1.0.md) |
-| **Web3代码有Bug哋办？** | **意图宪法** (Intent Constitution) | [ASTO12.Web3](ASTO12.Web3.Eng.P.v8.0.md) |
-| **AI胡说八道哋办？** | **RLEN** (规范强化学习) | [ASTO13.AI](ASTO13.AI.Eng.P.v8.0.md) |
-| **投票怎么不被操纵？** | **NCP协议** (Normative Consensus) | [ASTO14.民主](ASTO14.民主.Hum.P.v8.0.md) |
-| **系统挂了怎么重启？** | **理论免疫系统** (TIS) | [ASTO16.韧性](ASTO16.韧性.Hum.P.v8.0.md) |
+| **如何确保代码合规？** | **红绿灯协议** (Traffic Light Protocol) | ASTO11.自动化.Eng.P.v8.0.md |
+| **如何测试系统极限？** | **对抗测试** (Adversarial Testing) | ASTO-Ext.09.工程实践指南.v1.0.md |
+| **多方案怎么选？** | **赛马机制** (Horse Race) | ASTO-Ext.09.工程实践指南.v1.0.md |
+| **如何发布不回滚？** | **封板/解封** (Seal/Unseal) | ASTO-Ext.09.工程实践指南.v1.0.md |
+| **Web3代码有Bug哋办？** | **意图宪法** (Intent Constitution) | ASTO12.Web3.Eng.P.v8.0.md |
+| **AI胡说八道哋办？** | **RLEN** (规范强化学习) | ASTO13.AI.Eng.P.v8.0.md |
+| **投票怎么不被操纵？** | **NCP协议** (Normative Consensus) | ASTO14.民主.Hum.P.v8.0.md |
+| **系统挂了怎么重启？** | **理论免疫系统** (TIS) | ASTO16.韧性.Hum.P.v8.0.md |
 
 ---
 
@@ -1145,26 +1145,26 @@ if DCI = 0:  "立即消除(触犯伦理红线)"
 
 | 编号 | 文档名称 | 简介 |
 | :--- | :--- | :--- |
-| 01 | [ASTO01. 理论免疫宣言](ASTO01.非此.Phil.P.v8.0.md) | 为何"它不是什么"比"它是什么"更重要 |
-| 02 | [ASTO02. 序章：否定性导引](ASTO02.序章.Proto.v8.0.md) | 在理解之前的否定性导引 |
-| 03 | [ASTO03. 认识论](ASTO03.认识论.Proto.v1.0.md) | 认知错误的必然性与知行合一 |
-| 04 | [ASTO04. 宣言](ASTO04.宣言.Proto.v11.0.md) | 结构性处境与行动纲领（本文件） |
-| 05 | [ASTO05. 价值与边界](ASTO05.价值与边界.Proto.v1.0.md) | 复数性测试与伦理熔断 |
-| 06 | [ASTO06. 公理](ASTO06.公理.Proto.v8.0.md) | 系统的热力学法则与结构存在论 |
-| 07 | [ASTO07. 重构](ASTO07.重构.Proto.v10.0.md) | 架构师的二十一种宇宙视角 |
-| 08 | [ASTO08. 实践](ASTO08.实践.Guide.v2.0.md) | 介入复杂系统的工程指南 |
-| 09 | [ASTO09. 边界](ASTO09.边界.Proto.v9.0.md) | 控制与混沌的平衡 |
-| 10 | [ASTO10. 批判](ASTO10.批判.Hum.P.v9.0.md) | 反极权宪章与系统免疫 |
-| 11 | [ASTO11. 自动化](ASTO11.自动化.Eng.P.v8.0.md) | 可执行规范与零摩擦治理 |
-| 12 | [ASTO12. Web3](ASTO12.Web3.Eng.P.v8.0.md) | 意图宪法与链上三权分立 |
-| 13 | [ASTO13. AI](ASTO13.AI.Eng.P.v8.0.md) | 逆熵智能体与文明的结构性传承 |
-| 14 | [ASTO14. 民主](ASTO14.民主.Hum.P.v8.0.md) | 对话平台与 NCP 协议 |
-| 15 | [ASTO15. 例外](ASTO15.例外.Phil.P.v8.0.md) | 从宗教体验到星际主权 |
-| 16 | [ASTO16. 韧性](ASTO16.韧性.Hum.P.v8.0.md) | 理论的自我免疫与反脆弱 |
-| 17 | [ASTO17. 留白](ASTO17.留白.md) | 预留的扩展空间 |
-| 18 | [ASTO18. 终章](ASTO18.终章.Hum.P.v8.0.md) | 系统的终极关怀 |
-| 19 | [ASTO19. 附录](ASTO19.附录.Glossary.md) | 术语表与工程映射 |
-| 20 | [ASTO20. 图序](ASTO20.图序.md) | 全景视觉索引 |
+| 01 | ASTO01.非此.Phil.P.v8.0.md | 为何"它不是什么"比"它是什么"更重要 |
+| 02 | ASTO02.序章.Proto.v8.0.md | 在理解之前的否定性导引 |
+| 03 | ASTO03.认识论.Proto.v1.0.md | 认知错误的必然性与知行合一 |
+| 04 | ASTO04.宣言.Proto.v11.0.md | 结构性处境与行动纲领（本文件） |
+| 05 | ASTO05.价值与边界.Proto.v1.0.md | 复数性测试与伦理熔断 |
+| 06 | ASTO06.公理.Proto.v8.0.md | 系统的热力学法则与结构存在论 |
+| 07 | ASTO07.重构.Proto.v10.0.md | 架构师的二十一种宇宙视角 |
+| 08 | ASTO08.实践.Guide.v2.0.md | 介入复杂系统的工程指南 |
+| 09 | ASTO09.边界.Proto.v9.0.md | 控制与混沌的平衡 |
+| 10 | ASTO10.批判.Hum.P.v9.0.md | 反极权宪章与系统免疫 |
+| 11 | ASTO11.自动化.Eng.P.v8.0.md | 可执行规范与零摩擦治理 |
+| 12 | ASTO12.Web3.Eng.P.v8.0.md | 意图宪法与链上三权分立 |
+| 13 | ASTO13.AI.Eng.P.v8.0.md | 逆熵智能体与文明的结构性传承 |
+| 14 | ASTO14.民主.Hum.P.v8.0.md | 对话平台与 NCP 协议 |
+| 15 | ASTO15.例外.Phil.P.v8.0.md | 从宗教体验到星际主权 |
+| 16 | ASTO16.韧性.Hum.P.v8.0.md | 理论的自我免疫与反脆弱 |
+| 17 | ASTO17.留白.md | 预留的扩展空间 |
+| 18 | ASTO18.终章.Hum.P.v8.0.md | 系统的终极关怀 |
+| 19 | ASTO19.附录.Glossary.md | 术语表与工程映射 |
+| 20 | ASTO20.图序.md | 全景视觉索引 |
 
 ---
 
@@ -1176,3 +1176,4 @@ if DCI = 0:  "立即消除(触犯伦理红线)"
 任何 ASTO 概念都只是该矩阵的一个切片。
 
 *(End of Manifesto)*
+

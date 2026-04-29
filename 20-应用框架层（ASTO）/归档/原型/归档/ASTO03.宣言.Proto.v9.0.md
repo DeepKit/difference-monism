@@ -1,4 +1,4 @@
-﻿# **ASTO03.属集变迁存在论 (ASTO) 宣言：基于跨文化结构同构性的演化哲学**
+# **ASTO03.属集变迁存在论 (ASTO) 宣言：基于跨文化结构同构性的演化哲学**
 
 > **Version**: Γ.26 (缺陷作为创造力：从不完美公理到工程实践)
 > **Status**: Living Document
@@ -2238,25 +2238,26 @@ function classifyDefect(defect) {
 
 # ASTO 原型 01–18 目录
 
-01. [ASTO01. 属集变迁存在论(ASTO)理论免疫宣言：为何“它不是什么”比“它是什么”更重要](ASTO01.非此.Phil.P.v8.0.md)
-02. [ASTO02.在理解之前：属集变迁存在论(ASTO)的否定性导引](ASTO02.序章.Proto.v8.0.md)
-03. [ASTO03.属集变迁存在论 (ASTO) 宣言：基于跨文化结构同构性的演化哲学](ASTO03.宣言.Proto.v10.0.md)
-04. [ASTO04. 公理体系：系统的热力学法则与结构存在论](ASTO04.公理.Proto.v8.0.md)
-05. [ASTO05. 重构：架构师的二十一种宇宙视角](ASTO05.重构.Proto.v10.0.md)
-06. [ASTO06. 实践指南：生活|人文|工程 三轨读本](ASTO06.实践.Guide.v2.0.md)
-07. [ASTO07. 边界与自由：控制与混沌的平衡](ASTO07.边界.Proto.v9.0.md)
-08. [ASTO08. 批判：反极权宪章与系统免疫](ASTO08.批判.Hum.P.v9.0.md)
-09. [ASTO09. 自动化：可执行规范与零摩擦治理](ASTO09.自动化.Eng.P.v8.0.md)
-10. [ASTO10. Web3：意图宪法与链上三权分立](ASTO10.Web3.Eng.P.v8.0.md)
-11. [ASTO11. AI 对齐：逆熵智能体与文明的结构性传承](ASTO11.AI.Eng.P.v8.0.md)
-12. [ASTO12. 民主：对话平台与 NCP 协议](ASTO12.民主.Hum.P.v8.0.md)
-13. [ASTO13. 例外与极限：从宗教体验到星际主权](ASTO13.例外.Phil.P.v8.0.md)
-14. [ASTO14. 韧性：理论的自我免疫与反脆弱](ASTO14.韧性.Hum.P.v8.0.md)
-15. [ASTO15. 留白](ASTO15.留白.md)
-16. [ASTO16. 终章：过桥之后](ASTO16.终章.Hum.P.v8.0.md)
-17. [ASTO17. 附录：术语表与工程映射](ASTO17.附录.Glossary.md)
-18. [ASTO18. 图序：全景视觉索引](ASTO18.图序.md)
+01. ASTO01.非此.Phil.P.v8.0.md
+02. ASTO02.序章.Proto.v8.0.md
+03. ASTO03.宣言.Proto.v10.0.md
+04. ASTO04.公理.Proto.v8.0.md
+05. ASTO05.重构.Proto.v10.0.md
+06. ASTO06.实践.Guide.v2.0.md
+07. ASTO07.边界.Proto.v9.0.md
+08. ASTO08.批判.Hum.P.v9.0.md
+09. ASTO09.自动化.Eng.P.v8.0.md
+10. ASTO10.Web3.Eng.P.v8.0.md
+11. ASTO11.AI.Eng.P.v8.0.md
+12. ASTO12.民主.Hum.P.v8.0.md
+13. ASTO13.例外.Phil.P.v8.0.md
+14. ASTO14.韧性.Hum.P.v8.0.md
+15. ASTO15.留白.md
+16. ASTO16.终章.Hum.P.v8.0.md
+17. ASTO17.附录.Glossary.md
+18. ASTO18.图序.md
 
 
 
 *(完)*
+

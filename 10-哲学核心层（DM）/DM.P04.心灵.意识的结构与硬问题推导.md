@@ -71,11 +71,11 @@ P04不直接完成：
 
 ### 配套工具
 
-- [DM.P99.1.内部.意识案例总表](./internal/DM.P99.1.内部.意识案例总表.md)
-- [DM.P99.10.内部.DM对照GNWIIT](./internal/DM.P99.10.内部.DM对照GNWIIT.md)
-- [DM.P99.17.内部.意识证据链声明与反例处置](./internal/DM.P99.17.内部.意识证据链声明与反例处置.md)
-- [DM.P99.18.内部.意识案例档案.可引用草案](./internal/DM.P99.18.内部.意识案例档案.可引用草案.md)
-- [DM.P99.24.内部.意识可受损预测.三范式强否定式](./internal/DM.P99.24.内部.意识可受损预测.三范式强否定式.md)
+- DM.P99.1.内部.意识案例总表.md
+- DM.P99.10.内部.DM对照GNWIIT.md
+- DM.P99.17.内部.意识证据链声明与反例处置.md
+- DM.P99.18.内部.意识案例档案.可引用草案.md
+- DM.P99.24.内部.意识可受损预测.三范式强否定式.md
 
 ---
 
@@ -1548,3 +1548,4 @@ P04的核心立场是：
 - Maturana, H. R. & Varela, F. J. (1980). *Autopoiesis and Cognition*. D. Reidel.
 - Nagel, T. (1974). "What Is It Like to Be a Bat?" *The Philosophical Review*, 83(4), 435-450.
 - Tononi, G. (2008). "Consciousness as Integrated Information." *Biological Bulletin*, 215(3), 216-242.
+

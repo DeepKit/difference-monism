@@ -337,8 +337,9 @@ ASTO-Ext.01 并非法律科技时代的挽歌。它是一份清醒的**建设性
 ---
 
 **关联文件**：
-- 理论基础：[ASTO04.宣言](../ASTO.P04.宣言.Phil.md)、[ASTO06.公理](../ASTO.P05a.公理.Phil.md)
-- 工程实践：[ASTO11.自动化](../工程版/ASTO.E02.自动化.Eng.md)
-- 治理扩展：[ASTO14.民主](../ASTO.P10.民主.Phil.md)
+- 理论基础：ASTO.P04.宣言.Phil.md、ASTO.P05a.公理.Phil.md
+- 工程实践：ASTO.E02.自动化.Eng.md
+- 治理扩展：ASTO.P10.民主.Phil.md
+
 
 

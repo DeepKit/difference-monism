@@ -38,12 +38,12 @@ P10不做文献综述式堆砌，
 
 ### 配套工具
 
-- [DM.P99.8.内部.DM对照Habermas](./internal/DM.P99.8.内部.DM对照Habermas.md)
-- [DM.P99.9.内部.DM对照SenNussbaum](./internal/DM.P99.9.内部.DM对照SenNussbaum.md)
-- [DM.P99.10.内部.DM对照GNWIIT](./internal/DM.P99.10.内部.DM对照GNWIIT.md)
-- [DM.P99.14.内部.DM对照非还原物理主义与结构实在论](./internal/DM.P99.14.内部.DM对照非还原物理主义与结构实在论.md)
-- [DM.P99.21.内部.DM对外一页定位表](./internal/DM.P99.21.内部.DM对外一页定位表.md)
-- [DM.P99.22.内部.DM对外问答包](./internal/DM.P99.22.内部.DM对外问答包.md)
+- DM.P99.8.内部.DM对照Habermas.md
+- DM.P99.9.内部.DM对照SenNussbaum.md
+- DM.P99.10.内部.DM对照GNWIIT.md
+- DM.P99.14.内部.DM对照非还原物理主义与结构实在论.md
+- DM.P99.21.内部.DM对外一页定位表.md
+- DM.P99.22.内部.DM对外问答包.md
 
 ---
 
@@ -412,3 +412,4 @@ P10 的核心立场是：
 - Nāgārjuna (c. 150-250 CE). *Mūlamadhyamakakārikā*.
 - Varela, F. J., Thompson, E., & Rosch, E. (1991). *The Embodied Mind*. MIT Press.
 - Whitehead, A. N. (1929). *Process and Reality*. Macmillan.
+

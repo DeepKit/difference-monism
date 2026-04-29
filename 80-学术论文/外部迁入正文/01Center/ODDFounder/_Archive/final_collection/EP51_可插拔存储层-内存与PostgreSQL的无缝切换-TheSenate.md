@@ -1,0 +1,76 @@
+# 可插拔存储层：内存与PostgreSQL的无缝切换
+
+> **作者**: Fuyi ( ODDFounder  fuyi.it@live.cn )
+> **日期**: 2026-01-11
+> **标签**: 架构设计, 存储抽象, 依赖注入, TheSenate
+
+---
+
+## 摘要
+
+在开发阶段，我们喜欢 SQLite 或内存数据库的轻便；在生产阶段，我们通过 PostgreSQL 获得高可用和强一致性。如何让应用代码在不修改的情况下适应这两种环境？**TheSenate** 设计了一个**可插拔存储层 (Pluggable Storage Layer)**。通过 Delphi 的接口（Interface）和依赖注入，实现了存储介质的透明切换。
+
+---
+
+## 一、存储的抽象 (`uSvcDatabase.pas`)
+
+TheSenate 没有在业务逻辑中直接使用 `TFDQuery` 或 `TFDConnection`。
+而是定义了一组**服务接口**。
+
+虽然 `uSvcDatabase` 目前主要针对 PG，但在架构设计上，它被包裹在业务服务（如 `uSvcAiConfig`）之下。
+
+### 1.1 业务服务层
+```pascal
+type
+  IAiConfigService = interface
+    function GetConfig(Id: string): TAiConfig;
+    procedure SaveConfig(Config: TAiConfig);
+  end;
+```
+
+业务逻辑只调用 `IAiConfigService`，完全不知道底层是 SQL 还是 JSON 文件。
+
+---
+
+## 二、双模式实现
+
+### 2.1 内存/文件模式 (Dev Mode)
+在早期的 Prototype 阶段，或者单元测试中，我们使用 **TDictionary** 或 **SQLite** 作为后端。
+*   **优点**：启动极快，无外部依赖，测试隔离性好。
+*   **实现**：`TMemoryAiConfigService`。
+
+### 2.2 PostgreSQL 模式 (Prod Mode)
+在生产环境（`uSvcDatabase`），我们连接到真实的 PG 实例。
+*   **优点**：数据持久化，支持并发，支持向量检索（pgvector）。
+*   **实现**：`TPGAiConfigService`。
+
+---
+
+## 三、环境配置与切换 (`uModelEnv`)
+
+TheSenate 引入了 `TEnvConfig` 来管理环境上下文。
+*   `ENV_DEV`: 连接到 `localhost` 或使用 Mock。
+*   `ENV_CLOUD`: 连接到云端 PG。
+
+```pascal
+function TDatabaseService.GetConnection(const EnvName: string): TFDConnection;
+begin
+  // 根据 EnvName 加载不同的配置
+  // 如果是测试环境，甚至可以返回一个 MockConnection
+end;
+```
+
+---
+
+## 四、价值
+
+这种**存储抽象**带来了巨大的灵活性：
+1.  **开发体验**：开发者不需要在本地装 PG 就能跑起前端和部分后端逻辑。
+2.  **测试效率**：单元测试使用内存存储，毫秒级完成，不需要清理数据库。
+3.  **渐进式迁移**：项目早期用 SQLite 快速迭代，成熟后无缝迁移到 PG，业务代码零感知。
+
+**可插拔架构**是长期维护项目的防腐剂。它防止了底层技术选型的变更腐蚀上层业务逻辑。
+
+---
+
+*（本系列文章全部完结）*

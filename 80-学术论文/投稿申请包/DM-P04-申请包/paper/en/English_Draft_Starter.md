@@ -12,7 +12,7 @@ consciousness; hard problem; internality; organizational threshold; first-person
 
 ## Current source
 
-- Chinese full draft: [DM-P04.硬问题不是两种实体的桥接而是内部性的形成.投稿体草案.md](D:\_Progs\一元论\80-学术论文\DM-P04.硬问题不是两种实体的桥接而是内部性的形成.投稿体草案.md)
+- Chinese full draft: DM-P04.硬问题不是两种实体的桥接而是内部性的形成.投稿体草案.md
 
 ## Section mapping
 
@@ -26,3 +26,4 @@ consciousness; hard problem; internality; organizational threshold; first-person
 8. Failure Conditions
 9. Scope Limits
 10. Conclusion
+

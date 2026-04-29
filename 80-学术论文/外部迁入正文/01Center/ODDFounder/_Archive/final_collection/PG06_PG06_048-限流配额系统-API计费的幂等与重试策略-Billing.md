@@ -1,0 +1,86 @@
+# 限流配额系统：API计费的幂等与重试策略
+
+> **作者**: Fuyi ( ODDFounder  fuyi.it@live.cn )
+> **日期**: 2026-01-11
+> **标签**: 计费, 限流, 幂等性, 分布式系统, Billing
+
+---
+
+## 摘要
+
+在计费系统中，"扣多了"是事故，"扣少了"是损失。面对网络抖动和重试机制，如何保证扣费的准确性？**Billing** 系统引入了严格的 **幂等性设计 (Idempotency)** 和 **令牌桶限流 (Token Bucket)**，确保在高并发和不稳定网络下，每一笔交易都精准无误。
+
+---
+
+## 一、幂等性：重试的保护伞
+
+当 Progee 调用 Billing 的 `Charge` 接口超时时，它会重试。
+如果没有幂等性，用户可能会被扣两次钱。
+
+### 1.1 幂等键 (Idempotency Key)
+客户端必须在请求头中携带 `X-Idempotency-Key`。
+通常使用 `UUID` 或 `RequestID`。
+
+### 1.2 服务端逻辑
+1.  **Check**: 检查 Redis 中是否存在该 Key。
+2.  **Exist**: 如果存在，直接返回上次的缓存结果（`200 OK` 或 `402 Payment Required`），不执行扣费。
+3.  **Absent**: 如果不存在，执行扣费逻辑，并将 Key + Result 存入 Redis（设置 TTL 如 24小时）。
+
+```python
+def charge(req):
+    key = req.headers.get("X-Idempotency-Key")
+    if redis.exists(key):
+        return redis.get(key)
+    
+    # ... 执行扣费 ...
+    
+    redis.setex(key, 24*3600, result)
+    return result
+```
+
+---
+
+## 二、限流：保护系统的防洪堤
+
+为了防止用户恶意刷接口（或代码 Bug 导致死循环），必须有限流。
+
+### 2.1 多级限流
+*   **User Level**: 每个用户每分钟最多 60 次。
+*   **App Level**: 每个应用每秒最多 1000 次。
+*   **Global Level**: 整个系统总并发限制。
+
+### 2.2 Redis 令牌桶
+我们使用 Redis 的 `CL.THROTTLE` (Redis Cell) 或 Lua 脚本实现滑动窗口限流。
+相比于简单的计数器，令牌桶能允许短时间的**突发流量 (Burst)**，体验更好。
+
+---
+
+## 三、配额 (Quota) 管理
+
+配额不同于余额。余额是钱，配额是量（如"每日免费 10 次"）。
+
+### 3.1 周期性重置
+*   **Daily Quota**: 每天 0点 重置。
+*   **Monthly Quota**: 每月 1日 重置。
+
+Billing 系统使用 Redis 的 `EXPIRE` 特性自动处理重置。
+`INCR user:123:daily_usage` -> `EXPIRE user:123:daily_usage 86400`。
+
+### 3.2 硬顶与软顶
+*   **Hard Limit**: 超过即拒绝。
+*   **Soft Limit**: 超过发送告警（邮件/短信），但不阻断服务（适合大客户）。
+
+---
+
+## 四、总结
+
+计费系统的核心不是计算加减法，而是处理**不确定性**。
+*   **幂等性** 解决了网络的不确定性。
+*   **限流** 解决了流量的不确定性。
+*   **配额** 解决了资源的不确定性。
+
+这三道防线，构成了 Billing 系统坚固的护城河。
+
+---
+
+*下一篇预告：《049-多租户计费：跨应用边界的访问控制设计》*

@@ -117,7 +117,7 @@
   - 将 `P05b / P07-P11` 写为扩展层与场景层
   - 增补 `history.md` 的归档角色
 
-- `ASTO/papers/readme.md`
+- `ASTO/papers/README.md`
   - 将原先的长包顺序改写为“主链推荐顺序 + 扩展层按需附加”
   - 将 `P05b` 改写为扩展稿
   - 将 `P07-P11` 明确压回扩展层与场景层
@@ -199,7 +199,7 @@
    - `papers/better.md` 与 `papers/better3.5.md` 归档到 `papers/history.md`
    - `papers/人文版/better.md` 归档到 `papers/人文版/history.md`
 
-若后续重新开启新一轮清理，不回写本文件；直接新建新的 `better.md`，只记录当轮未完成项。
+若后续重新开启新一轮清理，不回写本文件；直接新建新的活动任务台，只记录当轮未完成项。
 
 ---
 

@@ -1,0 +1,96 @@
+# 多层同步架构设计：从本地到P2P的优雅降级
+
+> **作者**: Fuyi ( ODDFounder  fuyi.it@live.cn )
+> **日期**: 2026-01-11
+> **标签**: 同步算法, Syncthing, P2P, 架构设计, OmniSync
+
+---
+
+## 摘要
+
+在多设备同步领域，没有一种单一协议能适应所有场景。局域网快但出不去，云盘方便但要钱且隐私堪忧，P2P安全但穿透难。**OmniSync** 采用了一种**多层级、可降级**的同步架构，以 **Syncthing** 为核心，结合本地复制和云端中继，实现了"永不掉线"的数据同步体验。
+
+---
+
+## 一、同步的"不可能三角"
+
+在设计 OmniSync 时，我们面临三个维度的权衡：
+1.  **速度** (Speed)
+2.  **隐私** (Privacy)
+3.  **可用性** (Availability)
+
+*   **公有云**（Dropbox）：可用性高，但隐私差，速度受限。
+*   **局域网共享**：速度极快，隐私好，但离开家就断联。
+*   **纯P2P**：隐私好，但在复杂NAT下穿透困难。
+
+OmniSync 的答案是：**我全都要。**
+
+---
+
+## 二、多层架构设计
+
+OmniSync 设计了四层同步策略，根据网络环境**自动降级**。
+
+### 2.1 Layer 1: 本地直连 (Loopback/LAN)
+
+*   **场景**：两台设备在同一 WiFi 下，或者在本机不同目录间同步。
+*   **机制**：直接文件复制或 TCP 直连。
+*   **特点**：千兆级速度，零延迟。
+
+### 2.2 Layer 2: P2P 直连 (P2P Direct)
+
+*   **场景**：跨网络，但双方 NAT 友好（UPnP/IPv6）。
+*   **技术**：基于 **Syncthing协议**。OmniSync 封装了 `uSyncthingAPI`，直接控制 Syncthing 核心。
+*   **特点**：端到端加密，不经过第三方服务器，速度取决于双方上行带宽。
+
+### 2.3 Layer 3: P2P 中继 (Relay)
+
+*   **场景**：双方都在对称 NAT 后，无法打洞。
+*   **机制**：通过全球分布的 Relay Server 转发加密流量。
+*   **特点**：速度稍慢，但保证能连上。隐私依然安全（Relay 只能看到密文）。
+
+### 2.4 Layer 4: 云端兜底 (Cloud Fallback) (规划中)
+
+*   **场景**：极端网络环境，或者需要离线备份。
+*   **机制**：加密上传到 S3/WebDAV。
+*   **特点**：作为"死信箱"，保证数据最终一致性。
+
+---
+
+## 三、Syncthing 的封装艺术
+
+在 `uSyncthingAPI.pas` 中，OmniSync 并没有重新发明轮子，而是站在了巨人的肩膀上。我们对 Syncthing 进行了深度封装：
+
+### 3.1 状态机映射
+Syncthing 的状态很复杂（Scanning, Syncing, Idle, Error）。OmniSync将其映射为用户易懂的 UI 状态。
+*   `GetFolderStatus` 解析 JSON，计算出精确的进度百分比。
+
+### 3.2 事件驱动 (Event Driven)
+我们没有轮询（Polling）状态，而是通过 `StartEventListener` 监听 Syncthing 的 Event Stream。
+*   当文件发生变化时，UI 毫秒级响应更新。
+*   利用 Delphi 的 `TThread.Queue` 将后台事件安全地投递到主线程。
+
+### 3.3 弹性重试 (Resilience)
+网络是不可靠的。`DoRequestWithRetry` 结合了**断路器模式 (Circuit Breaker)**。
+*   如果 Syncthing 服务未启动或崩溃，OmniSync 不会卡死，而是进入"等待重连"状态，并尝试自动拉起服务。
+
+---
+
+## 四、配置即代码
+
+OmniSync 的同步关系不是硬编码的，而是通过 **Config Artifacts** 定义的。
+*   我们定义 Device（设备）和 Folder（文件夹）的拓扑结构。
+*   将这些配置推送到 Syncthing 的 `config.xml`。
+*   这种 **Configuration-Driven** 的方式，使得 OmniSync 可以轻松管理成百上千个同步节点。
+
+---
+
+## 五、总结
+
+OmniSync 的架构哲学是 **"优雅降级 (Graceful Degradation)"**。
+最好的同步是 Layer 1，但我们永远为 Layer 3 做好准备。
+通过封装成熟的 P2P 协议（Syncthing），结合 Delphi 高效的本地控制能力，OmniSync 实现了**企业级的稳定性和极客级的隐私性**的完美平衡。
+
+---
+
+*（本系列文章第二阶段 12 篇已完结）*

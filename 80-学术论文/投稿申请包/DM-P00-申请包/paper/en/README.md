@@ -7,4 +7,5 @@
 
 当前主稿：
 
-- [DM-P00.submission.en.md](D:\_Progs\一元论\80-学术论文\投稿申请包\DM-P00-申请包\paper\en\DM-P00.submission.en.md)
+- DM-P00.submission.en.md
+

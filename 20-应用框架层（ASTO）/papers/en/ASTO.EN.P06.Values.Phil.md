@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ASTO.P06. Values and Boundaries: Plurality Test and Ethical Circuit-Breaker"
 date: "2026-03-20"
 version: "v2.1 (Human Experience Focus)"
@@ -101,7 +101,7 @@ Every translation implies loss. We acknowledge the following "Residues" (lost ph
 
 ## **1. Guide: Why Do We Need Ethical Boundaries?**
 
-> **Hierarchical Positioning of ASTO.P05**: [ASTO.P05.Axioms](./ASTO.EN.P05a.Axioms.Phil.md) established the underlying axioms of the ASTO system in software engineering—thermodynamic laws of systems and attribute-set mode ontology. This P06 document explores axiology and ethical boundaries based on P05 axioms, answering "how we should use these axioms" rather than "what the axioms are".
+> **Hierarchical Positioning of ASTO.P05**: ASTO.EN.P05a.Axioms.Phil.md established the underlying axioms of the ASTO system in software engineering—thermodynamic laws of systems and attribute-set mode ontology. This P06 document explores axiology and ethical boundaries based on P05 axioms, answering "how we should use these axioms" rather than "what the axioms are".
 
 ASTO is not only a theory about existence, but also a theory about **the Ought of Existence**. Without axiology, ASTO would degenerate into pure instrumental rationality.
 We do not pursue eternal Fundamentals (that's impossible), but seek to guard Taboos that make change meaningful and existence valuable amidst change.
@@ -120,7 +120,7 @@ We do not pursue eternal Fundamentals (that's impossible), but seek to guard Tab
 
 ### **1.1 Civilizational Selection Function: How Value Constrains Evolution (Evolution ≠ Progress)**
 
-> This section aligns with [ASTO.P04.Manifesto §0 Meta-Definition](./ASTO.EN.P04.Manifesto.Phil.md#asto-civilization-meta-definition) and conforms to [ASTO.P05 Meta-Axiom of Civilizational Stewardship](./ASTO.EN.P05a.Axioms.Phil.md#asto-meta-axiom-civilization-stewardship).
+> This section aligns with ASTO.EN.P04.Manifesto.Phil.md and conforms to ASTO.EN.P05a.Axioms.Phil.md.
 >
 > **Priority**: Taboo/Plurality/Untouchable Dimension > Motility > Efficiency.
 
@@ -1109,29 +1109,31 @@ ASTO is derived from the engineering practice extraction of ODD (Output-Driven D
 ```text
 ASTO Document System (EN)
 ├── 🌟 P Series: Philosophy Core
-│   ├── [P01. Not This](./ASTO.EN.P01.NotThis.Phil.md) (Theoretical Immunity Manifesto)
-│   ├── [P02. Prologue](./ASTO.EN.P02.Prologue.Phil.md) (Negative Guidance & Path Split)
-│   ├── [P03. Epistemology](./ASTO.EN.P03.Epistemology.Phil.md) (Inevitability of Cognitive Errors)
-│   ├── [P04. Manifesto](./ASTO.EN.P04.Manifesto.Phil.md) (Structural Condition & Action Program)
-│   ├── [P05a. Axioms](./ASTO.EN.P05a.Axioms.Phil.md) (Axiom System)
-│   ├── [P05b. Human Experience](./ASTO.EN.P05b.HumanExperience.Phil.md) (Death, Meaning, Love)(./ASTO.EN.P05a.Axioms.Phil.md) (System Thermodynamics & Attribute-Set Mode Ontology)
-│   ├── [P06. Values](./ASTO.EN.P06.Values.Phil.md) (Plurality Test & Ethical Circuit-Breaker) ← current
-│   ├── [P07. Freedom](./ASTO.EN.P07.Freedom.Phil.md) (Boundary is Freedom)
-│   ├── [P08. Exception](./ASTO.EN.P08.Exception.Phil.md) (Religious Experience & Interstellar Sovereignty)
-│   ├── [P09a. Critique](./ASTO.EN.P09a.Critique.Phil.md) (Anti-Totalitarian Charter & System Immunity)
-│   ├── [P10. Democracy](./ASTO.EN.P10.Democracy.Phil.md) (Dialogue Platform & NCP Protocol)
-│   ├── [P11. Resilience](./ASTO.EN.P11.Resilience.Phil.md) (Self-Immunity & Anti-Fragility)
-│   ├── [P12. WhiteSpace](./ASTO.EN.P12.WhiteSpace.Phil.md) (Reserve Expansion Space)
-│   └── [P13. Epilogue](./ASTO.EN.P13.Epilogue.Phil.md) (Ultimate Concern)
+│   ├── ASTO.EN.P01.NotThis.Phil.md (Theoretical Immunity Manifesto)
+│   ├── ASTO.EN.P02.Prologue.Phil.md (Negative Guidance & Path Split)
+│   ├── ASTO.EN.P03.Epistemology.Phil.md (Inevitability of Cognitive Errors)
+│   ├── ASTO.EN.P04.Manifesto.Phil.md (Structural Condition & Action Program)
+│   ├── ASTO.EN.P05a.Axioms.Phil.md (Axiom System)
+│   ├── ASTO.EN.P05b.HumanExperience.Phil.md (Death, Meaning, Love)(./ASTO.EN.P05a.Axioms.Phil.md) (System Thermodynamics & Attribute-Set Mode Ontology)
+│   ├── ASTO.EN.P06.Values.Phil.md (Plurality Test & Ethical Circuit-Breaker) ← current
+│   ├── ASTO.EN.P07.Freedom.Phil.md (Boundary is Freedom)
+│   ├── ASTO.EN.P08.Exception.Phil.md (Religious Experience & Interstellar Sovereignty)
+│   ├── ASTO.EN.P09a.Critique.Phil.md (Anti-Totalitarian Charter & System Immunity)
+│   ├── ASTO.EN.P10.Democracy.Phil.md (Dialogue Platform & NCP Protocol)
+│   ├── ASTO.EN.P11.Resilience.Phil.md (Self-Immunity & Anti-Fragility)
+│   ├── ASTO.EN.P12.WhiteSpace.Phil.md (Reserve Expansion Space)
+│   └── ASTO.EN.P13.Epilogue.Phil.md (Ultimate Concern)
 │
 └── 🧰 U Series: Utilities
-    ├── [U01. Figure Index](./ASTO.EN.U01.FigureIndex.md)
-    ├── [U02. Glossary](./ASTO.EN.U02.Glossary.en.md)
-    ├── [U03. Theoretical System Charts](./ASTO.EN.U03.TheoreticalSystemCharts.Phil.md)
-    └── [U04. Practice Loop](./ASTO.EN.U04.PracticeLoop.Phil.md)
+    ├── ASTO.EN.U01.FigureIndex.md
+    ├── ASTO.EN.U02.Glossary.en.md
+    ├── ASTO.EN.U03.TheoreticalSystemCharts.Phil.md
+    └── ASTO.EN.U04.PracticeLoop.Phil.md
 ```
 
-> 🔙 For the full document system (including Chinese series), see: [Main index](../readme.md)
+> 🔙 For the full document system (including Chinese series), see: README.md
 
 **(End of ASTO.P06 v1.0)**
+
+
 

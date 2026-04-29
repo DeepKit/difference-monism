@@ -383,7 +383,9 @@ abstract: "生活中的困惑，往往是因为我们混淆了“本质”与“
 
 ---
 
-> 📖 [返回 ASTO 首页](../readme.md) | [深入阅读《公理体系》(Hardcore Mode)](.../ASTO.P05a.公理.Phil.md)
+> 📖 README.md | ASTO.P05a.公理.Phil.md
+
+
 
 
 

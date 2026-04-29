@@ -232,53 +232,55 @@ The ASTO system is distilled from the engineering practice of ODD (Output-Driven
 ```text
 ASTO Document System
 ├── 🌟 P-Series: Philosophy Core (Philosophy)
-│   ├── [P01. Not-This](./ASTO.EN.P01.NotThis.Phil.md) (Manifesto of Theoretical Immunity)
-│   ├── [P02. Prologue](./ASTO.EN.P02.Prologue.Phil.md) (Negative Guide and Path Branching)
-│   ├── [P03. Epistemology](./ASTO.EN.P03.Epistemology.Phil.md) (Inevitability of Cognitive Errors)
-│   ├── [P04. Manifesto](./ASTO.EN.P04.Manifesto.Phil.md) (Structural Situation and Program of Action)
-│   ├── [P05a. Axioms](./ASTO.EN.P05a.Axioms.Phil.md) (Axiom System)
-│   ├── [P05b. Human Experience](./ASTO.EN.P05b.HumanExperience.Phil.md) (Death, Meaning, Love)(./ASTO.EN.P05a.Axioms.Phil.md) (System Thermodynamics and Attribute-Set Mode Ontology)
-│   ├── [P06. Values](./ASTO.EN.P06.Values.Phil.md) (Plurality Test and Ethical Circuit-Breaker)
-│   ├── [P07. Freedom](./ASTO.EN.P07.Freedom.Phil.md) (Boundary is Freedom)
-│   ├── [P08. Exception](./ASTO.EN.P08.Exception.Phil.md) (Religious Experience and Interstellar Sovereignty)
-│   ├── [P09a. Critique](./ASTO.EN.P09a.Critique.Phil.md) (Anti-Totalitarian Charter and System Immunity)
-│   ├── [P10. Democracy](./ASTO.EN.P10.Democracy.Phil.md) (Dialogue Platform and NCP Protocol)
-│   ├── [P11. Resilience](./ASTO.EN.P11.Resilience.Phil.md) (Self-Immunity and Antifragility)
-│   ├── [P12. WhiteSpace](./ASTO.EN.P12.WhiteSpace.Phil.md) (Reserved Extension Space)
-│   └── [P13. Epilogue](./ASTO.EN.P13.Epilogue.Phil.md) (Ultimate Concern of the System)
+│   ├── ASTO.EN.P01.NotThis.Phil.md (Manifesto of Theoretical Immunity)
+│   ├── ASTO.EN.P02.Prologue.Phil.md (Negative Guide and Path Branching)
+│   ├── ASTO.EN.P03.Epistemology.Phil.md (Inevitability of Cognitive Errors)
+│   ├── ASTO.EN.P04.Manifesto.Phil.md (Structural Situation and Program of Action)
+│   ├── ASTO.EN.P05a.Axioms.Phil.md (Axiom System)
+│   ├── ASTO.EN.P05b.HumanExperience.Phil.md (Death, Meaning, Love)(./ASTO.EN.P05a.Axioms.Phil.md) (System Thermodynamics and Attribute-Set Mode Ontology)
+│   ├── ASTO.EN.P06.Values.Phil.md (Plurality Test and Ethical Circuit-Breaker)
+│   ├── ASTO.EN.P07.Freedom.Phil.md (Boundary is Freedom)
+│   ├── ASTO.EN.P08.Exception.Phil.md (Religious Experience and Interstellar Sovereignty)
+│   ├── ASTO.EN.P09a.Critique.Phil.md (Anti-Totalitarian Charter and System Immunity)
+│   ├── ASTO.EN.P10.Democracy.Phil.md (Dialogue Platform and NCP Protocol)
+│   ├── ASTO.EN.P11.Resilience.Phil.md (Self-Immunity and Antifragility)
+│   ├── ASTO.EN.P12.WhiteSpace.Phil.md (Reserved Extension Space)
+│   └── ASTO.EN.P13.Epilogue.Phil.md (Ultimate Concern of the System)
 │
 ├── 🛠️ E-Series: Engineering Practice (Engineering)
-│   ├── [E01. Guide](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E01.%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97.Eng.md) (Life|Humanities|Engineering Triple-Track Reader)
-│   ├── [E02. Automation](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E02.%E8%87%AA%E5%8A%A8%E5%8C%96.Eng.md) (Executable Norms and Zero-Friction Governance)
-│   ├── [E03. Web3](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E03.Web3.Eng.md) (Intent Constitution and On-Chain Separation of Powers)
-│   ├── [E04. AI Alignment](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E04.AI%E5%AF%B9%E9%BD%90.Eng.md) (Anti-Entropy Agents and Civilization Inheritance)
-│   ├── [E05. Handbook](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E05.%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5%E6%89%8B%E5%86%8C.Eng.md) (Adversarial Testing and Horse Race Mechanism)
-│   └── [E06. DomainExt](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.E06.%E9%A2%86%E5%9F%9F%E6%89%A9%E5%B1%95.Eng.md) (Multi-Domain Application Index)
+│   ├── ASTO.E01.实践指南.Eng.md (Life|Humanities|Engineering Triple-Track Reader)
+│   ├── ASTO.E02.自动化.Eng.md (Executable Norms and Zero-Friction Governance)
+│   ├── ASTO.E03.Web3.Eng.md (Intent Constitution and On-Chain Separation of Powers)
+│   ├── ASTO.E04.AI对齐.Eng.md (Anti-Entropy Agents and Civilization Inheritance)
+│   ├── ASTO.E05.工程实践手册.Eng.md (Adversarial Testing and Horse Race Mechanism)
+│   └── ASTO.E06.领域扩展.Eng.md (Multi-Domain Application Index)
 │
 ├── 🧩 H-Series: Humanities Narrative (Humanities)
-│   ├── [H01. Refactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H01.%E9%87%8D%E6%9E%84.Hum.md) (Twenty-One Universal Perspectives of the Architect)
-│   ├── [H02. Guide](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H02.%E5%AF%BC%E8%AF%BB%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AF%BB%E8%BF%99%E6%9C%AC%E4%B9%A6.Hum.md)
-│   ├── [H03. Story](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H03.%E6%95%85%E4%BA%8B%EF%BC%9A%E5%B0%8F%E9%99%88%E7%9A%84%E9%82%A3%E6%9D%A1%E8%B7%AF.Hum.md)
-│   ├── [H04. CognitiveAdventure](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H04.%E8%AE%A4%E7%9F%A5%E5%86%92%E9%99%A9.Hum.md)
-│   ├── [H05. FantasyDrift](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H05.%E5%A5%87%E5%B9%BB%E6%BC%82%E6%B5%81.Hum.md)
-│   └── [H06. AgingRefactoring](../%E4%BA%BA%E6%96%87%E7%89%88/ASTO.H06.%E6%9A%AE%E5%B9%B4%E7%9A%84%E9%87%8D%E6%9E%84%EF%BC%9A%E7%BB%99%E4%B8%8D%E5%86%8D%E5%B9%B4%E8%BD%BB%E7%9A%84%E4%BD%A0.Hum.md)
+│   ├── ASTO.H01.重构.Hum.md (Twenty-One Universal Perspectives of the Architect)
+│   ├── ASTO.H02.导读：为什么读这本书.Hum.md
+│   ├── ASTO.H03.故事：小陈的那条路.Hum.md
+│   ├── ASTO.H04.认知冒险.Hum.md
+│   ├── ASTO.H05.奇幻漂流.Hum.md
+│   └── ASTO.H06.暮年的重构：给不再年轻的你.Hum.md
 │
 ├── 🎓 Lite-Series: Youth Edition (Youth)
-│   ├── [L01. Manifesto (Lite)](../%E9%9D%92%E6%98%A5%E7%89%88/ASTO04.%E5%AE%A3%E8%A8%80.Lite.v1.0.md)
-│   ├── [L02. Epistemology (Lite)](../%E9%9D%92%E6%98%A5%E7%89%88/ASTOop.%E8%AE%A4%E8%AF%86%E8%AE%BA.Lite.v1.0.md)
-│   └── [L03. Values (Lite)](../%E9%9D%92%E6%98%A5%E7%89%88/ASTO05.%E4%BB%B7%E5%80%BC%E4%B8%8E%E8%BE%B9%E7%95%8C.Lite.v1.0.md)
+│   ├── ASTO04.宣言.Lite.v1.0.md
+│   ├── ASTOop.认识论.Lite.v1.0.md
+│   └── ASTO05.价值与边界.Lite.v1.0.md
 │
 └── 🌍 Ext-Series: Domain Extensions (Extensions)
-│   ├── [Ext.01 Law](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.01.%E6%B3%95%E5%BE%8B.Sci.P.md)
-│   ├── [Ext.02 Science](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.02.%E7%A7%91%E5%AD%A6.Sci.P.md)
-│   ├── [Ext.03 Organization](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.03.%E7%BB%84%E7%BB%87.Sci.P.md)
-│   ├── [Ext.04 Education](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.04.%E6%95%99%E8%82%B2.Sci.P.md)
-│   ├── [Ext.05 City](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.05.%E5%9F%8E%E5%B8%82.Sci.P.md)
-│   ├── [Ext.06 Healthcare](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.06.%E5%8C%BB%E7%96%97.Sci.P.md)
-│   ├── [Ext.07 Universe](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.07.%E5%AE%87%E5%AE%99.Sci.P.md)
-│   └── [Ext.08 WhiteSpace](../%E5%B7%A5%E7%A8%8B%E7%89%88/ASTO.Ext.08.%E7%95%99%E7%99%BD.Sci.P.md)
+│   ├── ASTO.Ext.01.法律.Sci.P.md
+│   ├── ASTO.Ext.02.科学.Sci.P.md
+│   ├── ASTO.Ext.03.组织.Sci.P.md
+│   ├── ASTO.Ext.04.教育.Sci.P.md
+│   ├── ASTO.Ext.05.城市.Sci.P.md
+│   ├── ASTO.Ext.06.医疗.Sci.P.md
+│   ├── ASTO.Ext.07.宇宙.Sci.P.md
+│   └── ASTO.Ext.08.留白.Sci.P.md
 ```
 
-> 🔙 [Return to Main Directory](../readme.md)
+> 🔙 README.md
+
+
 
 

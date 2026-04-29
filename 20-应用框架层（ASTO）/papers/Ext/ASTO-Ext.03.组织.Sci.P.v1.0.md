@@ -313,8 +313,9 @@ team:
 ---
 
 **关联文件**：
-- 理论基础：[ASTO04.宣言](../ASTO.P04.宣言.Phil.md)、[ASTO06.公理](../ASTO.P05a.公理.Phil.md)
-- 自动化实践：[ASTO11.自动化](../工程版/ASTO.E02.自动化.Eng.md)
-- 韧性设计：[ASTO16.韧性](../ASTO.P11.韧性.Phil.md)
+- 理论基础：ASTO.P04.宣言.Phil.md、ASTO.P05a.公理.Phil.md
+- 自动化实践：ASTO.E02.自动化.Eng.md
+- 韧性设计：ASTO.P11.韧性.Phil.md
+
 
 

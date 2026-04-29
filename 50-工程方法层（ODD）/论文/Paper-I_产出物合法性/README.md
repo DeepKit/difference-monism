@@ -1,4 +1,4 @@
-﻿# Paper I — 产出物合法性基础
+# Paper I — 产出物合法性基础
 
 > **英文标题**: Foundations of Artifact Legitimacy in AI-Native Software Engineering
 > **中文标题**: AI 原生软件工程中的产出物合法性基础
@@ -29,7 +29,7 @@
 
 ## 正文位置
 
-→ **[../论文-学术版.md](../论文-学术版.md)**
+→ **论文-学术版.md**
 
 ---
 
@@ -55,3 +55,4 @@
 - [ ] 精简至会议篇幅限制
 - [ ] 补充 Related Work 独立章节
 - [ ] 增强实证引用（指向 Paper E1/E2）
+

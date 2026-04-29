@@ -12,7 +12,7 @@ crisis governance; reversibility; emergency power; institutional procedure; poli
 
 ## Current source
 
-- Chinese full draft: [DM-P09.危机压缩必须可复归.投稿体草案.md](D:\_Progs\一元论\80-学术论文\DM-P09.危机压缩必须可复归.投稿体草案.md)
+- Chinese full draft: DM-P09.危机压缩必须可复归.投稿体草案.md
 
 ## Section mapping
 
@@ -22,3 +22,4 @@ crisis governance; reversibility; emergency power; institutional procedure; poli
 4. Case Analysis
 5. Objections, Limits, and Future Work
 6. Conclusion
+

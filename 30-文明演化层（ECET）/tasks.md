@@ -10,8 +10,7 @@
 
 - 旧版 `tasks.md` 含早期编码残留，已不再作为正式公开文本保留
 - 当前 ECET 的公开发布状态，应优先查看：
-  - `readme.md`
-  - `PUBLISH_READINESS.md`
+  - `README.md`
   - `ECET.预印本发布说明.v1.0.md`
   - 根目录 `tasks.md`
 

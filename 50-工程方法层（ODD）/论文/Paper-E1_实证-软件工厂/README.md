@@ -1,7 +1,7 @@
-﻿# Paper E1 — 实证：一人软件工厂
+# Paper E1 — 实证：一人软件工厂
 
 > **英文标题**: One-Person Software Factory: An Empirical Case Study of Output-Driven Development with AI
-> **中文标题**: 一人软件工厂：输出驱动开发与 AI 协作的实证案例研究
+> **中文标题**: 一人软件工厂：产出物驱动开发与 AI 协作的实证案例研究
 
 ---
 
@@ -44,4 +44,5 @@
 
 ## 详细提纲
 
-→ **[提纲.md](提纲.md)**
+→ **提纲.md**
+

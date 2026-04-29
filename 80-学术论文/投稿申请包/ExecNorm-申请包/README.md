@@ -24,9 +24,9 @@
 
 ## 当前正文入口
 
-- 中文主候选：[EN01.可执行规范主义：基于形式化介质的社会治理新范式.md](D:\_Progs\一元论\80-学术论文\外部迁入正文\01Center\ODDFounder\ExecNorm\EN01.可执行规范主义：基于形式化介质的社会治理新范式.md)
-- 英文主候选：[EN01.Executable Normativism A New Paradigm of Social Governance Based on Formal Media.md](D:\_Progs\一元论\80-学术论文\外部迁入正文\01Center\ODDFounder\ExecNorm\EN01.Executable Normativism A New Paradigm of Social Governance Based on Formal Media.md)
-- 匿名占位页：[ExecNorm.blind.md](D:\_Progs\一元论\80-学术论文\投稿申请包\ExecNorm-申请包\paper\blind\ExecNorm.blind.md)
+- 中文主候选：EN01.可执行规范主义：基于形式化介质的社会治理新范式.md
+- 英文主候选：EN01.Executable Normativism A New Paradigm of Social Governance Based on Formal Media.md
+- 匿名占位页：ExecNorm.blind.md
 
 ## 当前判断
 
@@ -35,4 +35,5 @@
 
 ## 裁决入口
 
-- [ExecNorm-唯一主稿裁决对照表.md](D:\_Progs\一元论\80-学术论文\投稿申请包\ExecNorm-申请包\submission\ExecNorm-唯一主稿裁决对照表.md)
+- ExecNorm-唯一主稿裁决对照表.md
+

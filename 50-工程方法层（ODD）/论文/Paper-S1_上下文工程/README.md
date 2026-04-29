@@ -1,7 +1,7 @@
-﻿# Paper S1 — 上下文工程
+# Paper S1 — 上下文工程
 
 > **英文标题**: Context Engineering for Output-Driven Development: Layered Assembly, Token Budgets, and Evidence-First Memory
-> **中文标题**: 输出驱动开发的上下文工程：分层组装、Token 预算与证据优先记忆
+> **中文标题**: 产出物驱动开发的上下文工程：分层组装、Token 预算与证据优先记忆
 
 ---
 
@@ -38,4 +38,5 @@
 
 ## 详细提纲
 
-→ **[提纲.md](提纲.md)**
+→ **提纲.md**
+

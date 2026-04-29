@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ASTO.P09b. Critique and Response: Challenges from Philosophical Traditions"
 date: "2026-03-20"
 version: "v9.2 (Critique and Response)"
@@ -94,5 +94,6 @@ Progee2's ODD methodology document (v1.6) contains a remarkably honest "Critical
 ---
 ## References
 
-- [ASTO.P09a. Critique](./ASTO.EN.P09a.Critique.Phil.md) — External Critique (Anti-Totalitarian Charter)
-- [ASTO.P05a. Axioms](./ASTO.EN.P05a.Axioms.Phil.md) — Structural Foundation
+- ASTO.EN.P09a.Critique.Phil.md — External Critique (Anti-Totalitarian Charter)
+- ASTO.EN.P05a.Axioms.Phil.md — Structural Foundation
+

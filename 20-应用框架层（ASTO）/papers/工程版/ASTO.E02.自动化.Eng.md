@@ -6,7 +6,7 @@
 > **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
 > **Audience**: 本文档面向**工程师、架构师与系统设计者**。
 > **Abstract**: 探讨可执行规范主义 (Executable Normativism) 在 ASTO 体系中的工程落地，引入红绿灯协议与混合治理模式，实现零摩擦与人类主权的平衡。
-> **Context**: 本文是 **可执行规范主义 (Executable Normativism)** 在 **属集变迁存在论 (ASTO)** 体系中的工程落地。经哲学审计，本次修订重点修复了“乐观执行”的不可逆风险，引入了“玻璃破碎”紧急机制与维持人类认知的“随机摩擦”；并以 [ASTO 文明元定义](../ASTO.P04.宣言.Phil.md#asto-civilization-meta-definition) 与 [ASTO.P05 公理之上：文明守护元公理](../ASTO.P05a.公理.Phil.md#asto-meta-axiom-civilization-stewardship) 作为上位约束，避免“零摩擦”异化为技术极权。
+> **Context**: 本文是 **可执行规范主义 (Executable Normativism)** 在 **属集变迁存在论 (ASTO)** 体系中的工程落地。经哲学审计，本次修订重点修复了“乐观执行”的不可逆风险，引入了“玻璃破碎”紧急机制与维持人类认知的“随机摩擦”；并以 ASTO.P04.宣言.Phil.md 与 ASTO.P05a.公理.Phil.md 作为上位约束，避免“零摩擦”异化为技术极权。
 > **Compat Note**: 本文件原编号为 ASTO09。
 
 ---
@@ -22,7 +22,7 @@ ASTO 自动化旨在实现 **“嵌入式合规” (Embedded Compliance)**：
 > 在 ASTO 体系中，**“五态”** 描述了规范的存在形态（自在 → 共识 → 编码 → 物化 → 定向），而 **“动变性”** 是驱动系统演化的因果力量，分为四类：**本律式、涌现式、目标式、建模式**。自动化本质上是对 **本律式/目标式动变性** 的编码与管控。
 
 ### **文明守护条款：零摩擦不是最高目标**
-> 对齐 [ASTO.P04.宣言 §0 文明元定义](../ASTO.P04.宣言.Phil.md#asto-civilization-meta-definition) 与 [ASTO.P05 公理之上：文明守护元公理](../ASTO.P05a.公理.Phil.md#asto-meta-axiom-civilization-stewardship)。
+> 对齐 ASTO.P04.宣言.Phil.md 与 ASTO.P05a.公理.Phil.md。
 
 *   **优先级**：禁行红线/复数性/不可触达维 > 动变性 > 效率。
 *   **AGI 前默认保守**：任何不可逆的自动化必须可审计、可中断、可退出、责任链清晰；否则强制进入黄灯/红灯流程。
@@ -242,53 +242,55 @@ ASTO 自动化不是要建造一个关押人类的铁笼，而是要建造一套
 ```text
 ASTO 文档体系
 ├── 🌟 P 系列：哲学核心 (Philosophy)
-│   ├── [P01. 非此](../ASTO.P01.非此.Phil.md) (理论免疫宣言)
-│   ├── [P02. 序章](../ASTO.P02.序章.Phil.md) (否定性导引与路径分流)
-│   ├── [P03. 认识论](../ASTO.P03.认识论.Phil.md) (认知错误的必然性)
-│   ├── [P04. 宣言](../ASTO.P04.宣言.Phil.md) (结构性处境与行动纲领)
-│   ├── [P05. 公理](../ASTO.P05a.公理.Phil.md) (系统热力学与结构存在论)
-│   ├── [P06. 价值](../ASTO.P06.价值与边界.Phil.md) (复数性测试与伦理熔断)
-│   ├── [P07. 自由](../ASTO.P07.自由论.Phil.md) (边界即自由)
-│   ├── [P08. 例外](../ASTO.P08.例外.Phil.md) (宗教体验与星际主权)
-│   ├── [P09. 批判](../ASTO.P09a.批判.Phil.md) (反极权宪章与系统免疫)
-│   ├── [P10. 民主](../ASTO.P10.民主.Phil.md) (对话平台与 NCP 协议)
-│   ├── [P11. 韧性](../ASTO.P11.韧性.Phil.md) (自我免疫与反脆弱)
-│   ├── [P12. 留白](../ASTO.P12.留白.Phil.md) (预留扩展空间)
-│   └── [P13. 终章](../ASTO.P13.终章.Phil.md) (系统的终极关怀)
+│   ├── ASTO.P01.非此.Phil.md (理论免疫宣言)
+│   ├── ASTO.P02.序章.Phil.md (否定性导引与路径分流)
+│   ├── ASTO.P03.认识论.Phil.md (认知错误的必然性)
+│   ├── ASTO.P04.宣言.Phil.md (结构性处境与行动纲领)
+│   ├── ASTO.P05a.公理.Phil.md (系统热力学与结构存在论)
+│   ├── ASTO.P06.价值与边界.Phil.md (复数性测试与伦理熔断)
+│   ├── ASTO.P07.自由论.Phil.md (边界即自由)
+│   ├── ASTO.P08.例外.Phil.md (宗教体验与星际主权)
+│   ├── ASTO.P09a.批判.Phil.md (反极权宪章与系统免疫)
+│   ├── ASTO.P10.民主.Phil.md (对话平台与 NCP 协议)
+│   ├── ASTO.P11.韧性.Phil.md (自我免疫与反脆弱)
+│   ├── ASTO.P12.留白.Phil.md (预留扩展空间)
+│   └── ASTO.P13.终章.Phil.md (系统的终极关怀)
 │
 ├── 🛠️ E 系列：工程实践 (Engineering)
-│   ├── [E01. 实践指南](./ASTO.E01.实践指南.Eng.md) (生活|人文|工程三轨读本)
-│   ├── [E02. 自动化](./ASTO.E02.自动化.Eng.md) (可执行规范与零摩擦治理)
-│   ├── [E03. Web3](./ASTO.E03.Web3.Eng.md) (意图宪法与链上三权分立)
-│   ├── [E04. AI对齐](./ASTO.E04.AI对齐.Eng.md) (逆熵智能体与文明传承)
-│   ├── [E05. 工程手册](./ASTO.E05.工程实践手册.Eng.md) (对抗测试与赛马机制)
-│   └── [E06. 领域扩展](./ASTO.E06.领域扩展.Eng.md) (多领域应用索引)
+│   ├── ASTO.E01.实践指南.Eng.md (生活|人文|工程三轨读本)
+│   ├── ASTO.E02.自动化.Eng.md (可执行规范与零摩擦治理)
+│   ├── ASTO.E03.Web3.Eng.md (意图宪法与链上三权分立)
+│   ├── ASTO.E04.AI对齐.Eng.md (逆熵智能体与文明传承)
+│   ├── ASTO.E05.工程实践手册.Eng.md (对抗测试与赛马机制)
+│   └── ASTO.E06.领域扩展.Eng.md (多领域应用索引)
 │
 ├── 🧩 H 系列：人文叙事 (Humanities)
-│   ├── [H01. 重构](../人文版/ASTO.H01.重构.Hum.md) (架构师的二十一种宇宙视角)
-│   ├── [H02. 导读](../人文版/ASTO.H02.导读：为什么读这本书.Hum.md)
-│   ├── [H03. 故事](../人文版/ASTO.H03.故事：小陈的那条路.Hum.md)
-│   ├── [H04. 认知冒险](../人文版/ASTO.H04.认知冒险.Hum.md)
-│   ├── [H05. 奇幻漂流](../人文版/ASTO.H05.奇幻漂流.Hum.md)
-│   └── [H06. 暮年的重构](../人文版/ASTO.H06.暮年的重构：给不再年轻的你.Hum.md)
+│   ├── ASTO.H01.重构.Hum.md (架构师的二十一种宇宙视角)
+│   ├── ASTO.H02.导读：为什么读这本书.Hum.md
+│   ├── ASTO.H03.故事：小陈的那条路.Hum.md
+│   ├── ASTO.H04.认知冒险.Hum.md
+│   ├── ASTO.H05.奇幻漂流.Hum.md
+│   └── ASTO.H06.暮年的重构：给不再年轻的你.Hum.md
 │
 ├── 🎓 Lite 系列：青春版 (Youth)
-│   ├── [L01. 宣言 (Lite)](./青春版/ASTO04.宣言.Lite.v1.0.md)
-│   ├── [L02. 认识论 (Lite)](./青春版/ASTOop.认识论.Lite.v1.0.md)
-│   └── [L03. 价值 (Lite)](./青春版/ASTO05.价值与边界.Lite.v1.0.md)
+│   ├── ASTO04.宣言.Lite.v1.0.md
+│   ├── ASTOop.认识论.Lite.v1.0.md
+│   └── ASTO05.价值与边界.Lite.v1.0.md
 │
 └── 🌍 Ext 系列：领域扩展 (Extensions)
-    ├── [Ext.01 法律](./ASTO.Ext.01.法律.Sci.P.md)
-    ├── [Ext.02 科学](./ASTO.Ext.02.科学.Sci.P.md)
-    ├── [Ext.03 组织](./ASTO.Ext.03.组织.Sci.P.md)
-    ├── [Ext.04 教育](./ASTO.Ext.04.教育.Sci.P.md)
-    ├── [Ext.05 城市](./ASTO.Ext.05.城市.Sci.P.md)
-    ├── [Ext.06 医疗](./ASTO.Ext.06.医疗.Sci.P.md)
-    ├── [Ext.07 宇宙](./ASTO.Ext.07.宇宙.Sci.P.md)
-    └── [Ext.08 留白](./ASTO.Ext.08.留白.Sci.P.md)
+    ├── ASTO.Ext.01.法律.Sci.P.md
+    ├── ASTO.Ext.02.科学.Sci.P.md
+    ├── ASTO.Ext.03.组织.Sci.P.md
+    ├── ASTO.Ext.04.教育.Sci.P.md
+    ├── ASTO.Ext.05.城市.Sci.P.md
+    ├── ASTO.Ext.06.医疗.Sci.P.md
+    ├── ASTO.Ext.07.宇宙.Sci.P.md
+    └── ASTO.Ext.08.留白.Sci.P.md
 ```
 
-> 🔙 [返回总目录](../readme.md)
+> 🔙 README.md
+
+
 
 
 

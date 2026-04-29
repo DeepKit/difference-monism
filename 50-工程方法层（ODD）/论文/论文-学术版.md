@@ -1,7 +1,7 @@
 ﻿# The ODD Series Paper I: Foundations of Artifact Legitimacy in AI-Native Software Engineering
 <!-- ODD-ZENODO-DOI:18207648 BEGIN -->
 > **统一确权引用 / Canonical Reference (Zenodo DOI)**
-> 中文（推荐引用）：Yi Fu. 《输出驱动开发：AI辅助软件工程的范式转变》. Zenodo, 2026. DOI: 10.5281/zenodo.18207648. (https://doi.org/10.5281/zenodo.18207648)
+> 中文（推荐引用）：Yi Fu. 《产出物驱动开发：AI辅助软件工程的范式转变》. Zenodo, 2026. DOI: 10.5281/zenodo.18207648. (https://doi.org/10.5281/zenodo.18207648)
 > English (recommended citation): Yi Fu. *Output-Driven Development: A Paradigm Shift in AI-Assisted Software Engineering*. Zenodo, 2026. DOI: 10.5281/zenodo.18207648. (https://doi.org/10.5281/zenodo.18207648)
 > Record: https://zenodo.org/records/18207648
 

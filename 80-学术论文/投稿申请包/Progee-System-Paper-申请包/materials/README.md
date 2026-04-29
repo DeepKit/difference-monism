@@ -12,9 +12,10 @@
 
 补充入口：
 
-- [补充材料说明.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\补充材料说明.md)
-- [Artifact-最小执行模板.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\Artifact-最小执行模板.md)
-- [Artifact-交付目录草案.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\Artifact-交付目录草案.md)
-- [结果与主张映射表.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\结果与主张映射表.md)
-- [审稿人最小复核路径.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\审稿人最小复核路径.md)
-- [附录与实现锚点表.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\附录与实现锚点表.md)
+- 补充材料说明.md
+- Artifact-最小执行模板.md
+- Artifact-交付目录草案.md
+- 结果与主张映射表.md
+- 审稿人最小复核路径.md
+- 附录与实现锚点表.md
+

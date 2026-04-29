@@ -1,0 +1,138 @@
+[
+  {
+    "category": "code",
+    "name": "Code",
+    "description": "Source code files",
+    "types": [
+      { "code": "delphi_unit", "name": "Delphi Unit", "ext": ".pas" },
+      { "code": "delphi_form", "name": "Delphi Form", "ext": ".fmx" },
+      { "code": "python_module", "name": "Python Module", "ext": ".py" },
+      { "code": "ts_component", "name": "React Component", "ext": ".tsx" },
+      { "code": "go_package", "name": "Go Package", "ext": ".go" }
+    ]
+  },
+  {
+    "category": "database",
+    "name": "Database",
+    "description": "Database objects",
+    "types": [
+      { "code": "pg_table", "name": "PostgreSQL Table", "statement": "CREATE TABLE" },
+      { "code": "pg_function", "name": "PostgreSQL Function", "statement": "CREATE FUNCTION" },
+      { "code": "redis_key", "name": "Redis Key Schema", "format": "key:value" }
+    ]
+  },
+  {
+    "category": "config",
+    "name": "Configuration",
+    "description": "System configuration",
+    "types": [
+      { "code": "env_config", "name": "Environment Variables", "ext": ".env" },
+      { "code": "app_config", "name": "Application Config", "format": "JSON/YAML" }
+    ]
+  },
+  {
+    "category": "infrastructure",
+    "name": "Infrastructure",
+    "description": "DevOps and Cloud",
+    "types": [
+      { "code": "dockerfile", "name": "Dockerfile", "ext": "Dockerfile" },
+      { "code": "k8s_manifest", "name": "K8s Manifest", "ext": ".yaml" },
+      { "code": "terraform_module", "name": "Terraform Module", "ext": ".tf" }
+    ]
+  },
+  {
+    "category": "document",
+    "name": "Document",
+    "description": "Human readable docs",
+    "types": [
+      { "code": "prd", "name": "Product Requirements", "ext": ".md" },
+      { "code": "tech_design", "name": "Technical Design", "ext": ".md" },
+      { "code": "api_doc", "name": "API Documentation", "ext": ".md" }
+    ]
+  },
+  {
+    "category": "test",
+    "name": "Test",
+    "description": "Quality assurance",
+    "types": [
+      { "code": "unit_test", "name": "Unit Test", "ext": "_test.py" },
+      { "code": "e2e_test", "name": "E2E Test", "ext": ".spec.ts" },
+      { "code": "test_data", "name": "Test Data Fixture", "ext": ".json" }
+    ]
+  },
+  {
+    "category": "behavior",
+    "name": "Behavior",
+    "description": "Runtime effects",
+    "types": [
+      { "code": "email_sent", "name": "Email Sent Event" },
+      { "code": "log_entry", "name": "Log Entry" },
+      { "code": "metric_emitted", "name": "Metric Emission" }
+    ]
+  },
+  {
+    "category": "api",
+    "name": "API",
+    "description": "Interface definitions",
+    "types": [
+      { "code": "openapi_spec", "name": "OpenAPI Spec", "ext": ".yaml" },
+      { "code": "graphql_schema", "name": "GraphQL Schema", "ext": ".graphql" },
+      { "code": "grpc_proto", "name": "gRPC Proto", "ext": ".proto" }
+    ]
+  },
+  {
+    "category": "security",
+    "name": "Security",
+    "description": "Security artifacts",
+    "types": [
+      { "code": "ssl_cert", "name": "SSL Certificate", "ext": ".crt" },
+      { "code": "rbac_policy", "name": "RBAC Policy", "format": "JSON" }
+    ]
+  },
+  {
+    "category": "design",
+    "name": "Design",
+    "description": "Visual design",
+    "types": [
+      { "code": "figma_file", "name": "Figma Design", "ext": ".fig" },
+      { "code": "ui_mockup", "name": "UI Mockup", "ext": ".png" }
+    ]
+  },
+  {
+    "category": "asset",
+    "name": "Asset",
+    "description": "Static resources",
+    "types": [
+      { "code": "svg_icon", "name": "SVG Icon", "ext": ".svg" },
+      { "code": "font_file", "name": "Font File", "ext": ".ttf" }
+    ]
+  },
+  {
+    "category": "ml",
+    "name": "AI/ML",
+    "description": "AI models and data",
+    "types": [
+      { "code": "prompt_template", "name": "Prompt Template", "ext": ".txt" },
+      { "code": "model_weights", "name": "Model Weights", "ext": ".pth" },
+      { "code": "dataset", "name": "Dataset", "ext": ".csv" }
+    ]
+  },
+  {
+    "category": "build",
+    "name": "Build",
+    "description": "Build artifacts",
+    "types": [
+      { "code": "binary_exe", "name": "Binary Executable", "ext": ".exe" },
+      { "code": "docker_image", "name": "Docker Image", "format": "tar" }
+    ]
+  },
+  {
+    "category": "data",
+    "name": "Data",
+    "description": "Data operations",
+    "types": [
+      { "code": "migration_script", "name": "DB Migration", "ext": ".sql" },
+      { "code": "seed_data", "name": "Seed Data", "ext": ".sql" }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ASTO.P02. Prologue: Negative Guide"
 date: "2026-03-20"
 version: "v8.0"
@@ -209,14 +209,14 @@ Do not read from beginning to end. Choose your path according to your confusion:
 
 For applied/engineering topics (AI, Web3, automation, etc.), see the main index (these series are currently maintained in Chinese):
 
-- [Main index](../readme.md)
+- README.md
 
 ### **Path D: Youth Edition (Lite)**
 > "I want to avoid obscure jargon and look directly for 'cheat codes' to deal with life's dilemmas."
 
 Youth edition and humanities narratives are currently maintained in Chinese. See:
 
-- [Main index](../readme.md)
+- README.md
 
 ---
 
@@ -224,17 +224,19 @@ Youth edition and humanities narratives are currently maintained in Chinese. See
 
 | Goal | Suggested EN document |
 |:---|:---|
-| Understand cognition limits and evidence | [ASTO.EN.P03 Epistemology](./ASTO.EN.P03.Epistemology.Phil.md) |
-| Establish the core dynamics and action program | [ASTO.EN.P04 Manifesto](./ASTO.EN.P04.Manifesto.Phil.md) |
-| Understand values/boundaries and ethical circuit breaker | [ASTO.EN.P06 Values](./ASTO.EN.P06.Values.Phil.md) |
-| Understand freedom as boundary | [ASTO.EN.P07 Freedom](./ASTO.EN.P07.Freedom.Phil.md) |
-| Exception state & crisis structures | [ASTO.EN.P08 Exception](./ASTO.EN.P08.Exception.Phil.md) |
-| Anti-totalitarian critique | [ASTO.EN.P09 Critique](./ASTO.EN.P09a.Critique.Phil.md) |
-| Democracy as civilizational immune system | [ASTO.EN.P10 Democracy](./ASTO.EN.P10.Democracy.Phil.md) |
-| Theory self-immunity and antifragility | [ASTO.EN.P11 Resilience](./ASTO.EN.P11.Resilience.Phil.md) |
-| Glossary / terminology normalization | [ASTO.EN.U02 Glossary](./ASTO.EN.U02.Glossary.en.md) |
+| Understand cognition limits and evidence | ASTO.EN.P03.Epistemology.Phil.md |
+| Establish the core dynamics and action program | ASTO.EN.P04.Manifesto.Phil.md |
+| Understand values/boundaries and ethical circuit breaker | ASTO.EN.P06.Values.Phil.md |
+| Understand freedom as boundary | ASTO.EN.P07.Freedom.Phil.md |
+| Exception state & crisis structures | ASTO.EN.P08.Exception.Phil.md |
+| Anti-totalitarian critique | ASTO.EN.P09a.Critique.Phil.md |
+| Democracy as civilizational immune system | ASTO.EN.P10.Democracy.Phil.md |
+| Theory self-immunity and antifragility | ASTO.EN.P11.Resilience.Phil.md |
+| Glossary / terminology normalization | ASTO.EN.U02.Glossary.en.md |
 
-> For engineering practice, humanities narratives, youth edition, and domain extensions (currently maintained in Chinese), see: [Main index](../readme.md)
+> For engineering practice, humanities narratives, youth edition, and domain extensions (currently maintained in Chinese), see: README.md
 
 ---
 (Functional Tree: refer to P01 or README)
+
+

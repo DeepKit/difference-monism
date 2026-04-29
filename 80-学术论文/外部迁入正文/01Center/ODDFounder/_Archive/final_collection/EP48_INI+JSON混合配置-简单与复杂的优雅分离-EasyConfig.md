@@ -1,0 +1,104 @@
+# INI+JSON混合配置：简单与复杂的优雅分离
+
+> **作者**: Fuyi ( ODDFounder  fuyi.it@live.cn )
+> **日期**: 2026-01-11
+> **标签**: 配置管理, INI, JSON, EasyConfig, 架构设计
+
+---
+
+## 摘要
+
+在软件配置中，我们常面临两难：INI 简单易读但不支持嵌套，JSON 结构强大但对人类不友好（括号地狱）。**EasyConfig** 提出了一种**INI + JSON 混合架构**：用 INI 管理扁平的、高频修改的参数，用 JSON 管理深层嵌套的复杂数据。两者通过"引用"机制无缝结合，既保留了简单性，又拥有了复杂性。
+
+---
+
+## 一、配置文件的"不可能三角"
+
+1.  **可读性**：非技术人员能看懂。
+2.  **结构化**：支持列表、嵌套对象。
+3.  **简洁性**：没有多余的符号。
+
+*   **INI**: 满足 1, 3，不满足 2。
+*   **JSON**: 满足 2，不满足 1, 3。
+*   **YAML**: 试图全满足，但缩进错误是噩梦。
+
+---
+
+## 二、混合架构设计
+
+EasyConfig 的思路是：**分层管理**。
+
+### 2.1 INI 层：入口与开关
+
+主配置文件永远是 `.ini`。
+它包含所有用户可能需要手动修改的开关、路径和基本参数。
+
+```ini
+[General]
+AppName=MyTool
+Theme=Dark
+AutoSave=true
+
+[AI]
+Provider=OpenAI
+Temperature=0.7
+; 引用复杂配置
+ModelConfig=@json:models.json/gpt4_config
+```
+
+### 2.2 JSON 层：复杂结构
+
+复杂的、机器生成的、或者层级很深的数据，存放在 `.json` 文件中。
+
+```json
+// models.json
+{
+  "gpt4_config": {
+    "context_window": 128000,
+    "pricing": { "input": 0.03, "output": 0.06 },
+    "stops": ["User:", "System:"]
+  }
+}
+```
+
+### 2.3 引用解析 (Reference Resolution)
+
+在 `ConfigManager.pas` 中，我们实现了解析逻辑：
+1.  读取 INI 值。
+2.  检测到 `@json:` 前缀。
+3.  解析路径 `models.json` 和 Key `gpt4_config`。
+4.  加载 JSON，提取对象，并将其**虚拟地**挂载到配置树上。
+
+对于应用程序来说，它看到的是一个**统一的配置对象**，无需关心数据到底存在 INI 还是 JSON 里。
+
+---
+
+## 三、双向同步与编辑器
+
+EasyConfig 不仅是读取库，还是一个**编辑器框架**。
+
+### 3.1 可视化编辑
+*   对于 INI 项，显示为 TextBox, CheckBox。
+*   对于 JSON 引用项，点击后弹出一个专门的 JSON Editor 或 TreeView。
+
+### 3.2 事务性保存
+`ConfigManager` 维护了 `IsModified` 状态。
+保存时，它会：
+1.  先备份（Backup）。
+2.  保存 JSON 文件。
+3.  保存 INI 文件。
+确保两个文件的一致性。
+
+---
+
+## 四、总结
+
+INI+JSON 混合架构体现了 **"关注点分离"** 的原则。
+*   **给人类看**：INI。简单，直观，不易出错。
+*   **给机器看**：JSON。严谨，灵活，易于序列化。
+
+EasyConfig 通过一个薄薄的抽象层，让这两种格式协同工作，解决了"既要又要"的难题。这种设计特别适合那些**既有大量开关配置，又有复杂数据结构**（如 AI Agent 的 Prompt 模板）的现代应用。
+
+---
+
+*下一篇预告：《095-WebView2浏览器自动化：多LLM并行测试实战》*

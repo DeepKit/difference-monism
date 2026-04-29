@@ -1,0 +1,120 @@
+# AI配置分层模型：Scene/Case/Episode/Step的设计哲学
+
+> **作者**: Fuyi ( ODDFounder  fuyi.it@live.cn )
+> **日期**: 2026-01-11
+> **标签**: AI配置, 架构设计, Insight, 复杂任务编排
+
+---
+
+## 摘要
+
+如何让 AI 处理一个跨度长达数周、包含数十个步骤的复杂任务？简单的 Prompt Chain 已经不够用了。Insight 系统引入了一套借鉴自**影视剧制作**的分层配置模型：**Scene（场景） / Case（案卷） / Episode（剧集） / Step（步骤）**。本文解析这套分层架构的设计哲学。
+
+---
+
+## 一、从"对话"到"剧本"
+
+传统的 Chatbot 是线性的：用户问，AI 答。
+但在复杂的工程实施（或法律案件分析、医疗诊断）中，任务是**结构化**的。
+
+*   我们需要先了解背景（Scene）。
+*   然后建立一个项目档案（Case）。
+*   每个档案包含多个阶段的任务（Episode）。
+*   每个阶段包含具体的执行动作（Step）。
+
+Insight 直接将这种结构映射到了配置管理中。
+
+---
+
+## 二、四层模型详解
+
+在 `FormAiConfigManager.pas` 中，我们可以看到清晰的层级结构：
+
+### 2.1 Scene (场景) —— 也就是 "World Setting"
+
+*   **定义**：定义了任务发生的宏观环境、世界观和基础规则。
+*   **配置项**：
+    *   **NPC Roles**: 参与的角色（如：架构师、律师、医生）。
+    *   **Global Constraints**: 全局约束（如：法律法规、医学伦理）。
+    *   **Shared Knowledge**: 共享知识库。
+*   **例子**：`SoftwareDev_Scene`（软件开发场景）。
+
+### 2.2 Case (案卷) —— 也就是 "Project"
+
+*   **定义**：一个具体的、长期的任务实例。它继承自某个 Scene。
+*   **配置项**：
+    *   **Goal**: 案卷的总目标。
+    *   **Context**: 案卷特有的背景资料（如：需求文档、客户资料）。
+*   **例子**：`Case_Progee_Refactor`（Progee重构项目）。
+
+### 2.3 Episode (剧集) —— 也就是 "Phase"
+
+*   **定义**：Case 下的一个阶段性任务包。
+*   **特点**：Episode 之间通常有时间顺序或依赖关系。
+*   **配置项**：
+    *   **Season/Index**: 顺序号（S1E1）。
+    *   **Entry Condition**: 进入该剧集的条件（如：上一集已封版）。
+*   **例子**：`Episode_Database_Design`（数据库设计阶段）。
+
+### 2.4 Step (步骤) —— 也就是 "Action"
+
+*   **定义**：最小的执行单元。
+*   **配置项**：
+    *   **Intent**: 意图（如：生成SQL）。
+    *   **Prompt Template**: 具体的提示词模板。
+    *   **NPC**: 指定由哪个角色执行。
+    *   **Validation**: 步骤完成的验证逻辑。
+*   **例子**：`Step_Generate_Tables`（生成表结构）。
+
+---
+
+## 三、分层带来的优势
+
+### 3.1 上下文隔离 (Context Isolation)
+
+通过分层，我们实现了精准的上下文注入：
+*   执行 `Step` 时，只需注入当前 `Episode` 的上下文，加上 `Case` 的背景，和 `Scene` 的规则。
+*   不需要注入其他无关 `Episode` 的细节。
+*   **效果**：极大节省 Token，减少 AI 干扰。
+
+### 3.2 复用性 (Reusability)
+
+*   **Scene** 是高度可复用的。我们可以用同一个 `SoftwareDev_Scene` 来创建无数个 `Case`。
+*   **Episode** 也可以复用。比如 `Episode_Code_Review` 可以被插入到任何 Case 中。
+
+### 3.3 角色扮演 (Role Playing)
+
+由于 Role 定义在 Scene 层，具体的 Step 可以引用 Role。
+*   Step A 由 `Architect` 执行。
+*   Step B 由 `Worker` 执行。
+*   Step C 由 `Tester` 执行。
+
+Insight 引擎会自动切换 System Prompt，让 LLM 瞬间"变身"，保证了专业度。
+
+---
+
+## 四、代码视角的映射
+
+在 `FormAiConfigManager.pas` 的筛选逻辑中，我们可以看到这种层级关系的严格约束：
+
+```pascal
+// 伪代码逻辑
+if Category == 'AI Episodes' then
+  ShowFilter('Filter by Case'); // 剧集必须归属于案卷
+if Category == 'AI Episode Steps' then
+  ShowFilter('Filter by Episode'); // 步骤必须归属于剧集
+```
+
+这种严格的 **Parent-Child** 关系，构建了一棵逻辑严密的**任务树**。AI 不是在漫无目的地游荡，而是在沿着这棵树，一步一个脚印地攀登。
+
+---
+
+## 五、总结
+
+Insight 的四层模型告诉我们：**解决复杂问题的最好方法是分治（Divide and Conquer）。**
+
+通过 Scene -> Case -> Episode -> Step 的逐层拆解，我们将一个巨大的、模糊的目标（"做一个软件"），变成了一系列微小的、确定的、可执行的指令。这正是 **ODD** 思想在配置管理层面的完美体现。
+
+---
+
+*下一篇预告：《038-自然语言到结构化数据：需求澄清的AI方案》*

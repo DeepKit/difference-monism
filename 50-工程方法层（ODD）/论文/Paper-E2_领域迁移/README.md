@@ -1,7 +1,7 @@
-﻿# Paper E2 — 领域迁移：ODD 超越软件
+# Paper E2 — 领域迁移：ODD 超越软件
 
 > **英文标题**: ODD Beyond Software: Domain Adaptation of Output-Driven Development to AI-Assisted Novel Writing
-> **中文标题**: ODD 超越软件：输出驱动开发在 AI 辅助小说创作中的领域迁移
+> **中文标题**: ODD 超越软件：产出物驱动开发在 AI 辅助小说创作中的领域迁移
 
 ---
 
@@ -44,4 +44,5 @@
 
 ## 详细提纲
 
-→ **[提纲.md](提纲.md)**
+→ **提纲.md**
+

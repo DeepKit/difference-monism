@@ -14,18 +14,18 @@
 
 如果平台只允许一个主对象，建议上传：
 
-1. [论文/论文-学术版.md](./论文/论文-学术版.md)
+1. 论文-学术版.md
 
 如平台更适合英文主文，也可使用：
 
-2. [Paper_01_ODD_Core_English_2026-01-16.md](./Paper_01_ODD_Core_English_2026-01-16.md)
+2. Paper_01_ODD_Core_English_2026-01-16.md
 
 建议作为补充材料同时附上：
 
-3. [论文/白皮书.md](./论文/白皮书.md)
-4. [README.md](./README.md)
-5. [RM.ODD.工程方法论.md](./RM.ODD.工程方法论.md)
-6. [ODD-main/README.md](./ODD-main/README.md)
+3. 白皮书.md
+4. README.md
+5. RM.ODD.工程方法论.md
+6. README.md
 
 ---
 
@@ -91,3 +91,4 @@
 - 公开时优先说明 ODD 与 DM、ASTO、ECET、TAT 的分层关系。
 - 不把工程仓库中的缓存、数据库、样例集与内部讨论稿当成首轮公开主包。
 - 不把“减少对代码审查的依赖”误读成“人类不再承担责任”。
+

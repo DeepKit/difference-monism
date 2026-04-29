@@ -50,10 +50,10 @@ P07 负责说明在这种不可能性之内，模型为何仍可比较优劣
 
 ### 配套工具
 
-- [DM.P99.5.内部.术语表](./internal/DM.P99.5.内部.术语表.md)
-- [DM.P99.6.内部.失败条件总表](./internal/DM.P99.6.内部.失败条件总表.md)
-- [DM.P99.4.内部.强对手标准答复包](./internal/DM.P99.4.内部.强对手标准答复包.md)
-- [DM.P99.内部.研究纲领到成熟理论与外部比较](./internal/DM.P99.内部.研究纲领到成熟理论与外部比较.md)
+- DM.P99.5.内部.术语表.md
+- DM.P99.6.内部.失败条件总表.md
+- DM.P99.4.内部.强对手标准答复包.md
+- DM.P99.内部.研究纲领到成熟理论与外部比较.md
 
 ---
 
@@ -374,3 +374,4 @@ DM 与可靠主义共享实践取向：
 - van Fraassen, B. C. (1980). *The Scientific Image*. Oxford University Press.
 - Varela, F. J., Thompson, E., & Rosch, E. (1991). *The Embodied Mind*. MIT Press.
 - Goldman, A. I. (1986). *Epistemology and Cognition*. Harvard University Press.
+

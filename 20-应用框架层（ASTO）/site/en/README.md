@@ -2,7 +2,7 @@
 
 > 属集变迁存在论
 
-> **Current Status**: This site is a reading-oriented documentation entry for ASTO. It is not identical to the current first-round public preprint package. For formal public release, prioritize `20-应用框架层（ASTO）/README.md`, `PUBLISH_READINESS.md`, `papers/ASTO.预印本发布说明.v1.0.md`, and the core chain `U00 + P03 + P05a + P06 + P04 + P99.1-5`; treat `P01 / P02` as peripheral primers and `P05b / P07-P11` as optional extensions.
+> **Current Status**: This site is a reading-oriented documentation entry for ASTO. It is not identical to the current first-round public preprint package. For formal public release, prioritize `20-应用框架层（ASTO）/README.md`, `20-应用框架层（ASTO）/papers/README.md`, `papers/ASTO.预印本发布说明.v1.0.md`, and the core chain `U00 + P03 + P05a + P06 + P04 + P99.1-5`; treat `P01 / P02` as peripheral primers and `P05b / P07-P11` as optional extensions.
 
 Welcome to the documentation site for Attribute-Set Transition Ontology.
 

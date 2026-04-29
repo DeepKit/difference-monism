@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ASTO.P05b. Human Core Experiences: Death, Freedom, Meaning, and Love in ASTO"
 date: "2026-03-20"
 version: "v2.1 (Human Experience Focus)"
@@ -13,7 +13,7 @@ abstract: "Extension of the P05a axiom and theorem system. Uses ASTO structural 
 > **Version**: v2.1 (Human Experience Focus)
 > **Status**: Public Review Draft
 > **Author**: Yi Fu (付毅, ODDFounder, fuyi.it@live.cn)
-> **Prerequisite**: [ASTO.P05a. Axiom System](./ASTO.EN.P05a.Axioms.Phil.md)
+> **Prerequisite**: ASTO.EN.P05a.Axioms.Phil.md
 
 ---
 
@@ -80,7 +80,7 @@ Paradoxically, death is the condition of meaning:
 
 ## 2. Freedom: Perturbation Within Constraints
 
-> See also: [ASTO.P07. Freedom](./ASTO.EN.P07.Freedom.Phil.md)
+> See also: ASTO.EN.P07.Freedom.Phil.md
 
 **ASTO Definition**: Freedom is not "absence of constraints"; it is **the ability to introduce motility perturbations within inviolable constraints**.
 
@@ -261,10 +261,11 @@ But it is **revisable** through democratic deliberation.
 
 ## References
 
-- [ASTO.P05a. Axiom System](./ASTO.EN.P05a.Axioms.Phil.md) — Logical foundation
-- [ASTO.P06. Values and Boundaries](./ASTO.EN.P06.Values.Phil.md) — Ethical framework
-- [ASTO.P07. Freedom](./ASTO.EN.P07.Freedom.Phil.md) — Detailed freedom analysis
+- ASTO.EN.P05a.Axioms.Phil.md — Logical foundation
+- ASTO.EN.P06.Values.Phil.md — Ethical framework
+- ASTO.EN.P07.Freedom.Phil.md — Detailed freedom analysis
 
 ---
 
 > **Note**: This document provides ASTO's structural descriptions of human experiences. It does not claim these descriptions exhaust the phenomena—much remains in the ineffable, the taboo, the yet-to-be-said.
+

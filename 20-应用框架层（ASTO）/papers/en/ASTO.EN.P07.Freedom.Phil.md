@@ -32,7 +32,7 @@ abstract: "Discussing the core role of boundaries in Attribute-Set Transition On
 > **Declaration**: This perturbation may contain cognitive defects, logical holes, and bias. Welcome testing, critique, and overwriting. Retain right to self-mockery and obligation of self-negation.
 
 > **📌 Axiom Version Lock**
-> All axioms cited are based on **[ASTO.EN.P05a.Axioms.Phil.md](./ASTO.EN.P05a.Axioms.Phil.md)**.
+> All axioms cited are based on **ASTO.EN.P05a.Axioms.Phil.md**.
 
 ---
 
@@ -49,20 +49,20 @@ Interpretation under current cognition and tech conditions, not ultimate truth. 
 | **Utility (Can it survive?)** | A perturbation that can be retained or expanded must manifest a relatively positive survival benefit (fitness) in its Field. | We tend to focus on parts that form survival feedback (actionable consequences), sacrificing completeness in pure truth-seeking. |
 | **Imperfection (Is there a way out?)** | There is inevitably a gap between the world and any model; the gap cannot be eliminated, only managed; reserving reversibility and slack for future transition is necessary for continual evolution. | Our cognition is necessarily incomplete; we must presuppose validation/correction/fault-tolerance and reversibility mechanisms. |
 
-> For detailed definitions, see **[ASTO.P05 Axioms § Meta-Constraints](./ASTO.EN.P05a.Axioms.Phil.md)**.
+> For detailed definitions, see **ASTO.EN.P05a.Axioms.Phil.md**.
 
 ### **3. Defect is Source of Creativity**
-(See [ASTO.P03.Epistemology § 1.6](./ASTO.EN.P03.Epistemology.Phil.md))
+(See ASTO.EN.P03.Epistemology.Phil.md)
 
 ### **4. Don't Treat ASTO as Bible**
 ASTO is a living tool, not dead dogma. When theory suppresses concrete practical experience, treat it as alienation: revise or discard.
 
 ### **5. Reading Guide**
 If concepts are unclear, consult:
-- [ASTO.P03 Epistemology](./ASTO.EN.P03.Epistemology.Phil.md) — Epistemology and Unity of Knowing and Doing
-- [ASTO.P04 Manifesto](./ASTO.EN.P04.Manifesto.Phil.md) — Core framework and action program
-- [ASTO.P05 Axioms](./ASTO.EN.P05a.Axioms.Phil.md) — Axiom system
-- [ASTO.U02 Glossary](./ASTO.EN.U02.Glossary.en.md) — Terminology
+- ASTO.EN.P03.Epistemology.Phil.md — Epistemology and Unity of Knowing and Doing
+- ASTO.EN.P04.Manifesto.Phil.md — Core framework and action program
+- ASTO.EN.P05a.Axioms.Phil.md — Axiom system
+- ASTO.EN.U02.Glossary.en.md — Terminology
 
 ---
 
@@ -521,22 +521,23 @@ The ASTO system is distilled from the engineering practice of ODD (Output-Driven
 ```text
 ASTO Documentation System
 ├── 🌟 P-Series: Philosophy
-│   ├── [P01. NotThis](./ASTO.EN.P01.NotThis.Phil.md) (Manifesto of Theoretical Immunity)
-│   ├── [P02. Prologue](./ASTO.EN.P02.Prologue.Phil.md) (Negative Guidance and Path Branching)
-│   ├── [P03. Epistemology](./ASTO.EN.P03.Epistemology.Phil.md) (Inevitability of Cognitive Errors)
-│   ├── [P04. Manifesto](./ASTO.EN.P04.Manifesto.Phil.md) (Structural Situation and Action Program)
-│   ├── [P05a. Axioms](./ASTO.EN.P05a.Axioms.Phil.md) (Axiom System)
-│   ├── [P05b. Human Experience](./ASTO.EN.P05b.HumanExperience.Phil.md) (Death, Meaning, Love)(./ASTO.EN.P05a.Axioms.Phil.md) (System Thermodynamics and Attribute-Set Mode Ontology)
-│   ├── [P06. Values](./ASTO.EN.P06.Values.Phil.md) (Plurality Test and Ethical Circuit Breaker)
-│   ├── [P07. Freedom](./ASTO.EN.P07.Freedom.Phil.md) (Boundary is Freedom)
-│   ├── [P08. Exception](./ASTO.EN.P08.Exception.Phil.md) (Religious Experience and Interstellar Sovereignty)
-│   ├── [P09a. Critique](./ASTO.EN.P09a.Critique.Phil.md) (Anti-Totalitarian Charter and System Immunity)
-│   ├── [P10. Democracy](./ASTO.EN.P10.Democracy.Phil.md) (Dialogue Platform and NCP Protocol)
-│   ├── [P11. Resilience](./ASTO.EN.P11.Resilience.Phil.md) (Self-Immunity and Antifragility)
-│   ├── [P12. WhiteSpace](./ASTO.EN.P12.WhiteSpace.Phil.md) (Reserved Extension Space)
-│   └── [P13. Epilogue](./ASTO.EN.P13.Epilogue.Phil.md) (Ultimate Concern of the System)
+│   ├── ASTO.EN.P01.NotThis.Phil.md (Manifesto of Theoretical Immunity)
+│   ├── ASTO.EN.P02.Prologue.Phil.md (Negative Guidance and Path Branching)
+│   ├── ASTO.EN.P03.Epistemology.Phil.md (Inevitability of Cognitive Errors)
+│   ├── ASTO.EN.P04.Manifesto.Phil.md (Structural Situation and Action Program)
+│   ├── ASTO.EN.P05a.Axioms.Phil.md (Axiom System)
+│   ├── ASTO.EN.P05b.HumanExperience.Phil.md (Death, Meaning, Love)(./ASTO.EN.P05a.Axioms.Phil.md) (System Thermodynamics and Attribute-Set Mode Ontology)
+│   ├── ASTO.EN.P06.Values.Phil.md (Plurality Test and Ethical Circuit Breaker)
+│   ├── ASTO.EN.P07.Freedom.Phil.md (Boundary is Freedom)
+│   ├── ASTO.EN.P08.Exception.Phil.md (Religious Experience and Interstellar Sovereignty)
+│   ├── ASTO.EN.P09a.Critique.Phil.md (Anti-Totalitarian Charter and System Immunity)
+│   ├── ASTO.EN.P10.Democracy.Phil.md (Dialogue Platform and NCP Protocol)
+│   ├── ASTO.EN.P11.Resilience.Phil.md (Self-Immunity and Antifragility)
+│   ├── ASTO.EN.P12.WhiteSpace.Phil.md (Reserved Extension Space)
+│   └── ASTO.EN.P13.Epilogue.Phil.md (Ultimate Concern of the System)
 ```
 
 **(End)**
+
 
 

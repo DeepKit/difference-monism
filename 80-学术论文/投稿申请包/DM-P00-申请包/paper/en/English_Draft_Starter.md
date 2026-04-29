@@ -14,7 +14,7 @@ starting-point competition; difference; non-arbitrary constraint; structure; tem
 
 ## Current source
 
-- Chinese full draft: [DM-P00.为什么起点应写作差异加非任意约束性.投稿体草案.md](D:\_Progs\一元论\80-学术论文\DM-P00.为什么起点应写作差异加非任意约束性.投稿体草案.md)
+- Chinese full draft: DM-P00.为什么起点应写作差异加非任意约束性.投稿体草案.md
 
 ## Section mapping
 
@@ -29,3 +29,4 @@ starting-point competition; difference; non-arbitrary constraint; structure; tem
 9. Failure Conditions
 10. Scope Limits
 11. Conclusion
+

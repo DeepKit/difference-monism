@@ -12,6 +12,10 @@
 
 > **LMM 负责把现实问题场显影并整理成可诊断输入，COP 负责把输入压成有界状态，ODD 负责把允许进入执行面的状态编译成契约、门禁与证据链。**
 
+当前纪律：
+
+> **若看整条治理执行链的总定义，以 `TAT-COP-ODD-Harness 接口白皮书（现行版）` 与 `ai一元论理论体系总览.md` 为准；本文只负责 `LMM -> COP -> ODD` 这一段的转接细则。**
+
 ---
 
 ## 2. 本文只处理什么
@@ -200,7 +204,7 @@
 | `REFER` + `TAT_REVIEW` | 任意 | `audit_placeholder_contract` | 先回引 `TAT`，不得越层执行 |
 | `REFER` + `ODD_AUDIT` | `MEDIUM / HIGH` | `audit_contract / repair_contract` | 先审计可追溯性、停表与回滚接口 |
 
-最短判断：
+最短归纳：
 
 1. `FREEZE / UNKNOWN / REFER` 不是“坏结果”，而是“不允许装作已经能执行”
 2. `MIXED` 可以生成比较型或采样型契约，但不能伪装成单一确定方案
@@ -324,7 +328,7 @@ LMM 显影问题场
 - `52-认知方法层（LMM）/01.LMM理论/LMM.理论.003-理论基础与系统架构.md`
 - `52-认知方法层（LMM）/04.产品打造/Agentic-AI子场/LMM.产品-AI.007-一页自测与断链归档入口.md`
 - `52-认知方法层（LMM）/05.理论变现/LMM.变现.007-主战线港口承接与报价SOP.md`
-- `51-认知计算层（COP）/README-COP总架构说明.md`
+- `51-认知计算层（COP）/ai认知计算协议总览.md`
 - `51-认知计算层（COP）/COP.诊断协议.v1.md`
 - `51-认知计算层（COP）/Phase1_MVP立即部署/COP.P1-V3-工程化接口设计.md`
 - `50-工程方法层（ODD）/ODD-main/docs/C09.工程_契约_产出物_证据.md`

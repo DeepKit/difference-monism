@@ -26,9 +26,9 @@
 
 ## 主文入口
 
-- 中文稿：[LMM.研究.007-理论总述稿.md](D:\_Progs\一元论\52-认知方法层（LMM）\07.LMM研究\LMM.研究.007-理论总述稿.md)
-- 包内英文起稿页：[English_Draft_Starter.md](D:\_Progs\一元论\80-学术论文\投稿申请包\LMM-理论总述-申请包\paper\en\English_Draft_Starter.md)
-- 包内匿名占位页：[LMM-理论总述.blind.md](D:\_Progs\一元论\80-学术论文\投稿申请包\LMM-理论总述-申请包\paper\blind\LMM-理论总述.blind.md)
+- 中文稿：LMM.研究.007-理论总述稿.md
+- 包内英文起稿页：English_Draft_Starter.md
+- 包内匿名占位页：LMM-理论总述.blind.md
 
 ## 当前判断
 
@@ -37,4 +37,5 @@
 
 ## 路线入口
 
-- [LMM-拆稿路线对照表.md](D:\_Progs\一元论\80-学术论文\投稿申请包\LMM-理论总述-申请包\submission\LMM-拆稿路线对照表.md)
+- LMM-拆稿路线对照表.md
+

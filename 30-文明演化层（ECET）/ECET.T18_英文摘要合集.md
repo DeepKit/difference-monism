@@ -148,9 +148,10 @@ This document reports proof-of-concept agent-based modeling (ABM) results aligne
 
 ## Theoretical Foundation
 
-> This section derives from [ECET.A00 Theoretical Foundation](./ECET.A00_理论基础.md).
+> This section derives from ECET.A00_理论基础.md.
 
 ECET.T18 (English Abstract) summarises the full framework. A00 provides the formal derivation chain (ASTO → ECET) that underpins all claims in this abstract. Readers seeking the axiomatic basis for the constraint triad, FREEZE/FAIL conditions, and ODD boundary definitions should consult A00 §3–§4.
+
 
 
 

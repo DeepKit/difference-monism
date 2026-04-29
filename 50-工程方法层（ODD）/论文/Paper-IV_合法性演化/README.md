@@ -1,7 +1,7 @@
-﻿# Paper IV — 合法性演化
+# Paper IV — 合法性演化
 
 > **英文标题**: Legitimacy Evolution: Governing Re-legitimation and Lifecycle Management in Output-Driven Development
-> **中文标题**: 合法性演化：输出驱动开发中的重新合法化与生命周期治理
+> **中文标题**: 合法性演化：产出物驱动开发中的重新合法化与生命周期治理
 
 ---
 
@@ -38,4 +38,5 @@
 
 ## 详细提纲
 
-→ **[提纲.md](提纲.md)**
+→ **提纲.md**
+

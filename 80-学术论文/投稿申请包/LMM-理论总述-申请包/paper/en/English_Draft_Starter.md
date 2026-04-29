@@ -12,8 +12,9 @@ responsibility-bounded intake; weak measurement; problem illumination; governanc
 
 ## Current source
 
-- Chinese source: [LMM.研究.007-理论总述稿.md](D:\_Progs\一元论\52-认知方法层（LMM）\07.LMM研究\LMM.研究.007-理论总述稿.md)
+- Chinese source: LMM.研究.007-理论总述稿.md
 
 ## Current note
 
 This English starter is a package-level bridge document, not yet a full submission-ready English article.
+

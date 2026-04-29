@@ -59,10 +59,10 @@ P00不负责完成：
 
 ### 配套工具
 
-- [DM.P99.5.内部.术语表](./internal/DM.P99.5.内部.术语表.md)
-- [DM.P99.6.内部.失败条件总表](./internal/DM.P99.6.内部.失败条件总表.md)
-- [DM.P99.14.内部.DM对照非还原物理主义与结构实在论](./internal/DM.P99.14.内部.DM对照非还原物理主义与结构实在论.md)
-- [DM.P99.31.内部.物理接口备忘](./internal/DM.P99.31.内部.物理接口备忘.md)
+- DM.P99.5.内部.术语表.md
+- DM.P99.6.内部.失败条件总表.md
+- DM.P99.14.内部.DM对照非还原物理主义与结构实在论.md
+- DM.P99.31.内部.物理接口备忘.md
 
 ---
 
@@ -1810,4 +1810,5 @@ DM并不把世界理解为一组现成实体，
 - Ladyman, J. & Ross, D. (2007). *Every Thing Must Go: Metaphysics Naturalized*. Oxford University Press.
 - Quine, W. V. O. (1951). "Two Dogmas of Empiricism." *The Philosophical Review*, 60(1), 20-43.
 - Whitehead, A. N. (1929). *Process and Reality*. Macmillan.
+
 

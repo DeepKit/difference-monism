@@ -1,15 +1,15 @@
-﻿# **ASTO12. Web3：意图宪法与链上三权分立**
+# **ASTO12. Web3：意图宪法与链上三权分立**
 
 > **Version**: Γ.10 (Constitutional Web3 - Civilization Aligned)
 > **Status**: Living Document
 > **作者**: Fuyi (ODDFounder fuyi.it@live.cn)
-> **Context**: 本文解决了 Web3 的核心悖论：**Code is Law (代码即法律) vs. Code has Bugs (代码有漏洞)**。我们提出 **Intent is Constitution (意图即宪法)** 的治理架构，旨在构建一个符合 [ASTO 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition)（禁元/复数性/不可触达维 > 动变性 > 效率）的链上社会；并受 [ASTO06 公理之上：文明守护元公理](./ASTO06.公理.Proto.v8.0.md#asto-meta-axiom-civilization-stewardship) 约束，以避免“代码即法律”被误用为技术极权。
+> **Context**: 本文解决了 Web3 的核心悖论：**Code is Law (代码即法律) vs. Code has Bugs (代码有漏洞)**。我们提出 **Intent is Constitution (意图即宪法)** 的治理架构，旨在构建一个符合 ASTO04.宣言.Proto.v11.0.md（禁元/复数性/不可触达维 > 动变性 > 效率）的链上社会；并受 ASTO06.公理.Proto.v8.0.md 约束，以避免“代码即法律”被误用为技术极权。
 > **Compat Note**: 本文件原编号为 ASTO10。
 
 ---
 
 ## **0. 文明元定义对齐：链上宪法的上位约束（AGI 前默认保守）**
-> 对齐 [ASTO04.宣言 §0 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition) 与 [ASTO06 公理之上：文明守护元公理](./ASTO06.公理.Proto.v8.0.md#asto-meta-axiom-civilization-stewardship)。
+> 对齐 ASTO04.宣言.Proto.v11.0.md 与 ASTO06.公理.Proto.v8.0.md。
 > **优先级**：禁元/复数性/不可触达维 > 动变性 > 效率。
 
 *   **宪法先于代码**：把不可交易底线显式化为 Invariants，并把争议留给可异议/可退出的治理层。
@@ -117,3 +117,4 @@ Web3 的初衷是 **Trustless**，但这被误读为 **Responsibility-less**。
 只有当代码臣服于规范，规范臣服于人类意图时，Web3 才能走出黑暗森林，成为文明的**理性外骨骼**。
 
 **(本文档是构建 Constitutional Web3 的工程指南。)**
+

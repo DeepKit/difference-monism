@@ -44,16 +44,17 @@
 
 ## 主文入口
 
-- 中文稿：[10-Progee-System-Paper-CN.md](D:\_Progs\一元论\80-学术论文\外部迁入正文\02Business\progee2\docs\articles\10-Progee-System-Paper-CN.md)
-- 英文稿：[10-Progee-System-Paper-EN.md](D:\_Progs\一元论\80-学术论文\外部迁入正文\02Business\progee2\docs\articles\10-Progee-System-Paper-EN.md)
-- 包内英文入口：[Progee-System-Paper.en.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\paper\en\Progee-System-Paper.en.md)
-- 包内匿名稿：[Progee-System-Paper.blind.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\paper\blind\Progee-System-Paper.blind.md)
+- 中文稿：10-Progee-System-Paper-CN.md
+- 英文稿：10-Progee-System-Paper-EN.md
+- 包内英文入口：Progee-System-Paper.en.md
+- 包内匿名稿：Progee-System-Paper.blind.md
 
 ## 提交入口
 
-- 期刊适配：[目标期刊适配表.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\目标期刊适配表.md)
-- 投稿信：[投稿信模板.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\投稿信模板.md)
-- 元数据：[作者信息与投稿元数据.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\作者信息与投稿元数据.md)
-- 摘要版简介：[摘要版简介.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\摘要版简介.md)
-- 退修模板：[退修最小回应模板.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\submission\退修最小回应模板.md)
-- 补充材料说明：[补充材料说明.md](D:\_Progs\一元论\80-学术论文\投稿申请包\Progee-System-Paper-申请包\materials\补充材料说明.md)
+- 期刊适配：目标期刊适配表.md
+- 投稿信：投稿信模板.md
+- 元数据：作者信息与投稿元数据.md
+- 摘要版简介：摘要版简介.md
+- 退修模板：退修最小回应模板.md
+- 补充材料说明：补充材料说明.md
+

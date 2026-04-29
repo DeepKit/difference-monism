@@ -1,7 +1,7 @@
-﻿# Paper III — 契约精度
+# Paper III — 契约精度
 
 > **英文标题**: Contract Precision as the First-Class Determinant of Artifact Correctness in Output-Driven Development
-> **中文标题**: 契约精度：输出驱动开发中产出物正确性的首要决定因素
+> **中文标题**: 契约精度：产出物驱动开发中产出物正确性的首要决定因素
 
 ---
 
@@ -38,4 +38,5 @@
 
 ## 详细提纲
 
-→ **[提纲.md](提纲.md)**
+→ **提纲.md**
+

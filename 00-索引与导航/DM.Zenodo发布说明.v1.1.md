@@ -14,13 +14,13 @@
 
 最适合上传的主对象是：
 
-1. [DM.统一送审包.v1.1](./DM.统一送审包.v1.1.md)
+1. DM.统一送审包.v1.1.md
 
 若 Zenodo 允许附带补充材料，建议同时附上：
 
-2. [DM.理论定位申明](./DM.理论定位申明.md)
-3. [Glossary](./Glossary.md)
-4. [DM.全栈术语映射与命名关系表](./DM.全栈术语映射与命名关系表.md)
+2. DM.理论定位申明.md
+3. Glossary.md
+4. DM.全栈术语映射与命名关系表.md
 
 不建议第一次公开就把全仓库所有层级文档打包为同一个外部对象。
 
@@ -80,9 +80,7 @@
 
 ## 5. 推荐引用格式
 
-在 DOI 尚未生成前，可先写成：
-
-> Yi Fu. 《差异一元论（DM）：统一送审版 v1.1》. Zenodo, 2026. DOI 待生成.
+> Yi Fu. 《差异一元论（DM）：统一送审版 v1.1》. Zenodo, 2026. DOI: 10.5281/zenodo.19852505. (https://doi.org/10.5281/zenodo.19852505)
 
 或：
 
@@ -92,11 +90,10 @@
   title     = {Difference Monism (DM): Unified Send-for-Review Package v1.1},
   year      = {2026},
   publisher = {Zenodo},
-  note      = {Public review edition; DOI pending}
+  doi       = {10.5281/zenodo.19852505},
+  url       = {https://doi.org/10.5281/zenodo.19852505}
 }
 ```
-
-生成 DOI 后，把 `note` 改成正式 `doi` 与 `url` 即可。
 
 ---
 
@@ -115,3 +112,4 @@
 - 标出这是“已形成统一主链的研究纲领型理论包”，而不是终局真理。
 - 若附带补充材料，优先放定位申明和术语表，不优先放大量内部工作流文档。
 - 若读者在仓库或补充材料中看到 `RM / Resonance Monism / 共振一元论 / 共扰一元论`，应按早期命名阶段材料理解；当前公开主链以 `DM -> ASTO -> ECET -> TAT -> ODD` 为准。
+

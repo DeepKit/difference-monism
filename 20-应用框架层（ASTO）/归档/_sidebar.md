@@ -1,0 +1,11 @@
+- [首页](/)
+- **论文**
+  - [papers/](papers/)
+- **原型**
+  - [原型/](原型/)
+- **故事**
+  - [小说故事/](小说故事/)
+- **其它**
+  - ASTO_Ethics_Charter.md
+  - ASTO_Letter_to_Future.md
+

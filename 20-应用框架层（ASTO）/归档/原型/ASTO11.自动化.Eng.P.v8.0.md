@@ -1,10 +1,10 @@
-﻿# **ASTO11. 自动化：可执行规范与零摩擦治理**
+# **ASTO11. 自动化：可执行规范与零摩擦治理**
 
 > **Version**: Γ.12 (Zero-Friction Governance - Phil.Audit)
 > **Status**: Living Document
 > **作者**: Fuyi (ODDFounder fuyi.it@live.cn)
 > **审计顾问**: Habermas, Wiener, Marcuse, Latour (Virtual Table)
-> **Context**: 本文是 **可执行规范主义 (Executable Normativism)** 在 **属集变迁存在论 (ASTO)** 体系中的工程落地。经哲学审计，本次修订重点修复了“乐观执行”的不可逆风险，引入了“玻璃破碎”紧急机制与维持人类认知的“随机摩擦”；并以 [ASTO 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition) 与 [ASTO06 公理之上：文明守护元公理](./ASTO06.公理.Proto.v8.0.md#asto-meta-axiom-civilization-stewardship) 作为上位约束，避免“零摩擦”异化为技术极权。
+> **Context**: 本文是 **可执行规范主义 (Executable Normativism)** 在 **属集变迁存在论 (ASTO)** 体系中的工程落地。经哲学审计，本次修订重点修复了“乐观执行”的不可逆风险，引入了“玻璃破碎”紧急机制与维持人类认知的“随机摩擦”；并以 ASTO04.宣言.Proto.v11.0.md 与 ASTO06.公理.Proto.v8.0.md 作为上位约束，避免“零摩擦”异化为技术极权。
 > **Compat Note**: 本文件原编号为 ASTO09。
 
 ---
@@ -20,7 +20,7 @@ ASTO 自动化旨在实现 **“嵌入式合规” (Embedded Compliance)**：
 > 在 ASTO 体系中，**“五态”** 描述了规范的存在形态（自在 → 共识 → 编码 → 物化 → 定向），而 **“动变性”** 是驱动系统演化的因果力量，分为四类：**本律式、涌现式、目标式、建模式**。自动化本质上是对 **本律式/目标式动变性** 的编码与管控。
 
 ### **文明守护条款：零摩擦不是最高目标**
-> 对齐 [ASTO04.宣言 §0 文明元定义](./ASTO04.宣言.Proto.v11.0.md#asto-civilization-meta-definition) 与 [ASTO06 公理之上：文明守护元公理](./ASTO06.公理.Proto.v8.0.md#asto-meta-axiom-civilization-stewardship)。
+> 对齐 ASTO04.宣言.Proto.v11.0.md 与 ASTO06.公理.Proto.v8.0.md。
 
 *   **优先级**：禁元/复数性/不可触达维 > 动变性 > 效率。
 *   **AGI 前默认保守**：任何不可逆的自动化必须可审计、可中断、可退出、责任链清晰；否则强制进入黄灯/红灯流程。
@@ -219,3 +219,4 @@ ASTO 自动化不是要建造一个关押人类的铁笼，而是要建造一套
 通过**人机对话平台**，我们将法律的威严转化为代码的坚固，将官僚的傲慢转化为逻辑的透明。
 
 **(本文档是零摩擦社会的工程蓝图。)**
+

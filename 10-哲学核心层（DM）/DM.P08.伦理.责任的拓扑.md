@@ -52,12 +52,12 @@ P08进入规范层，
 
 ### 配套工具
 
-- [DM.P99.2.内部.制度案例总表](./internal/DM.P99.2.内部.制度案例总表.md)
-- [DM.P99.12.内部.制度案例卡.第一批12例](./internal/DM.P99.12.内部.制度案例卡.第一批12例.md)
-- [DM.P99.15.内部.合法性程序最小模板](./internal/DM.P99.15.内部.合法性程序最小模板.md)
-- [DM.P99.16.内部.DM最小制度评估维度表](./internal/DM.P99.16.内部.DM最小制度评估维度表.md)
-- [DM.P99.19.内部.制度案例档案.可引用草案](./internal/DM.P99.19.内部.制度案例档案.可引用草案.md)
-- [DM.P99.23.内部.合法性程序跑通.三例输出](./internal/DM.P99.23.内部.合法性程序跑通.三例输出.md)
+- DM.P99.2.内部.制度案例总表.md
+- DM.P99.12.内部.制度案例卡.第一批12例.md
+- DM.P99.15.内部.合法性程序最小模板.md
+- DM.P99.16.内部.DM最小制度评估维度表.md
+- DM.P99.19.内部.制度案例档案.可引用草案.md
+- DM.P99.23.内部.合法性程序跑通.三例输出.md
 
 ---
 
@@ -2563,3 +2563,4 @@ P08 的核心立场是：
 - Sen, A. (2009). *The Idea of Justice*. Harvard University Press.
 - Nussbaum, M. C. (2011). *Creating Capabilities*. Harvard University Press.
 - Strawson, P. F. (1962). "Freedom and Resentment." *Proceedings of the British Academy*, 48, 1-25.
+

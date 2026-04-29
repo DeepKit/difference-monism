@@ -8,6 +8,10 @@
 >
 > **作者 / Author**：Yi Fu（付毅，ODDFounder，fuyi.it@live.cn）
 
+> **目录说明**：本文件只负责 `ECET` 目录说明、阅读顺序与发布口径，不承担给 AI 的单文件入口职责。
+>
+> **AI 单文件入口**：若只发一个文件给 AI 或协作者看 `ECET`，优先发 `ai演化约束存在论总览.md`。
+
 ---
 
 ## 当前最稳定位
@@ -191,22 +195,12 @@ ECET 当前最适合被公开描述为：
 - `ecet_simulation.py`
 - `ECET_sim_tool.py`
 
-以下 `RM.ECET.*` 文件属于早期 `RM / 共扰一元论` 命名阶段的历史材料：
+以下文件已移入 `归档/`，属于早期 `RM / 共扰一元论` 命名阶段或内部工作材料，仅保留作溯源参考：
 
-- `RM.ECET.理论基础.md`
-- `RM.ECET.演化定律.md`
-- `RM.ECET.状态与规范跃迁.md`
-
-它们可保留作溯源参考，但不应被当作当前公开主包的一部分。
-
-以下文件属于内部工作、讨论痕迹或缓存式材料，不建议作为首轮公开主包对外发送：
-
-- `tasks.md`
-- `ECET_AlignmentForum_Draft.md`
-- `COS理念讨论.txt`
-- `ChatGPT Image 2026年2月18日 09_03_31.png`
-- `ecet_chatbot.py`
-- `归档/`
+- `归档/RM.ECET.*`（理论基础/演化定律/状态与规范跃迁）
+- `归档/ECET_AlignmentForum_Draft.md`
+- `归档/ECET_Paper_v1.md` / `归档/ECET_论文_中文版_v1.md`
+- `归档/COS理念讨论.txt` / `归档/ecet_chatbot.py` / `归档/ChatGPT Image *.png`
 
 ---
 

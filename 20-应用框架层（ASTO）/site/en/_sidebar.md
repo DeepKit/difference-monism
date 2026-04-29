@@ -1,4 +1,4 @@
-﻿- [Home](/)
+- [Home](/)
 - **Getting Started**
   - [One Page](onepage/)
   - [Lite](lite/)
@@ -8,4 +8,5 @@
   - [Engineering](engineering/)
 - **Stories**
   - [Stories](stories/)
-- [About](about.md)
+- about.md
+

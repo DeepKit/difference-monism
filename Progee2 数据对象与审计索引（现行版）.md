@@ -5,6 +5,8 @@
 > 性质：数据草案 / 审计补件  
 > 目的：把 `signal_case / cop_assessment / tat_ruling_record / odd_contract / execution_ticket / runtime_event / incident_case / rollback_order / appeal_request` 压成可落表、可索引、可回放的最小数据结构。  
 > 边界：本文只处理第一阶段窄链所需数据对象，不覆盖 `Progee2` 全仓业务表。  
+>
+> 当前纪律：本文默认后置于 `Progee2 落地优化稿（现行版）` 与 `Progee2 API 与状态流转草案（现行版）` 阅读，只承担数据补件角色。  
 
 ---
 

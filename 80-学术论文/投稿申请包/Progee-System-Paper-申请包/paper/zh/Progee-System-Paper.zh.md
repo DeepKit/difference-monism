@@ -5,8 +5,9 @@
 
 ## 主稿
 
-- [10-Progee-System-Paper-CN.md](D:\_Progs\一元论\80-学术论文\外部迁入正文\02Business\progee2\docs\articles\10-Progee-System-Paper-CN.md)
+- 10-Progee-System-Paper-CN.md
 
 ## 当前说明
 
 本页作为申请包内部中文主稿稳定入口，不另行维护第二份正文副本。
+

@@ -230,16 +230,16 @@ ASTO 不试图打破规范。
 
 ### **Path C: 问题驱动者**
 > "我有具体的问题，给我直接的答案。"
-- **AI对齐** → [ASTO.E04. AI](./工程版/ASTO.E04.AI对齐.Eng.md)
-- **Web3治理** → [ASTO.E03. Web3](./工程版/ASTO.E03.Web3.Eng.md)
-- **数字化转型** → [ASTO.E02. 自动化](./工程版/ASTO.E02.自动化.Eng.md)
-- **团队自动化** → [ASTO.E02. 自动化](./工程版/ASTO.E02.自动化.Eng.md)
+- **AI对齐** → ASTO.E04.AI对齐.Eng.md
+- **Web3治理** → ASTO.E03.Web3.Eng.md
+- **数字化转型** → ASTO.E02.自动化.Eng.md
+- **团队自动化** → ASTO.E02.自动化.Eng.md
 - **法律/组织/教育** → 见下方附录
 
 ### **Path D: 青春版 (Lite)**
 > "我想避开晦涩的术语，直接寻找应对生活困境的'作弊码'。"
-- **[ASTO03. 认识论 (Lite)](./青春版/ASTOop.认识论.Lite.v1.0.md)**：大脑的省电模式与认知冒险
-- **[H03. 小陈的故事](./人文版/ASTO.H03.故事：小陈的那条路.Hum.md)**：一个普通人的觉醒
+- **ASTOop.认识论.Lite.v1.0.md**：大脑的省电模式与认知冒险
+- **ASTO.H03.故事：小陈的那条路.Hum.md**：一个普通人的觉醒
 
 ---
 
@@ -265,14 +265,14 @@ ASTO 不试图打破规范。
 
 | 编号 | 领域 | 核心洞见 | 典型读者 | 原型 (Ext) |
 |:---|:---|:---|:---|:---|
-| [E06.01](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-01-universe) | **宇宙** | 主权随光速延迟迁移 | 航天工程、星际治理 | [Ext.07](./工程版/ASTO.Ext.07.宇宙.Sci.P.md) |
-| [E06.02](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-02-law) | **法律** | 红绿灯司法分流 | 法律工程师 | [Ext.01](./工程版/ASTO.Ext.01.法律.Sci.P.md) |
-| [E06.03](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-03-science) | **科学** | 证伪是系统的垃圾回收 | 科学哲学爱好者 | [Ext.02](./工程版/ASTO.Ext.02.科学.Sci.P.md) |
-| [E06.04](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-04-organization) | **组织** | AI取代中层，神经系统涌现 | 管理者、组织设计者 | [Ext.03](./工程版/ASTO.Ext.03.组织.Sci.P.md) |
-| [E06.05](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-05-education) | **教育** | 从灌输EN到孵化NEN | 教育者 | [Ext.04](./工程版/ASTO.Ext.04.教育.Sci.P.md) |
-| [E06.06](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-06-city) | **城市** | 街道是算法，市民是数据流 | 城市规划者 | [Ext.05](./工程版/ASTO.Ext.05.城市.Sci.P.md) |
-| [E06.07](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-07-healthcare) | **医疗** | 疾病是属性的异常解离 | 医疗从业者 | [Ext.06](./工程版/ASTO.Ext.06.医疗.Sci.P.md) |
-| [E05](./工程版/ASTO.E05.工程实践手册.Eng.md) | **工程实践** | 对抗测试/赛马/封板完整手册 | **所有工程师（必读）** | — |
+| ASTO.E06.领域扩展.Eng.md | **宇宙** | 主权随光速延迟迁移 | 航天工程、星际治理 | ASTO.Ext.07.宇宙.Sci.P.md |
+| ASTO.E06.领域扩展.Eng.md | **法律** | 红绿灯司法分流 | 法律工程师 | ASTO.Ext.01.法律.Sci.P.md |
+| ASTO.E06.领域扩展.Eng.md | **科学** | 证伪是系统的垃圾回收 | 科学哲学爱好者 | ASTO.Ext.02.科学.Sci.P.md |
+| ASTO.E06.领域扩展.Eng.md | **组织** | AI取代中层，神经系统涌现 | 管理者、组织设计者 | ASTO.Ext.03.组织.Sci.P.md |
+| ASTO.E06.领域扩展.Eng.md | **教育** | 从灌输EN到孵化NEN | 教育者 | ASTO.Ext.04.教育.Sci.P.md |
+| ASTO.E06.领域扩展.Eng.md | **城市** | 街道是算法，市民是数据流 | 城市规划者 | ASTO.Ext.05.城市.Sci.P.md |
+| ASTO.E06.领域扩展.Eng.md | **医疗** | 疾病是属性的异常解离 | 医疗从业者 | ASTO.Ext.06.医疗.Sci.P.md |
+| ASTO.E05.工程实践手册.Eng.md | **工程实践** | 对抗测试/赛马/封板完整手册 | **所有工程师（必读）** | — |
 
 ### **三、按问题快速索引 (FAQ)**
 
@@ -280,11 +280,11 @@ ASTO 不试图打破规范。
 *   **我想发币/做DAO** → ASTO.E03 Web3
 *   **我想训练大模型** → ASTO.E04 AI
 *   **我想设计投票系统** → ASTO.P10 民主
-*   **我想去火星** → ASTO.P08 例外 / [ASTO.E06.01 宇宙](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-01-universe)
-*   **系统总挂怎么办** → ASTO.P11 韧性 / [ASTO.E05 工程实践手册](./工程版/ASTO.E05.工程实践手册.Eng.md)
-*   **公司管理太僵化** → [ASTO.E06.04 组织](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-04-organization)
-*   **教育太卷怎么办** → [ASTO.E06.05 教育](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-05-education)
-*   **智慧城市怎么搞** → [ASTO.E06.06 城市](./工程版/ASTO.E06.领域扩展.Eng.md#asto-e06-06-city)
+*   **我想去火星** → ASTO.P08 例外 / ASTO.E06.领域扩展.Eng.md
+*   **系统总挂怎么办** → ASTO.P11 韧性 / ASTO.E05.工程实践手册.Eng.md
+*   **公司管理太僵化** → ASTO.E06.领域扩展.Eng.md
+*   **教育太卷怎么办** → ASTO.E06.领域扩展.Eng.md
+*   **智慧城市怎么搞** → ASTO.E06.领域扩展.Eng.md
 
 
 ---
@@ -314,54 +314,56 @@ ASTO 体系源自 ODD（输出驱动开发）的工程实践提炼。
 ```text
 ASTO 文档体系
 ├── 🌟 P 系列：哲学核心 (Philosophy)
-│   ├── [P01. 非此](./ASTO.P01.非此.Phil.md) (理论免疫宣言)
-│   ├── [P02. 序章](./ASTO.P02.序章.Phil.md) (否定性导引与路径分流)
-│   ├── [P03. 认识论](./ASTO.P03.认识论.Phil.md) (认知错误的必然性)
-│   ├── [P04. 宣言](./ASTO.P04.宣言.Phil.md) (属集变迁处境与行动纲领)
-│   ├── [P05a. 公理](./ASTO.P05a.公理.Phil.md) (系统热力学与属集变迁存在论)
-│   ├── [P05b. 人类核心体验](./ASTO.P05b.人类核心体验.Phil.md) (死亡、自由、意义与爱的ASTO描述)
-│   ├── [P06. 价值](./ASTO.P06.价值与边界.Phil.md) (复数性测试与伦理熔断)
-│   ├── [P07. 自由](./ASTO.P07.自由论.Phil.md) (边界即自由)
-│   ├── [P08. 例外](./ASTO.P08.例外.Phil.md) (宗教体验与星际主权)
-│   ├── [P09a. 批判](./ASTO.P09a.批判.Phil.md) (反极权宪章与系统免疫)
-│   ├── [P09b. 批判与回应](./ASTO.P09b.批判与回应.Phil.md) (来自哲学传统的挑战)
-│   ├── [P10. 民主](./ASTO.P10.民主.Phil.md) (对话平台与 NCP 协议)
-│   ├── [P11. 韧性](./ASTO.P11.韧性.Phil.md) (自我免疫与反脆弱)
-│   ├── [P12. 留白](./ASTO.P12.留白.Phil.md) (预留扩展空间)
-│   └── [P13. 终章](./ASTO.P13.终章.Phil.md) (系统的终极关怀)
+│   ├── ASTO.P01.非此.Phil.md (理论免疫宣言)
+│   ├── ASTO.P02.序章.Phil.md (否定性导引与路径分流)
+│   ├── ASTO.P03.认识论.Phil.md (认知错误的必然性)
+│   ├── ASTO.P04.宣言.Phil.md (属集变迁处境与行动纲领)
+│   ├── ASTO.P05a.公理.Phil.md (系统热力学与属集变迁存在论)
+│   ├── ASTO.P05b.人类核心体验.Phil.md (死亡、自由、意义与爱的ASTO描述)
+│   ├── ASTO.P06.价值与边界.Phil.md (复数性测试与伦理熔断)
+│   ├── ASTO.P07.自由论.Phil.md (边界即自由)
+│   ├── ASTO.P08.例外.Phil.md (宗教体验与星际主权)
+│   ├── ASTO.P09a.批判.Phil.md (反极权宪章与系统免疫)
+│   ├── ASTO.P09b.批判与回应.Phil.md (来自哲学传统的挑战)
+│   ├── ASTO.P10.民主.Phil.md (对话平台与 NCP 协议)
+│   ├── ASTO.P11.韧性.Phil.md (自我免疫与反脆弱)
+│   ├── ASTO.P12.留白.Phil.md (预留扩展空间)
+│   └── ASTO.P13.终章.Phil.md (系统的终极关怀)
 │
 ├── 🛠️ E 系列：工程实践 (Engineering)
-│   ├── [E01. 实践指南](./工程版/ASTO.E01.实践指南.Eng.md) (生活|人文|工程三轨读本)
-│   ├── [E02. 自动化](./工程版/ASTO.E02.自动化.Eng.md) (可执行规范与零摩擦治理)
-│   ├── [E03. Web3](./工程版/ASTO.E03.Web3.Eng.md) (意图宪法与链上三权分立)
-│   ├── [E04. AI对齐](./工程版/ASTO.E04.AI对齐.Eng.md) (逆熵智能体与文明传承)
-│   ├── [E05. 工程手册](./工程版/ASTO.E05.工程实践手册.Eng.md) (对抗测试与赛马机制)
-│   └── [E06. 领域扩展](./工程版/ASTO.E06.领域扩展.Eng.md) (多领域应用索引)
+│   ├── ASTO.E01.实践指南.Eng.md (生活|人文|工程三轨读本)
+│   ├── ASTO.E02.自动化.Eng.md (可执行规范与零摩擦治理)
+│   ├── ASTO.E03.Web3.Eng.md (意图宪法与链上三权分立)
+│   ├── ASTO.E04.AI对齐.Eng.md (逆熵智能体与文明传承)
+│   ├── ASTO.E05.工程实践手册.Eng.md (对抗测试与赛马机制)
+│   └── ASTO.E06.领域扩展.Eng.md (多领域应用索引)
 │
 ├── 🧩 H 系列：人文叙事 (Humanities)
-│   ├── [H01. 重构](./人文版/ASTO.H01.重构.Hum.md) (架构师的二十一种宇宙视角)
-│   ├── [H02. 导读](./人文版/ASTO.H02.导读：为什么读这本书.Hum.md)
-│   ├── [H03. 故事](./人文版/ASTO.H03.故事：小陈的那条路.Hum.md)
-│   ├── [H04. 认知冒险](./人文版/ASTO.H04.认知冒险.Hum.md)
-│   ├── [H05. 奇幻漂流](./人文版/ASTO.H05.奇幻漂流.Hum.md)
-│   └── [H06. 暮年的重构](./人文版/ASTO.H06.暮年的重构：给不再年轻的你.Hum.md)
+│   ├── ASTO.H01.重构.Hum.md (架构师的二十一种宇宙视角)
+│   ├── ASTO.H02.导读：为什么读这本书.Hum.md
+│   ├── ASTO.H03.故事：小陈的那条路.Hum.md
+│   ├── ASTO.H04.认知冒险.Hum.md
+│   ├── ASTO.H05.奇幻漂流.Hum.md
+│   └── ASTO.H06.暮年的重构：给不再年轻的你.Hum.md
 │
 ├── 🎓 Lite 系列：青春版 (Youth)
-│   ├── [L01. 宣言 (Lite)](./青春版/ASTO04.宣言.Lite.v1.0.md)
-│   ├── [L02. 认识论 (Lite)](./青春版/ASTOop.认识论.Lite.v1.0.md)
-│   └── [L03. 价值 (Lite)](./青春版/ASTO05.价值与边界.Lite.v1.0.md)
+│   ├── ASTO04.宣言.Lite.v1.0.md
+│   ├── ASTOop.认识论.Lite.v1.0.md
+│   └── ASTO05.价值与边界.Lite.v1.0.md
 │
 └── 🌍 Ext 系列：领域扩展 (Extensions)
-    ├── [Ext.01 法律](./工程版/ASTO.Ext.01.法律.Sci.P.md)
-    ├── [Ext.02 科学](./工程版/ASTO.Ext.02.科学.Sci.P.md)
-    ├── [Ext.03 组织](./工程版/ASTO.Ext.03.组织.Sci.P.md)
-    ├── [Ext.04 教育](./工程版/ASTO.Ext.04.教育.Sci.P.md)
-    ├── [Ext.05 城市](./工程版/ASTO.Ext.05.城市.Sci.P.md)
-    ├── [Ext.06 医疗](./工程版/ASTO.Ext.06.医疗.Sci.P.md)
-    ├── [Ext.07 宇宙](./工程版/ASTO.Ext.07.宇宙.Sci.P.md)
-    └── [Ext.08 留白](./工程版/ASTO.Ext.08.留白.Sci.P.md)
+    ├── ASTO.Ext.01.法律.Sci.P.md
+    ├── ASTO.Ext.02.科学.Sci.P.md
+    ├── ASTO.Ext.03.组织.Sci.P.md
+    ├── ASTO.Ext.04.教育.Sci.P.md
+    ├── ASTO.Ext.05.城市.Sci.P.md
+    ├── ASTO.Ext.06.医疗.Sci.P.md
+    ├── ASTO.Ext.07.宇宙.Sci.P.md
+    └── ASTO.Ext.08.留白.Sci.P.md
 ```
 
-> 🔙 [返回总目录](./readme.md)
+> 🔙 README.md
+
+
 
 
